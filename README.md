@@ -16,9 +16,9 @@
 #
 
 
-![batapii](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=batapii&theme=dark) ![batapii's GitHub stats](https://github-readme-stats.vercel.app/api?username=batapii&show_icons=true&theme=vue-dark)
+![batapii](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=batapii&theme=dark) [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=batapii&layout=compact&theme=vue-dark)](https://github.com/anuraghazra/github-readme-stats)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=batapii&layout=compact&theme=vue-dark)](https://github.com/anuraghazra/github-readme-stats)
+![batapii's GitHub stats](https://github-readme-stats.vercel.app/api?username=batapii&show_icons=true&theme=vue-dark)
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=batapii&theme=discord)](https://github.com/ryo-ma/github-profile-trophy)
 
