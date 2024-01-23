@@ -33,7 +33,7 @@
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=batapii&theme=discord)](https://github.com/ryo-ma/github-profile-trophy)
 
-[![My Twitter Followers](https://badgen.net/twitter/follow/batapii3939)](https://twitter.com/batapii3939)
+[![My Twitter Followers](https://twitter.com/batapii3939)](https://twitter.com/batapii3939)
 
 
 <!-- --------------------------------- :) ---------------------------------- -->
