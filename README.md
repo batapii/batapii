@@ -23,7 +23,11 @@
   </a>
 </p>
 
-https://github-stats-evirunurm.vercel.app/api/stats.js?username=batapii
+<p align="left"> 
+  <img alt="Top Langs" height="150px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=batapii&layout=compact&count_private=true&show_icons=true&theme=tokyonight" />
+  <img alt="github stats" height="150px" src="https://github-readme-stats.vercel.app/api?username=batapii3939&count_private=true&show_icons=true&show_icons=true&theme=tokyonight" />
+</p>
+
 
 <!-- --------------------------------- :) ---------------------------------- -->
 
