@@ -20,6 +20,8 @@
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=batapii&theme=discord)](https://github.com/ryo-ma/github-profile-trophy)
 
+![](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=vn7n24fzkq&theme=default)
+
 
 
 <!-- --------------------------------- :) ---------------------------------- -->
