@@ -10,7 +10,7 @@
     <img height="20" src="https://img.shields.io/github/followers/batapii?label=follow&logo=github&style=flat" />
   </a>
   
-# Backend Developer in Japan👋
+# Android Developer in Japan👋 
 ### Just 22 years old 
 ### Feel free to contact me anytime!👍
 #
