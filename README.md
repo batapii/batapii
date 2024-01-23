@@ -27,7 +27,7 @@
 ### Just 20 years old 
 ### Feel free to contact me anytime!👍
 #
-![Foo_name's GitHub stats](https://github-readme-stats.vercel.app/api?username=batapii_name&show_icons=true&theme=vue-dark)
+![batapii_name's GitHub stats](https://github-readme-stats.vercel.app/api?username=batapii_name&show_icons=true&theme=vue-dark)
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=batapii_name&layout=compact&theme=vue-dark)](https://github.com/anuraghazra/github-readme-stats)
 
