@@ -24,7 +24,7 @@
 
 
 <img
-  src="https://github.com/<batapii>/<wakata>/blob/<branch-name>/images/stat.svg"
+  src="https://github.com/<batapii>/<batapii>/blob/<wakata>/images/stat.svg"
   alt="Alternative Text"
 />
 Example:
