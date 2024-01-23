@@ -23,7 +23,7 @@
   </a>
 </p>
 
-https://github-stats-evirunurm.vercel.app/api/stats.js?username=【batapii】
+https://github-stats-evirunurm.vercel.app/api/stats.js?username=batapii
 
 <!-- --------------------------------- :) ---------------------------------- -->
 
