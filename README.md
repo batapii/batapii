@@ -16,7 +16,12 @@
 #
 
 
-![batapii](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=batapii&theme=dark) [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=batapii&layout=compact&theme=vue-dark)](https://github.com/anuraghazra/github-readme-stats)
+![batapii](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=batapii&theme=dark)
+
+<p align="left"> 
+  <img alt="Top Langs" height="150px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=batapii&layout=compact&count_private=true&show_icons=true&theme=tokyonight" />
+  <img alt="github stats" height="150px" src="https://github-readme-stats.vercel.app/api?username=batapii&count_private=true&show_icons=true&show_icons=true&theme=tokyonight" />
+</p>
 
 ![batapii's GitHub stats](https://github-readme-stats.vercel.app/api?username=batapii&show_icons=true&theme=vue-dark)
 
