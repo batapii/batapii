@@ -23,28 +23,7 @@
   </a>
 </p>
 
-# Backend Developer in Japan👋
-### Just 20 years old 
-### Feel free to contact me anytime!👍
-#
-![batapii_name's GitHub stats](https://github-readme-stats.vercel.app/api?username=batapii_name&show_icons=true&theme=vue-dark)
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=batapii_name&layout=compact&theme=vue-dark)](https://github.com/anuraghazra/github-readme-stats)
-
-[![trophy](https://github-profile-trophy.vercel.app/?username=batapii_name&theme=discord)](https://github.com/ryo-ma/github-profile-trophy)
-
-[![My Twitter Followers](https://badgen.net/twitter/follow/batapii3939)](https://twitter.com/batapii3939)
-
-
-# NOW TRAINING
-
-<p align="left">
-<a href="https://twitter.com/[batapii]" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="[batapii]" height="30" width="40" /></a>
-<a href="[batapi3939@gmail.com]"><img src="https://img.shields.io/badge/Gmail-d14836?style=flat-square&logo=Gmail&logoColor=white&link=[batapi3939@gmail.com]"/></a>
-</p>
-
-
-
+https://github-stats-evirunurm.vercel.app/api/stats.js?username=【batapii】
 
 <!-- --------------------------------- :) ---------------------------------- -->
 
