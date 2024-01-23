@@ -3,7 +3,7 @@
   <a href="https://github.com/batapii/batapii/">
     <img src="https://komarev.com/ghpvc/?username=batapii" alt="batapii" />
   </a>
-  <a href="http://twitter.com/batapii">
+  <a href="http://twitter.com/batapii3939">
     <img height="20" src="https://img.shields.io/twitter/follow/batapii?label=Twitter&logo=twitter&style=flat" />
   </a>
   <a href="https://github.com/batapii">
@@ -18,7 +18,7 @@
   <a href="http://qiita.com/batapii">
     <img height="20" src="https://qiita-badge.apiapi.app/s/batapii/posts.svg" />
   </a>
-  <//qiita.com/yutkat">
+  <//qiita.com/batapii">
     <img height="20" src="https://qiita-badge.apiapi.app/s/batapii/contributions.svg" />
   </a>
 </p>
