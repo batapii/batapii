@@ -39,8 +39,8 @@
 # NOW TRAINING
 
 <p align="left">
-<a href="https://twitter.com/[batapii]" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="[Foo]" height="30" width="40" /></a>
-<a href="[batapi3939@gmail.com]"><img src="https://img.shields.io/badge/Gmail-d14836?style=flat-square&logo=Gmail&logoColor=white&link=[batapii3939@gmail.com]"/></a>
+<a href="https://twitter.com/batapii" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="[Foo]" height="30" width="40" /></a>
+<a href="batapi3939@gmail.com"><img src="https://img.shields.io/badge/Gmail-d14836?style=flat-square&logo=Gmail&logoColor=white&link=batapii3939@gmail.com"/></a>
 </p>
 
 
