@@ -16,7 +16,7 @@
 #
 
 
-![batapii](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=batapii&theme=vue-dark)
+![batapii](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=batapii&theme=dark)
 
 ![batapii's GitHub stats](https://github-readme-stats.vercel.app/api?username=batapii&show_icons=true&theme=vue-dark)
 
