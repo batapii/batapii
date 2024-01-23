@@ -23,6 +23,16 @@
 [![trophy](https://github-profile-trophy.vercel.app/?username=batapii&theme=discord)](https://github.com/ryo-ma/github-profile-trophy)
 
 
+<img
+  src="https://github.com/<batapii>/<>/blob/<branch-name>/images/stat.svg"
+  alt="Alternative Text"
+/>
+Example:
+<img
+  src="https://github.com/avinal/avinal/blob/main/images/stat.svg"
+  alt="Avinal WakaTime Activity"
+/>
+
 
 <!-- --------------------------------- :) ---------------------------------- -->
 
@@ -38,6 +48,7 @@
     </h1>
   </div>
 <br><br><br>
+
 
 
 
