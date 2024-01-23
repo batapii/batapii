@@ -36,27 +36,6 @@
 [![My Twitter Followers](https://badgen.net/twitter/follow/batapii3939)](https://twitter.com/batapii3939)
 
 
-# NOW TRAINING
-
-<p align="left">
-<a href="https://twitter.com/[Foo]" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="[Foo]" height="30" width="40" /></a>
-<a href="[Foo_email]"><img src="https://img.shields.io/badge/Gmail-d14836?style=flat-square&logo=Gmail&logoColor=white&link=[Foo_email]"/></a>
-</p>
-
-
-
-# My Skill (Programming Languages, Frameworks and Tools)
-
-<img src="https://skillicons.dev/icons?i=html,css,js,typescript,firebase,react,vue,next,sqlite,mysql,github,vscode,docker,laravel,cakephp,discord,php,gutlab,jquery,aws,vite" /> <br /><br />
-
-  ※Another skill and tools
-  Codeigniter, Virtual Box, CakePHP, CircleCI and so on.
-  
-# NOW TRAINING
-
-<img src="https://skillicons.dev/icons?i=react,next,typescript,mysql,laravel,docker,vscode,github" /> <br /><br />
-
-
 <!-- --------------------------------- :) ---------------------------------- -->
 
 <br><br><br>
