@@ -24,7 +24,7 @@
 </p>
 
 # Backend Developer in Japan👋
-### Just 20 years old 
+### Just 22 years old 
 ### Feel free to contact me anytime!👍
 #
 ![Foo_name's GitHub stats](https://github-readme-stats.vercel.app/api?username=batapii&show_icons=true&theme=vue-dark)
