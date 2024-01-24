@@ -25,11 +25,7 @@
 
 <!--START_SECTION:waka-->
 
-```rust
-From: 23 January 2024 - To: 23 January 2024
-
-Total Time: 0 secs
-
+```txt
 No activity tracked
 ```
 
