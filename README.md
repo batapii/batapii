@@ -24,11 +24,74 @@
 
 
 <!--START_SECTION:waka-->
+![Code Time](http://img.shields.io/badge/Code%20Time-0%20secs-blue)
 
-```txt
-No activity tracked
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-7.9%20thousand%20lines%20of%20code-blue)
+
+**🐱 My GitHub Data** 
+
+> 📦 ? Used in GitHub's Storage 
+ > 
+> 🏆 78 Contributions in the Year 2024
+ > 
+> 🚫 Not Opted to Hire
+ > 
+> 📜 2 Public Repositories 
+ > 
+> 🔑 0 Private Repositories 
+ > 
+**I'm an Early 🐤** 
+
+```text
+🌞 Morning                29 commits          █████░░░░░░░░░░░░░░░░░░░░   21.01 % 
+🌆 Daytime                55 commits          ██████████░░░░░░░░░░░░░░░   39.86 % 
+🌃 Evening                12 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   08.70 % 
+🌙 Night                  42 commits          ████████░░░░░░░░░░░░░░░░░   30.43 % 
+```
+📅 **I'm Most Productive on Wednesday** 
+
+```text
+Monday                   24 commits          ████░░░░░░░░░░░░░░░░░░░░░   17.39 % 
+Tuesday                  12 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   08.70 % 
+Wednesday                81 commits          ███████████████░░░░░░░░░░   58.70 % 
+Thursday                 10 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   07.25 % 
+Friday                   3 commits           █░░░░░░░░░░░░░░░░░░░░░░░░   02.17 % 
+Saturday                 6 commits           █░░░░░░░░░░░░░░░░░░░░░░░░   04.35 % 
+Sunday                   2 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   01.45 % 
 ```
 
+
+📊 **This Week I Spent My Time On** 
+
+```text
+🕑︎ Time Zone: Asia/Tokyo
+
+💬 Programming Languages: 
+No Activity Tracked This Week
+
+🔥 Editors: 
+No Activity Tracked This Week
+
+💻 Operating System: 
+No Activity Tracked This Week
+```
+
+**I Mostly Code in Kotlin** 
+
+```text
+Kotlin                   4 repos             █████████████████░░░░░░░░   66.67 % 
+mcfunction               1 repo              ████░░░░░░░░░░░░░░░░░░░░░   16.67 % 
+Java                     1 repo              ████░░░░░░░░░░░░░░░░░░░░░   16.67 % 
+```
+
+
+
+**Timeline**
+
+![Lines of Code chart](https://raw.githubusercontent.com/batapii/batapii/main/assets/bar_graph.png)
+
+
+ Last Updated on 24/01/2024 02:09:10 UTC
 <!--END_SECTION:waka-->
 
 
