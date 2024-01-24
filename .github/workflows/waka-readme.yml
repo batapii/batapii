@@ -58,6 +58,3 @@ jobs:
       # - uses: athul/waka-readme@master
       #   with:
       #     WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-        uses: gautamkrishnar/blog-post-workflow@master
-        with:
-          feed_list: "https://zenn.dev/batapii/feed"
