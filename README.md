@@ -12,7 +12,6 @@
   
 # Android Developer in Japan👋 
 ### Just 22 years old 
-### Feel free to contact me anytime!👍
 #
 
 <p align="left"> 
