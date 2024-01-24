@@ -21,7 +21,7 @@
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=batapii&theme=discord)](https://github.com/ryo-ma/github-profile-trophy)
 
-[![WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=batapii)](https://github.com/anuraghazra/github-readme-stats)
+
 
 <!--START_SECTION:waka-->
 
