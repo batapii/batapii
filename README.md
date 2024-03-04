@@ -12,7 +12,7 @@
 
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-34%20hrs%2028%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-35%20hrs%2018%20mins-blue)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-8.5%20thousand%20lines%20of%20code-blue)
 
@@ -55,13 +55,18 @@ Sunday                   2 commits           ░░░░░░░░░░░�
 🕑︎ Time Zone: Asia/Tokyo
 
 💬 Programming Languages: 
-Other                    23 mins             █████████████████████████   100.00 % 
+Other                    36 mins             █████████████░░░░░░░░░░░░   50.18 % 
+Kotlin                   28 mins             ██████████░░░░░░░░░░░░░░░   39.42 % 
+XML                      2 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   04.03 % 
+Markdown                 2 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   03.64 % 
+GitIgnore file           1 min               █░░░░░░░░░░░░░░░░░░░░░░░░   02.16 % 
 
 🔥 Editors: 
-Chrome                   23 mins             █████████████████████████   100.00 % 
+Chrome                   36 mins             █████████████░░░░░░░░░░░░   50.18 % 
+Android Studio           36 mins             ████████████░░░░░░░░░░░░░   49.82 % 
 
 💻 Operating System: 
-Mac                      23 mins             █████████████████████████   100.00 % 
+Mac                      1 hr 12 mins        █████████████████████████   100.00 % 
 ```
 
 **I Mostly Code in Kotlin** 
@@ -78,7 +83,7 @@ mcfunction               1 repo              ████░░░░░░░�
 ![Lines of Code chart](https://raw.githubusercontent.com/batapii/batapii/main/assets/bar_graph.png)
 
 
- Last Updated on 03/03/2024 19:37:28 UTC
+ Last Updated on 04/03/2024 19:37:10 UTC
 <!--END_SECTION:waka-->
 
 
