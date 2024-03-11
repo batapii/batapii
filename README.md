@@ -55,18 +55,13 @@ Sunday                   2 commits           ░░░░░░░░░░░�
 🕑︎ Time Zone: Asia/Tokyo
 
 💬 Programming Languages: 
-Kotlin                   28 mins             ██████████████░░░░░░░░░░░   57.74 % 
-Other                    13 mins             ███████░░░░░░░░░░░░░░░░░░   27.02 % 
-XML                      2 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   05.90 % 
-Markdown                 2 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   05.33 % 
-GitIgnore file           1 min               █░░░░░░░░░░░░░░░░░░░░░░░░   03.17 % 
+No Activity Tracked This Week
 
 🔥 Editors: 
-Android Studio           36 mins             ██████████████████░░░░░░░   72.98 % 
-Chrome                   13 mins             ███████░░░░░░░░░░░░░░░░░░   27.02 % 
+No Activity Tracked This Week
 
 💻 Operating System: 
-Mac                      49 mins             █████████████████████████   100.00 % 
+No Activity Tracked This Week
 ```
 
 **I Mostly Code in Kotlin** 
@@ -83,7 +78,7 @@ mcfunction               1 repo              ████░░░░░░░�
 ![Lines of Code chart](https://raw.githubusercontent.com/batapii/batapii/main/assets/bar_graph.png)
 
 
- Last Updated on 10/03/2024 19:37:33 UTC
+ Last Updated on 11/03/2024 19:37:06 UTC
 <!--END_SECTION:waka-->
 
 
