@@ -12,7 +12,7 @@
 
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-41%20hrs%2011%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-41%20hrs%2044%20mins-blue)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-8.5%20thousand%20lines%20of%20code-blue)
 
@@ -53,14 +53,14 @@ Sunday                   2 commits           ░░░░░░░░░░░�
 🕑︎ Time Zone: Asia/Tokyo
 
 💬 Programming Languages: 
-Other                    3 hrs 15 mins       ████████████████████████░   94.39 % 
-Canva Design             11 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.61 % 
+Other                    3 hrs 46 mins       ████████████████████████░   95.12 % 
+Canva Design             11 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   04.88 % 
 
 🔥 Editors: 
-Chrome                   3 hrs 27 mins       █████████████████████████   100.00 % 
+Chrome                   3 hrs 58 mins       █████████████████████████   100.00 % 
 
 💻 Operating System: 
-Mac                      3 hrs 27 mins       █████████████████████████   100.00 % 
+Mac                      3 hrs 58 mins       █████████████████████████   100.00 % 
 ```
 
 **I Mostly Code in Kotlin** 
@@ -77,7 +77,7 @@ mcfunction               1 repo              ████░░░░░░░�
 ![Lines of Code chart](https://raw.githubusercontent.com/batapii/batapii/main/assets/bar_graph.png)
 
 
- Last Updated on 20/04/2024 19:37:34 UTC
+ Last Updated on 21/04/2024 19:38:31 UTC
 <!--END_SECTION:waka-->
 
 
