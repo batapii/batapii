@@ -12,7 +12,7 @@
 
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-60%20hrs%2043%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-61%20hrs%2043%20mins-blue)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-8.5%20thousand%20lines%20of%20code-blue)
 
@@ -20,11 +20,11 @@
 
 > 📦 ? Used in GitHub's Storage 
  > 
-> 🏆 104 Contributions in the Year 2024
+> 🏆 105 Contributions in the Year 2024
  > 
 > 🚫 Not Opted to Hire
  > 
-> 📜 3 Public Repositories 
+> 📜 4 Public Repositories 
  > 
 > 🔑 0 Private Repositories 
  > 
@@ -55,18 +55,18 @@ Sunday                   2 commits           ░░░░░░░░░░░�
 🕑︎ Time Zone: Asia/Tokyo
 
 💬 Programming Languages: 
-Kotlin                   5 hrs 58 mins       ████████████████░░░░░░░░░   63.92 % 
-Other                    2 hrs 48 mins       ███████░░░░░░░░░░░░░░░░░░   29.95 % 
-Mermaid                  15 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.80 % 
-Properties               10 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   01.82 % 
-Shell Script             3 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.54 % 
+Other                    3 hrs 18 mins       ███████████████░░░░░░░░░░   58.72 % 
+Kotlin                   1 hr 59 mins        █████████░░░░░░░░░░░░░░░░   35.37 % 
+Mermaid                  15 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   04.66 % 
+Groovy                   2 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.69 % 
+Markdown                 0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.22 % 
 
 🔥 Editors: 
-Android Studio           6 hrs 33 mins       ██████████████████░░░░░░░   70.05 % 
-Chrome                   2 hrs 48 mins       ███████░░░░░░░░░░░░░░░░░░   29.95 % 
+Chrome                   3 hrs 18 mins       ███████████████░░░░░░░░░░   58.72 % 
+Android Studio           2 hrs 19 mins       ██████████░░░░░░░░░░░░░░░   41.28 % 
 
 💻 Operating System: 
-Mac                      9 hrs 21 mins       █████████████████████████   100.00 % 
+Mac                      5 hrs 37 mins       █████████████████████████   100.00 % 
 ```
 
 **I Mostly Code in Kotlin** 
@@ -83,7 +83,7 @@ mcfunction               1 repo              ████░░░░░░░�
 ![Lines of Code chart](https://raw.githubusercontent.com/batapii/batapii/main/assets/bar_graph.png)
 
 
- Last Updated on 15/05/2024 19:37:17 UTC
+ Last Updated on 16/05/2024 19:37:01 UTC
 <!--END_SECTION:waka-->
 
 
