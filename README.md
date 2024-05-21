@@ -2,9 +2,6 @@
 ### Just 22 years old 
 
 
-## チームリポジトリ
-
-### プロジェクトA
 
 [![プロジェクトA](https://github-readme-stats.vercel.app/api/pin/?username=チーム名&repo=リポジトリ名)](https://github.com/チーム名/リポジトリ名)
 
