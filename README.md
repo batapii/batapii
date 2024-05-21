@@ -3,7 +3,8 @@
 
 ### チーム開発
 
-[![プロジェクトA](https://github-readme-stats.vercel.app/api/pin/?username=N3AttendanceManager&repo=AttendanceApp)](https://github.com/N3AttendanceManager/AttendanceApp)
+[![プロジェクトA](https://github-readme-stats.vercel.app/api/pin/?username=N3AttendanceManager&repo=AttendanceApp&bg_color=000080&title_color=ffffff&text_color=ffffff)](https://github.com/N3AttendanceManager/AttendanceApp)
+
 
 ------------------------------------------------------------
 
