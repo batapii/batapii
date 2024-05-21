@@ -5,6 +5,7 @@
 
 [![プロジェクトA](https://github-readme-stats.vercel.app/api/pin/?username=N3AttendanceManager&repo=AttendanceApp)](https://github.com/N3AttendanceManager/AttendanceApp)
 
+------------------------------------------------------------
 
 <p align="left"> 
   <img alt="Top Langs" height="150px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=batapii&layout=compact&count_private=true&show_icons=true&theme=tokyonight" />
