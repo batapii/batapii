@@ -1,6 +1,15 @@
 # Android Developer in Japan👋 
 ### Just 22 years old 
 #
+# チームリポジトリ
+
+
+## リポジトリ一覧
+
+### プロジェクトA
+
+[![プロジェクトA](https://github-readme-stats.vercel.app/api/pin/?username=チーム名&repo=リポジトリ名)](https://github.com/チーム名/リポジトリ名)
+
 
 <p align="left"> 
   <img alt="Top Langs" height="150px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=batapii&layout=compact&count_private=true&show_icons=true&theme=tokyonight" />
