@@ -1,6 +1,6 @@
 # Android Developer in Japan👋 
 ### Just 22 years old 
-
+*************************************
 ### チーム開発
 
 [![プロジェクトA](https://github-readme-stats.vercel.app/api/pin/?username=N3AttendanceManager&repo=AttendanceApp&bg_color=0d1117&title_color=58a6ff&text_color=c3d1d9)](https://github.com/N3AttendanceManager/AttendanceApp)
