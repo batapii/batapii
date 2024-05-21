@@ -5,8 +5,8 @@ on:
     types: [test_trigger]
   workflow_dispatch:
   schedule:
-    # Runs at 4am JST
-    - cron: '30 19 * * *'
+    # Runs at 1am JST
+    - cron: '00 16 * * *'
 
 jobs:
   github-metrics:
