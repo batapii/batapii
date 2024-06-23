@@ -19,15 +19,13 @@
 
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-158%20hrs%2048%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-159%20hrs%2022%20mins-blue)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-34.0%20thousand%20lines%20of%20code-blue)
 
 **🐱 My GitHub Data** 
 
 > 📦 ? Used in GitHub's Storage 
- > 
-> 🏆 154 Contributions in the Year 2024
  > 
 > 🚫 Not Opted to Hire
  > 
@@ -62,18 +60,18 @@ Sunday                   2 commits           ░░░░░░░░░░░�
 🕑︎ Time Zone: Asia/Tokyo
 
 💬 Programming Languages: 
-Kotlin                   9 hrs 40 mins       █████████████░░░░░░░░░░░░   52.63 % 
-Other                    8 hrs 14 mins       ███████████░░░░░░░░░░░░░░   44.79 % 
-Text                     26 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.41 % 
+Kotlin                   9 hrs 33 mins       █████████████░░░░░░░░░░░░   51.46 % 
+Other                    8 hrs 32 mins       ████████████░░░░░░░░░░░░░   46.00 % 
+Text                     26 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.39 % 
 Properties               1 min               ░░░░░░░░░░░░░░░░░░░░░░░░░   00.12 % 
 Git                      0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.04 % 
 
 🔥 Editors: 
-Android Studio           10 hrs 9 mins       ██████████████░░░░░░░░░░░   55.21 % 
-Chrome                   8 hrs 14 mins       ███████████░░░░░░░░░░░░░░   44.79 % 
+Android Studio           10 hrs 1 min        ██████████████░░░░░░░░░░░   54.00 % 
+Chrome                   8 hrs 32 mins       ████████████░░░░░░░░░░░░░   46.00 % 
 
 💻 Operating System: 
-Mac                      18 hrs 23 mins      █████████████████████████   100.00 % 
+Mac                      18 hrs 34 mins      █████████████████████████   100.00 % 
 ```
 
 **I Mostly Code in Kotlin** 
@@ -90,7 +88,7 @@ mcfunction               1 repo              ███░░░░░░░░�
 ![Lines of Code chart](https://raw.githubusercontent.com/batapii/batapii/main/assets/bar_graph.png)
 
 
- Last Updated on 22/06/2024 16:10:38 UTC
+ Last Updated on 23/06/2024 16:09:26 UTC
 <!--END_SECTION:waka-->
 
 ⏳ **Total Coding Time**
