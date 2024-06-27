@@ -6,7 +6,6 @@ on:
   schedule:
     - cron: '0 * * * *'  # This will run the workflow every hour
 
-# 明示的に権限を定義
 permissions:
   contents: write
   packages: read
@@ -22,12 +21,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3  # v3に更新
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0  # すべての履歴をフェッチ
 
       - name: Set up Python
-        uses: actions/setup-python@v4  # v4に更新
+        uses: actions/setup-python@v4
         with:
           python-version: '3.x'
           cache: 'pip'  # 依存関係のキャッシュを有効化
