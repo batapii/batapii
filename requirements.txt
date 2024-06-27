@@ -1,2 +1,6 @@
-
 requests==2.26.0
+WakaTime APIを使用する場合
+wakatime==1.1.1
+GitHub APIを使用する場合
+PyGithub==1.55
+その他必要なパッケージがあれば、ここに追加してください
