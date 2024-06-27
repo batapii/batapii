@@ -4,15 +4,15 @@ on:
     types: [test_trigger]
   workflow_dispatch:
   schedule:
-    # Runs at 1am JST (00 16 * * * in UTC)
-    - cron: '00 16 * * *'
+    # Runs at 1am JST (00 16 *  in UTC)
+    - cron: '00 16 * '
 jobs:
   github-metrics:
     name: Update Readme with Metrics
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
       - name: Generate GitHub Profile Summary Cards
         uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
@@ -28,9 +28,6 @@ jobs:
           SHOW_LINES_OF_CODE: "True"
           SHOW_PROJECTS: "False"
           SHOW_PROFILE_VIEWS: "False"
-          SHOW_LOC_CHART: "False"
-          SHOW_TOTAL_CODE_TIME: "False"
-          SHOW_SHORT_INFO: "False"
       - name: Generate Metrics
         uses: lowlighter/metrics@latest
         with:
