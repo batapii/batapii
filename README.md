@@ -1,5 +1,5 @@
-# Android Developer in Japan👋 
-
+# Android Developer in Japan👋 # my skill🔥
+[![My Skills](https://skillicons.dev/icons?i=androidstudio,kotlin,github,notion,pr,twitter)](https://skillicons.dev)
 > [!NOTE]  
 > Highlights information that users should take into account, even when skimming.
 
@@ -30,7 +30,6 @@
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=batapii&theme=discord)](https://github.com/ryo-ma/github-profile-trophy)
 
-[![My Skills](https://skillicons.dev/icons?i=androidstudio,kotlin,github,notion,pr,twitter)](https://skillicons.dev)
 <!--START_SECTION:waka-->
 ![Code Time](http://img.shields.io/badge/Code%20Time-169%20hrs-blue)
 
