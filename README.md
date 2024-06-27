@@ -1,5 +1,5 @@
-# Android Developer in Japan👋 # my skill🔥
-[![My Skills](https://skillicons.dev/icons?i=androidstudio,kotlin,github,notion,pr,twitter)](https://skillicons.dev)
+# Android Developer in Japan👋 
+# My current skills →  [![My Skills](https://skillicons.dev/icons?i=androidstudio,kotlin,github,notion,pr,twitter)](https://skillicons.dev)
 > [!NOTE]  
 > Highlights information that users should take into account, even when skimming.
 
