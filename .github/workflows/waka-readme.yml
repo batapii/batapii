@@ -1,12 +1,13 @@
 name: Metrics
-
 on:
-  repository_dispatch:
-    types: [test_trigger]
-  workflow_dispatch:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
   schedule:
-    # Runs at 1am JST (00 16 * * * in UTC)
-    - cron: '00 16 * * *'
+    # Runs every hour
+    - cron: '0 * * * *'
+  workflow_dispatch:
 
 jobs:
   github-metrics:
@@ -14,15 +15,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
-
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      
       - name: Generate GitHub Profile Summary Cards
         uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         with:
           USERNAME: ${{ github.repository_owner }}
-
+      
       - name: Generate WakaTime Readme Stats
         uses: anmol098/waka-readme-stats@master
         with:
@@ -32,7 +35,10 @@ jobs:
           SHOW_LINES_OF_CODE: "True"
           SHOW_PROJECTS: "False"
           SHOW_PROFILE_VIEWS: "False"
-
+          SHOW_LOC_CHART: "False"
+          SHOW_TOTAL_CODE_TIME: "False"
+          SHOW_SHORT_INFO: "False"
+      
       - name: Generate Metrics
         uses: lowlighter/metrics@latest
         with:
@@ -58,3 +64,10 @@ jobs:
           plugin_topics_sort: stars
           plugin_topics_mode: mastered
           plugin_topics_limit: 0
+      
+      - name: Commit and Push if Changed
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git add -A
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update metrics" && git push)
