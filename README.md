@@ -41,7 +41,7 @@
 </p>
 <h2 align="center">📊 Weekly Coding Stats</h2>
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-171%20hrs%2054%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-167%20hrs%2018%20mins-blue)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-23.6%20thousand%20lines%20of%20code-blue)
 
@@ -120,7 +120,7 @@ mcfunction               1 repo              ███░░░░░░░░�
 ![Lines of Code chart](https://raw.githubusercontent.com/batapii/batapii/main/assets/bar_graph.png)
 
 
- Last Updated on 27/06/2024 14:17:52 UTC
+ Last Updated on 27/06/2024 15:21:30 UTC
 <!--END_SECTION:waka-->
 
 > [!NOTE]  
