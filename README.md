@@ -33,20 +33,14 @@ fields_of_interests:
 currently_learning: ["Kotlin Multiplatform", "Jetpack Compose"]
 2024 Goals: ["Contribute to 10+ open source projects", "Launch 2 personal apps"]
 hobbies: ["Coding", "Gaming", "Tech Meetups"]
-<h2 align="center">🛠️ My Tech Stack</h2>
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=androidstudio,kotlin,java,python,js,firebase,git" />
-</p>
+
   <summary><h3>🔧 Technologies & Tools</h3></summary>
   <p align="center">
     <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android" />
     <img src="https://img.shields.io/badge/Kotlin-0095D5?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin" />
-    <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" alt="Java" />
-    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
     <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" />
     <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
     <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-    <img src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=Jira&logoColor=white" alt="Jira" />
   </p>
 </details>
 <h2 align="center">📊 GitHub Stats</h2>
