@@ -14,26 +14,6 @@
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=batapii&theme=nord&column=7&no-frame=true&no-bg=true" alt="batapii" />
 </p>
-<h2 align="center">🚀 About Me</h2>
-yamlCopyname: Batapii
-located_in: Japan
-current_job: Android Developer
-education:
-  [
-    "Self-Taught Developer",
-    "Bachelor's in Computer Science"
-  ]
-fields_of_interests:
-  [
-    "Android Development",
-    "Kotlin",
-    "UI/UX",
-    "Machine Learning",
-  ]
-currently_learning: ["Kotlin Multiplatform", "Jetpack Compose"]
-2024 Goals: ["Contribute to 10+ open source projects", "Launch 2 personal apps"]
-hobbies: ["Coding", "Gaming", "Tech Meetups"]
-
   <summary><h3>🔧 Technologies & Tools</h3></summary>
   <p align="center">
     <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android" />
