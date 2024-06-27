@@ -31,38 +31,40 @@
 [![trophy](https://github-profile-trophy.vercel.app/?username=batapii&theme=discord)](https://github.com/ryo-ma/github-profile-trophy)
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-169%20hrs-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-170%20hrs%201%20min-blue)
 
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-22.6%20thousand%20lines%20of%20code-blue)
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-22.7%20thousand%20lines%20of%20code-blue)
 
 **🐱 My GitHub Data** 
 
-> 📦 ? Used in GitHub's Storage 
+> 📦 1.7 kB Used in GitHub's Storage 
+ > 
+> 🏆 171 Contributions in the Year 2024
  > 
 > 🚫 Not Opted to Hire
  > 
-> 📜 4 Public Repositories 
+> 📜 3 Public Repositories 
  > 
-> 🔑 0 Private Repositories 
+> 🔑 2 Private Repositories 
  > 
 **I'm an Early 🐤** 
 
 ```text
-🌞 Morning                89 commits          ███████░░░░░░░░░░░░░░░░░░   29.97 % 
-🌆 Daytime                152 commits         █████████████░░░░░░░░░░░░   51.18 % 
-🌃 Evening                13 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   04.38 % 
-🌙 Night                  43 commits          ████░░░░░░░░░░░░░░░░░░░░░   14.48 % 
+🌞 Morning                98 commits          ████████░░░░░░░░░░░░░░░░░   32.03 % 
+🌆 Daytime                152 commits         ████████████░░░░░░░░░░░░░   49.67 % 
+🌃 Evening                13 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   04.25 % 
+🌙 Night                  43 commits          ████░░░░░░░░░░░░░░░░░░░░░   14.05 % 
 ```
 📅 **I'm Most Productive on Wednesday** 
 
 ```text
-Monday                   58 commits          █████░░░░░░░░░░░░░░░░░░░░   19.53 % 
-Tuesday                  24 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   08.08 % 
-Wednesday                157 commits         █████████████░░░░░░░░░░░░   52.86 % 
-Thursday                 46 commits          ████░░░░░░░░░░░░░░░░░░░░░   15.49 % 
-Friday                   4 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   01.35 % 
-Saturday                 6 commits           █░░░░░░░░░░░░░░░░░░░░░░░░   02.02 % 
-Sunday                   2 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.67 % 
+Monday                   58 commits          █████░░░░░░░░░░░░░░░░░░░░   18.95 % 
+Tuesday                  24 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   07.84 % 
+Wednesday                157 commits         █████████████░░░░░░░░░░░░   51.31 % 
+Thursday                 55 commits          ████░░░░░░░░░░░░░░░░░░░░░   17.97 % 
+Friday                   4 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   01.31 % 
+Saturday                 6 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   01.96 % 
+Sunday                   2 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.65 % 
 ```
 
 
@@ -107,7 +109,7 @@ mcfunction               1 repo              ███░░░░░░░░�
 ![Lines of Code chart](https://raw.githubusercontent.com/batapii/batapii/main/assets/bar_graph.png)
 
 
- Last Updated on 27/06/2024 02:01:51 UTC
+ Last Updated on 27/06/2024 03:21:11 UTC
 <!--END_SECTION:waka-->
 
 ⏳ **Total Coding Time**
