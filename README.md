@@ -41,9 +41,16 @@
 </p>
 <h2 align="center">📊 Weekly Coding Stats</h2>
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-171%20hrs%2017%20mins-blue)
 
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-22.7%20thousand%20lines%20of%20code-blue)
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-22.7%20thousand%20lines%20of%20code-blue)<br>
+📊 Coding Stats
+- 🕓 **Code Time:** 171 hrs 17 mins
+- 🔥 **Current Streak:** 14 days
+- 🚀 **Projects Completed:** 5
+- 💻 **Main Language:** Kotlin
+
+
+
 
 **🐱 My GitHub Data** 
 
