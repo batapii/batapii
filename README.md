@@ -1,5 +1,4 @@
 # Android Developer in Japan👋 
-### Just 22 years old 
 
 > [!NOTE]  
 > Highlights information that users should take into account, even when skimming.
