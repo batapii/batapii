@@ -14,6 +14,7 @@
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=batapii&theme=nord&column=7&no-frame=true&no-bg=true" alt="batapii" />
 </p>
+<hr style="border:2px solid #3e3e3e; width:100%">
   <h3 align="center">🔧 Technologies & Tools</h3>
   <p align="center">
     <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android" />
@@ -23,6 +24,7 @@
     <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </p>
 </details>
+<hr style="border:2px solid #3e3e3e; width:100%">
 <h2 align="center">📊 GitHub Stats</h2>
 <p align="center">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=batapii&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
@@ -137,17 +139,12 @@ mcfunction               1 repo              ███░░░░░░░░�
 
 <h2 align="center">🎯 Current Focus</h2>
 
-🔭 I'm currently working on Project Name
-🌱 I'm currently learning Jetpack Compose and Kotlin Multiplatform
+🔭 I'm currently working on Project Name<br>
+🌱 I'm currently learning Jetpack Compose and Kotlin Multiplatform<br>
 👯 I'm looking to collaborate on Open Source Android Projects
-💬 Ask me about Android Development, Kotlin, and Mobile UI/UX
-📫 How to reach me: Email
 
-<h2 align="center">📚 Latest Blog Posts</h2>
 <!-- BLOG-POST-LIST:START -->
 
-Title of your first blog post
-Title of your second blog post
 
 <!-- BLOG-POST-LIST:END -->
 <h2 align="center">🔗 Connect with me</h2>
