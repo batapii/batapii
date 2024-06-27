@@ -52,4 +52,12 @@ jobs:
           plugin_habits_charts: yes
           plugin_stargazers: yes
           plugin_stars: yes
+          plugin_lines: yes
+          plugin_notable: yes
+          plugin_achievements: yes
+          plugin_activity: yes
+          plugin_projects: yes
+          plugin_repositories: yes
+          base: header, activity, community, repositories, metadata
           plugin_stars_limit: 4
+          config_timezone: Asia/Tokyo
