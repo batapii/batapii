@@ -33,6 +33,14 @@ object Batapii {
     fun sayHi() {
         println("見てくれてありがとう！たくさん見てください！")
     }
+        
+    // 日々の目標
+    fun dailyGoal() {
+        println("1日1コミット、着実に成長！")
+    }
+    
+    // 好きな日本食
+    val favoriteFood = "寿司🍣"
 }
 ```
 
