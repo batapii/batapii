@@ -12,14 +12,24 @@ print(f"WAKATIME_API_KEY length: {len(os.environ.get('WAKATIME_API_KEY', ''))}")
 
 api_key = os.getenv('WAKATIME_API_KEY')
 
+encoded_key = base64.b64encode(api_key.encode()).decode()
+
 if not api_key:
     raise ValueError("WAKATIME_API_KEYが設定されていません。")
 
 def get_wakatime_stats(api_key):
     headers = {
-        "Authorization": "Basic " + base64.b64encode(api_key.encode()).decode()
+        "Authorization": "Basic " + encoded_key
     }
 
+    
+    response = requests.get("https://api.wakatime.com/api/v1/users/current/stats/last_7_days", headers=headers)
+    print(f"ステータスコード: {response.status_code}")
+    print(f"レスポンス内容: {response.text}")
+    
+    if response.status_code == 401:
+        print("認証エラー: 401 Unauthorized。APIキーを確認してください。")
+    
     print(f"Authorization header: {headers['Authorization'][:15]}...{headers['Authorization'][-5:]}")
 
     # リーダーボードIDを設定（必要に応じて変更）
