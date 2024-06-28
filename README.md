@@ -187,7 +187,7 @@ mcfunction               1 repo              ███░░░░░░░░�
 - 🌱 Deepening expertise in Kotlin and Android development
 - 👯 Seeking collaborations on Open Source Android Projects
 - 🚀 Aiming to increase contribution frequency, especially on weekends
-
+<!--START_SECTION:activity-->
 <h2 align="center">🔗 Connect with me</h2>
 <p align="center">
   <a href="https://twitter.com/batapii3939" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="batapii" height="30" width="40" /></a>
