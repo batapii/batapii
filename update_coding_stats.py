@@ -15,17 +15,21 @@ api_key = os.getenv('WAKATIME_API_KEY')
 github_token = os.getenv('GH_TOKEN')
 repo_name = os.getenv('GITHUB_REPOSITORY')
 
-print(f"WAKATIME_API_KEY set: {bool(wakatime_api_key)}")
-print(f"WAKATIME_API_KEY length: {len(wakatime_api_key) if wakatime_api_key else 'Not Set'}")
+print(f"WAKATIME_API_KEY set: {bool(api_key)}")
+print(f"WAKATIME_API_KEY length: {len(api_key) if api_key else 'Not Set'}")
 print(f"GH_TOKEN set: {bool(github_token)}")
 print(f"GITHUB_REPOSITORY: {repo_name}")
+
+if not api_key:
+    raise ValueError("WAKATIME_API_KEYが設定されていません。")
+if not github_token:
+    raise ValueError("GH_TOKENが設定されていません。")
+if not repo_name:
+    raise ValueError("GITHUB_REPOSITORYが設定されていません。")
 
 
 encoded_key = base64.b64encode(api_key.encode()).decode()
 print(f"Encoded API Key: {encoded_key}")
-
-if not api_key:
-    raise ValueError("WAKATIME_API_KEYが設定されていません。")
 
 def get_wakatime_stats(api_key):
     headers = {
