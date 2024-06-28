@@ -10,6 +10,8 @@ import re
 print(f"WAKATIME_API_KEY set: {'WAKATIME_API_KEY' in os.environ}")
 print(f"WAKATIME_API_KEY length: {len(os.environ.get('WAKATIME_API_KEY', ''))}")
 
+api_key = os.getenv('WAKATIME_API_KEY')
+
 def get_wakatime_stats(api_key):
     headers = {
         "Authorization": f"Bearer {api_key}"
