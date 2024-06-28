@@ -22,10 +22,10 @@ def get_wakatime_stats(api_key):
         "weekly": "https://api.wakatime.com/api/v1/users/current/stats/last_7_days",
         "annual": "https://api.wakatime.com/api/v1/users/current/stats/last_year",
         "projects": "https://api.wakatime.com/api/v1/users/current/projects",
-        "leaderboard": f"https://api.wakatime.com/api/v1/users/current/leaderboards/{leaderboard_id}"
+        "leaderboard": f"https://api.wakatime.com/api/v1/users/current/leaderboards"
     }
     
-    results = {}
+results = {}
 for key, url in endpoints.items():
     try:
         response = requests.get(url, headers=headers)
@@ -40,7 +40,7 @@ for key, url in endpoints.items():
         print(f"{key} データ取得中にエラーが発生しました: {e}")
         results[key] = None
     
-    return results
+return results
 
 def format_time(seconds):
     return str(timedelta(seconds=seconds)).split('.')[0]
