@@ -11,19 +11,41 @@
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=batapii&label=Profile%20views&color=0e75b6&style=flat" alt="profile-views" />
   <img src="https://img.shields.io/github/followers/batapii?label=Followers&style=social" alt="followers-count">
+  <img src="https://img.shields.io/badge/Kotlin-Enthusiast-0095D5" alt="Kotlin Enthusiast">
+  <img src="https://img.shields.io/badge/Android-Expert-3DDC84" alt="Android Expert">
 </p>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=YOUR_GITHUB_USERNAME&layout=compact" alt="WakaTime Coding Stats" />
+</p>
+
+<h2 align="center">🚀 Quick Overview</h2>
+
+```kotlin
+object Batapii {
+    val name = "Batapii"
+    val role = "Android Developer"
+    val language = listOf("Kotlin", "Java", "Python")
+    val specialization = listOf("Android Development", "Jetpack Compose", "Kotlin Multiplatform")
+    
+    val learning = "Constantly exploring new Android features and best practices"
+    val hobbies = listOf("Coding", "Gaming", "Tech Meetups")
+
+    fun sayHi() {
+        println("見てくれてありがとう！たくさん見てください！")
+    }
+}
+```
 
 <h2 align="center">🏆 GitHub Trophies</h2>
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=batapii&theme=nord&column=7&no-frame=true&no-bg=true" alt="batapii" />
 </p>
 
-<hr style="border:2px solid #3e3e3e; width:100%">
-
 <h2 align="center">🔧 Technologies & Tools</h2>
 <p align="center">
   <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android" />
   <img src="https://img.shields.io/badge/Kotlin-0095D5?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin" />
+  <img src="https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=for-the-badge&logo=jetpack-compose&logoColor=white" alt="Jetpack Compose" />
   <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" />
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
   <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
@@ -61,12 +83,6 @@
 <h2 align="center">📊 My Coding Insights</h2>
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-175%20hrs%2022%20mins-blue)
-
-![Profile Views](http://img.shields.io/badge/Profile%20Views-13-blue)
-
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-24.8%20thousand%20lines%20of%20code-blue)
-
 **🐱 My GitHub Data** 
 
 > 📦 1.9 kB Used in GitHub's Storage 
@@ -78,7 +94,7 @@
 > 📜 3 Public Repositories 
  > 
 > 🔑 2 Private Repositories 
- > 
+
 **I'm an Early 🐤** 
 
 ```text
@@ -87,6 +103,7 @@
 🌃 Evening                23 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   06.18 % 
 🌙 Night                  61 commits          ████░░░░░░░░░░░░░░░░░░░░░   16.40 % 
 ```
+
 📅 **I'm Most Productive on Wednesday** 
 
 ```text
@@ -98,7 +115,6 @@ Friday                   60 commits          ████░░░░░░░�
 Saturday                 6 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   01.61 % 
 Sunday                   2 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.54 % 
 ```
-
 
 📊 **This Week I Spent My Time On** 
 
@@ -139,44 +155,53 @@ mcfunction               1 repo              ███░░░░░░░░�
 
 ![Lines of Code chart](https://raw.githubusercontent.com/batapii/batapii/main/assets/bar_graph.png)
 
-Last Updated on 28/06/2024 12:22:49 UTC
 <!--END_SECTION:waka-->
 
-<h2 align="center">🚀 Coding Productivity</h2>
+<h2 align="center">🚀 コーディング生産性ハイライト</h2>
 
-- **Peak Coding Hours:** 10:00 AM - 2:00 PM
-- **Most Productive Day:** Wednesday
-- **Current Streak:** 15 days
-- **Longest Streak:** 30 days
-- **Productivity Score:** 85/100
+- **総コーディング時間:** 175時間22分
+- **ピークコーディング時間帯:** 10:00 - 14:00
+- **最も生産的な曜日:** 水曜日
+- **最も使用する言語:** Kotlin（リポジトリの77.78%）
+- **メインプロジェクト:** ToDoSNS（週間作業時間の79.19%）
 
-<h2 align="center">📈 Long-term Trends</h2>
+<h2 align="center">🏆 コーディング実績</h2>
 
-- **Monthly Average:** 153 hrs 30 mins
-- **YoY Growth:** +15% coding time
-- **Language Mastery:** Achieved 1000+ hours in Kotlin
+- **継続的な貢献:** 2024年に237回のコントリビューション
+- **多言語スキル:** Kotlin、Python、mcfunctionに精通
+- **プロジェクトへの献身:** 今週ToDoSNSに12時間以上費やす
+- **ツールの習熟:** Android StudioとChromeデベロッパーツールに熟練
 
-<h2 align="center">🏆 Achievements</h2>
+<h2 align="center">🎯 現在の焦点と目標</h2>
 
-- **Global Rank:** Top 5% of WakaTime users
-- **Android Specialist:** 500+ hours on Android projects
-- **Open Source Contributor:** 50+ contributions to public repositories
+- 🔭 ToDoSNSプロジェクトの進化
+- 🌱 KotlinとAndroid開発のスキル向上
+- 👯 オープンソースAndroidプロジェクトでの協力を求めています
+- 🚀 特に週末のコントリビューション頻度を増やすことを目指しています
 
-<h2 align="center">🔥 Recent GitHub Activity</h2>
+<h2 align="center">💼 スキルセット</h2>
 
-<!--START_SECTION:activity-->
-1. 🎉 Merged PR [#123](https://github.com/batapii/repo-name/pull/123) in [batapii/repo-name]
-2. 💪 Opened PR [#124](https://github.com/batapii/repo-name/pull/124) in [batapii/repo-name]
-3. 🗣 Commented on [#125](https://github.com/batapii/repo-name/issues/125) in [batapii/repo-name]
-4. ❌ Closed PR [#126](https://github.com/batapii/repo-name/pull/126) in [batapii/repo-name]
-5. 🚀 Published release [v1.0.0](https://github.com/batapii/repo-name/releases/tag/v1.0.0) in [batapii/repo-name]
-<!--END_SECTION:activity-->
+- **言語:** Kotlin, Java, Python, SQL
+- **フレームワーク:** Android SDK, Jetpack Compose, Retrofit
+- **ツール:** Android Studio, Git, Firebase, Room Database
+- **その他:** Material Design, CI/CD, アジャイル開発手法
 
-<h2 align="center">🎯 Current Focus</h2>
+<h2 align="center">📫 コンタクト</h2>
 
-🔭 I'm currently working on Project Name<br>
-🌱 I'm currently learning Jetpack Compose and Kotlin Multiplatform<br>
-👯 I'm looking to collaborate on Open Source Android Projects
+- **GitHub:** [batapii](https://github.com/batapii)
+- **Qiita:** [あなたのQiitaアカウント]
+- **Zenn:** [あなたのZennアカウント]
+- **Twitter:** [@あなたのTwitterハンドル]
+
+<p align="center">
+  <a href="https://github.com/batapii">
+    <img src="https://img.shields.io/github/followers/batapii?label=フォロワー&style=social" alt="GitHub フォロワー">
+  </a>
+  <a href="[あなたのTwitterURL]">
+    <img src="https://img.shields.io/twitter/follow/あなたのTwitterハンドル?style=social" alt="Twitter フォロワー">
+  </a>
+</p>
+
 
 <h2 align="center">🔗 Connect with me</h2>
 <p align="center">
@@ -197,5 +222,4 @@ Last Updated on 28/06/2024 12:22:49 UTC
   <img src="https://user-images.githubusercontent.com/44926913/175853109-f8850656-6704-4a8a-bee6-9aca154d929b.gif">・・
   <img src="https://user-images.githubusercontent.com/44926913/175853154-5449d974-975e-44a6-ab84-a86031265e40.gif">・・・・
   <img src="https://user-images.githubusercontent.com/44926913/175853109-f8850656-6704-4a8a-bee6-9aca154d929b.gif">・
-  <img src="https://user-images.githubusercontent.com/44926913/175853154-5449d974-975e-44a6-ab84-a86031265e40.gif">・・・・
-</div>
+  <img src="https://user-images.githubusercontent.com/44926913/175853154-5449d974-975e-44a6-ab84-a86031265e40.gif">・・・
