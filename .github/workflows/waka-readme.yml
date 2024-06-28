@@ -43,10 +43,10 @@ jobs:
           find . -name requirements.txt
           echo "Contents of requirements.txt (if found):"
           cat requirements.txt || echo "requirements.txt not found"
-          echo "Searching for update_readme.py:"
-          find . -name update_readme.py
-          echo "Contents of update_readme.py (if found):"
-          cat update_readme.py || echo "update_readme.py not found"
+          echo "Searching for update_coding_stats.py:"
+          find . -name update_coding_stats.py
+          echo "Contents of update_coding_stats.py (if found):"
+          cat update_coding_stats.py || echo "update_coding_stats.py not found"
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -64,16 +64,16 @@ jobs:
           echo "Installed packages:"
           pip list
 
-      - name: Update README with Coding Stats
+      - name: Update Coding Stats
         env:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
-          if [ -f update_readme.py ]; then
-            python update_readme.py
+          if [ -f "./update_coding_stats.py" ]; then
+            python ./update_coding_stats.py
           else
-            echo "::error::update_readme.py not found"
+            echo "::error::update_coding_stats.py not found in the current directory"
             exit 1
           fi
 
