@@ -3,8 +3,8 @@ import os
 from github import Github
 import base64
 
-def get_wakatime_stats(api_key):
-    url = "https://wakatime.com/api/v1/users/current/stats/last_7_days"
+def get_wakatime_stats(api_key, period='last_7_days'):
+    url = f"https://wakatime.com/api/v1/users/current/stats/{period}"
     headers = {
         "Authorization": f"Bearer {api_key}"
     }
@@ -22,9 +22,15 @@ def update_readme_with_stats():
 
     try:
         # WakaTimeの統計データを取得
-        stats = get_wakatime_stats(wakatime_api_key)
-        total_time = stats['data']['grand_total']['text']
+        stats_last_7_days = get_wakatime_stats(wakatime_api_key, 'last_7_days')
+        stats_last_30_days = get_wakatime_stats(wakatime_api_key, 'last_30_days')
+        stats_last_year = get_wakatime_stats(wakatime_api_key, 'last_year')
 
+        # 統計情報の抽出
+        total_time_7_days = stats_last_7_days['data']['grand_total']['text']
+        total_time_30_days = stats_last_30_days['data']['grand_total']['text']
+        total_time_year = stats_last_year['data']['grand_total']['text']
+        
         # GitHubリポジトリを更新
         g = Github(github_token)
         repo = g.get_repo(repo_name)
@@ -34,7 +40,15 @@ def update_readme_with_stats():
         content = base64.b64decode(readme.content).decode('utf-8')
 
         # 既存の統計情報を更新または新しい情報を追加
-        stats_section = f"# Coding Stats\n\nTotal coding time last 7 days: {total_time}\n"
+        stats_section = f"""# Coding Stats
+
+## Total Coding Time
+
+- **Last 7 days**: {total_time_7_days}
+- **Last 30 days**: {total_time_30_days}
+- **Last year**: {total_time_year}
+
+"""
         if "# Coding Stats" in content:
             content = content.replace(content[content.index("# Coding Stats"):content.index("\n\n", content.index("# Coding Stats"))], stats_section)
         else:
