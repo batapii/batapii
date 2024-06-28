@@ -9,9 +9,6 @@
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=batapii&label=Profile%20views&color=0e75b6&style=flat" alt="profile-views" />
-  <img src="http://img.shields.io/badge/Code%20Time-176%20hrs%2010%20mins-blue&label=Profile%20views&color=0e75b6&style=flat" alt="profile-views" />
-  <img src="https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-24.9%20thousand%20lines%20of%20code-blue&label=Profile%20views&color=0e35b4&style=flat" alt="profile-views" /><br>
   <img src="https://img.shields.io/github/followers/batapii?label=Followers&style=social" alt="followers-count">
   <img src="https://img.shields.io/badge/Kotlin-Enthusiast-0095D5" alt="Kotlin Enthusiast">
   <img src="https://img.shields.io/badge/Android-Expert-3DDC84" alt="Android Expert">
@@ -82,6 +79,12 @@ object Batapii {
 <h2 align="center">📊 My Coding Insights</h2>
 
 <!--START_SECTION:waka-->
+
+![Code Time](http://img.shields.io/badge/Code%20Time-176%20hrs%2052%20mins-blue)
+
+![Profile Views](http://img.shields.io/badge/Profile%20Views-13-blue)
+
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-24.9%20thousand%20lines%20of%20code-blue)
 **🐱 My GitHub Data** 
 
 > 📦 2.1 kB Used in GitHub's Storage 
