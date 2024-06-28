@@ -11,19 +11,28 @@ def get_wakatime_stats(api_key):
         "Authorization": f"Bearer {api_key}"
     }
     
-    # 過去7日間の統計
-    weekly_stats = requests.get("https://wakatime.com/api/v1/users/current/stats/last_7_days", headers=headers).json()
+    endpoints = {
+        "weekly": "https://wakatime.com/api/v1/users/current/stats/last_7_days",
+        "annual": "https://wakatime.com/api/v1/users/current/stats/last_year",
+        "projects": "https://wakatime.com/api/v1/users/current/projects",
+        "leaderboard": "https://wakatime.com/api/v1/users/current/leaderboards/"
+    }
     
-    # 年間の統計（プレミアム機能）
-    annual_stats = requests.get("https://wakatime.com/api/v1/users/current/stats/last_year", headers=headers).json()
+    results = {}
+    for key, url in endpoints.items():
+        try:
+            response = requests.get(url, headers=headers)
+            response.raise_for_status()
+            data = response.json()
+            print(f"{key} データ取得成功: {json.dumps(data, indent=2)[:500]}...")  # 最初の500文字のみ表示
+            if 'data' not in data:
+                print(f"警告: {key} データに 'data' キーがありません")
+            results[key] = data
+        except requests.exceptions.RequestException as e:
+            print(f"{key} データ取得エラー: {e}")
+            results[key] = None
     
-    # プロジェクト別の統計（プレミアム機能）
-    projects = requests.get("https://wakatime.com/api/v1/users/current/projects", headers=headers).json()
-    
-    # リーダーボード情報（プレミアム機能）
-    leaderboard = requests.get("https://wakatime.com/api/v1/users/current/leaderboards/", headers=headers).json()
-    
-    return weekly_stats, annual_stats, projects, leaderboard
+    return results
 
 def format_time(seconds):
     return str(timedelta(seconds=seconds)).split('.')[0]
@@ -157,6 +166,8 @@ Last Updated on {datetime.now().strftime('%d/%m/%Y %H:%M:%S')} UTC
     repo.update_file(readme.path, "Update coding stats with premium features", content, readme.sha)
     print("README updated with premium coding stats and new sections")
 
+import traceback
+
 if __name__ == "__main__":
     wakatime_api_key = os.getenv('WAKATIME_API_KEY')
     github_token = os.getenv('GH_TOKEN')
@@ -166,13 +177,21 @@ if __name__ == "__main__":
         raise ValueError("必要な環境変数が設定されていません")
     
     try:
+        print("WakaTime統計の取得を開始します...")
         weekly_stats, annual_stats, projects, leaderboard = get_wakatime_stats(wakatime_api_key)
+        print("WakaTime統計の取得が完了しました")
         
+        print("GitHubリポジトリへの接続を開始します...")
         g = Github(github_token)
         repo = g.get_repo(repo_name)
+        print("GitHubリポジトリへの接続が完了しました")
         
+        print("READMEの更新を開始します...")
         update_readme_with_stats(repo, weekly_stats, annual_stats, projects, leaderboard)
+        print("READMEの更新が完了しました")
     except requests.exceptions.RequestException as e:
         print(f"WakaTime APIリクエストエラー: {e}")
+        print(f"詳細なエラー情報: {traceback.format_exc()}")
     except Exception as e:
         print(f"エラーが発生しました: {e}")
+        print(f"詳細なエラー情報: {traceback.format_exc()}")
