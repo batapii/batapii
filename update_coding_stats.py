@@ -137,8 +137,6 @@ def update_readme_with_stats(repo, stats):
     waka_stats = f"""<!--START_SECTION:waka-->
 ![Code Time](http://img.shields.io/badge/Code%20Time-{format_time(weekly_stats['total_seconds'])}-blue)
 
-![Profile Views](http://img.shields.io/badge/Profile%20Views-{weekly_stats['user_profile_views']}-blue)
-
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-{weekly_stats['lines_of_code']}%20lines%20of%20code-blue)
 
 **🐱 My GitHub Data** 
