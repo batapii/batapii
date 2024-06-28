@@ -15,9 +15,11 @@ api_key = os.getenv('WAKATIME_API_KEY')
 github_token = os.getenv('GH_TOKEN')
 repo_name = os.getenv('GITHUB_REPOSITORY')
 
-print(f"WAKATIME_API_KEY: {api_key}")
-print(f"GH_TOKEN: {github_token}")
+print(f"WAKATIME_API_KEY set: {bool(wakatime_api_key)}")
+print(f"WAKATIME_API_KEY length: {len(wakatime_api_key) if wakatime_api_key else 'Not Set'}")
+print(f"GH_TOKEN set: {bool(github_token)}")
 print(f"GITHUB_REPOSITORY: {repo_name}")
+
 
 encoded_key = base64.b64encode(api_key.encode()).decode()
 print(f"Encoded API Key: {encoded_key}")
