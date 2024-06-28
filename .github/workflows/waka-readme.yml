@@ -4,7 +4,7 @@ on:
     types: [test_trigger]
   workflow_dispatch:
   schedule:
-    - cron: '*/2 * * * *'
+    - cron: '* */6 * * *'
 permissions:
   contents: write
   packages: read
