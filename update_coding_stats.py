@@ -12,6 +12,9 @@ print(f"WAKATIME_API_KEY length: {len(os.environ.get('WAKATIME_API_KEY', ''))}")
 
 api_key = os.getenv('WAKATIME_API_KEY')
 
+if not api_key:
+    raise ValueError("WAKATIME_API_KEYが設定されていません。")
+
 def get_wakatime_stats(api_key):
     headers = {
         "Authorization": f"Bearer {api_key}"
@@ -20,7 +23,7 @@ def get_wakatime_stats(api_key):
     print(f"Authorization header: {headers['Authorization'][:15]}...{headers['Authorization'][-5:]}")
 
     # リーダーボードIDを設定（必要に応じて変更）
-    leaderboard_id = "https://wakatime.com/leaders/sec/d9f9d9aa-ec93-4c1e-a82a-d8a77bb31a77/join/xsudixsroi"
+    leaderboard_id = "d9f9d9aa-ec93-4c1e-a82a-d8a77bb31a77"
 
     endpoints = {
         "weekly": "https://api.wakatime.com/api/v1/users/current/stats/last_7_days",
