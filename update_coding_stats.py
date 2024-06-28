@@ -1,67 +1,129 @@
-import requests
-import os
-from github import Github
-import base64
+name: Update GitHub Profile
 
-def get_wakatime_stats(api_key, period='last_7_days'):
-    url = f"https://wakatime.com/api/v1/users/current/stats/{period}"
-    headers = {
-        "Authorization": f"Bearer {api_key}"
-    }
-    response = requests.get(url, headers=headers)
-    response.raise_for_status()
-    return response.json()
+on:
+  repository_dispatch:
+    types: [test_trigger]
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */6 * * *'  # 6時間ごとに実行
 
-def update_readme_with_stats():
-    wakatime_api_key = os.getenv('WAKATIME_API_KEY')
-    github_token = os.getenv('GH_TOKEN')
-    repo_name = os.getenv('GITHUB_REPOSITORY')
+permissions:
+  contents: write
+  packages: read
+  pull-requests: write
 
-    if not wakatime_api_key or not github_token or not repo_name:
-        raise ValueError("必要な環境変数が設定されていません")
+concurrency: 
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
-    try:
-        # WakaTimeの統計データを取得
-        stats_last_7_days = get_wakatime_stats(wakatime_api_key, 'last_7_days')
-        stats_last_30_days = get_wakatime_stats(wakatime_api_key, 'last_30_days')
-        stats_last_year = get_wakatime_stats(wakatime_api_key, 'last_year')
+jobs:
+  update-profile:
+    name: Update Profile README and Metrics
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
-        # 統計情報の抽出
-        total_time_7_days = stats_last_7_days['data']['grand_total']['text']
-        total_time_30_days = stats_last_30_days['data']['grand_total']['text']
-        total_time_year = stats_last_year['data']['grand_total']['text']
-        
-        # GitHubリポジトリを更新
-        g = Github(github_token)
-        repo = g.get_repo(repo_name)
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12.4'
 
-        # README.mdを取得
-        readme = repo.get_readme()
-        content = base64.b64decode(readme.content).decode('utf-8')
+      - name: Debug Information
+        run: |
+          echo "Python version:"
+          python --version
+          echo "Pip version:"
+          pip --version
+          echo "Contents of requirements.txt:"
+          cat requirements.txt || echo "requirements.txt not found"
+          echo "Available wakatime versions:"
+          pip index versions wakatime
+          echo "Repository contents:"
+          ls -la
+          echo "Searching for update_coding_stats.py:"
+          find . -name update_coding_stats.py
 
-        # 既存の統計情報を更新または新しい情報を追加
-        stats_section = f"""# Coding Stats
+      - name: Upgrade pip
+        run: |
+          python -m pip install --upgrade pip
+          pip --version
 
-## Total Coding Time
+      - name: Install dependencies
+        run: |
+          if [ -f "requirements.txt" ]; then
+            echo "Installing from requirements.txt"
+            pip install -r requirements.txt
+          else
+            echo "::error::requirements.txt not found"
+            exit 1
+          fi
+          echo "Installed packages:"
+          pip list
 
-- **Last 7 days**: {total_time_7_days}
-- **Last 30 days**: {total_time_30_days}
-- **Last year**: {total_time_year}
+      - name: Update Coding Stats
+        env:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          if [ -f update_coding_stats.py ]; then
+            python update_coding_stats.py
+          else
+            echo "::error::update_coding_stats.py not found"
+            exit 1
+          fi
 
-"""
-        if "# Coding Stats" in content:
-            content = content.replace(content[content.index("# Coding Stats"):content.index("\n\n", content.index("# Coding Stats"))], stats_section)
-        else:
-            content += f"\n{stats_section}"
+      - name: Update recent GitHub activity
+        uses: jamesgeorge007/github-activity-readme@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-        # READMEを更新
-        repo.update_file(readme.path, "Update coding stats", content, readme.sha)
-        print("README updated with coding stats")
+      - name: Update WakaTime stats
+        uses: anmol098/waka-readme-stats@master
+        with:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          SHOW_LINES_OF_CODE: "True"
+          SHOW_PROFILE_VIEWS: "False"
+          SHOW_COMMIT: "True"
+          SHOW_DAYS_OF_WEEK: "True"
+          SHOW_LANGUAGE: "True"
+          SHOW_OS: "True"
+          SHOW_PROJECTS: "True"
+          SHOW_TIMEZONE: "True"
+          SHOW_EDITORS: "True"
+          SHOW_LANGUAGE_PER_REPO: "True"
+          SHOW_SHORT_INFO: "True"
+          SHOW_LOC_CHART: "True"
 
-    except requests.exceptions.RequestException as e:
-        print(f"WakaTime APIリクエストエラー: {e}")
-    except Exception as e:
-        print(f"エラーが発生しました: {e}")
+      - name: Update GitHub stats
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          plugin_lines: yes
+          plugin_isocalendar: yes
+          plugin_languages: yes
+          plugin_achievements: yes
+          plugin_notable: yes
 
-if __name__ == "__main__":
-    update_readme_with_stats()
+      - name: Commit and push if changed
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git add README.md
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update GitHub profile [skip ci]"
+            git pull --rebase origin ${{ github.ref }}
+            git push
+          fi
+
+      - name: Check for errors
+        if: failure()
+        run: |
+          echo "::error::Workflow failed. Please check the logs for more information."
+          exit 1
