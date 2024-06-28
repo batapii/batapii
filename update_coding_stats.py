@@ -17,11 +17,12 @@ def get_wakatime_stats(api_key):
     
     print(f"Authorization header: {headers['Authorization'][:15]}...{headers['Authorization'][-5:]}")
 
+
     endpoints = {
-        "weekly": "https://wakatime.com/api/v1/users/current/stats/last_7_days",
-        "annual": "https://wakatime.com/api/v1/users/current/stats/last_year",
-        "projects": "https://wakatime.com/api/v1/users/current/projects",
-        "leaderboard": "https://wakatime.com/api/v1/users/current/leaderboards"
+        "weekly": "https://api.wakatime.com/api/v1/users/current/stats/last_7_days",
+        "annual": "https://api.wakatime.com/api/v1/users/current/stats/last_year",
+        "projects": "https://api.wakatime.com/api/v1/users/current/projects",
+        "leaderboard": f"https://api.wakatime.com/api/v1/users/current/leaderboards/{leaderboard_id}"
     }
     
     results = {}
