@@ -7,11 +7,16 @@ import json
 import traceback
 import re
 
+print(f"WAKATIME_API_KEY set: {'WAKATIME_API_KEY' in os.environ}")
+print(f"WAKATIME_API_KEY length: {len(os.environ.get('WAKATIME_API_KEY', ''))}")
+
 def get_wakatime_stats(api_key):
     headers = {
         "Authorization": f"Bearer {api_key}"
     }
     
+    print(f"Authorization header: {headers['Authorization'][:15]}...{headers['Authorization'][-5:]}")
+
     endpoints = {
         "weekly": "https://wakatime.com/api/v1/users/current/stats/last_7_days",
         "annual": "https://wakatime.com/api/v1/users/current/stats/last_year",
