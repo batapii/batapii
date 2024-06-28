@@ -3,10 +3,18 @@
       with:
         python-version: '3.12.4'
 
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install requests PyGithub
+- name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f "requirements.txt" ]; then
+            echo "Installing from requirements.txt"
+            pip install -r requirements.txt
+          else
+            echo "::error::requirements.txt not found"
+            exit 1
+          fi
+          echo "Installed packages:"
+          pip list
 
     - name: Debug Information
       run: |
