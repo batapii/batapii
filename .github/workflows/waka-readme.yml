@@ -71,7 +71,7 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
           if [ -f "./update_coding_stats.py" ]; then
-            python ./update_coding_stats.py
+            python -u ./update_coding_stats.py
           else
             echo "::error::update_coding_stats.py not found in the current directory"
             exit 1
