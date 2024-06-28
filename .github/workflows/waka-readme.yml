@@ -4,14 +4,17 @@ on:
     types: [test_trigger]
   workflow_dispatch:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/5 * * * *'  # 毎時実行に変更
+
 permissions:
   contents: write
   packages: read
   pull-requests: write
+
 concurrency: 
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
+
 jobs:
   github-metrics:
     name: Update Readme with Metrics
@@ -22,38 +25,24 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Debug Information
-        run: |
-          echo "Current directory: $(pwd)"
-          echo "Repository contents:"
-          ls -la
-          echo "Checking out specific paths in the repository:"
-          echo "Contents of .github/workflows:"
-          ls -la .github/workflows
-          echo "Contents of project root:"
-          ls -la
-          echo "Python version:"
-          python --version
-          echo "Pip version:"
-          pip --version
-          echo "Searching for requirements.txt:"
-          find . -name requirements.txt
-          echo "Contents of requirements.txt (if found):"
-          cat requirements.txt || echo "requirements.txt not found"
-          echo "Searching for update_coding_stats.py:"
-          find . -name update_coding_stats.py
-          echo "Contents of update_coding_stats.py (if found):"
-          cat update_coding_stats.py || echo "update_coding_stats.py not found"
-
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
+      - name: Debug Python and pip
+        run: |
+          python --version
+          pip --version
+          echo "Contents of requirements.txt:"
+          cat requirements.txt || echo "requirements.txt not found"
+          echo "Available wakatime versions:"
+          pip install wakatime==
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          if [ -f "requirements.txt" ];then
+          if [ -f "requirements.txt" ]; then
             echo "Installing from requirements.txt"
             pip install -r requirements.txt
           else
@@ -69,7 +58,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
-          if [ -f update_coding_stats.py ];then
+          if [ -f update_coding_stats.py ]; then
             python update_coding_stats.py
           else
             echo "::error::update_coding_stats.py not found"
@@ -88,18 +77,3 @@ jobs:
             git pull --rebase origin ${{ github.ref }}
             git push
           fi
-
-      - name: Check for errors
-        if: failure()
-        run: |
-          echo "::error::Workflow failed. Please check the logs for more information."
-          exit 1
-  
-      - name: Debug Python and pip
-        run: |
-            python --version
-            pip --version
-            echo "Contents of requirements.txt:"
-            cat requirements.txt
-            echo "Available wakatime versions:"
-            pip install wakatime==
