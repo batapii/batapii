@@ -1,7 +1,7 @@
 - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.x'
+        python-version: '3.12.4'
 
     - name: Install dependencies
       run: |
