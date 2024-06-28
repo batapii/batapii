@@ -26,28 +26,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Debug Information
-        run: |
-          echo "Current directory: $(pwd)"
-          echo "Repository contents:"
-          ls -la
-          echo "Contents of .github/workflows:"
-          ls -la .github/workflows
-          echo "Contents of project root:"
-          ls -la
-          echo "Python version:"
-          python --version
-          echo "Pip version:"
-          pip --version
-          echo "Searching for requirements.txt:"
-          find . -name requirements.txt
-          echo "Contents of requirements.txt (if found):"
-          cat requirements.txt || echo "requirements.txt not found"
-          echo "Searching for update_coding_stats.py:"
-          find . -name update_coding_stats.py
-          echo "Contents of update_coding_stats.py (if found):"
-          cat update_coding_stats.py || echo "update_coding_stats.py not found"
-
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -58,10 +36,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests PyGithub
           if [ -f "requirements.txt" ]; then
-            echo "Installing from requirements.txt"
             pip install -r requirements.txt
           fi
-          echo "Installed packages:"
           pip list
 
       - name: Update Coding Stats
