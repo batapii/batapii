@@ -17,7 +17,7 @@ if not api_key:
 
 def get_wakatime_stats(api_key):
     headers = {
-        "Authorization": f"Bearer {api_key}"
+        "Authorization": "Basic " + base64.b64encode(api_key.encode()).decode()
     }
 
     print(f"Authorization header: {headers['Authorization'][:15]}...{headers['Authorization'][-5:]}")
@@ -35,7 +35,8 @@ def get_wakatime_stats(api_key):
     results = {}
     for key, url in endpoints.items():
         try:
-            response = requests.get(url, headers=headers)
+            response = requests.get("https://api.wakatime.com/api/v1/users/current/summaries", headers=headers)
+            print(response.json())
             response.raise_for_status()
             results[key] = response.json()
             print(f"{key} データ取得成功: {json.dumps(results[key], indent=2)[:500]}...")  # 最初の500文字のみ表示
