@@ -1,20 +1,24 @@
-name: Metrics
+name: Comprehensive GitHub Profile Update
+
 on:
   repository_dispatch:
     types: [test_trigger]
   workflow_dispatch:
   schedule:
-    - cron: '*/5 * * * *'  # 5分ごとに実行
+    - cron: '0 * * * *'  # 6時間ごとに実行
+
 permissions:
   contents: write
   packages: read
   pull-requests: write
+
 concurrency: 
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
+
 jobs:
-  github-metrics:
-    name: Update Readme with Metrics
+  update-profile:
+    name: Update README and Metrics
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -27,7 +31,6 @@ jobs:
           echo "Current directory: $(pwd)"
           echo "Repository contents:"
           ls -la
-          echo "Checking out specific paths in the repository:"
           echo "Contents of .github/workflows:"
           ls -la .github/workflows
           echo "Contents of project root:"
@@ -76,6 +79,41 @@ jobs:
             exit 1
           fi
 
+      - name: Update WakaTime stats
+        uses: anmol098/waka-readme-stats@master
+        with:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          SHOW_LINES_OF_CODE: "True"
+          SHOW_PROFILE_VIEWS: "False"
+          SHOW_COMMIT: "True"
+          SHOW_DAYS_OF_WEEK: "True"
+          SHOW_LANGUAGE: "True"
+          SHOW_OS: "True"
+          SHOW_PROJECTS: "True"
+          SHOW_TIMEZONE: "True"
+          SHOW_EDITORS: "True"
+          SHOW_LANGUAGE_PER_REPO: "True"
+          SHOW_SHORT_INFO: "True"
+          SHOW_LOC_CHART: "True"
+          SHOW_TOTAL_CODE_TIME: "True"
+          SHOW_PROFILE_VIEWS: "True"
+
+      - name: Update recent GitHub activity
+        uses: jamesgeorge007/github-activity-readme@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Update GitHub stats
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          plugin_lines: yes
+          plugin_isocalendar: yes
+          plugin_languages: yes
+          plugin_achievements: yes
+          plugin_notable: yes
+
       - name: Commit and push if changed
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
@@ -84,6 +122,13 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Update coding stats [skip ci]"
+            git commit -m "Update GitHub profile [skip ci]"
             git pull --rebase origin ${{ github.ref }}
             git push || (echo "::error::git push failed"; exit 1)
+          fi
+
+      - name: Check for errors
+        if: failure()
+        run: |
+          echo "::error::Workflow failed. Please check the logs for more information."
+          exit 1
