@@ -28,16 +28,24 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.x'
+          python-version: '3.12.4'
 
       - name: Debug Python and pip
         run: |
+          echo "Python version:"
           python --version
+          echo "Pip version:"
           pip --version
           echo "Contents of requirements.txt:"
           cat requirements.txt || echo "requirements.txt not found"
           echo "Available wakatime versions:"
-          pip install wakatime==
+          pip index versions wakatime
+          echo "Installed packages:"
+          pip list
+          echo "Searching for update_coding_stats.py:"
+          find . -name update_coding_stats.py
+          echo "Contents of update_coding_stats.py (if found):"
+          cat update_coding_stats.py || echo "update_coding_stats.py not found"
 
       - name: Install dependencies
         run: |
@@ -77,3 +85,7 @@ jobs:
             git pull --rebase origin ${{ github.ref }}
             git push
           fi
+      - name: Upgrade pip
+        run: |
+          python -m pip install --upgrade pip
+          pip --version
