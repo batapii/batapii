@@ -28,16 +28,8 @@ object Batapii {
     val hobbies = listOf("Coding", "Gaming", "Tech Meetups")
 
     fun sayHi() {
-        println("見てくれてありがとう！たくさん見てください！")
+        println("Thanks")
     }
-        
-    // 日々の目標
-    fun dailyGoal() {
-        println("1日1コミット、着実に成長！")
-    }
-    
-    // 好きな日本食
-    val favoriteFood = "寿司🍣"
 }
 ```
 
@@ -162,51 +154,27 @@ mcfunction               1 repo              ███░░░░░░░░�
 
 <!--END_SECTION:waka-->
 
-<h2 align="center">🚀 コーディング生産性ハイライト</h2>
+<h2 align="center">🚀 Coding Productivity Highlights</h2>
 
-- **総コーディング時間:** 175時間22分
-- **ピークコーディング時間帯:** 10:00 - 14:00
-- **最も生産的な曜日:** 水曜日
-- **最も使用する言語:** Kotlin（リポジトリの77.78%）
-- **メインプロジェクト:** ToDoSNS（週間作業時間の79.19%）
+- **Total Coding Time:** 175 hrs 22 mins
+- **Peak Coding Hours:** 10:00 AM - 2:00 PM
+- **Most Productive Day:** Wednesday
+- **Favorite Language:** Kotlin (77.78% of repositories)
+- **Main Project:** ToDoSNS (79.19% of weekly time)
 
-<h2 align="center">🏆 コーディング実績</h2>
+<h2 align="center">🏆 Coding Achievements</h2>
 
-- **継続的な貢献:** 2024年に237回のコントリビューション
-- **多言語スキル:** Kotlin、Python、mcfunctionに精通
-- **プロジェクトへの献身:** 今週ToDoSNSに12時間以上費やす
-- **ツールの習熟:** Android StudioとChromeデベロッパーツールに熟練
+- **Consistent Contributor:** 237 contributions in 2024
+- **Language Diversity:** Proficient in Kotlin, Python, and mcfunction
+- **Project Dedication:** Over 12 hours spent on ToDoSNS this week
+- **Tool Mastery:** Skilled in both Android Studio and Chrome developer tools
 
-<h2 align="center">🎯 現在の焦点と目標</h2>
+<h2 align="center">🎯 Current Focus & Goals</h2>
 
-- 🔭 ToDoSNSプロジェクトの進化
-- 🌱 KotlinとAndroid開発のスキル向上
-- 👯 オープンソースAndroidプロジェクトでの協力を求めています
-- 🚀 特に週末のコントリビューション頻度を増やすことを目指しています
-
-<h2 align="center">💼 スキルセット</h2>
-
-- **言語:** Kotlin, Java, Python, SQL
-- **フレームワーク:** Android SDK, Jetpack Compose, Retrofit
-- **ツール:** Android Studio, Git, Firebase, Room Database
-- **その他:** Material Design, CI/CD, アジャイル開発手法
-
-<h2 align="center">📫 コンタクト</h2>
-
-- **GitHub:** [batapii](https://github.com/batapii)
-- **Qiita:** [あなたのQiitaアカウント]
-- **Zenn:** [あなたのZennアカウント]
-- **Twitter:** [@あなたのTwitterハンドル]
-
-<p align="center">
-  <a href="https://github.com/batapii">
-    <img src="https://img.shields.io/github/followers/batapii?label=フォロワー&style=social" alt="GitHub フォロワー">
-  </a>
-  <a href="[あなたのTwitterURL]">
-    <img src="https://img.shields.io/twitter/follow/あなたのTwitterハンドル?style=social" alt="Twitter フォロワー">
-  </a>
-</p>
-
+- 🔭 Advancing the ToDoSNS project
+- 🌱 Deepening expertise in Kotlin and Android development
+- 👯 Seeking collaborations on Open Source Android Projects
+- 🚀 Aiming to increase contribution frequency, especially on weekends
 
 <h2 align="center">🔗 Connect with me</h2>
 <p align="center">
