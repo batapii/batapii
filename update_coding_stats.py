@@ -1,12 +1,5 @@
 import requests
 import os
-<<<<<<< HEAD
-
-def update_readme_with_stats():
-    # WakaTimeのAPIを使用してデータを取得し、
-    # READMEを更新するコードをここに書きます
-    print("Updating README with coding stats...")
-=======
 from github import Github
 import base64
 
@@ -69,7 +62,6 @@ def update_readme_with_stats():
         print(f"WakaTime APIリクエストエラー: {e}")
     except Exception as e:
         print(f"エラーが発生しました: {e}")
->>>>>>> b30d8cecce6b4dfe40d0ae98459f1fb6d5ca737e
 
 if __name__ == "__main__":
     update_readme_with_stats()
