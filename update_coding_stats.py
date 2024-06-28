@@ -11,8 +11,8 @@ print(f"WAKATIME_API_KEY set: {'WAKATIME_API_KEY' in os.environ}")
 print(f"WAKATIME_API_KEY length: {len(os.environ.get('WAKATIME_API_KEY', ''))}")
 
 api_key = os.getenv('WAKATIME_API_KEY')
-
 encoded_key = base64.b64encode(api_key.encode()).decode()
+print(f"Encoded API Key: {encoded_key}")
 
 if not api_key:
     raise ValueError("WAKATIME_API_KEYが設定されていません。")
