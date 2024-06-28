@@ -35,7 +35,7 @@ def get_wakatime_stats(api_key):
     results = {}
     for key, url in endpoints.items():
         try:
-            response = requests.get("https://api.wakatime.com/api/v1/users/current/summaries", headers=headers)
+            response = requests.get(url, headers=headers)
             print(response.json())
             response.raise_for_status()
             results[key] = response.json()
