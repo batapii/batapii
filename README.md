@@ -14,9 +14,6 @@
   <img src="https://img.shields.io/badge/Kotlin-Enthusiast-0095D5" alt="Kotlin Enthusiast">
   <img src="https://img.shields.io/badge/Android-Expert-3DDC84" alt="Android Expert">
 </p>
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=YOUR_GITHUB_USERNAME&layout=compact" alt="WakaTime Coding Stats" />
-</p>
 
 <h2 align="center">🚀 Quick Overview</h2>
 
