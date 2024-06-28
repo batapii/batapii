@@ -21,7 +21,7 @@ def get_wakatime_stats(api_key):
         "weekly": "https://wakatime.com/api/v1/users/current/stats/last_7_days",
         "annual": "https://wakatime.com/api/v1/users/current/stats/last_year",
         "projects": "https://wakatime.com/api/v1/users/current/projects",
-        "leaderboard": "https://wakatime.com/api/v1/users/current/leaderboards/"
+        "leaderboard": "https://wakatime.com/api/v1/users/current/leaderboards"
     }
     
     results = {}
