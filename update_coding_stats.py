@@ -1,10 +1,75 @@
 import requests
 import os
+<<<<<<< HEAD
 
 def update_readme_with_stats():
     # WakaTimeのAPIを使用してデータを取得し、
     # READMEを更新するコードをここに書きます
     print("Updating README with coding stats...")
+=======
+from github import Github
+import base64
+
+def get_wakatime_stats(api_key, period='last_7_days'):
+    url = f"https://wakatime.com/api/v1/users/current/stats/{period}"
+    headers = {
+        "Authorization": f"Bearer {api_key}"
+    }
+    response = requests.get(url, headers=headers)
+    response.raise_for_status()
+    return response.json()
+
+def update_readme_with_stats():
+    wakatime_api_key = os.getenv('WAKATIME_API_KEY')
+    github_token = os.getenv('GH_TOKEN')
+    repo_name = os.getenv('GITHUB_REPOSITORY')
+
+    if not wakatime_api_key or not github_token or not repo_name:
+        raise ValueError("必要な環境変数が設定されていません")
+
+    try:
+        # WakaTimeの統計データを取得
+        stats_last_7_days = get_wakatime_stats(wakatime_api_key, 'last_7_days')
+        stats_last_30_days = get_wakatime_stats(wakatime_api_key, 'last_30_days')
+        stats_last_year = get_wakatime_stats(wakatime_api_key, 'last_year')
+
+        # 統計情報の抽出
+        total_time_7_days = stats_last_7_days['data']['grand_total']['text']
+        total_time_30_days = stats_last_30_days['data']['grand_total']['text']
+        total_time_year = stats_last_year['data']['grand_total']['text']
+        
+        # GitHubリポジトリを更新
+        g = Github(github_token)
+        repo = g.get_repo(repo_name)
+
+        # README.mdを取得
+        readme = repo.get_readme()
+        content = base64.b64decode(readme.content).decode('utf-8')
+
+        # 既存の統計情報を更新または新しい情報を追加
+        stats_section = f"""# Coding Stats
+
+## Total Coding Time
+
+- **Last 7 days**: {total_time_7_days}
+- **Last 30 days**: {total_time_30_days}
+- **Last year**: {total_time_year}
+
+"""
+        if "# Coding Stats" in content:
+            content = content.replace(content[content.index("# Coding Stats"):content.index("\n\n", content.index("# Coding Stats"))], stats_section)
+        else:
+            content += f"\n{stats_section}"
+
+        # READMEを更新
+        repo.update_file(readme.path, "Update coding stats", content, readme.sha)
+        print("README updated with coding stats")
+
+    except requests.exceptions.RequestException as e:
+        print(f"WakaTime APIリクエストエラー: {e}")
+    except Exception as e:
+        print(f"エラーが発生しました: {e}")
+>>>>>>> b30d8cecce6b4dfe40d0ae98459f1fb6d5ca737e
 
 if __name__ == "__main__":
     update_readme_with_stats()

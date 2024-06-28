@@ -4,7 +4,12 @@ on:
     types: [test_trigger]
   workflow_dispatch:
   schedule:
+<<<<<<< HEAD
     - cron: '0 * * * *'
+=======
+    - cron: '0 */6 * * *'  # 6時間ごとに実行
+
+>>>>>>> b30d8cecce6b4dfe40d0ae98459f1fb6d5ca737e
 permissions:
   contents: write
   packages: read
