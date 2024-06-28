@@ -79,7 +79,7 @@ object Batapii {
 <h2 align="center">📊 My Coding Insights</h2>
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-177%20hrs%2029%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-171%20hrs%2054%20mins-blue)
 
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-13-blue)
 
@@ -160,7 +160,7 @@ mcfunction               1 repo              ███░░░░░░░░�
 ![Lines of Code chart](https://raw.githubusercontent.com/batapii/batapii/main/assets/bar_graph.png)
 
 
- Last Updated on 28/06/2024 14:59:49 UTC
+ Last Updated on 28/06/2024 15:09:39 UTC
 <!--END_SECTION:waka-->
 
 <h2 align="center">🚀 Coding Productivity Highlights</h2>
