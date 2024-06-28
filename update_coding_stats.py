@@ -4,6 +4,7 @@ from github import Github
 import base64
 from datetime import datetime, timedelta
 import json
+import re
 
 def get_wakatime_stats(api_key):
     headers = {
@@ -27,18 +28,29 @@ def get_wakatime_stats(api_key):
 def format_time(seconds):
     return str(timedelta(seconds=seconds)).split('.')[0]
 
-def update_readme_content(weekly_stats, annual_stats, projects, leaderboard):
+def calculate_peak_hours(weekly_stats):
+    hourly_data = [0] * 24
+    for day in weekly_stats['data']['days']:
+        for hour in day['hours']:
+            hourly_data[hour['hour']] += hour['total_seconds']
+    
+    peak_start = hourly_data.index(max(hourly_data))
+    peak_end = (peak_start + 4) % 24  # 4時間のピーク期間を仮定
+    
+    return f"{peak_start:02d}:00 - {peak_end:02d}:00"
+
+def update_productivity_highlights(weekly_stats, annual_stats):
     total_time = weekly_stats['data']['total_seconds']
     total_hours = total_time // 3600
     total_minutes = (total_time % 3600) // 60
     
-    peak_hours = "10:00 AM - 2:00 PM"  # この部分は別途ロジックが必要
+    peak_hours = calculate_peak_hours(weekly_stats)
     most_productive_day = max(weekly_stats['data']['days'], key=lambda x: x['total_seconds'])['date']
     favorite_language = weekly_stats['data']['languages'][0]['name']
     main_project = weekly_stats['data']['projects'][0]['name']
     main_project_percent = weekly_stats['data']['projects'][0]['percent']
 
-    productivity_highlights = f"""
+    return f"""
 <h2 align="center">🚀 Coding Productivity Highlights</h2>
 
 - **Total Coding Time:** {total_hours} hrs {total_minutes} mins
@@ -48,16 +60,15 @@ def update_readme_content(weekly_stats, annual_stats, projects, leaderboard):
 - **Main Project:** {main_project} ({main_project_percent:.2f}% of weekly time)
 """
 
-    coding_achievements = f"""
+def update_coding_achievements(weekly_stats, annual_stats):
+    return f"""
 <h2 align="center">🏆 Coding Achievements</h2>
 
-- **Consistent Contributor:** {weekly_stats['data']['days_including_holidays']} days of coding in the last week
+- **Consistent Contributor:** {annual_stats['data']['total_days_contributed']} days of coding in {datetime.now().year}
 - **Language Diversity:** Proficient in {', '.join([lang['name'] for lang in weekly_stats['data']['languages'][:3]])}
-- **Project Dedication:** Over {weekly_stats['data']['projects'][0]['hours']} hours spent on {main_project} this week
+- **Project Dedication:** Over {weekly_stats['data']['projects'][0]['hours']} hours spent on {weekly_stats['data']['projects'][0]['name']} this week
 - **Tool Mastery:** Skilled in {', '.join([editor['name'] for editor in weekly_stats['data']['editors']])}
 """
-
-    return productivity_highlights + coding_achievements
 
 def update_readme_with_stats(repo, weekly_stats, annual_stats, projects, leaderboard):
     readme = repo.get_readme()
@@ -133,10 +144,15 @@ Last Updated on {datetime.now().strftime('%d/%m/%Y %H:%M:%S')} UTC
     content = content[:waka_start] + waka_stats + content[waka_end + len("<!--END_SECTION:waka-->"):]
     
     # 新しい統計セクションの更新
-    new_stats = update_readme_content(weekly_stats, annual_stats, projects, leaderboard)
-    highlight_start = content.index('<h2 align="center">🚀 Coding Productivity Highlights</h2>')
-    achievement_end = content.index('</h2>', content.index('<h2 align="center">🏆 Coding Achievements</h2>')) + 5
-    content = content[:highlight_start] + new_stats + content[achievement_end:]
+    highlights = update_productivity_highlights(weekly_stats, annual_stats)
+    achievements = update_coding_achievements(weekly_stats, annual_stats)
+
+    content = re.sub(
+        r'<h2 align="center">🚀 Coding Productivity Highlights</h2>.*?<h2 align="center">🏆 Coding Achievements</h2>',
+        f'{highlights}\n{achievements}',
+        content,
+        flags=re.DOTALL
+    )
     
     repo.update_file(readme.path, "Update coding stats with premium features", content, readme.sha)
     print("README updated with premium coding stats and new sections")
