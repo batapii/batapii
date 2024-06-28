@@ -25,15 +25,19 @@ def get_wakatime_stats(api_key):
     }
     
     results = {}
-    for key, url in endpoints.items():
-        try:
-            response = requests.get(url, headers=headers)
-            response.raise_for_status()
-            results[key] = response.json()
-            print(f"{key} データ取得成功: {json.dumps(results[key], indent=2)[:500]}...")  # 最初の500文字のみ表示
-        except requests.exceptions.RequestException as e:
-            print(f"{key} データ取得エラー: {e}")
-            results[key] = None
+for key, url in endpoints.items():
+    try:
+        response = requests.get(url, headers=headers)
+        response.raise_for_status()
+        results[key] = response.json()
+        print(f"{key} データ取得成功: {json.dumps(results[key], indent=2)[:500]}...")  # 最初の500文字のみ表示
+    except requests.exceptions.HTTPError as e:
+        print(f"{key} データ取得エラー: {e.response.status_code} {e.response.reason}")
+        print(f"レスポンス内容: {e.response.text}")
+        results[key] = None
+    except requests.exceptions.RequestException as e:
+        print(f"{key} データ取得中にエラーが発生しました: {e}")
+        results[key] = None
     
     return results
 
