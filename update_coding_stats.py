@@ -14,33 +14,36 @@ def get_wakatime_stats(api_key):
     headers = {
         "Authorization": f"Bearer {api_key}"
     }
-    
+
     print(f"Authorization header: {headers['Authorization'][:15]}...{headers['Authorization'][-5:]}")
 
+    # リーダーボードIDを設定（必要に応じて変更）
+    leaderboard_id = "https://wakatime.com/leaders/sec/d9f9d9aa-ec93-4c1e-a82a-d8a77bb31a77/join/xsudixsroi"
 
     endpoints = {
         "weekly": "https://api.wakatime.com/api/v1/users/current/stats/last_7_days",
         "annual": "https://api.wakatime.com/api/v1/users/current/stats/last_year",
         "projects": "https://api.wakatime.com/api/v1/users/current/projects",
-        "leaderboard": f"https://api.wakatime.com/api/v1/users/current/leaderboards"
+        "leaderboard": f"https://api.wakatime.com/api/v1/users/current/leaderboards/{leaderboard_id}"
     }
-    
-results = {}
-for key, url in endpoints.items():
-    try:
-        response = requests.get(url, headers=headers)
-        response.raise_for_status()
-        results[key] = response.json()
-        print(f"{key} データ取得成功: {json.dumps(results[key], indent=2)[:500]}...")  # 最初の500文字のみ表示
-    except requests.exceptions.HTTPError as e:
-        print(f"{key} データ取得エラー: {e.response.status_code} {e.response.reason}")
-        print(f"レスポンス内容: {e.response.text}")
-        results[key] = None
-    except requests.exceptions.RequestException as e:
-        print(f"{key} データ取得中にエラーが発生しました: {e}")
-        results[key] = None
-    
-return results
+
+    results = {}
+    for key, url in endpoints.items():
+        try:
+            response = requests.get(url, headers=headers)
+            response.raise_for_status()
+            results[key] = response.json()
+            print(f"{key} データ取得成功: {json.dumps(results[key], indent=2)[:500]}...")  # 最初の500文字のみ表示
+        except requests.exceptions.HTTPError as e:
+            print(f"{key} データ取得エラー: {e.response.status_code} {e.response.reason}")
+            print(f"レスポンス内容: {e.response.text}")
+            results[key] = None
+        except requests.exceptions.RequestException as e:
+            print(f"{key} データ取得中にエラーが発生しました: {e}")
+            results[key] = None
+
+    return results  # この行を関数内に正しく配置
+
 
 def format_time(seconds):
     return str(timedelta(seconds=seconds)).split('.')[0]
