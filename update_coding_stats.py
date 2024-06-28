@@ -10,7 +10,15 @@ import re
 print(f"WAKATIME_API_KEY set: {'WAKATIME_API_KEY' in os.environ}")
 print(f"WAKATIME_API_KEY length: {len(os.environ.get('WAKATIME_API_KEY', ''))}")
 
+
 api_key = os.getenv('WAKATIME_API_KEY')
+github_token = os.getenv('GH_TOKEN')
+repo_name = os.getenv('GITHUB_REPOSITORY')
+
+print(f"WAKATIME_API_KEY: {api_key}")
+print(f"GH_TOKEN: {github_token}")
+print(f"GITHUB_REPOSITORY: {repo_name}")
+
 encoded_key = base64.b64encode(api_key.encode()).decode()
 print(f"Encoded API Key: {encoded_key}")
 
