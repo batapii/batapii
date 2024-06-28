@@ -94,3 +94,12 @@ jobs:
         run: |
           echo "::error::Workflow failed. Please check the logs for more information."
           exit 1
+  
+      - name: Debug Python and pip
+        run: |
+            python --version
+            pip --version
+            echo "Contents of requirements.txt:"
+            cat requirements.txt
+            echo "Available wakatime versions:"
+            pip install wakatime==
