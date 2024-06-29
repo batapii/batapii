@@ -7,6 +7,11 @@ import json
 import traceback
 import re
 
+
+api_key = os.getenv('WAKATIME_API_KEY')
+github_token = os.getenv('GH_TOKEN')
+repo_name = os.getenv('GITHUB_REPOSITORY')
+
 def get_wakatime_stats(api_key):
     headers = {
         "Authorization": f"Bearer {api_key}"
