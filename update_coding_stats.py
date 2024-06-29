@@ -10,7 +10,6 @@ import re
 print(f"WAKATIME_API_KEY set: {'WAKATIME_API_KEY' in os.environ}")
 print(f"WAKATIME_API_KEY length: {len(os.environ.get('WAKATIME_API_KEY', ''))}")
 
-
 api_key = os.getenv('WAKATIME_API_KEY')
 github_token = os.getenv('GH_TOKEN')
 repo_name = os.getenv('GITHUB_REPOSITORY')
@@ -27,7 +26,6 @@ if not github_token:
 if not repo_name:
     raise ValueError("GITHUB_REPOSITORYが設定されていません。")
 
-
 encoded_key = base64.b64encode(api_key.encode()).decode()
 print(f"Encoded API Key: {encoded_key}")
 
@@ -35,7 +33,6 @@ def get_wakatime_stats(api_key):
     headers = {
         "Authorization": "Basic " + encoded_key
     }
-
     
     response = requests.get("https://api.wakatime.com/api/v1/users/current/stats/last_7_days", headers=headers)
     print(f"ステータスコード: {response.status_code}")
@@ -46,7 +43,6 @@ def get_wakatime_stats(api_key):
     
     print(f"Authorization header: {headers['Authorization'][:15]}...{headers['Authorization'][-5:]}")
 
-    # リーダーボードIDを設定（必要に応じて変更）
     leaderboard_id = "d9f9d9aa-ec93-4c1e-a82a-d8a77bb31a77"
 
     endpoints = {
@@ -63,7 +59,7 @@ def get_wakatime_stats(api_key):
             print(response.json())
             response.raise_for_status()
             results[key] = response.json()
-            print(f"{key} データ取得成功: {json.dumps(results[key], indent=2)[:500]}...")  # 最初の500文字のみ表示
+            print(f"{key} データ取得成功: {json.dumps(results[key], indent=2)[:500]}...")
         except requests.exceptions.HTTPError as e:
             print(f"{key} データ取得エラー: {e.response.status_code} {e.response.reason}")
             print(f"レスポンス内容: {e.response.text}")
@@ -72,8 +68,7 @@ def get_wakatime_stats(api_key):
             print(f"{key} データ取得中にエラーが発生しました: {e}")
             results[key] = None
 
-    return results  # この行を関数内に正しく配置
-
+    return results
 
 def format_time(seconds):
     return str(timedelta(seconds=seconds)).split('.')[0]
@@ -89,7 +84,7 @@ def calculate_peak_hours(weekly_stats):
     
     return f"{peak_start:02d}:00 - {peak_end:02d}:00"
 
-def update_productivity_highlights(weekly_stats, annual_stats):
+def update_productivity_and_achievements(content, weekly_stats, annual_stats):
     total_time = weekly_stats['total_seconds']
     total_hours = total_time // 3600
     total_minutes = (total_time % 3600) // 60
@@ -100,7 +95,7 @@ def update_productivity_highlights(weekly_stats, annual_stats):
     main_project = weekly_stats['projects'][0]['name']
     main_project_percent = weekly_stats['projects'][0]['percent']
 
-    return f"""
+    productivity_highlights = f"""<!--START_SECTION:productivity_highlights-->
 <h2 align="center">🚀 Coding Productivity Highlights</h2>
 
 - **Total Coding Time:** {total_hours} hrs {total_minutes} mins
@@ -108,17 +103,25 @@ def update_productivity_highlights(weekly_stats, annual_stats):
 - **Most Productive Day:** {most_productive_day}
 - **Favorite Language:** {favorite_language}
 - **Main Project:** {main_project} ({main_project_percent:.2f}% of weekly time)
+<!--END_SECTION:productivity_highlights-->
 """
 
-def update_coding_achievements(weekly_stats, annual_stats):
-    return f"""
+    coding_achievements = f"""<!--START_SECTION:coding_achievements-->
 <h2 align="center">🏆 Coding Achievements</h2>
 
 - **Consistent Contributor:** {annual_stats['total_days_contributed']} days of coding in {datetime.now().year}
 - **Language Diversity:** Proficient in {', '.join([lang['name'] for lang in weekly_stats['languages'][:3]])}
-- **Project Dedication:** Over {weekly_stats['projects'][0]['hours']} hours spent on {weekly_stats['projects'][0]['name']} this week
-- **Tool Mastery:** Skilled in {', '.join([editor['name'] for editor in weekly_stats['editors']])}
+- **Project Dedication:** Over {weekly_stats['projects'][0]['hours']} hours spent on {main_project} this week
+- **Tool Mastery:** Skilled in {', '.join([editor['name'] for editor in weekly_stats['editors'][:2]])}
+<!--END_SECTION:coding_achievements-->
 """
+
+    content = re.sub(r'<!--START_SECTION:productivity_highlights-->.*?<!--END_SECTION:productivity_highlights-->', 
+                     productivity_highlights, content, flags=re.DOTALL)
+    content = re.sub(r'<!--START_SECTION:coding_achievements-->.*?<!--END_SECTION:coding_achievements-->', 
+                     coding_achievements, content, flags=re.DOTALL)
+
+    return content
 
 def update_readme_with_stats(repo, stats):
     if not all(stats.values()):
@@ -197,15 +200,7 @@ Last Updated on {datetime.now().strftime('%d/%m/%Y %H:%M:%S')} UTC
     content = content[:waka_start] + waka_stats + content[waka_end + len("<!--END_SECTION:waka-->"):]
     
     # 新しい統計セクションの更新
-    highlights = update_productivity_highlights(weekly_stats, annual_stats)
-    achievements = update_coding_achievements(weekly_stats, annual_stats)
-
-    content = re.sub(
-        r'<h2 align="center">🚀 Coding Productivity Highlights</h2>.*?<h2 align="center">🏆 Coding Achievements</h2>',
-        f'{highlights}\n{achievements}',
-        content,
-        flags=re.DOTALL
-    )
+    content = update_productivity_and_achievements(content, weekly_stats, annual_stats)
     
     repo.update_file(readme.path, "Update coding stats with premium features", content, readme.sha)
     print("README updated with premium coding stats and new sections")
