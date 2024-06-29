@@ -7,67 +7,27 @@ import json
 import traceback
 import re
 
-print(f"WAKATIME_API_KEY set: {'WAKATIME_API_KEY' in os.environ}")
-print(f"WAKATIME_API_KEY length: {len(os.environ.get('WAKATIME_API_KEY', ''))}")
-
-api_key = os.getenv('WAKATIME_API_KEY')
-github_token = os.getenv('GH_TOKEN')
-repo_name = os.getenv('GITHUB_REPOSITORY')
-
-print(f"WAKATIME_API_KEY set: {bool(api_key)}")
-print(f"WAKATIME_API_KEY length: {len(api_key) if api_key else 'Not Set'}")
-print(f"GH_TOKEN set: {bool(github_token)}")
-print(f"GITHUB_REPOSITORY: {repo_name}")
-
-if not api_key:
-    raise ValueError("WAKATIME_API_KEYが設定されていません。")
-if not github_token:
-    raise ValueError("GH_TOKENが設定されていません。")
-if not repo_name:
-    raise ValueError("GITHUB_REPOSITORYが設定されていません。")
-
-encoded_key = base64.b64encode(api_key.encode()).decode()
-print(f"Encoded API Key: {encoded_key}")
-
 def get_wakatime_stats(api_key):
     headers = {
-        "Authorization": "Basic " + encoded_key
+        "Authorization": f"Bearer {api_key}"
     }
     
-    response = requests.get("https://api.wakatime.com/api/v1/users/current/stats/last_7_days", headers=headers)
-    print(f"ステータスコード: {response.status_code}")
-    print(f"レスポンス内容: {response.text}")
-    
-    if response.status_code == 401:
-        print("認証エラー: 401 Unauthorized。APIキーを確認してください。")
-    
-    print(f"Authorization header: {headers['Authorization'][:15]}...{headers['Authorization'][-5:]}")
-
-    leaderboard_id = "d9f9d9aa-ec93-4c1e-a82a-d8a77bb31a77"
-
     endpoints = {
-        "weekly": "https://api.wakatime.com/api/v1/users/current/stats/last_7_days",
-        "annual": "https://api.wakatime.com/api/v1/users/current/stats/last_year",
-        "projects": "https://api.wakatime.com/api/v1/users/current/projects",
-        "leaderboard": f"https://api.wakatime.com/api/v1/users/current/leaderboards/{leaderboard_id}"
+        "weekly": "https://wakatime.com/api/v1/users/current/stats/last_7_days",
+        "annual": "https://wakatime.com/api/v1/users/current/stats/last_year",
     }
-
+    
     results = {}
     for key, url in endpoints.items():
         try:
             response = requests.get(url, headers=headers)
-            print(response.json())
             response.raise_for_status()
             results[key] = response.json()
-            print(f"{key} データ取得成功: {json.dumps(results[key], indent=2)[:500]}...")
-        except requests.exceptions.HTTPError as e:
-            print(f"{key} データ取得エラー: {e.response.status_code} {e.response.reason}")
-            print(f"レスポンス内容: {e.response.text}")
-            results[key] = None
+            print(f"{key} データ取得成功")
         except requests.exceptions.RequestException as e:
-            print(f"{key} データ取得中にエラーが発生しました: {e}")
+            print(f"{key} データ取得エラー: {e}")
             results[key] = None
-
+    
     return results
 
 def format_time(seconds):
@@ -140,49 +100,17 @@ def update_readme_with_stats(repo, stats):
     waka_stats = f"""<!--START_SECTION:waka-->
 ![Code Time](http://img.shields.io/badge/Code%20Time-{format_time(weekly_stats['total_seconds'])}-blue)
 
-**🐱 My GitHub Data** 
-
-> 📦 {(annual_stats['human_readable_total_size'])} Used in GitHub's Storage 
- > 
-> 🏆 {annual_stats['human_readable_total_count']} Contributions in the Year {datetime.now().year}
- > 
-> 🚫 Not Opted to Hire
- > 
-> 📜 {len([repo for repo in repo.get_user().get_repos() if not repo.private])} Public Repositories 
- > 
-> 🔑 {len([repo for repo in repo.get_user().get_repos() if repo.private])} Private Repositories 
- > 
-**I'm an Early 🐤** 
-
-```text
-🌞 Morning    {sum(day['categories'][0]['total_seconds'] for day in weekly_stats['days'])} commits
-🌆 Daytime    {sum(day['categories'][1]['total_seconds'] for day in weekly_stats['days'])} commits
-🌃 Evening    {sum(day['categories'][2]['total_seconds'] for day in weekly_stats['days'])} commits
-🌙 Night      {sum(day['categories'][3]['total_seconds'] for day in weekly_stats['days'])} commits
-```
-📅 **I'm Most Productive on {max(weekly_stats['days'], key=lambda x: x['total_seconds'])['date']}** 
-
-```text
-Monday       {weekly_stats['days'][0]['total_seconds']} commits
-Tuesday      {weekly_stats['days'][1]['total_seconds']} commits
-Wednesday    {weekly_stats['days'][2]['total_seconds']} commits
-Thursday     {weekly_stats['days'][3]['total_seconds']} commits
-Friday       {weekly_stats['days'][4]['total_seconds']} commits
-Saturday     {weekly_stats['days'][5]['total_seconds']} commits
-Sunday       {weekly_stats['days'][6]['total_seconds']} commits
-```
-
-
 📊 **This Week I Spent My Time On** 
 
 ```text
-⌚︎ Time Zone: Asia/Tokyo
-
 💬 Programming Languages: 
 {' '.join(f"{lang['name']:<20}{format_time(lang['total_seconds']):<15}{lang['percent']:.2f}%" for lang in weekly_stats['languages'][:5])}
 
 🔥 Editors: 
 {' '.join(f"{editor['name']:<20}{format_time(editor['total_seconds']):<15}{editor['percent']:.2f}%" for editor in weekly_stats['editors'])}
+
+🐱‍💻 Projects: 
+{' '.join(f"{proj['name']:<20}{format_time(proj['total_seconds']):<15}{proj['percent']:.2f}%" for proj in weekly_stats['projects'][:5])}
 
 💻 Operating System: 
 {' '.join(f"{os['name']:<20}{format_time(os['total_seconds']):<15}{os['percent']:.2f}%" for os in weekly_stats['operating_systems'])}
@@ -199,11 +127,11 @@ Last Updated on {datetime.now().strftime('%d/%m/%Y %H:%M:%S')} UTC
 """
     content = content[:waka_start] + waka_stats + content[waka_end + len("<!--END_SECTION:waka-->"):]
     
-    # 新しい統計セクションの更新
+    # Productivity HighlightsとCoding Achievementsの更新
     content = update_productivity_and_achievements(content, weekly_stats, annual_stats)
     
-    repo.update_file(readme.path, "Update coding stats with premium features", content, readme.sha)
-    print("README updated with premium coding stats and new sections")
+    repo.update_file(readme.path, "Update coding stats", content, readme.sha)
+    print("README updated with coding stats and achievements")
 
 if __name__ == "__main__":
     wakatime_api_key = os.getenv('WAKATIME_API_KEY')
