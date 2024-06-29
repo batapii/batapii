@@ -162,8 +162,6 @@ mcfunction               1 repo              ⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜�
  Last Updated on 29/06/2024 16:32:05 UTC
 <!--END_SECTION:waka-->
 
-<h2 align="center">📊 Recent GitHub Activity</h2>
-
 <!--START_SECTION:activity-->
 <!--END_SECTION:activity-->
 
