@@ -161,6 +161,10 @@ mcfunction               1 repo              ⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜�
 
  Last Updated on 29/06/2024 15:45:16 UTC
 <!--END_SECTION:waka-->
+<h2 align="center">📊 Recent GitHub Activity</h2>
+
+<!--START_SECTION:activity-->
+1. No recent activity
 
 <h2 align="center">🎯 Current Focus & Goals</h2>
 
@@ -168,6 +172,8 @@ mcfunction               1 repo              ⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜�
 - 🌱 Deepening expertise in Kotlin and Android development
 - 👯 Seeking collaborations on Open Source Android Projects
 - 🚀 Aiming to increase contribution frequency, especially on weekends
+
+<!--END_SECTION:activity-->
 
 <h2 align="center">🔗 Connect with me</h2>
 <p align="center">
