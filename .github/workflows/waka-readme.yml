@@ -37,8 +37,6 @@ jobs:
         uses: jamesgeorge007/github-activity-readme@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          DEBUG: true
 
       - name: Update GitHub stats
         uses: lowlighter/metrics@latest
