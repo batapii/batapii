@@ -65,7 +65,7 @@ object Batapii {
     <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=N3AttendanceManager&repo=AttendanceApp&theme=tokyonight" />
   </a>
 </p>
-<!-- 以下のプロジェクトは実際のものに更新するか、準備ができるまでコメントアウトしたままにしてください
+<!--
 <p align="center">
   <a href="https://github.com/batapii/ProjectName1">
     <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=batapii&repo=ProjectName1&theme=tokyonight" />
@@ -153,11 +153,6 @@ mcfunction               1 repo              ███░░░░░░░░�
 
  Last Updated on 29/06/2024 15:27:45 UTC
 <!--END_SECTION:waka-->
-
-<h2 align="center">📊 Recent GitHub Activity</h2>
-
-<!--START_SECTION:activity-->
-<!--END_SECTION:activity-->
 
 <h2 align="center">🎯 Current Focus & Goals</h2>
 
