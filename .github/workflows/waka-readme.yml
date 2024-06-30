@@ -9,9 +9,14 @@ jobs:
   update-readme:
     name: Update README
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - uses: actions/checkout@v2
-
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
       - name: Update WakaTime stats
         uses: anmol098/waka-readme-stats@master
         with:
@@ -32,15 +37,13 @@ jobs:
           SHOW_TOTAL_CODE_TIME: "True"
           SHOW_UPDATED_DATE: "True"
           SYMBOL_VERSION: 3
-
       - name: Update recent GitHub activity
-        uses: jamesgeorge007/github-activity-readme@master
+        uses: jamesgeorge007/github-activity-readme@v0.3.6
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           COMMIT_MSG: 'Update README with recent activity'
           MAX_LINES: 5
-
       - name: Update GitHub stats
         uses: lowlighter/metrics@latest
         with:
@@ -50,7 +53,6 @@ jobs:
           plugin_languages: yes
           plugin_achievements: yes
           plugin_notable: yes
-
       - name: Commit and push if changed
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
