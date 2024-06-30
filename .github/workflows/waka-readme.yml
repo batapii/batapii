@@ -39,6 +39,7 @@ jobs:
           SYMBOL_VERSION: 3
       - name: Update recent GitHub activity
         uses: jamesgeorge007/github-activity-readme@v0.3.6
+          continue-on-error:true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
