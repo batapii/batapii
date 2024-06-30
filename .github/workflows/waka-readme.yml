@@ -45,7 +45,7 @@ jobs:
           COMMIT_MSG: 'Update README with recent activity'
           MAX_LINES: 5
       - name: Update GitHub stats
-        uses: lowlighter/metrics@latest
+        uses: lowlighter/metrics@v3.33
         with:
           token: ${{ secrets.GH_TOKEN }}
           plugin_lines: yes
@@ -55,7 +55,17 @@ jobs:
           plugin_notable: yes
       - name: Commit and push if changed
         run: |
+          echo "Configuring git..."
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
+          echo "Adding README.md..."
           git add README.md
-          git diff --staged --quiet || (git commit -m "Update README" && git push)
+          echo "Checking for changes..."
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            echo "Committing changes..."
+            git commit -m "Update README"
+            echo "Pushing changes..."
+            git push
+          fi
