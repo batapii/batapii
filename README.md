@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/batapii/batapii/main/mountain-output/mountain.svg" />
+
 
 
 
@@ -52,10 +52,11 @@ object Batapii {
 </p>
 
 <h2 align="center">📊 GitHub Stats</h2>
-<p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=batapii&show_icons=true&theme=tokyonight&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=batapii&layout=compact&langs_count=8&theme=tokyonight"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=batapii&theme=tokyonight" alt="batapii" />
+<p align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=batapii&show_icons=true&theme=tokyonight&count_private=true"/>
+  <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=batapii&layout=compact&langs_count=8&theme=tokyonight"/>
+  <img width="48%" src="https://github-readme-streak-stats.herokuapp.com/?user=batapii&theme=tokyonight" alt="batapii" />
+  <img width="48%" src="https://raw.githubusercontent.com/batapii/batapii/main/mountain-output/mountain.svg" />
 </p>
 
 <h2 align="center">📈 Contribution Graph</h2>
