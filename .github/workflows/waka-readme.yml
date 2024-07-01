@@ -1,11 +1,38 @@
-name: Update GitHub Profile README
+name: Update GitHub Profile README and Generate Mountain
 
 on:
   schedule:
-    - cron: '0 */6 * * *'  # 6時間ごとに実行
+    - cron: "0 9 * * *"  # 毎日 UTC 9:00 (JST 18:00) に実行
   workflow_dispatch:
 
 jobs:
+  readme_mountain:
+    runs-on: ubuntu-latest
+    name: generate-mountain
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Use README.Mountain
+        uses: suba327777/README.Mountain@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+          THEME: "default"
+      - name: Diff
+        id: diff
+        run: |
+          git add -N .
+          git diff --name-only --exit-code
+        continue-on-error: true
+      - name: commit & push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "[μRM] generate svg."
+          git push
+        if: steps.diff.outcome == 'failure'
+
   update-readme:
     name: Update README
     runs-on: ubuntu-latest
