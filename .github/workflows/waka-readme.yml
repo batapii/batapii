@@ -22,9 +22,21 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+      - name: Clean up submodules
+        run: |
+          if [ -f .gitmodules ]; then
+            git config -f .gitmodules --get-regexp '^submodule\..*\.path$' |
+            while read path_key path
+            do
+              if [ ! -d "$path" ]; then
+                git config -f .gitmodules --remove-section "submodule.${path_key##submodule.}"
+                git add .gitmodules
+              fi
+            done
+          fi
+
       - name: Manage local and remote changes
         run: |
-          # 現在の変更を確認
           if [[ -n $(git status -s) ]]; then
             echo "Local changes detected. Stashing..."
             git stash
@@ -33,12 +45,8 @@ jobs:
             echo "No local changes. Skipping stash."
             STASHED=false
           fi
-
-          # リモートの変更をプル
           echo "Pulling latest changes..."
           git pull origin main
-
-          # スタッシュした変更があれば再適用
           if [ "$STASHED" = true ]; then
             echo "Reapplying stashed changes..."
             git stash pop || echo "Failed to pop stash. Manual intervention may be required."
@@ -49,7 +57,65 @@ jobs:
         with:
           node-version: '20'
 
-      # ... [他の既存のステップ] ...
+      - name: Generate Mountain
+        uses: suba327777/README.Mountain@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+          THEME: "dark"
+
+      - name: Update WakaTime stats
+        uses: anmol098/waka-readme-stats@master
+        with:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          SHOW_OS: "True"
+          SHOW_PROJECTS: "True"
+          SHOW_EDITORS: "True"
+          SHOW_TIMEZONE: "True"
+          SHOW_LOC_CHART: "False"
+          SHOW_PROFILE_VIEWS: "True"
+          SHOW_LINES_OF_CODE: "True"
+          SHOW_LANGUAGE_PER_REPO: "True"
+          SHOW_SHORT_INFO: "True"
+          SHOW_DAYS_OF_WEEK: "True"
+          SHOW_LANGUAGE: "True"
+          SHOW_COMMIT: "True"
+          SHOW_TOTAL_CODE_TIME: "True"
+          SHOW_UPDATED_DATE: "True"
+          SYMBOL_VERSION: 3
+
+      - name: Split WakaTime stats
+        run: |
+          sed -n '/🐱 My GitHub Data/,/I'"'"'m an Early 🐤/ w github-data.md' README.md
+          sed -n '/I'"'"'m an Early 🐤/,/📊 This Week I Spent My Time On/ w coding-habits.md' README.md
+          sed -n '/📊 This Week I Spent My Time On/,/I Mostly Code in Kotlin/ w weekly-breakdown.md' README.md
+
+      - name: Update recent GitHub activity
+        uses: jamesgeorge007/github-activity-readme@master
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          COMMIT_MSG: 'Update README with recent activity'
+          MAX_LINES: 5
+
+      - name: Update GitHub stats
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          plugin_lines: yes
+          plugin_isocalendar: yes
+          plugin_languages: yes
+          plugin_achievements: yes
+          plugin_notable: yes
+
+      - name: Debug directory contents
+        run: |
+          echo "Current directory contents:"
+          ls -la
+          echo "Contents of mountain-output directory:"
+          ls -la mountain-output || echo "mountain-output directory not found"
 
       - name: Update README
         run: |
