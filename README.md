@@ -94,8 +94,6 @@ object Batapii {
 
 > 📦 2.7 kB Used in GitHub's Storage 
  > 
-> 🏆 317 Contributions in the Year 2024
- > 
 > 🚫 Not Opted to Hire
  > 
 > 📜 3 Public Repositories 
@@ -164,7 +162,7 @@ mcfunction               1 repo              ⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜�
 ![Lines of Code chart](https://raw.githubusercontent.com/batapii/batapii/main/assets/bar_graph.png)
 
 
- Last Updated on 02/07/2024 00:51:30 UTC
+ Last Updated on 02/07/2024 06:17:05 UTC
 <!--END_SECTION:waka-->
 
 <!--START_SECTION:activity-->
