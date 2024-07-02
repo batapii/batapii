@@ -1,49 +1,48 @@
-
 ## 📊 My Coding Insights
 <table>
   <tr>
     <td valign="top" width="48%" style="padding: 5px;">
       <h3>🐱 My GitHub Data</h3>
       <ul>
-        <li>📦 2.6 kB Used in GitHub's Storage</li>
-        <li>🏆 339 Contributions in the Year 2024</li>
+        <li>📦 {{GITHUB_STORAGE}} Used in GitHub's Storage</li>
+        <li>🏆 {{GITHUB_CONTRIBUTIONS}} Contributions in the Year 2024</li>
         <li>🚫 Not Opted to Hire</li>
-        <li>📜 3 Public Repositories</li>
-        <li>🔑 2 Private Repositories</li>
+        <li>📜 {{PUBLIC_REPOS}} Public Repositories</li>
+        <li>🔑 {{PRIVATE_REPOS}} Private Repositories</li>
       </ul>
     </td>
     <td valign="top" width="48%" style="padding: 5px;">
       <h3>I'm an Early 🐤</h3>
-      <div style="overflow-x: auto;">
-        <pre><code>🌞 Morning    122 commits    ⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜   23.55% 
-🌆 Daytime    231 commits    ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜   44.59% 
-🌃 Evening    58 commits     ⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   11.20% 
-🌙 Night      107 commits    ⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   20.66%</code></pre>
+      <div style="overflow-x: auto; white-space: nowrap;">
+        <pre><code>🌞 Morning    {{MORNING_COMMITS}} commits    {{MORNING_PERCENT}} 
+🌆 Daytime    {{DAYTIME_COMMITS}} commits    {{DAYTIME_PERCENT}} 
+🌃 Evening    {{EVENING_COMMITS}} commits     {{EVENING_PERCENT}} 
+🌙 Night      {{NIGHT_COMMITS}} commits    {{NIGHT_PERCENT}}</code></pre>
       </div>
     </td>
   </tr>
   <tr>
     <td valign="top" width="48%" style="padding: 5px;">
       <h3>📅 I'm Most Productive on Wednesday</h3>
-      <div style="overflow-x: auto;">
-        <pre><code>Monday       91 commits     ⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   17.57% 
-Tuesday      55 commits     ⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   10.62% 
-Wednesday    170 commits    ⬛⬛⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜   32.82% 
-Thursday     71 commits     ⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   13.71% 
-Friday       70 commits     ⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   13.51% 
-Saturday     39 commits     ⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   07.53% 
-Sunday       22 commits     ⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   04.25%</code></pre>
+      <div style="overflow-x: auto; white-space: nowrap;">
+        <pre><code>Monday       {{MONDAY_COMMITS}} commits     {{MONDAY_PERCENT}} 
+Tuesday      {{TUESDAY_COMMITS}} commits     {{TUESDAY_PERCENT}} 
+Wednesday    {{WEDNESDAY_COMMITS}} commits    {{WEDNESDAY_PERCENT}} 
+Thursday     {{THURSDAY_COMMITS}} commits     {{THURSDAY_PERCENT}} 
+Friday       {{FRIDAY_COMMITS}} commits     {{FRIDAY_PERCENT}} 
+Saturday     {{SATURDAY_COMMITS}} commits     {{SATURDAY_PERCENT}} 
+Sunday       {{SUNDAY_COMMITS}} commits     {{SUNDAY_PERCENT}}</code></pre>
       </div>
     </td>
     <td valign="top" width="48%" style="padding: 5px;">
       <h3>📊 This Week I Spent My Time On</h3>
-      <div style="overflow-x: auto;">
+      <div style="overflow-x: auto; white-space: nowrap;">
         <pre><code>💬 Programming Languages: 
-Other          12 hrs 39 mins  ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬜ 75.44% 
-Kotlin         3 hrs 54 mins   ⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 23.27% 
-Text           11 mins         ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜  1.13% 
-Figma Design   1 min           ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜  0.15% 
-Git            0 secs          ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜  0.01% 
+Other          {{OTHER_TIME}}  {{OTHER_PERCENT}} 
+Kotlin         {{KOTLIN_TIME}}   {{KOTLIN_PERCENT}} 
+Text           {{TEXT_TIME}}         {{TEXT_PERCENT}} 
+Figma Design   {{FIGMA_TIME}}           {{FIGMA_PERCENT}} 
+Git            {{GIT_TIME}}          {{GIT_PERCENT}} 
 </code></pre>
       </div>
     </td>
@@ -51,20 +50,20 @@ Git            0 secs          ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜�
   <tr>
     <td valign="top" width="48%" style="padding: 5px;">
       <h3>🔥 Editors</h3>
-      <div style="overflow-x: auto;">
-        <pre><code>Chrome         12 hrs 41 mins  ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬜ 75.58% 
-Android Studio 4 hrs 5 mins    ⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 24.42% 
+      <div style="overflow-x: auto; white-space: nowrap;">
+        <pre><code>Chrome         {{CHROME_TIME}}  {{CHROME_PERCENT}} 
+Android Studio {{STUDIO_TIME}}    {{STUDIO_PERCENT}} 
 </code></pre>
       </div>
     </td>
     <td valign="top" width="48%" style="padding: 5px;">
       <h3>🐱‍💻 Projects</h3>
-      <div style="overflow-x: auto;">
-        <pre><code>batapii        8 hrs 40 mins   ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜ 51.74% 
-ToDoSNS        7 hrs 40 mins   ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜ 45.70% 
-ProtocolLib    8 mins          ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜  0.87% 
-tokens         8 mins          ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜  0.86% 
-skill-icons    2 mins          ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜  0.23% 
+      <div style="overflow-x: auto; white-space: nowrap;">
+        <pre><code>batapii        {{BATAPII_TIME}}   {{BATAPII_PERCENT}} 
+ToDoSNS        {{TODOSNS_TIME}}   {{TODOSNS_PERCENT}} 
+ProtocolLib    {{PROTOC_LIB_TIME}}          {{PROTOC_LIB_PERCENT}} 
+tokens         {{TOKENS_TIME}}          {{TOKENS_PERCENT}} 
+skill-icons    {{SKILL_ICONS_TIME}}          {{SKILL_ICONS_PERCENT}} 
 </code></pre>
       </div>
     </td>
@@ -72,16 +71,16 @@ skill-icons    2 mins          ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜�
   <tr>
     <td valign="top" width="48%" style="padding: 5px;">
       <h3>💻 Operating System</h3>
-      <div style="overflow-x: auto;">
-        <pre><code>Mac            16 hrs 46 mins  ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛ 100.00%
+      <div style="overflow-x: auto; white-space: nowrap;">
+        <pre><code>Mac            {{MAC_TIME}}  {{MAC_PERCENT}}
 </code></pre>
       </div>
     </td>
     <td valign="top" width="48%" style="padding: 5px;">
       <h3>📚 My Tech Stack</h3>
-      <div style="overflow-x: auto;">
-        <pre><code>Kotlin       7 repos   ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬜⬜⬜   87.50% 
-mcfunction   1 repo    ⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   12.50%
+      <div style="overflow-x: auto; white-space: nowrap;">
+        <pre><code>Kotlin       {{KOTLIN_REPOS}}   {{KOTLIN_PERCENT}} 
+mcfunction   {{MCFUNCTION_REPOS}}    {{MCFUNCTION_PERCENT}}
 </code></pre>
       </div>
     </td>
