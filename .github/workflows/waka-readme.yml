@@ -161,3 +161,12 @@ jobs:
           git status
           git log --oneline -n 5
           git diff
+
+      - name: Debug WakaTime stats
+        run: |
+          echo "WakaTime API Key status: ${{ secrets.WAKATIME_API_KEY != '' }}"
+          echo "GH Token status: ${{ secrets.GH_TOKEN != '' }}"
+          echo "README.md contents:"
+          cat README.md
+          echo "Current directory contents:"
+          ls -la
