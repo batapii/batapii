@@ -10,7 +10,10 @@ jobs:
     name: Update README with Custom Cards
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v3  # v2 から v3 にアップデート
+        with:
+          fetch-depth: 0
 
       - name: Generate WakaTime Card
         uses: lowlighter/metrics@latest
@@ -24,8 +27,8 @@ jobs:
           plugin_wakatime_days: 7
           plugin_wakatime_sections: time, projects, projects-graphs
           plugin_wakatime_limit: 5
-          plugin_wakatime_url: https://wakatime.com/@batapii
-          plugin_wakatime_user: batapii
+          plugin_wakatime_url: https://wakatime.com/@yourusername
+          plugin_wakatime_user: yourusername
 
       - name: Generate GitHub Stats Card
         uses: lowlighter/metrics@latest
@@ -41,19 +44,36 @@ jobs:
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
 
+      - name: Debug Info
+        run: |
+          echo "Current directory contents:"
+          ls -la
+          echo "Git status:"
+          git status
+
       - name: Update README
         run: |
           echo "# My GitHub Profile" > README.md
           echo "" >> README.md
           echo "## WakaTime Stats" >> README.md
-          echo "![WakaTime stats](./metrics-waketime.svg)" >> README.md
+          if [ -f metrics-waketime.svg ]; then
+            echo "![WakaTime stats](./metrics-waketime.svg)" >> README.md
+          else
+            echo "WakaTime stats not available" >> README.md
+          fi
           echo "" >> README.md
           echo "## GitHub Stats" >> README.md
-          echo "![GitHub stats](./metrics-github.svg)" >> README.md
+          if [ -f metrics-github.svg ]; then
+            echo "![GitHub stats](./metrics-github.svg)" >> README.md
+          else
+            echo "GitHub stats not available" >> README.md
+          fi
 
       - name: Commit and push if changed
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
-          git add README.md metrics-waketime.svg metrics-github.svg
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update README with custom cards" && git push)
+          git add README.md
+          git add metrics-*.svg || true
+          git status
+          git diff --staged --quiet || (git commit -m "Update README with custom cards" && git push) || echo "No changes to commit"
