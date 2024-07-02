@@ -44,7 +44,10 @@
 </details>
 
 ## 🏆 GitHub Trophies
-[![trophy](https://github-profile-trophy.vercel.app/?username=yourusername&theme=onedark)](https://github.com/ryo-ma/github-profile-trophy)
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=batapii&theme=nord&column=7&no-frame=true&no-bg=true" alt="batapii" />
+</p>
 
 ## 🔧 Technologies & Tools
 ![](https://img.shields.io/badge/OS-Linux-informational?style=flat&logo=linux&logoColor=white&color=2bbc8a)
