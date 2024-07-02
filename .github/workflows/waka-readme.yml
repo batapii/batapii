@@ -65,6 +65,12 @@ jobs:
           SHOW_UPDATED_DATE: "True"
           SYMBOL_VERSION: 3
 
+      - name: Split WakaTime stats
+        run: |
+          sed -n '/🐱 My GitHub Data/,/I'"'"'m an Early 🐤/ w github-data.md' README.md
+          sed -n '/I'"'"'m an Early 🐤/,/📊 This Week I Spent My Time On/ w coding-habits.md' README.md
+          sed -n '/📊 This Week I Spent My Time On/,/I Mostly Code in Kotlin/ w weekly-breakdown.md' README.md
+
       - name: Update recent GitHub activity
         uses: jamesgeorge007/github-activity-readme@master
         continue-on-error: true
@@ -84,10 +90,48 @@ jobs:
           plugin_achievements: yes
           plugin_notable: yes
 
+      - name: Update README
+        run: |
+          cat << EOF > README.md
+          # My GitHub Profile
+
+          ![Mountain](./mountain-output/mountain.svg)
+
+          ## 📊 My Coding Insights
+          <details>
+          <summary><b>Click to view GitHub Data</b></summary>
+
+          $(cat github-data.md)
+          </details>
+
+          <details>
+          <summary><b>Click to view Coding Habits</b></summary>
+
+          $(cat coding-habits.md)
+          </details>
+
+          <details>
+          <summary><b>Click to view Weekly Breakdown</b></summary>
+
+          $(cat weekly-breakdown.md)
+          </details>
+
+          ## 🏆 GitHub Trophies
+
+          ## 🔧 Technologies & Tools
+
+          ## 📈 Contribution Graph
+
+          ## 💼 Featured Projects
+
+          ## 🔗 Connect with me
+
+          EOF
+
       - name: Commit and push changes
         run: |
           git pull origin main  # 最新の変更を再度取得
-          git add README.md
+          git add README.md github-data.md coding-habits.md weekly-breakdown.md
           if [ -f "mountain-output/mountain.svg" ]; then
             git add mountain-output/mountain.svg
           fi
