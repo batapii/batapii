@@ -69,6 +69,13 @@ jobs:
         with:
           COMMIT_MSG: 'Update README with recent activity'
           MAX_LINES: 5
+          DAY_LIMIT: 30
+          INCLUDE_EVENTS: |
+            ISSUE
+            PR
+            PUSH
+            STAR
+            CREATE
       - name: Update GitHub stats
         uses: lowlighter/metrics@latest
         with:
