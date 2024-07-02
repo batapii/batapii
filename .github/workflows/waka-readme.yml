@@ -50,6 +50,7 @@ jobs:
           SHOW_TOTAL_CODE_TIME: "True"
           SHOW_UPDATED_DATE: "True"
           SYMBOL_VERSION: 3
+          SHOW_TIME_RANGE: "True"
 
       - name: Update recent GitHub activity
         uses: jamesgeorge007/github-activity-readme@master
