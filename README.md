@@ -139,58 +139,6 @@ mcfunction   1 repo    ⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜
   <img src="https://readme-typing-svg.herokuapp.com/?lines=Android+Developer+in+Japan;Always%20learning%20new%20things&font=Fira%20Code&center=true&width=440&height=45&color=f75c7e&vCenter=true&size=22">
 </div>
 
-## 📊 My Coding Insights
-
-<table>
-  <tr>
-    <td valign="top" width="50%">
-      <details open>
-        <summary><b>🎮 Steam Playtime</b></summary>
-        <img src="https://img.shields.io/badge/Steam-000000?style=for-the-badge&logo=steam&logoColor=white" alt="Steam" /><br>
-        1. 🔫 Counter-Strike: Global Offensive ⚪ 1802 hrs 19 mins<br>
-        2. 👥 Among Us                         ⚪ 51 hrs 31 mins<br>
-        3. 🏃 Fall Guys: Ultimate Knockout     ⚪ 26 hrs 49 mins<br>
-        4. 🐺 The Witcher 3: Wild Hunt         ⚪ 0 hrs 33 mins<br>
-        5. ⚔️ Dota 2                           ⚪ 0 hrs 8 mins
-      </details>
-    </td>
-    <td valign="top" width="50%">
-      <details open>
-        <summary><b>♟️ Chess.com Ratings</b></summary>
-        <img src="https://img.shields.io/badge/Chess.com-00853E?style=for-the-badge&logo=chess.com&logoColor=white" alt="Chess.com" /><br>
-        1. ⚡ Blitz  ................................. 1467<br>
-        2. 🏃 Bullet ................................ 1601<br>
-        3. 🕰️ Rapid  ................................ 1839<br>
-        4. 🧠 Tactics ............................... 2089<br>
-        5. 📅 Daily  ................................. 995
-      </details>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" width="50%">
-      <details open>
-        <summary><b>🌓 Commit Time Distribution</b></summary>
-        ```
-        1. 🌄 Morning   38 commits ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 14.7%<br>
-        2. 🏙️ Daytime   79 commits ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 29.7%<br>
-        3. 🌆 Evening   77 commits ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 28.1%<br>
-        4. 🌙 Night     72 commits ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 27.5%
-        ```
-    </td>
-    <td valign="top" width="50%">
-      <details open>
-        <summary><b>🐱 GitHub Data</b></summary>
-        <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /><br>
-        1. 🏆 1,278 Contributions in year 2021<br>
-        2. 💾 Used 584 MB in GitHub's Storage<br>
-        3. 📝 6 Public Gists<br>
-        4. 🔑 1 Public Keys<br>
-        5. 🚫 Not opted to Hire
-      </details>
-    </td>
-  </tr>
-</table>
-
 ## 🚀 About Me
 
 I'm an Android developer based in Japan, passionate about creating innovative mobile applications and always eager to learn new technologies.
