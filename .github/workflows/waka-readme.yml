@@ -2,8 +2,8 @@ name: Update GitHub Profile README and Generate Mountain
 
 on:
   schedule:
-    - cron: "0 9 * * *"
-    - cron: '0 */6 * * *'
+    - cron: "0 9 * * *"  # 毎日 UTC 9:00 (JST 18:00) に実行
+    - cron: '0 */6 * * *'  # 6時間ごとに実行
   workflow_dispatch:
 
 jobs:
@@ -15,7 +15,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0
+          fetch-depth: 0  # 全履歴をフェッチ
 
       - name: Set up Git
         run: |
@@ -37,7 +37,40 @@ jobs:
 
       - name: Sync with remote
         run: |
-          git pull origin main --rebase
+          git pull origin main --rebase || (git stash && git pull origin main && git stash pop)
+
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Generate Mountain
+        uses: suba327777/README.Mountain@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+          THEME: "dark"
+
+      - name: Update WakaTime stats
+        uses: anmol098/waka-readme-stats@master
+        with:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          SHOW_OS: "True"
+          SHOW_PROJECTS: "True"
+          SHOW_EDITORS: "True"
+          SHOW_TIMEZONE: "True"
+          SHOW_LOC_CHART: "False"
+          SHOW_PROFILE_VIEWS: "True"
+          SHOW_LINES_OF_CODE: "True"
+          SHOW_LANGUAGE_PER_REPO: "True"
+          SHOW_SHORT_INFO: "True"
+          SHOW_DAYS_OF_WEEK: "True"
+          SHOW_LANGUAGE: "True"
+          SHOW_COMMIT: "True"
+          SHOW_TOTAL_CODE_TIME: "True"
+          SHOW_UPDATED_DATE: "True"
+          SYMBOL_VERSION: 3
 
       - name: Update README
         run: |
@@ -61,22 +94,8 @@ jobs:
           <details>
           <summary><b>🐱 GitHub Data</b></summary>
 
-          <!--START_SECTION:github-data-->
-          <!--END_SECTION:github-data-->
-          </details>
-
-          <details>
-          <summary><b>⏱ Coding Habits</b></summary>
-
-          <!--START_SECTION:coding-habits-->
-          <!--END_SECTION:coding-habits-->
-          </details>
-
-          <details>
-          <summary><b>📅 Weekly Breakdown</b></summary>
-
-          <!--START_SECTION:weekly-breakdown-->
-          <!--END_SECTION:weekly-breakdown-->
+          <!--START_SECTION:waka-->
+          <!--END_SECTION:waka-->
           </details>
 
           ## 🏆 GitHub Trophies
@@ -102,36 +121,43 @@ jobs:
           ## 🔗 Connect with me
           [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&link=https://github.com/batapii)](https://github.com/batapii)
 
+          ## 📝 Recent GitHub Activity
           <!--START_SECTION:activity-->
           <!--END_SECTION:activity-->
           EOF
-
-      - name: Update WakaTime stats
-        uses: anmol098/waka-readme-stats@master
-        with:
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          SHOW_OS: "True"
-          SHOW_PROJECTS: "True"
-          SHOW_EDITORS: "True"
-          SHOW_TIMEZONE: "True"
-          SHOW_LOC_CHART: "False"
-          SHOW_PROFILE_VIEWS: "True"
-          SHOW_LINES_OF_CODE: "True"
-          SHOW_LANGUAGE_PER_REPO: "True"
-          SHOW_SHORT_INFO: "True"
-          SHOW_DAYS_OF_WEEK: "True"
-          SHOW_LANGUAGE: "True"
-          SHOW_COMMIT: "True"
-          SHOW_TOTAL_CODE_TIME: "True"
-          SHOW_UPDATED_DATE: "True"
 
       - name: Update recent GitHub activity
         uses: jamesgeorge007/github-activity-readme@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          COMMIT_MSG: 'Update README with recent activity'
+          MAX_LINES: 5
 
       - name: Commit and push changes
         run: |
           git add README.md
-          git diff --staged --quiet || (git commit -m "Update README and stats" && git push)
+          if [ -f "mountain-output/mountain.svg" ]; then
+            git add mountain-output/mountain.svg
+          fi
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update README and stats"
+            git pull --rebase origin main
+            git push || (git pull --rebase origin main && git push)
+            if [ $? -ne 0 ]; then
+              echo "Push failed after rebase. Manual intervention may be required."
+              git status
+              git diff
+              exit 1
+            fi
+          fi
+
+      - name: Check for errors
+        if: failure()
+        run: |
+          echo "Workflow failed. Here's some debug information:"
+          git status
+          git log --oneline -n 5
+          git diff
