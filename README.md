@@ -1,7 +1,4 @@
 
-
-
-
 <h1 align="center">
   <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28">
   Welcome to Batapii's Android Coding Universe!
@@ -12,36 +9,16 @@
   <img src="https://readme-typing-svg.herokuapp.com/?lines=Android+Developer+in+Japan;Always%20learning%20new%20things&font=Fira%20Code&center=true&width=440&height=45&color=f75c7e&vCenter=true&size=22">
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/github/followers/batapii?label=Followers&style=social" alt="followers-count">
-  <img src="https://img.shields.io/badge/Kotlin-Enthusiast-0095D5" alt="Kotlin Enthusiast">
-  <img src="https://img.shields.io/badge/Android-Expert-3DDC84" alt="Android Expert">
-</p>
+## 🏆 GitHub Trophies
 
-<h2 align="center">🚀 Quick Overview</h2>
-
-```kotlin
-object Batapii {
-    val name = "Batapii"
-    val role = "Android Developer"
-    val language = listOf("Kotlin", "Java", "Python")
-    val specialization = listOf("Android Development", "Jetpack Compose", "Kotlin Multiplatform")
-    
-    val learning = "Constantly exploring new Android features and best practices"
-    val hobbies = listOf("Coding", "Gaming", "Tech Meetups")
-
-    fun sayHi() {
-        println("Thanks")
-    }
-}
-```
-
-<h2 align="center">🏆 GitHub Trophies</h2>
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=batapii&theme=nord&column=7&no-frame=true&no-bg=true" alt="batapii" />
 </p>
 
-<h2 align="center">🔧 Technologies & Tools</h2>
+## 🔧 Technologies & Tools
+
+<details>
+<summary><b>Click to view Technologies & Tools</b></summary>
 <p align="center">
   <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android" />
   <img src="https://img.shields.io/badge/Kotlin-0095D5?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin" />
@@ -50,145 +27,55 @@ object Batapii {
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
   <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
 </p>
+</details>
 
-<h2 align="center">📊 GitHub Stats</h2>
-<p align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+## 📊 GitHub Stats
+
+<details>
+<summary><b>Click to view GitHub Stats</b></summary>
+<p align="center">
   <img width="48%" src="https://github-readme-stats.vercel.app/api?username=batapii&show_icons=true&theme=tokyonight&count_private=true"/>
   <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=batapii&layout=compact&langs_count=8&theme=tokyonight"/>
   <img width="48%" src="https://github-readme-streak-stats.herokuapp.com/?user=batapii&theme=tokyonight" alt="batapii" />
   <img width="48%" src="https://raw.githubusercontent.com/batapii/batapii/main/mountain-output/mountain.svg" />
 </p>
-
-<h2 align="center">📈 Contribution Graph</h2>
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=batapii&theme=tokyo-night&area=true&hide_border=true" width="100%">
 </p>
+</details>
 
-<h2 align="center">💼 Featured Projects</h2>
+## 💼 Featured Projects
+
+<details>
+<summary><b>Click to view Featured Projects</b></summary>
 <p align="center">
   <a href="https://github.com/N3AttendanceManager/AttendanceApp">
     <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=N3AttendanceManager&repo=AttendanceApp&theme=tokyonight" />
   </a>
 </p>
-<!--
-<p align="center">
-  <a href="https://github.com/batapii/ProjectName1">
-    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=batapii&repo=ProjectName1&theme=tokyonight" />
-  </a>
-  <a href="https://github.com/batapii/ProjectName2">
-    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=batapii&repo=ProjectName2&theme=tokyonight" />
-  </a>
-</p>
--->
+</details>
 
-<h2 align="center">📊 My Coding Insights</h2>
+## 📊 My Coding Insights
+
+<details>
+<summary><b>Click to view Coding Insights</b></summary>
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-179%20hrs%203%20mins-blue)
-
-![Profile Views](http://img.shields.io/badge/Profile%20Views-14-blue)
-
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-28.5%20thousand%20lines%20of%20code-blue)
-
-**🐱 My GitHub Data** 
-
-> 📦 2.7 kB Used in GitHub's Storage 
- > 
-> 🚫 Not Opted to Hire
- > 
-> 📜 3 Public Repositories 
- > 
-> 🔑 2 Private Repositories 
- > 
-**I'm an Early 🐤** 
-
-```text
-🌞 Morning                122 commits         ⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   25.05 % 
-🌆 Daytime                218 commits         ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   44.76 % 
-🌃 Evening                40 commits          ⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   08.21 % 
-🌙 Night                  107 commits         ⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   21.97 % 
-```
-📅 **I'm Most Productive on Wednesday** 
-
-```text
-Monday                   91 commits          ⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   18.69 % 
-Tuesday                  24 commits          ⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   04.93 % 
-Wednesday                170 commits         ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   34.91 % 
-Thursday                 71 commits          ⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   14.58 % 
-Friday                   70 commits          ⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   14.37 % 
-Saturday                 39 commits          ⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   08.01 % 
-Sunday                   22 commits          ⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   04.52 % 
-```
-
-
-📊 **This Week I Spent My Time On** 
-
-```text
-🕑︎ Time Zone: Asia/Tokyo
-
-💬 Programming Languages: 
-Other                    12 hrs 39 mins      ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜   75.44 % 
-Kotlin                   3 hrs 54 mins       ⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   23.27 % 
-Text                     11 mins             ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   01.13 % 
-Figma Design             1 min               ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   00.15 % 
-Git                      0 secs              ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   00.01 % 
-
-🔥 Editors: 
-Chrome                   12 hrs 41 mins      ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜   75.58 % 
-Android Studio           4 hrs 5 mins        ⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   24.42 % 
-
-🐱‍💻 Projects: 
-batapii                  8 hrs 40 mins       ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   51.74 % 
-ToDoSNS                  7 hrs 40 mins       ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   45.70 % 
-ProtocolLib              8 mins              ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   00.87 % 
-tokens                   8 mins              ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   00.86 % 
-skill-icons?tab=readme-ov2 mins              ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   00.23 % 
-
-💻 Operating System: 
-Mac                      16 hrs 46 mins      ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛   100.00 % 
-```
-
-**I Mostly Code in Kotlin** 
-
-```text
-Kotlin                   7 repos             ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬜⬜⬜   87.50 % 
-mcfunction               1 repo              ⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   12.50 % 
-```
-
-
-
-**Timeline**
-
-![Lines of Code chart](https://raw.githubusercontent.com/batapii/batapii/main/assets/bar_graph.png)
-
-
- Last Updated on 02/07/2024 06:17:05 UTC
 <!--END_SECTION:waka-->
 
-<!--START_SECTION:activity-->
-<!--END_SECTION:activity-->
+</details>
 
-<h2 align="center">🎯 Current Focus & Goals</h2>
+## 🎯 Current Focus & Goals
+
+<details>
+<summary><b>Click to view Current Focus & Goals</b></summary>
 
 - 🔭 Advancing the ToDoSNS project
 - 🌱 Deepening expertise in Kotlin and Android development
 - 👯 Seeking collaborations on Open Source Android Projects
 - 🚀 Aiming to increase contribution frequency, especially on weekends
 
-
-<h2 align="center">🔗 Connect with me</h2>
-<p align="center">
-  <a href="https://twitter.com/batapii3939" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="batapii" height="30" width="40" /></a>
-  <a href="https://linkedin.com/in/batapii" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="batapii" height="30" width="40" /></a>
-  <a href="https://stackoverflow.com/users/batapii" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="batapii" height="30" width="40" /></a>
-</p>
-
-<h2 align="center">☕ Support</h2>
-<p align="center">
-  <a href="https://www.buymeacoffee.com/batapii" target="_blank">
-    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="60px" width="217px">
-  </a>
-</p>
+</details>
 
 <div align="center">
   <img src="https://user-images.githubusercontent.com/44926913/175852850-3fb6c715-1856-41ff-8c1f-94ce3b03b458.gif">・・
