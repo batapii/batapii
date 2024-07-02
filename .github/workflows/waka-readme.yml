@@ -22,21 +22,34 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: Stash local changes
-        run: git stash
+      - name: Manage local and remote changes
+        run: |
+          # 現在の変更を確認
+          if [[ -n $(git status -s) ]]; then
+            echo "Local changes detected. Stashing..."
+            git stash
+            STASHED=true
+          else
+            echo "No local changes. Skipping stash."
+            STASHED=false
+          fi
 
-      - name: Pull latest changes
-        run: git pull origin main
+          # リモートの変更をプル
+          echo "Pulling latest changes..."
+          git pull origin main
 
-      - name: Pop stashed changes
-        run: git stash pop
+          # スタッシュした変更があれば再適用
+          if [ "$STASHED" = true ]; then
+            echo "Reapplying stashed changes..."
+            git stash pop || echo "Failed to pop stash. Manual intervention may be required."
+          fi
 
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '20'
 
-      # ... [他の既存のステップはそのまま] ...
+      # ... [他の既存のステップ] ...
 
       - name: Update README
         run: |
@@ -49,19 +62,19 @@ jobs:
           <details>
           <summary><b>Click to view GitHub Data</b></summary>
 
-          $(cat github-data.md)
+          $(cat github-data.md || echo "GitHub Data not available")
           </details>
 
           <details>
           <summary><b>Click to view Coding Habits</b></summary>
 
-          $(cat coding-habits.md)
+          $(cat coding-habits.md || echo "Coding Habits not available")
           </details>
 
           <details>
           <summary><b>Click to view Weekly Breakdown</b></summary>
 
-          $(cat weekly-breakdown.md)
+          $(cat weekly-breakdown.md || echo "Weekly Breakdown not available")
           </details>
 
           ## 🏆 GitHub Trophies
@@ -78,8 +91,22 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git add README.md github-data.md coding-habits.md weekly-breakdown.md
+          git add README.md
+          for file in github-data.md coding-habits.md weekly-breakdown.md; do
+            if [ -f "$file" ]; then
+              git add "$file"
+            fi
+          done
           if [ -f "mountain-output/mountain.svg" ]; then
             git add mountain-output/mountain.svg
           fi
-          git diff --staged --quiet || (git commit -m "Update README and generate mountain" && git push --force-with-lease)
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update README and generate mountain"
+            git push || git pull --rebase && git push
+            if [ $? -ne 0 ]; then
+              echo "Push failed. Manual intervention may be required."
+              exit 1
+            fi
+          fi
