@@ -1,3 +1,0 @@
-requests==2.26.0
-wakatime==14.0.1
-PyGithub==1.55
