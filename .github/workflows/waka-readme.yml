@@ -14,6 +14,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # 全履歴をフェッチ
+
+      - name: Set up Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Pull latest changes
+        run: |
+          git pull origin main
 
       - name: Use Node.js
         uses: actions/setup-node@v3
@@ -75,8 +86,5 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md mountain-output/mountain.svg
-          git commit -m "Update README and generate mountain" || echo "No changes to commit"
-          git push
+          git diff --staged --quiet || (git commit -m "Update README and generate mountain" && git push)
