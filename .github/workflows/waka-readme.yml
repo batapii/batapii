@@ -22,21 +22,89 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: Debug directory contents
+      - name: Clean up submodules
         run: |
-          echo "Current directory contents:"
-          ls -la
-          echo "Root directory contents:"
-          ls -la /
-
-      - name: Create initial README if not exists
-        run: |
-          if [ ! -f README.md ]; then
-            echo "# My GitHub Profile" > README.md
-            echo "Initial README.md created."
-          else
-            echo "README.md already exists."
+          if [ -f .gitmodules ]; then
+            git config -f .gitmodules --get-regexp '^submodule\..*\.path$' |
+            while read path_key path
+            do
+              if [ ! -d "$path" ]; then
+                git config -f .gitmodules --remove-section "submodule.${path_key##submodule.}"
+                git add .gitmodules
+              fi
+            done
           fi
+
+      - name: Sync with remote
+        run: |
+          git pull origin main --rebase
+
+      - name: Update README
+        run: |
+          cat << EOF > README.md
+          <h1 align="center">
+            <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28">
+            Welcome to Batapii's Android Coding Universe!
+            <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28">
+          </h1>
+
+          <p align="center">
+            <img src="https://readme-typing-svg.herokuapp.com/?lines=Android+Developer+in+Japan;Always%20learning%20new%20things&font=Fira%20Code&center=true&width=440&height=45&color=f75c7e&vCenter=true&size=22">
+          </p>
+
+          ![Mountain](./mountain-output/mountain.svg)
+
+          ## 🚀 About Me
+          I'm an Android developer based in Japan, passionate about creating innovative mobile applications and always eager to learn new technologies.
+
+          ## 📊 My Coding Insights
+          <details>
+          <summary><b>🐱 GitHub Data</b></summary>
+
+          <!--START_SECTION:github-data-->
+          <!--END_SECTION:github-data-->
+          </details>
+
+          <details>
+          <summary><b>⏱ Coding Habits</b></summary>
+
+          <!--START_SECTION:coding-habits-->
+          <!--END_SECTION:coding-habits-->
+          </details>
+
+          <details>
+          <summary><b>📅 Weekly Breakdown</b></summary>
+
+          <!--START_SECTION:weekly-breakdown-->
+          <!--END_SECTION:weekly-breakdown-->
+          </details>
+
+          ## 🏆 GitHub Trophies
+          [![trophy](https://github-profile-trophy.vercel.app/?username=batapii&theme=onedark)](https://github.com/ryo-ma/github-profile-trophy)
+
+          ## 🔧 Technologies & Tools
+          ![](https://img.shields.io/badge/OS-Android-informational?style=flat&logo=android&logoColor=white&color=2bbc8a)
+          ![](https://img.shields.io/badge/Editor-Android_Studio-informational?style=flat&logo=android-studio&logoColor=white&color=2bbc8a)
+          ![](https://img.shields.io/badge/Code-Kotlin-informational?style=flat&logo=kotlin&logoColor=white&color=2bbc8a)
+          ![](https://img.shields.io/badge/Code-Java-informational?style=flat&logo=java&logoColor=white&color=2bbc8a)
+
+          ## 📈 GitHub Stats
+          ![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=batapii&show_icons=true&theme=radical)
+
+          [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=batapii&layout=compact&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
+
+          ## 📊 Contribution Graph
+          ![GitHub Activity Graph](https://activity-graph.herokuapp.com/graph?username=batapii&theme=dracula)
+
+          ## 💼 Featured Projects
+          [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=batapii&repo=AttendanceApp&theme=radical)](https://github.com/N3AttendanceManager/AttendanceApp)
+
+          ## 🔗 Connect with me
+          [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&link=https://github.com/batapii)](https://github.com/batapii)
+
+          <!--START_SECTION:activity-->
+          <!--END_SECTION:activity-->
+          EOF
 
       - name: Update WakaTime stats
         uses: anmol098/waka-readme-stats@master
@@ -57,89 +125,13 @@ jobs:
           SHOW_COMMIT: "True"
           SHOW_TOTAL_CODE_TIME: "True"
           SHOW_UPDATED_DATE: "True"
-          SYMBOL_VERSION: 3
-
-      - name: Debug WakaTime stats
-        run: |
-          echo "README.md contents:"
-          cat README.md || echo "README.md not found"
-
-      - name: Split WakaTime stats
-        run: |
-          if [ -f README.md ]; then
-            sed -n '/🐱 My GitHub Data/,/I'"'"'m an Early 🐤/ w github-data.md' README.md
-            sed -n '/I'"'"'m an Early 🐤/,/📊 This Week I Spent My Time On/ w coding-habits.md' README.md
-            sed -n '/📊 This Week I Spent My Time On/,/I Mostly Code in Kotlin/ w weekly-breakdown.md' README.md
-            echo "WakaTime stats split completed."
-          else
-            echo "README.md not found. Cannot split WakaTime stats."
-          fi
-
-      - name: Debug WakaTime stats files
-        run: |
-          for file in github-data.md coding-habits.md weekly-breakdown.md; do
-            if [ -f "$file" ]; then
-              echo "Contents of $file:"
-              cat "$file"
-            else
-              echo "$file not found."
-            fi
-          done
-
-      - name: Update README
-        run: |
-          cat << EOF > README.md
-          # My GitHub Profile
-
-          ## 📊 My Coding Insights
-          <details>
-          <summary><b>Click to view GitHub Data</b></summary>
-
-          $(cat github-data.md 2>/dev/null || echo "GitHub Data not available")
-          </details>
-
-          <details>
-          <summary><b>Click to view Coding Habits</b></summary>
-
-          $(cat coding-habits.md 2>/dev/null || echo "Coding Habits not available")
-          </details>
-
-          <details>
-          <summary><b>Click to view Weekly Breakdown</b></summary>
-
-          $(cat weekly-breakdown.md 2>/dev/null || echo "Weekly Breakdown not available")
-          </details>
-
-          ## 🏆 GitHub Trophies
-
-          ## 🔧 Technologies & Tools
-
-          ## 📈 Contribution Graph
-
-          ## 💼 Featured Projects
-
-          ## 🔗 Connect with me
-
-          <!--START_SECTION:activity-->
-          <!--END_SECTION:activity-->
-
-          EOF
 
       - name: Update recent GitHub activity
         uses: jamesgeorge007/github-activity-readme@master
-        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          COMMIT_MSG: 'Update README with recent activity'
-          MAX_LINES: 5
 
       - name: Commit and push changes
         run: |
           git add README.md
-          for file in github-data.md coding-habits.md weekly-breakdown.md; do
-            if [ -f "$file" ]; then
-              git add "$file"
-            fi
-          done
-          git diff --staged --quiet || (git commit -m "Update README and WakaTime stats" && git push)
+          git diff --staged --quiet || (git commit -m "Update README and stats" && git push)
