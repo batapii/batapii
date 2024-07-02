@@ -7,40 +7,29 @@ on:
   workflow_dispatch:
 
 jobs:
-  readme_mountain:
+  update-profile:
     runs-on: ubuntu-latest
-    name: generate-mountain
+    permissions:
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Use README.Mountain
+
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Generate Mountain
         uses: suba327777/README.Mountain@release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
           THEME: "dark"
-      - name: Clean up README.Mountain
-        run: |
-          rm -rf README.Mountain
-      - name: Commit and push changes
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add mountain-output/mountain.svg
-          git commit -m "[μRM] generate svg" || echo "No changes to commit"
-          git push
 
-  update-readme:
-    name: Update README
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - uses: actions/checkout@v4
-      - name: Use Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20'
+      - name: Clean up README.Mountain
+        run: rm -rf README.Mountain
+
       - name: Update WakaTime stats
         uses: anmol098/waka-readme-stats@master
         with:
@@ -50,7 +39,7 @@ jobs:
           SHOW_PROJECTS: "True"
           SHOW_EDITORS: "True"
           SHOW_TIMEZONE: "True"
-          SHOW_LOC_CHART: "True"
+          SHOW_LOC_CHART: "False"
           SHOW_PROFILE_VIEWS: "True"
           SHOW_LINES_OF_CODE: "True"
           SHOW_LANGUAGE_PER_REPO: "True"
@@ -61,21 +50,16 @@ jobs:
           SHOW_TOTAL_CODE_TIME: "True"
           SHOW_UPDATED_DATE: "True"
           SYMBOL_VERSION: 3
+
       - name: Update recent GitHub activity
-        uses: jamesgeorge007/github-activity-readme@v0.3.6
+        uses: jamesgeorge007/github-activity-readme@master
         continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           COMMIT_MSG: 'Update README with recent activity'
           MAX_LINES: 5
-          DAY_LIMIT: 30
-          INCLUDE_EVENTS: |
-            ISSUE
-            PR
-            PUSH
-            STAR
-            CREATE
+
       - name: Update GitHub stats
         uses: lowlighter/metrics@latest
         with:
@@ -85,9 +69,11 @@ jobs:
           plugin_languages: yes
           plugin_achievements: yes
           plugin_notable: yes
-      - name: Commit and push if changed
+
+      - name: Commit and push changes
         run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "github-actions[bot]"
-          git add README.md
-          git diff --staged --quiet || (git commit -m "Update README" && git push)
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md mountain-output/mountain.svg
+          git commit -m "Update README and generate mountain" || echo "No changes to commit"
+          git push
