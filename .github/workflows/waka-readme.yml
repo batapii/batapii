@@ -35,6 +35,18 @@ jobs:
             done
           fi
 
+      - name: Remove unnecessary submodule
+        run: |
+          if [ -f .gitmodules ]; then
+            if grep -q "README.Mountain" .gitmodules; then
+              git config -f .gitmodules --remove-section submodule.README.Mountain
+              git add .gitmodules
+              git rm --cached README.Mountain
+              rm -rf README.Mountain
+              git commit -m "Remove README.Mountain submodule"
+            fi
+          fi
+
       - name: Sync with remote
         run: |
           git pull origin main --rebase || (git stash && git pull origin main && git stash pop)
@@ -151,7 +163,7 @@ jobs:
               git add README.md
               git rebase --continue
             fi
-            git push || (git pull --rebase origin main && git push)
+            git push origin main || (git pull --rebase origin main && git push origin main)
             if [ $? -ne 0 ]; then
               echo "Push failed after rebase. Manual intervention may be required."
               git status
