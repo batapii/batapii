@@ -145,6 +145,12 @@ jobs:
           else
             git commit -m "Update README and stats"
             git pull --rebase origin main
+            if [ $? -ne 0 ]; then
+              echo "Merge conflict detected. Attempting to resolve..."
+              git checkout --theirs README.md
+              git add README.md
+              git rebase --continue
+            fi
             git push || (git pull --rebase origin main && git push)
             if [ $? -ne 0 ]; then
               echo "Push failed after rebase. Manual intervention may be required."
