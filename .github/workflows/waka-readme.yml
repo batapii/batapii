@@ -1,4 +1,4 @@
-name: Update README with WakaTime Stats
+name: Update README with Stats
 
 on:
   schedule:
@@ -7,10 +7,12 @@ on:
 
 jobs:
   update-readme:
-    name: Update README with WakaTime Metrics
+    name: Update README with Metrics
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0  # 全履歴をフェッチ
       
       - name: Update WakaTime stats
         uses: anmol098/waka-readme-stats@master
@@ -28,13 +30,11 @@ jobs:
           SHOW_DAYS_OF_WEEK: "True"
           SHOW_LANGUAGE: "True"
           SHOW_TOTAL_CODE_TIME: "True"
-          SECTIONS_ORDER: "waka-commit-time,waka-week-stats,waka-time-stats,waka-editors,waka-projects,waka-os,waka-tech-stack"
           COMMIT_BY_ME: "True"
           COMMIT_MESSAGE: "Update README with WakaTime stats"
 
       - name: Update GitHub Data
         run: |
-          # GitHub APIを使用してデータを取得し、github-data.mdに書き込む
           token="${{ secrets.GH_TOKEN }}"
           username="${{ github.repository_owner }}"
           api_url="https://api.github.com/users/$username"
@@ -48,13 +48,20 @@ jobs:
           echo "<li>📦 $(du -sh .git | cut -f1) Used in GitHub's Storage</li>" >> github-data.md
           echo "<li>🏆 $(git rev-list --count HEAD) Contributions in the Year $(date +%Y)</li>" >> github-data.md
           echo "<li>📜 $public_repos Public Repositories</li>" >> github-data.md
-          echo "<li>🔑 $(ls -l ~/.ssh | grep -v "total" | wc -l) SSH Keys</li>" >> github-data.md
+          echo "<li>🔑 $(ls -l ~/.ssh 2>/dev/null | grep -v "total" | wc -l || echo '0') SSH Keys</li>" >> github-data.md
           echo "</ul>" >> github-data.md
           echo "<!--END_SECTION:github-data-->" >> github-data.md
+
+      - name: Remove submodule reference
+        run: |
+          if [ -f .gitmodules ]; then
+            sed -i '/README.Mountain/d' .gitmodules
+            git add .gitmodules
+          fi
 
       - name: Commit and push if changed
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
           git add README.md github-data.md
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update README with WakaTime stats" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update README with stats" && git push --force-with-lease)
