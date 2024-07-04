@@ -22,8 +22,20 @@ I'm an Android developer based in Japan, passionate about creating innovative mo
 
 ## 📈 GitHub Stats
 ![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=batapii&show_icons=true&theme=radical)
-
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=batapii&layout=compact&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
+
+## 🔥 Streak Stats
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=batapii&theme=radical)](https://git.io/streak-stats)
+
+## 📊 Contribution Graph
+![Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=batapii&theme=Unicorn)
+
+## 🗂️ Recent Activity
+<!--START_SECTION:activity-->
+1. 🎉 Merged PR [#123](https://github.com/batapii/repo-name/pull/123) in [batapii/repo-name](https://github.com/batapii/repo-name)
+2. 💪 Opened PR [#124](https://github.com/batapii/repo-name/pull/124) in [batapii/repo-name](https://github.com/batapii/repo-name)
+3. 🗣 Commented on [#125](https://github.com/batapii/repo-name/issues/125) in [batapii/repo-name](https://github.com/batapii/repo-name)
+<!--END_SECTION:activity-->
 
 ## 📊 My Coding Insights
 
