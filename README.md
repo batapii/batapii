@@ -22,17 +22,20 @@ I'm an Android developer based in Japan, passionate about creating innovative mo
 ![](https://img.shields.io/badge/Code-Kotlin-informational?style=flat&logo=kotlin&logoColor=white&color=2bbc8a)
 ![](https://img.shields.io/badge/Code-Java-informational?style=flat&logo=java&logoColor=white&color=2bbc8a)
 
-## 📈 GitHub Stats
+## 📊 GitHub Stats
 
-<a href="https://github.com/anuraghazra/github-readme-stats">
-  <img height="200" align="center" src="https://github-readme-stats.vercel.app/api?username=batapii&show_icons=true&theme=radical" />
-</a>
-<a href="https://github.com/anuraghazra/github-readme-stats">
-  <img height="200" align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=batapii&layout=compact&theme=radical&langs_count=8&card_width=320" />
-</a>
+<div align="center">
+  <a href="https://github.com/anuraghazra/github-readme-stats">
+    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=batapii&show_icons=true&theme=radical&include_all_commits=true&count_private=true"/>
+  </a>
+  <a href="https://github.com/anuraghazra/github-readme-stats">
+    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=batapii&layout=compact&langs_count=8&theme=radical"/>
+  </a>
 
-## 🔥 Streak Stats
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=batapii&theme=radical)](https://git.io/streak-stats)
+  <a href="https://github.com/DenverCoder1/github-readme-streak-stats">
+    <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=batapii&theme=radical&hide_border=false"/>
+  </a>
+</div>
 
 ## 📊 Contribution Graph
 ![Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=batapii&theme=Unicorn)
