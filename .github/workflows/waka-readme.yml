@@ -1,53 +1,17 @@
-name: Update GitHub Profile README and Generate Mountain
+name: Update README with WakaTime Stats
 
 on:
   schedule:
-    - cron: "0 9 * * *"  # 毎日 UTC 9:00 (JST 18:00) に実行
-    - cron: '0 */6 * * *'  # 6時間ごとに実行
-  workflow_dispatch:
+    - cron: '0 0 * * *'  # 毎日 UTC 0:00 (JST 9:00) に実行
+  workflow_dispatch:  # 手動実行のオプション
 
 jobs:
-  update-profile:
+  update-readme:
+    name: Update README with WakaTime Metrics
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-
-      - name: Set up Git
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-      - name: Remove README.Mountain submodule
-        run: |
-          if [ -f .gitmodules ] && grep -q "README.Mountain" .gitmodules; then
-            git config -f .gitmodules --remove-section submodule.README.Mountain
-            git add .gitmodules
-            git rm --cached README.Mountain
-            rm -rf README.Mountain
-            git commit -m "Remove README.Mountain submodule"
-          fi
-
-      - name: Sync with remote
-        run: |
-          git pull origin main --rebase || (git stash && git pull origin main && git stash pop)
-
-      - name: Use Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20'
-
-      - name: Generate Mountain
-        uses: suba327777/README.Mountain@release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USERNAME: ${{ github.repository_owner }}
-          THEME: "dark"
-
+      - uses: actions/checkout@v2
+      
       - name: Update WakaTime stats
         uses: anmol098/waka-readme-stats@master
         with:
@@ -56,46 +20,41 @@ jobs:
           SHOW_OS: "True"
           SHOW_PROJECTS: "True"
           SHOW_EDITORS: "True"
-          SHOW_TIMEZONE: "True"
+          SHOW_TIMEZONE: "False"
           SHOW_LOC_CHART: "False"
-          SHOW_PROFILE_VIEWS: "True"
           SHOW_LINES_OF_CODE: "True"
-          SHOW_LANGUAGE_PER_REPO: "True"
-          SHOW_SHORT_INFO: "True"
+          SHOW_PROFILE_VIEWS: "True"
+          SHOW_COMMIT: "True"
           SHOW_DAYS_OF_WEEK: "True"
           SHOW_LANGUAGE: "True"
-          SHOW_COMMIT: "True"
           SHOW_TOTAL_CODE_TIME: "True"
-          SHOW_UPDATED_DATE: "True"
-          SYMBOL_VERSION: 3
-          COMMIT_MESSAGE: "Updated waka-readme graph with new metrics"
+          SECTIONS_ORDER: "waka-commit-time,waka-week-stats,waka-time-stats,waka-editors,waka-projects,waka-os,waka-tech-stack"
+          COMMIT_BY_ME: "True"
+          COMMIT_MESSAGE: "Update README with WakaTime stats"
 
-      - name: Update recent GitHub activity
-        uses: jamesgeorge007/github-activity-readme@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          COMMIT_MSG: 'Update README with recent activity'
-          MAX_LINES: 5
-
-      - name: Commit and push changes
+      - name: Update GitHub Data
         run: |
-          git add README.md
-          if [ -f "mountain-output/mountain.svg" ]; then
-            git add mountain-output/mountain.svg
-          fi
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "Update README and stats"
-            git push origin main || (git pull --rebase origin main && git push origin main)
-          fi
+          # GitHub APIを使用してデータを取得し、github-data.mdに書き込む
+          token="${{ secrets.GH_TOKEN }}"
+          username="${{ github.repository_owner }}"
+          api_url="https://api.github.com/users/$username"
+          
+          response=$(curl -s -H "Authorization: token $token" $api_url)
+          public_repos=$(echo $response | jq '.public_repos')
+          followers=$(echo $response | jq '.followers')
+          
+          echo "<!--START_SECTION:github-data-->" > github-data.md
+          echo "<ul>" >> github-data.md
+          echo "<li>📦 $(du -sh .git | cut -f1) Used in GitHub's Storage</li>" >> github-data.md
+          echo "<li>🏆 $(git rev-list --count HEAD) Contributions in the Year $(date +%Y)</li>" >> github-data.md
+          echo "<li>📜 $public_repos Public Repositories</li>" >> github-data.md
+          echo "<li>🔑 $(ls -l ~/.ssh | grep -v "total" | wc -l) SSH Keys</li>" >> github-data.md
+          echo "</ul>" >> github-data.md
+          echo "<!--END_SECTION:github-data-->" >> github-data.md
 
-      - name: Debug information
-        if: failure()
+      - name: Commit and push if changed
         run: |
-          echo "Workflow failed. Debug information:"
-          git status
-          git log --oneline -n 5
-          git diff
-          cat README.md
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git add README.md github-data.md
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update README with WakaTime stats" && git push)
