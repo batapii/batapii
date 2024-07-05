@@ -73,6 +73,13 @@ jobs:
           echo "Workflow failed. Here's some debug information:"
           git status
           git log -n 5
+
+      - name: Debug WakaTime output
+        run: |
+          echo "WakaTime stats update completed. Checking README.md:"
+          cat README.md
+          echo "Checking for differences:"
+          git diff README.md
           cat .git/config
           ls -la
           cat README.md
