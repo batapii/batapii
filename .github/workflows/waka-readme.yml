@@ -1,62 +1,31 @@
-name: Update README with WakaTime Stats
+name: WakaTime README
+
 on:
   schedule:
-    - cron: '0 0 * * *'  # 毎日 UTC 0:00 (JST 9:00) に実行
-  workflow_dispatch:  # 手動実行のオプション
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 jobs:
   update-readme:
-    name: Update README with WakaTime Metrics
+    name: Update Readme with Metrics
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
         with:
-          fetch-depth: 0  # 全履歴をフェッチ
-      
-      - name: Setup Git
-        run: |
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "github-actions[bot]"
-
+          python-version: '3.9'
       - name: Update WakaTime stats
-        uses: anmol098/waka-readme-stats@master
-        with:
+        env:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          SHOW_OS: "True"
-          SHOW_PROJECTS: "True"
-          SHOW_EDITORS: "True"
-          SHOW_TIMEZONE: "False"
-          SHOW_LOC_CHART: "False"
-          SHOW_LINES_OF_CODE: "True"
-          SHOW_PROFILE_VIEWS: "True"
-          SHOW_COMMIT: "True"
-          SHOW_DAYS_OF_WEEK: "True"
-          SHOW_LANGUAGE: "True"
-          SHOW_LANGUAGE_PER_REPO: "True"
-          SHOW_TOTAL_CODE_TIME: "True"
-          SHOW_SHORT_INFO: "False"
-          SHOW_UPDATED_DATE: "True"
-
-      - name: Check for changes
-        id: git-check
+          UPDATE_OPTION: "README_SECTION"
         run: |
-          git diff --exit-code || echo "changes=true" >> $GITHUB_OUTPUT
-
-      - name: Commit and push changes
-        if: steps.git-check.outputs.changes == 'true'
+          pip install PyGithub httpx
+          python waka_update.py
+      - name: Commit and push if changed
         run: |
-          git add README.md
-          git commit -m "Update README with WakaTime stats"
-          git push || (git pull --rebase && git push)
-
-      - name: Debug Information
-        run: |
-          echo "Workflow completed. Here's some debug information:"
-          git status
-          git log -n 5
-          echo "WakaTime stats update completed. Checking README.md:"
-          cat README.md
-          echo "Checking for differences:"
-          git diff README.md
-          cat .git/config
-          ls -la
+          git diff
+          git config --global user.email "readme-bot@example.com"
+          git config --global user.name "README-bot"
+          git add -A
+          git commit -m "Updated README with WakaTime stats" || exit 0
+          git push
