@@ -63,7 +63,7 @@ I'm an Android developer based in Japan, passionate about creating innovative mo
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-16-blue)
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-34.9%20thousand%20lines%20of%20code-blue)
 
-<table>
+<table style="width:100%">
   <tr>
     <td valign="top" width="50%">
       <h3>🐱 My GitHub Data</h3>
@@ -83,10 +83,10 @@ I'm an Android developer based in Japan, passionate about creating innovative mo
       <h3>I'm an Early 🐤</h3>
       <div style="height: 200px; overflow: auto;">
         <!--START_SECTION:waka-commit-time-->
-        <pre><code>🌞 Morning    122 commits    ⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜   23.55% 
-🌆 Daytime    231 commits    ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜   44.59% 
-🌃 Evening    58 commits     ⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   11.20% 
-🌙 Night      107 commits    ⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   20.66%</code></pre>
+        <pre><code>🌞 Morning    122 commits    ████░░░░░░░░ 23.55%
+🌆 Daytime    231 commits    ████████░░░░ 44.59%
+🌃 Evening    58 commits     ██░░░░░░░░░░ 11.20%
+🌙 Night      107 commits    ████░░░░░░░░ 20.66%</code></pre>
         <!--END_SECTION:waka-commit-time-->
       </div>
     </td>
@@ -96,13 +96,13 @@ I'm an Android developer based in Japan, passionate about creating innovative mo
       <h3>📅 I'm Most Productive on Wednesday</h3>
       <div style="height: 200px; overflow: auto;">
         <!--START_SECTION:waka-week-stats-->
-        <pre><code>Monday       91 commits     ⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   17.57% 
-Tuesday      55 commits     ⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   10.62% 
-Wednesday    170 commits    ⬛⬛⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜   32.82% 
-Thursday     71 commits     ⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   13.71% 
-Friday       70 commits     ⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   13.51% 
-Saturday     39 commits     ⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   07.53% 
-Sunday       22 commits     ⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   04.25%</code></pre>
+        <pre><code>Monday       91 commits     ████░░░░░░░░ 17.57%
+Tuesday      55 commits     ██░░░░░░░░░░ 10.62%
+Wednesday    170 commits    ████████░░░░ 32.82%
+Thursday     71 commits     ███░░░░░░░░░ 13.71%
+Friday       70 commits     ███░░░░░░░░░ 13.51%
+Saturday     39 commits     ██░░░░░░░░░░ 07.53%
+Sunday       22 commits     █░░░░░░░░░░░ 04.25%</code></pre>
         <!--END_SECTION:waka-week-stats-->
       </div>
     </td>
@@ -111,11 +111,11 @@ Sunday       22 commits     ⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   04.2
       <div style="height: 200px; overflow: auto;">
         <!--START_SECTION:waka-time-stats-->
         <pre><code>💬 Programming Languages: 
-Other          12 hrs 39 mins  ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬜ 75.44% 
-Kotlin         3 hrs 54 mins   ⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 23.27% 
-Text           11 mins         ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜  1.13% 
-Figma Design   1 min           ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜  0.15% 
-Git            0 secs          ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜  0.01%</code></pre>
+Other          12 hrs 39 mins █████████░░ 75.44%
+Kotlin         3 hrs 54 mins  ██░░░░░░░░░ 23.27%
+Text           11 mins        ░░░░░░░░░░░  1.13%
+Figma Design   1 min          ░░░░░░░░░░░  0.15%
+Git            0 secs         ░░░░░░░░░░░  0.01%</code></pre>
         <!--END_SECTION:waka-time-stats-->
       </div>
     </td>
@@ -125,8 +125,8 @@ Git            0 secs          ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜�
       <h3>🔥 Editors</h3>
       <div style="height: 200px; overflow: auto;">
         <!--START_SECTION:waka-editors-->
-        <pre><code>Chrome         12 hrs 41 mins  ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬜ 75.58% 
-                   Android Studio 4 hrs 5 mins    ⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 24.42%</code></pre>
+        <pre><code>Chrome         12 hrs 41 mins █████████░░ 75.58%
+Android Studio 4 hrs 5 mins   ██░░░░░░░░░ 24.42%</code></pre>
         <!--END_SECTION:waka-editors-->
       </div>
     </td>
@@ -134,11 +134,11 @@ Git            0 secs          ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜�
       <h3>🐱‍💻 Projects</h3>
       <div style="height: 200px; overflow: auto;">
         <!--START_SECTION:waka-projects-->
-        <pre><code>batapii        8 hrs 40 mins   ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜ 51.74% 
-                    ToDoSNS        7 hrs 40 mins   ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜ 45.70% 
-                    ProtocolLib    8 mins          ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜  0.87% 
-                    tokens         8 mins          ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜  0.86% 
-                    skill-icons    2 mins          ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜  0.23%</code></pre>
+        <pre><code>batapii        8 hrs 40 mins █████░░░░░░ 51.74%
+ToDoSNS        7 hrs 40 mins ████░░░░░░░ 45.70%
+ProtocolLib    8 mins        ░░░░░░░░░░░  0.87%
+tokens         8 mins        ░░░░░░░░░░░  0.86%
+skill-icons    2 mins        ░░░░░░░░░░░  0.23%</code></pre>
         <!--END_SECTION:waka-projects-->
       </div>
     </td>
@@ -148,7 +148,7 @@ Git            0 secs          ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜�
       <h3>💻 Operating System</h3>
       <div style="height: 200px; overflow: auto;">
         <!--START_SECTION:waka-os-->
-        <pre><code>Mac            16 hrs 46 mins  ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛ 100.00%</code></pre>
+        <pre><code>Mac            16 hrs 46 mins ██████████ 100.00%</code></pre>
         <!--END_SECTION:waka-os-->
       </div>
     </td>
@@ -156,8 +156,9 @@ Git            0 secs          ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜�
       <h3>📚 My Tech Stack</h3>
       <div style="height: 200px; overflow: auto;">
         <!--START_SECTION:waka-tech-stack-->
-        <pre><code>Kotlin       7 repos   ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬜⬜⬜   87.50% 
-mcfunction   1 repo    ⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   12.50%</code></pre>
+        <pre>
+<code>Kotlin       7 repos   █████████░ 87.50%
+mcfunction   1 repo    █░░░░░░░░░ 12.50%</code></pre>
         <!--END_SECTION:waka-tech-stack-->
       </div>
     </td>
