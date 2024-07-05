@@ -96,27 +96,20 @@ Text                      0h 0m                      0.08%
 <!--END_SECTION:waka-time_stats-->
 
 <!--START_SECTION:waka-editors-->
-🔥 Editors:
-Chrome                   5h 36m ■■■■■■■■■■■■■■■■■■■  99.92%
-Android Studio            0h 0m                      0.08%
+<pre><code>Chrome          5 hrs 36 mins  ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬜ 99.92%
+Android Studio  17 secs  ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 0.08%</code></pre>
 <!--END_SECTION:waka-editors-->
 
 <!--START_SECTION:waka-projects-->
-🐱‍💻 Projects:
-batapii                  5h 31m ■■■■■■■■■■■■■■■■■■■  98.40%
-tokens                    0h 4m                      1.33%
-ToDoSNS                   0h 0m                      0.08%
-batapii?tab=readme-ov-file           0h 0m                      0.08%
-profile                   0h 0m                      0.04%
-apps                      0h 0m                      0.02%
-repo-name                 0h 0m                      0.02%
-ProjectName1              0h 0m                      0.01%
-tokens?type=beta           0h 0m                      0.00%
+<pre><code>batapii         5 hrs 31 mins  ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬜ 98.40%
+tokens          4 mins  ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 1.33%
+ToDoSNS         17 secs  ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 0.08%
+batapii?tab=readme-ov-file 17 secs  ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 0.08%
+profile         9 secs  ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 0.04%</code></pre>
 <!--END_SECTION:waka-projects-->
 
 <!--START_SECTION:waka-os-->
-💻 Operating System:
-Mac                      5h 36m ■■■■■■■■■■■■■■■■■■■■ 100.00%
+<pre><code>Mac             5 hrs 36 mins  ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛ 100.00%</code></pre>
 <!--END_SECTION:waka-os-->
 
 
