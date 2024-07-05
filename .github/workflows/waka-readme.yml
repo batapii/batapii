@@ -87,3 +87,10 @@ jobs:
             # Force push (use with caution)
             git push --force-with-lease
           fi
+
+      - name: Update Recent Activity
+        uses: jamesgeorge007/github-activity-readme@master
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+            MAX_LINES: 5   
