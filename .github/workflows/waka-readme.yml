@@ -1,10 +1,8 @@
 name: Update README with WakaTime Stats
-
 on:
   schedule:
     - cron: '0 0 * * *'  # 毎日 UTC 0:00 (JST 9:00) に実行
   workflow_dispatch:  # 手動実行のオプション
-
 jobs:
   update-readme:
     name: Update README with WakaTime Metrics
@@ -18,7 +16,6 @@ jobs:
         run: |
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
-
       - name: Update WakaTime stats
         uses: anmol098/waka-readme-stats@master
         with:
@@ -38,7 +35,6 @@ jobs:
           SHOW_TOTAL_CODE_TIME: "True"
           SHOW_SHORT_INFO: "False"
           SHOW_UPDATED_DATE: "True"
-
       - name: Commit and push changes
         run: |
           git add README.md
@@ -67,7 +63,6 @@ jobs:
           else
             echo "No changes to commit"
           fi
-
       - name: Debug Information
         run: |
           echo "Workflow completed. Here's some debug information:"
