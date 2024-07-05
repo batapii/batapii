@@ -73,24 +73,32 @@ jobs:
 
       - name: Commit and push changes
         run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          
           git add README.md github-data.md
-          git diff --staged --quiet || (git commit -m "Update README with stats")
           
-          # Pull the latest changes and rebase
-          git pull --rebase origin main
-          
-          # Try to push changes
-          if git push; then
-            echo "Changes pushed successfully"
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
           else
-            echo "Push failed, trying to resolve conflicts..."
-            git fetch origin
-            git reset --hard origin/main
+            git commit -m "Update README with stats"
             
-            # Apply our changes on top of the latest main
-            git add README.md github-data.md
-            git diff --staged --quiet || (git commit -m "Update README with stats")
+            # Pull the latest changes and rebase
+            git pull --rebase origin main
             
-            # Force push (use with caution)
-            git push --force-with-lease
+            # Try to push changes
+            if git push; then
+              echo "Changes pushed successfully"
+            else
+              echo "Push failed, trying to resolve conflicts..."
+              git fetch origin
+              git reset --hard origin/main
+              
+              # Apply our changes on top of the latest main
+              git add README.md github-data.md
+              git diff --staged --quiet || git commit -m "Update README with stats"
+              
+              # Force push (use with caution)
+              git push --force-with-lease
+            fi
           fi
