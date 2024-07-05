@@ -9,104 +9,115 @@ GITHUB_TOKEN = os.environ["GH_TOKEN"]
 WAKATIME_API_KEY = os.environ["WAKATIME_API_KEY"]
 GITHUB_REPOSITORY = os.environ["GITHUB_REPOSITORY"]
 
+g = Github(GITHUB_TOKEN)
+repo = g.get_repo(GITHUB_REPOSITORY)
+
 def fetch_wakatime_stats():
     headers = {
         "Authorization": f"Basic {WAKATIME_API_KEY}"
     }
-    
     end_date = datetime.utcnow().date()
     start_date = end_date - timedelta(days=7)
-    
     url = f"https://wakatime.com/api/v1/users/current/summaries?start={start_date}&end={end_date}"
-    
     response = httpx.get(url, headers=headers)
-    response.raise_for_status()  # Will raise an exception for HTTP errors
+    response.raise_for_status()
     return response.json()
 
-def update_readme_section(section_name, content):
-    filename = f"README_{section_name}.md"
-    with open(filename, "w") as f:
-        f.write(content)
+def format_github_data():
+    user = g.get_user()
+    contributions = sum(c.total for c in repo.get_stats_contributors() if c.author == user)
+    return f"""<ul>
+          <li>📦 {repo.size / 1024:.1f} kB Used in GitHub's Storage</li>
+          <li>🏆 {contributions} Contributions in the Year {datetime.now().year}</li>
+          <li>🚫 Not Opted to Hire</li>
+          <li>📜 {user.public_repos} Public Repositories</li>
+          <li>🔑 {user.private_repos} Private Repositories</li>
+        </ul>"""
+
+def format_commit_time(commits):
+    total = sum(commits.values())
+    return f"""<pre><code>🌞 Morning    {commits['morning']:3d} commits    {'⬛' * int(commits['morning']/total*15)}{'⬜' * (15-int(commits['morning']/total*15))} {commits['morning']/total*100:.2f}% 
+🌆 Daytime    {commits['daytime']:3d} commits    {'⬛' * int(commits['daytime']/total*15)}{'⬜' * (15-int(commits['daytime']/total*15))} {commits['daytime']/total*100:.2f}% 
+🌃 Evening    {commits['evening']:3d} commits    {'⬛' * int(commits['evening']/total*15)}{'⬜' * (15-int(commits['evening']/total*15))} {commits['evening']/total*100:.2f}% 
+🌙 Night      {commits['night']:3d} commits    {'⬛' * int(commits['night']/total*15)}{'⬜' * (15-int(commits['night']/total*15))} {commits['night']/total*100:.2f}%</code></pre>"""
+
+def format_week_stats(commits):
+    total = sum(commits.values())
+    days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+    return "<pre><code>" + "\n".join([f"{day:<12} {commits[day.lower()]:3d} commits    {'⬛' * int(commits[day.lower()]/total*15)}{'⬜' * (15-int(commits[day.lower()]/total*15))} {commits[day.lower()]/total*100:.2f}%" for day in days]) + "</code></pre>"
 
 def format_time_stats(stats):
     languages = stats["data"][0]["languages"]
-    formatted = "💬 Programming Languages:\n"
-    for lang in languages[:5]:  # Top 5 languages
-        name = lang.get('name', 'Unknown')
-        total_time = lang.get('total_seconds', 0)
-        hours, remainder = divmod(total_time, 3600)
-        minutes, _ = divmod(remainder, 60)
-        time_str = f"{int(hours)}h {int(minutes)}m"
-        percentage = lang.get('percent', 0)
-        formatted += f"{name:<15} {time_str:>15} {'■' * int(percentage/5)}{' ' * (20-int(percentage/5))} {percentage:.2f}%\n"
-    return formatted
+    return "<pre><code>💬 Programming Languages: \n" + "\n".join([f"{lang['name']:<15} {lang['text']}  {'⬛' * int(lang['percent']/5)}{'⬜' * (20-int(lang['percent']/5))} {lang['percent']:.2f}%" for lang in languages[:5]]) + "</code></pre>"
 
 def format_editors(stats):
-    editors = stats["data"][0].get("editors", [])
-    formatted = "🔥 Editors:\n"
-    for editor in editors:
-        name = editor.get('name', 'Unknown')
-        total_time = editor.get('total_seconds', 0)
-        hours, remainder = divmod(total_time, 3600)
-        minutes, _ = divmod(remainder, 60)
-        time_str = f"{int(hours)}h {int(minutes)}m"
-        percentage = editor.get('percent', 0)
-        formatted += f"{name:<15} {time_str:>15} {'■' * int(percentage/5)}{' ' * (20-int(percentage/5))} {percentage:.2f}%\n"
-    return formatted
+    editors = stats["data"][0]["editors"]
+    return "<pre><code>" + "\n".join([f"{editor['name']:<15} {editor['text']}  {'⬛' * int(editor['percent']/5)}{'⬜' * (20-int(editor['percent']/5))} {editor['percent']:.2f}%" for editor in editors]) + "</code></pre>"
 
 def format_projects(stats):
-    projects = stats["data"][0].get("projects", [])
-    formatted = "🐱‍💻 Projects:\n"
-    for project in projects:
-        name = project.get('name', 'Unknown')
-        total_time = project.get('total_seconds', 0)
-        hours, remainder = divmod(total_time, 3600)
-        minutes, _ = divmod(remainder, 60)
-        time_str = f"{int(hours)}h {int(minutes)}m"
-        percentage = project.get('percent', 0)
-        formatted += f"{name:<15} {time_str:>15} {'■' * int(percentage/5)}{' ' * (20-int(percentage/5))} {percentage:.2f}%\n"
-    return formatted
+    projects = stats["data"][0]["projects"]
+    return "<pre><code>" + "\n".join([f"{project['name']:<15} {project['text']}  {'⬛' * int(project['percent']/5)}{'⬜' * (20-int(project['percent']/5))} {project['percent']:.2f}%" for project in projects[:5]]) + "</code></pre>"
 
 def format_os(stats):
-    operating_systems = stats["data"][0].get("operating_systems", [])
-    formatted = "💻 Operating System:\n"
-    for os in operating_systems:
-        name = os.get('name', 'Unknown')
-        total_time = os.get('total_seconds', 0)
-        hours, remainder = divmod(total_time, 3600)
-        minutes, _ = divmod(remainder, 60)
-        time_str = f"{int(hours)}h {int(minutes)}m"
-        percentage = os.get('percent', 0)
-        formatted += f"{name:<15} {time_str:>15} {'■' * int(percentage/5)}{' ' * (20-int(percentage/5))} {percentage:.2f}%\n"
-    return formatted
+    operating_systems = stats["data"][0]["operating_systems"]
+    return "<pre><code>" + "\n".join([f"{os['name']:<15} {os['text']}  {'⬛' * int(os['percent']/5)}{'⬜' * (20-int(os['percent']/5))} {os['percent']:.2f}%" for os in operating_systems]) + "</code></pre>"
+
+def format_tech_stack():
+    langs = repo.get_languages()
+    total = sum(langs.values())
+    return "<pre><code>" + "\n".join([f"{lang:<12} {count:2d} repos   {'⬛' * int(count/total*20)}{'⬜' * (20-int(count/total*20))} {count/total*100:.2f}%" for lang, count in langs.items()]) + "</code></pre>"
+
+def update_readme_section(content, start_tag, end_tag):
+    with open("README.md", "r") as f:
+        readme = f.read()
+    
+    pattern = f"{start_tag}.*?{end_tag}"
+    replacement = f"{start_tag}\n{content}\n{end_tag}"
+    updated_readme = re.sub(pattern, replacement, readme, flags=re.DOTALL)
+    
+    with open("README.md", "w") as f:
+        f.write(updated_readme)
 
 def main():
     try:
-        stats = fetch_wakatime_stats()
+        wakatime_stats = fetch_wakatime_stats()
         
-        update_readme_section("time_stats", format_time_stats(stats))
-        update_readme_section("editors", format_editors(stats))
-        update_readme_section("projects", format_projects(stats))
-        update_readme_section("os", format_os(stats))
-
-        # Update main README.md
-        with open("README.md", "r") as f:
-            readme = f.read()
-
-        for section in ["time_stats", "editors", "projects", "os"]:
-            with open(f"README_{section}.md", "r") as f:
-                section_content = f.read()
-            readme = re.sub(f"<!--START_SECTION:waka-{section}-->.*?<!--END_SECTION:waka-{section}-->",
-                            f"<!--START_SECTION:waka-{section}-->\n{section_content}\n<!--END_SECTION:waka-{section}-->",
-                            readme, flags=re.DOTALL)
-
-        with open("README.md", "w") as f:
-            f.write(readme)
+        update_readme_section(format_github_data(), "<!--START_SECTION:github-data-->", "<!--END_SECTION:github-data-->")
+        update_readme_section(format_commit_time(get_commit_times()), "<!--START_SECTION:waka-commit-time-->", "<!--END_SECTION:waka-commit-time-->")
+        update_readme_section(format_week_stats(get_week_stats()), "<!--START_SECTION:waka-week-stats-->", "<!--END_SECTION:waka-week-stats-->")
+        update_readme_section(format_time_stats(wakatime_stats), "<!--START_SECTION:waka-time-stats-->", "<!--END_SECTION:waka-time-stats-->")
+        update_readme_section(format_editors(wakatime_stats), "<!--START_SECTION:waka-editors-->", "<!--END_SECTION:waka-editors-->")
+        update_readme_section(format_projects(wakatime_stats), "<!--START_SECTION:waka-projects-->", "<!--END_SECTION:waka-projects-->")
+        update_readme_section(format_os(wakatime_stats), "<!--START_SECTION:waka-os-->", "<!--END_SECTION:waka-os-->")
+        update_readme_section(format_tech_stack(), "<!--START_SECTION:waka-tech-stack-->", "<!--END_SECTION:waka-tech-stack-->")
 
         print("README updated successfully!")
     except Exception as e:
         print(f"An error occurred: {str(e)}")
         raise
+
+def get_commit_times():
+    commits = repo.get_commits(author=g.get_user().login)
+    times = {'morning': 0, 'daytime': 0, 'evening': 0, 'night': 0}
+    for commit in commits:
+        hour = commit.commit.author.date.hour
+        if 6 <= hour < 12:
+            times['morning'] += 1
+        elif 12 <= hour < 18:
+            times['daytime'] += 1
+        elif 18 <= hour < 24:
+            times['evening'] += 1
+        else:
+            times['night'] += 1
+    return times
+
+def get_week_stats():
+    commits = repo.get_commits(author=g.get_user().login)
+    days = {day.lower(): 0 for day in ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']}
+    for commit in commits:
+        day = commit.commit.author.date.strftime("%A").lower()
+        days[day] += 1
+    return days
 
 if __name__ == "__main__":
     main()
