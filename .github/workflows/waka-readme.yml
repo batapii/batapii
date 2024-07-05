@@ -10,7 +10,7 @@ jobs:
     name: Update README with Metrics
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0  # 全履歴をフェッチ
       
@@ -57,6 +57,13 @@ jobs:
           echo "</ul>" >> github-data.md
           echo "<!--END_SECTION:github-data-->" >> github-data.md
 
+      - name: Update Recent Activity
+        uses: jamesgeorge007/github-activity-readme@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          MAX_LINES: 5
+
       - name: Remove submodule reference
         run: |
           if [ -f .gitmodules ]; then
@@ -87,10 +94,3 @@ jobs:
             # Force push (use with caution)
             git push --force-with-lease
           fi
-
-      - name: Update Recent Activity
-        uses: jamesgeorge007/github-activity-readme@master
-        env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-            MAX_LINES: 5   
