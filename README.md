@@ -189,7 +189,18 @@ mcfunction   1 repo    ⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜
     </td>
   </tr>
 </table>
-</table>
+
+<!--START_SECTION:waka-time_stats-->
+<!--END_SECTION:waka-time_stats-->
+
+<!--START_SECTION:waka-editors-->
+<!--END_SECTION:waka-editors-->
+
+<!--START_SECTION:waka-projects-->
+<!--END_SECTION:waka-projects-->
+
+<!--START_SECTION:waka-os-->
+<!--END_SECTION:waka-os-->
 
 
 <div align="center">
