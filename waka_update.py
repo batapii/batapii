@@ -25,13 +25,17 @@ def fetch_wakatime_stats():
 
 def format_github_data():
     user = g.get_user()
-    contributions = sum(c.total for c in repo.get_stats_contributors() if c.author == user)
+    contributions = sum(c.total for c in repo.get_stats_contributors() if c.author.login == user.login)
+    
+    # プライベートリポジトリの数を取得
+    private_repos = sum(1 for _ in user.get_repos(visibility='private'))
+    
     return f"""<ul>
           <li>📦 {repo.size / 1024:.1f} kB Used in GitHub's Storage</li>
           <li>🏆 {contributions} Contributions in the Year {datetime.now().year}</li>
           <li>🚫 Not Opted to Hire</li>
           <li>📜 {user.public_repos} Public Repositories</li>
-          <li>🔑 {user.private_repos} Private Repositories</li>
+          <li>🔑 {private_repos} Private Repositories</li>
         </ul>"""
 
 def format_commit_time(commits):
@@ -78,24 +82,6 @@ def update_readme_section(content, start_tag, end_tag):
     with open("README.md", "w") as f:
         f.write(updated_readme)
 
-def main():
-    try:
-        wakatime_stats = fetch_wakatime_stats()
-        
-        update_readme_section(format_github_data(), "<!--START_SECTION:github-data-->", "<!--END_SECTION:github-data-->")
-        update_readme_section(format_commit_time(get_commit_times()), "<!--START_SECTION:waka-commit-time-->", "<!--END_SECTION:waka-commit-time-->")
-        update_readme_section(format_week_stats(get_week_stats()), "<!--START_SECTION:waka-week-stats-->", "<!--END_SECTION:waka-week-stats-->")
-        update_readme_section(format_time_stats(wakatime_stats), "<!--START_SECTION:waka-time-stats-->", "<!--END_SECTION:waka-time-stats-->")
-        update_readme_section(format_editors(wakatime_stats), "<!--START_SECTION:waka-editors-->", "<!--END_SECTION:waka-editors-->")
-        update_readme_section(format_projects(wakatime_stats), "<!--START_SECTION:waka-projects-->", "<!--END_SECTION:waka-projects-->")
-        update_readme_section(format_os(wakatime_stats), "<!--START_SECTION:waka-os-->", "<!--END_SECTION:waka-os-->")
-        update_readme_section(format_tech_stack(), "<!--START_SECTION:waka-tech-stack-->", "<!--END_SECTION:waka-tech-stack-->")
-
-        print("README updated successfully!")
-    except Exception as e:
-        print(f"An error occurred: {str(e)}")
-        raise
-
 def get_commit_times():
     commits = repo.get_commits(author=g.get_user().login)
     times = {'morning': 0, 'daytime': 0, 'evening': 0, 'night': 0}
@@ -118,6 +104,24 @@ def get_week_stats():
         day = commit.commit.author.date.strftime("%A").lower()
         days[day] += 1
     return days
+
+def main():
+    try:
+        wakatime_stats = fetch_wakatime_stats()
+        
+        update_readme_section(format_github_data(), "<!--START_SECTION:github-data-->", "<!--END_SECTION:github-data-->")
+        update_readme_section(format_commit_time(get_commit_times()), "<!--START_SECTION:waka-commit-time-->", "<!--END_SECTION:waka-commit-time-->")
+        update_readme_section(format_week_stats(get_week_stats()), "<!--START_SECTION:waka-week-stats-->", "<!--END_SECTION:waka-week-stats-->")
+        update_readme_section(format_time_stats(wakatime_stats), "<!--START_SECTION:waka-time-stats-->", "<!--END_SECTION:waka-time-stats-->")
+        update_readme_section(format_editors(wakatime_stats), "<!--START_SECTION:waka-editors-->", "<!--END_SECTION:waka-editors-->")
+        update_readme_section(format_projects(wakatime_stats), "<!--START_SECTION:waka-projects-->", "<!--END_SECTION:waka-projects-->")
+        update_readme_section(format_os(wakatime_stats), "<!--START_SECTION:waka-os-->", "<!--END_SECTION:waka-os-->")
+        update_readme_section(format_tech_stack(), "<!--START_SECTION:waka-tech-stack-->", "<!--END_SECTION:waka-tech-stack-->")
+
+        print("README updated successfully!")
+    except Exception as e:
+        print(f"An error occurred: {str(e)}")
+        raise
 
 if __name__ == "__main__":
     main()
