@@ -77,7 +77,7 @@ I'm an Android developer based in Japan, passionate about creating innovative mo
 
 ## 🗂️ Recent Activity
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#123](https://github.com/batapii/repo-name/pull/123) in [batapii/repo-name](https://github.com/batapii/repo-name)
+1. ❗ Opened issue [#1](https://github.com/batapii/weatherApp/issues/1) in [batapii/weatherApp](https://github.com/batapii/weatherApp)
 2. 💪 Opened PR [#124](https://github.com/batapii/repo-name/pull/124) in [batapii/repo-name](https://github.com/batapii/repo-name)
 3. 🗣 Commented on [#125](https://github.com/batapii/repo-name/issues/125) in [batapii/repo-name](https://github.com/batapii/repo-name)
 <!--END_SECTION:activity-->
