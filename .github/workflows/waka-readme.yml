@@ -34,6 +34,7 @@ jobs:
           SHOW_COMMIT: "True"
           SHOW_DAYS_OF_WEEK: "True"
           SHOW_LANGUAGE: "True"
+          SHOW_LANGUAGE_PER_REPO: "True"
           SHOW_TOTAL_CODE_TIME: "True"
           SHOW_SHORT_INFO: "False"
           SHOW_UPDATED_DATE: "True"
@@ -68,18 +69,13 @@ jobs:
           fi
 
       - name: Debug Information
-        if: failure()
         run: |
-          echo "Workflow failed. Here's some debug information:"
+          echo "Workflow completed. Here's some debug information:"
           git status
           git log -n 5
-
-      - name: Debug WakaTime output
-        run: |
           echo "WakaTime stats update completed. Checking README.md:"
           cat README.md
           echo "Checking for differences:"
           git diff README.md
           cat .git/config
           ls -la
-          cat README.md
