@@ -16,6 +16,7 @@ jobs:
         run: |
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
+
       - name: Update WakaTime stats
         uses: anmol098/waka-readme-stats@master
         with:
@@ -35,34 +36,19 @@ jobs:
           SHOW_TOTAL_CODE_TIME: "True"
           SHOW_SHORT_INFO: "False"
           SHOW_UPDATED_DATE: "True"
+
+      - name: Check for changes
+        id: git-check
+        run: |
+          git diff --exit-code || echo "changes=true" >> $GITHUB_OUTPUT
+
       - name: Commit and push changes
+        if: steps.git-check.outputs.changes == 'true'
         run: |
           git add README.md
-          
-          if ! git diff --staged --quiet; then
-            git commit -m "Update README with WakaTime stats"
-            
-            # Pull the latest changes and rebase
-            git pull --rebase origin main || true
-            
-            # Try to push changes
-            if git push; then
-              echo "Changes pushed successfully"
-            else
-              echo "Push failed, trying to resolve conflicts..."
-              git fetch origin
-              git reset --hard origin/main
-              
-              # Apply our changes on top of the latest main
-              git add README.md
-              git diff --staged --quiet || git commit -m "Update README with WakaTime stats"
-              
-              # Force push (use with caution)
-              git push --force-with-lease || echo "Failed to push changes"
-            fi
-          else
-            echo "No changes to commit"
-          fi
+          git commit -m "Update README with WakaTime stats"
+          git push || (git pull --rebase && git push)
+
       - name: Debug Information
         run: |
           echo "Workflow completed. Here's some debug information:"
