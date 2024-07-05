@@ -23,7 +23,7 @@ jobs:
         uses: anmol098/waka-readme-stats@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
           SHOW_OS: "True"
           SHOW_PROJECTS: "True"
           SHOW_EDITORS: "True"
@@ -40,7 +40,7 @@ jobs:
 
       - name: Update GitHub Data
         run: |
-          token="${{ secrets.GITHUB_TOKEN }}"
+          token="${{ secrets.GH_TOKEN }}"
           username="${{ github.repository_owner }}"
           api_url="https://api.github.com/users/$username"
           
@@ -63,6 +63,13 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           MAX_LINES: 5
+
+      - name: Remove submodule reference
+        run: |
+          if [ -f .gitmodules ]; then
+            sed -i '/README.Mountain/d' .gitmodules
+            git add .gitmodules
+          fi
 
       - name: Commit and push changes
         run: |
@@ -95,5 +102,3 @@ jobs:
               git push --force-with-lease
             fi
           fi
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
