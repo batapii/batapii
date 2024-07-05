@@ -63,13 +63,11 @@ jobs:
         run: |
           git add README.md github-data.md
           
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
+          if ! git diff --staged --quiet; then
             git commit -m "Update README with stats"
             
             # Pull the latest changes and rebase
-            git pull --rebase origin main
+            git pull --rebase origin main || true
             
             # Try to push changes
             if git push; then
@@ -84,6 +82,16 @@ jobs:
               git diff --staged --quiet || git commit -m "Update README with stats"
               
               # Force push (use with caution)
-              git push --force-with-lease
+              git push --force-with-lease || echo "Failed to push changes"
             fi
+          else
+            echo "No changes to commit"
           fi
+
+      - name: Check for errors
+        if: failure()
+        run: |
+          echo "Workflow failed. Here's some debug information:"
+          git status
+          git log -n 5
+          cat .git/config
