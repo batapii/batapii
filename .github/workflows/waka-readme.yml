@@ -28,6 +28,7 @@ jobs:
 
       - name: Update GitHub Data
         run: |
+          set -e
           token="${{ secrets.GH_TOKEN }}"
           username="${{ github.repository_owner }}"
           api_url="https://api.github.com/users/$username"
@@ -44,7 +45,7 @@ jobs:
           echo "<li>🔑 $(ls -l ~/.ssh 2>/dev/null | grep -v "total" | wc -l || echo '0') SSH Keys</li>" >> github-data.md
           echo "</ul>" >> github-data.md
           echo "<!--END_SECTION:github-data-->" >> github-data.md
-
+        
       - name: Update Recent Activity
         uses: jamesgeorge007/github-activity-readme@master
         env:
@@ -54,6 +55,7 @@ jobs:
 
       - name: Remove submodule reference
         run: |
+          set -e
           if [ -f .gitmodules ]; then
             sed -i '/README.Mountain/d' .gitmodules
             git add .gitmodules
@@ -61,6 +63,7 @@ jobs:
 
       - name: Commit and push changes
         run: |
+          set -e
           git add README.md github-data.md
           
           if ! git diff --staged --quiet; then
@@ -88,10 +91,13 @@ jobs:
             echo "No changes to commit"
           fi
 
-      - name: Check for errors
+      - name: Debug Information
         if: failure()
         run: |
           echo "Workflow failed. Here's some debug information:"
           git status
           git log -n 5
           cat .git/config
+          ls -la
+          cat README.md
+          cat github-data.md
