@@ -151,21 +151,29 @@ Git            0 secs          ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜�
       <h3>🔥 Editors</h3>
       <div style="height: 200px; overflow: auto;">
         <!--START_SECTION:waka-editors-->
-        <pre><code>Chrome         12 hrs 41 mins  ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬜ 75.58% 
-Android Studio 4 hrs 5 mins    ⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 24.42%</code></pre>
-        <!--END_SECTION:waka-editors-->
+🔥 Editors:
+Chrome                   5h 36m ■■■■■■■■■■■■■■■■■■■  99.92%
+Android Studio            0h 0m                      0.08%
+
+<!--END_SECTION:waka-editors-->
       </div>
     </td>
     <td valign="top" width="50%">
       <h3>🐱‍💻 Projects</h3>
       <div style="height: 200px; overflow: auto;">
         <!--START_SECTION:waka-projects-->
-        <pre><code>batapii        8 hrs 40 mins   ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜ 51.74% 
-ToDoSNS        7 hrs 40 mins   ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜ 45.70% 
-ProtocolLib    8 mins          ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜  0.87% 
-tokens         8 mins          ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜  0.86% 
-skill-icons    2 mins          ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜  0.23%</code></pre>
-        <!--END_SECTION:waka-projects-->
+🐱‍💻 Projects:
+batapii                  5h 31m ■■■■■■■■■■■■■■■■■■■  98.40%
+tokens                    0h 4m                      1.33%
+ToDoSNS                   0h 0m                      0.08%
+batapii?tab=readme-ov-file           0h 0m                      0.08%
+profile                   0h 0m                      0.04%
+apps                      0h 0m                      0.02%
+repo-name                 0h 0m                      0.02%
+ProjectName1              0h 0m                      0.01%
+tokens?type=beta           0h 0m                      0.00%
+
+<!--END_SECTION:waka-projects-->
       </div>
     </td>
   </tr>
@@ -174,8 +182,10 @@ skill-icons    2 mins          ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜�
       <h3>💻 Operating System</h3>
       <div style="height: 200px; overflow: auto;">
         <!--START_SECTION:waka-os-->
-        <pre><code>Mac            16 hrs 46 mins  ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛ 100.00%</code></pre>
-        <!--END_SECTION:waka-os-->
+💻 Operating System:
+Mac                      5h 36m ■■■■■■■■■■■■■■■■■■■■ 100.00%
+
+<!--END_SECTION:waka-os-->
       </div>
     </td>
     <td valign="top" width="50%">
@@ -191,15 +201,37 @@ mcfunction   1 repo    ⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜
 </table>
 
 <!--START_SECTION:waka-time_stats-->
+💬 Programming Languages:
+Other                    5h 36m ■■■■■■■■■■■■■■■■■■■  99.92%
+Text                      0h 0m                      0.08%
+
 <!--END_SECTION:waka-time_stats-->
 
 <!--START_SECTION:waka-editors-->
+🔥 Editors:
+Chrome                   5h 36m ■■■■■■■■■■■■■■■■■■■  99.92%
+Android Studio            0h 0m                      0.08%
+
 <!--END_SECTION:waka-editors-->
 
 <!--START_SECTION:waka-projects-->
+🐱‍💻 Projects:
+batapii                  5h 31m ■■■■■■■■■■■■■■■■■■■  98.40%
+tokens                    0h 4m                      1.33%
+ToDoSNS                   0h 0m                      0.08%
+batapii?tab=readme-ov-file           0h 0m                      0.08%
+profile                   0h 0m                      0.04%
+apps                      0h 0m                      0.02%
+repo-name                 0h 0m                      0.02%
+ProjectName1              0h 0m                      0.01%
+tokens?type=beta           0h 0m                      0.00%
+
 <!--END_SECTION:waka-projects-->
 
 <!--START_SECTION:waka-os-->
+💻 Operating System:
+Mac                      5h 36m ■■■■■■■■■■■■■■■■■■■■ 100.00%
+
 <!--END_SECTION:waka-os-->
 
 
