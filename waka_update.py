@@ -7,7 +7,7 @@ import re
 
 GITHUB_TOKEN = os.environ["GH_TOKEN"]
 WAKATIME_API_KEY = os.environ["WAKATIME_API_KEY"]
-GITHUB_REPOSITORY = os.environ.get("GITHUB_REPOSITORY", "your_username/your_repo")
+GITHUB_REPOSITORY = os.environ["GITHUB_REPOSITORY"]
 
 g = Github(GITHUB_TOKEN)
 repo = g.get_repo(GITHUB_REPOSITORY)
@@ -27,12 +27,9 @@ def fetch_wakatime_stats():
 def format_github_data():
     # GitHubデータを取得し、整形する関数
     user = g.get_user()
-    # ユーザーの貢献度を計算
     contributions = sum(c.total for c in repo.get_stats_contributors() if c.author.login == user.login)
-    # プライベートリポジトリの数を数える
     private_repos = sum(1 for _ in user.get_repos(visibility='private'))
     
-    # データを整形された文字列として返す
     return f"""* 📦 {repo.size / 1024:.1f} kB Used in GitHub's Storage
 * 🏆 {contributions} Contributions in the Year {datetime.now().year}
 * 🚫 Not Opted to Hire
@@ -86,7 +83,6 @@ def update_readme_section(content, start_tag, end_tag):
     with open("README.md", "r", encoding="utf-8") as f:
         readme = f.read()
     
-    # 指定されたタグ間のコンテンツを置き換える
     pattern = f"{start_tag}.*?{end_tag}"
     replacement = f"{start_tag}\n```\n{content}\n```\n{end_tag}"
     updated_readme = re.sub(pattern, replacement, readme, flags=re.DOTALL)
@@ -121,10 +117,8 @@ def get_week_stats():
 
 def main():
     try:
-        # WakaTimeの統計を取得
         wakatime_stats = fetch_wakatime_stats()
         
-        # 各セクションを更新
         update_readme_section(format_github_data(), "<!--START_SECTION:github-data-->", "<!--END_SECTION:github-data-->")
         update_readme_section(format_commit_time(get_commit_times()), "<!--START_SECTION:waka-commit-time-->", "<!--END_SECTION:waka-commit-time-->")
         update_readme_section(format_week_stats(get_week_stats()), "<!--START_SECTION:waka-week-stats-->", "<!--END_SECTION:waka-week-stats-->")
