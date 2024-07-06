@@ -1,13 +1,30 @@
-name: WakaTime README
+name: GitHub-Profile-3D-Contrib and WakaTime README
 
 on:
-  schedule:
-    - cron: '0 0 * * *'  # 毎日UTC 0:00 (JST 9:00) に実行
-  workflow_dispatch:  # 手動実行のオプション
+  schedule: # 毎日 0:00 UTC (9:00 JST) に実行
+    - cron: "0 0 * * *"
+  workflow_dispatch:
 
 jobs:
+  generate-github-profile-3d-contrib:
+    runs-on: ubuntu-latest
+    name: Generate GitHub Profile 3D Contribution Graph
+    steps:
+      - uses: actions/checkout@v3
+      - uses: yoshi389111/github-profile-3d-contrib@0.7.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+      - name: Commit & Push
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add -A .
+          git commit -m "generated"
+          git push
+
   update-readme:
-    name: Update Readme with Metrics
+    name: Update Readme with WakaTime Metrics
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
