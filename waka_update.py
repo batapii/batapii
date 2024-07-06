@@ -71,9 +71,21 @@ def format_os(stats):
     return "\n".join([f"{os['name']:<15} {os['text']:<15} {generate_bar(os['percent'], 100)} {os['percent']:.2f}%" for os in operating_systems])
 
 def format_tech_stack():
-    langs = repo.get_languages()
-    total = sum(langs.values())
-    return "\n".join([f"{lang:<15} {count:2d} repos   {generate_bar(count, total)} {count/total*100:.2f}%" for lang, count in langs.items() if count > 0])
+    user = g.get_user()
+    repos = user.get_repos()
+    lang_count = {}
+    for repo in repos:
+        langs = repo.get_languages()
+        for lang, _ in langs.items():
+            lang_count[lang] = lang_count.get(lang, 0) + 1
+    
+    total_repos = sum(lang_count.values())
+    sorted_langs = sorted(lang_count.items(), key=lambda x: x[1], reverse=True)
+    
+    return "\n".join([
+        f"{lang:<15} {count:2d} repos   {generate_bar(count, total_repos)} {count/total_repos*100:.2f}%" 
+        for lang, count in sorted_langs[:10]  # Top 10 languages
+    ])
 
 def update_readme_section(content, start_tag, end_tag):
     with open("README.md", "r", encoding="utf-8") as f:
@@ -120,8 +132,13 @@ def main():
         update_readme_section(format_editors(wakatime_stats), "<!--START_SECTION:waka-editors-->", "<!--END_SECTION:waka-editors-->")
         update_readme_section(format_projects(wakatime_stats), "<!--START_SECTION:waka-projects-->", "<!--END_SECTION:waka-projects-->")
         update_readme_section(format_os(wakatime_stats), "<!--START_SECTION:waka-os-->", "<!--END_SECTION:waka-os-->")
-        update_readme_section(format_tech_stack(), "<!--START_SECTION:waka-tech-stack-->", "<!--END_SECTION:waka-tech-stack-->")
-
+        
+        try:
+            tech_stack = format_tech_stack()
+            update_readme_section(tech_stack, "<!--START_SECTION:waka-tech-stack-->", "<!--END_SECTION:waka-tech-stack-->")
+        except Exception as e:
+            print(f"Error updating tech stack: {str(e)}")
+        
         print("README updated successfully!")
     except Exception as e:
         print(f"An error occurred: {str(e)}")
