@@ -128,7 +128,7 @@ Mac                      3 hrs 52 mins       ███████████�
 
 <div align="center">
   
-[![Apple Music GitHub Profile](https://apple-music-github-profile.rayriffy.com/theme/dark.svg)](https://music.apple.com/profile/batapii)
+[![Apple Music GitHub profile](https://music-profile.rayriffy.com/theme/dark.svg?uid=001005.6598667d2ffd4a10a4f429edd0ba24c4.1156)](https://github.com/rayriffy/apple-music-github-profile)
 
 </div>
 
