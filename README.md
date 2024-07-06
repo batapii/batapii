@@ -69,13 +69,13 @@ I'm an Android developer based in Japan, passionate about creating innovative mo
       <h3>🐱 My GitHub Data</h3>
       <div style="height: 200px; overflow: auto;">
         <!--START_SECTION:github-data-->
-```
-* 📦 1.9 kB Used in GitHub's Storage
-* 🏆 315 Contributions in the Year 2024
-* 🚫 Not Opted to Hire
-* 📜 3 Public Repositories
-* 🔑 24 Private Repositories
-```
+<ul>
+  <li>📦 1.9 kB Used in GitHub's Storage</li>
+  <li>🏆 316 Contributions in the Year 2024</li>
+  <li>🚫 Not Opted to Hire</li>
+  <li>📜 3 Public Repositories</li>
+  <li>🔑 24 Private Repositories</li>
+</ul>
 <!--END_SECTION:github-data-->
       </div>
     </td>
@@ -83,12 +83,10 @@ I'm an Android developer based in Japan, passionate about creating innovative mo
       <h3>I'm an Early 🐤</h3>
       <div style="height: 200px; overflow: auto;">
         <!--START_SECTION:waka-commit-time-->
-```
-🌞 Morning     72 commits    ██░░░░░░░░ 21.95%
-🌆 Daytime    140 commits    ████░░░░░░ 42.68%
-🌃 Evening      29 commits    ░░░░░░░░░░ 8.84%
-🌙 Night        87 commits    ██░░░░░░░░ 26.52%
-```
+🌞 Morning     74 commits    ████░░░░░░░░░░░░░░░░ 22.42%
+🌆 Daytime    140 commits    ████████░░░░░░░░░░░░ 42.42%
+🌃 Evening     29 commits    █░░░░░░░░░░░░░░░░░░░ 8.79%
+🌙 Night       87 commits    █████░░░░░░░░░░░░░░░ 26.36%
 <!--END_SECTION:waka-commit-time-->
       </div>
     </td>
@@ -98,15 +96,13 @@ I'm an Android developer based in Japan, passionate about creating innovative mo
       <h3>📅 I'm Most Productive on Wednesday</h3>
       <div style="height: 200px; overflow: auto;">
         <!--START_SECTION:waka-week-stats-->
-```
-Monday         5 commits    ░░░░░░░░░░ 1.52%
-Tuesday      103 commits    ███░░░░░░░ 31.40%
-Wednesday     26 commits    ░░░░░░░░░░ 7.93%
-Thursday      56 commits    █░░░░░░░░░ 17.07%
-Friday       110 commits    ███░░░░░░░ 33.54%
-Saturday      23 commits    ░░░░░░░░░░ 7.01%
-Sunday         5 commits    ░░░░░░░░░░ 1.52%
-```
+Monday         5 commits    ░░░░░░░░░░░░░░░░░░░░ 1.52%
+Tuesday      103 commits    ██████░░░░░░░░░░░░░░ 31.21%
+Wednesday     26 commits    █░░░░░░░░░░░░░░░░░░░ 7.88%
+Thursday      56 commits    ███░░░░░░░░░░░░░░░░░ 16.97%
+Friday       110 commits    ██████░░░░░░░░░░░░░░ 33.33%
+Saturday      25 commits    █░░░░░░░░░░░░░░░░░░░ 7.58%
+Sunday         5 commits    ░░░░░░░░░░░░░░░░░░░░ 1.52%
 <!--END_SECTION:waka-week-stats-->
       </div>
     </td>
@@ -114,12 +110,10 @@ Sunday         5 commits    ░░░░░░░░░░ 1.52%
       <h3>📊 This Week I Spent My Time On</h3>
       <div style="height: 200px; overflow: auto;">
         <!--START_SECTION:waka-time-stats-->
-```
 💬 Programming Languages: 
-Other           1 hr 18 mins    ████████░░ 82.39%
-Kotlin          15 mins         █░░░░░░░░░ 15.95%
-Text            1 min           ░░░░░░░░░░ 1.66%
-```
+Other           1 hr 18 mins    ████████████████░░░░ 82.39%
+Kotlin          15 mins         ███░░░░░░░░░░░░░░░░░ 15.95%
+Text            1 min           ░░░░░░░░░░░░░░░░░░░░ 1.66%
 <!--END_SECTION:waka-time-stats-->
       </div>
     </td>
@@ -129,10 +123,8 @@ Text            1 min           ░░░░░░░░░░ 1.66%
       <h3>🔥 Editors</h3>
       <div style="height: 200px; overflow: auto;">
         <!--START_SECTION:waka-editors-->
-```
-Chrome          1 hr 18 mins    ████████░░ 82.39%
-Android Studio  16 mins         █░░░░░░░░░ 17.61%
-```
+Chrome          1 hr 18 mins    ████████████████░░░░ 82.39%
+Android Studio  16 mins         ███░░░░░░░░░░░░░░░░░ 17.61%
 <!--END_SECTION:waka-editors-->
       </div>
     </td>
@@ -140,13 +132,11 @@ Android Studio  16 mins         █░░░░░░░░░ 17.61%
       <h3>🐱‍💻 Projects</h3>
       <div style="height: 200px; overflow: auto;">
         <!--START_SECTION:waka-projects-->
-```
-ToDoSNS         1 hr 2 mins     ██████░░░░ 65.41%
-batapii         30 mins         ███░░░░░░░ 32.00%
-profile         1 min           ░░░░░░░░░░ 1.70%
-tokens          41 secs         ░░░░░░░░░░ 0.72%
-apps            5 secs          ░░░░░░░░░░ 0.09%
-```
+ToDoSNS         1 hr 2 mins     █████████████░░░░░░░ 65.41%
+batapii         30 mins         ██████░░░░░░░░░░░░░░ 32.00%
+profile         1 min           ░░░░░░░░░░░░░░░░░░░░ 1.70%
+tokens          41 secs         ░░░░░░░░░░░░░░░░░░░░ 0.72%
+apps            5 secs          ░░░░░░░░░░░░░░░░░░░░ 0.09%
 <!--END_SECTION:waka-projects-->
       </div>
     </td>
@@ -156,9 +146,7 @@ apps            5 secs          ░░░░░░░░░░ 0.09%
       <h3>💻 Operating System</h3>
       <div style="height: 200px; overflow: auto;">
         <!--START_SECTION:waka-os-->
-```
-Mac             1 hr 35 mins    ██████████ 100.00%
-```
+Mac             1 hr 35 mins    ████████████████████ 100.00%
 <!--END_SECTION:waka-os-->
       </div>
     </td>
@@ -166,9 +154,7 @@ Mac             1 hr 35 mins    ██████████ 100.00%
       <h3>📚 My Tech Stack</h3>
       <div style="height: 200px; overflow: auto;">
         <!--START_SECTION:waka-tech-stack-->
-```
-Python          7113 repos   ██████████ 100.00%
-```
+Python          6201 repos   ████████████████████ 100.00%
 <!--END_SECTION:waka-tech-stack-->
       </div>
     </td>
