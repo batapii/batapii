@@ -35,50 +35,19 @@ I'm an Android developer based in Japan, passionate about creating innovative mo
   <img src="https://github-profile-trophy.vercel.app/?username=batapii&theme=nord&column=7&no-frame=true&no-bg=true&rank=SECRET,SSS,SS,S,AAA,AA,A,B,C,?" alt="batapii" />
 </p>
 
-## 🛠️ Favorite Tech
+## 🌈 Skill Spectrum
 
-> Tools, languages, and other things that I like to work with.
+<div align="center">
 
-<table>
-  <tr>
-    <td align="center" width="96">
-      <a href="#macropower-tech">
-        <img src="https://techstack-generator.vercel.app/github-icon.svg" alt="icon" width="65" height="65" />
-      </a>
-      <br>GitHub
-    </td>
-    <td align="center" width="96">
-      <a href="#macropower-tech">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original-wordmark.svg" />
-      </a>
-      <br>Android Studio
-    </td>
-     <td align="center" width="96">
-      <a href="#macropower-tech">
-         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
-      </a>
-      <br>Git
-    </td>
-        <td align="center" width="96">
-      <a href="#macropower-tech">
-       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jetbrains/jetbrains-original.svg" />
-      </a>
-      <br>JetBrains
-    </td>
-        <td align="center" width="96">
-      <a href="#macropower-tech">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg" />
-      </a>
-      <br>Kotlin
-    </td>
-        <td align="center" width="96">
-      <a href="#macropower-tech">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" />
-      </a>
-      <br>Supabase
-    </td>
-  </tr>
-</table>
+![Kotlin](https://img.shields.io/badge/Kotlin-0095D5?style=for-the-badge&logo=kotlin&logoColor=white)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white)
+![Swift](https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+
+</div>
+
 
 ## 📊 My Coding Insights
 
@@ -151,10 +120,6 @@ Mac                      3 hrs 52 mins       ███████████�
   <a href="https://github.com/batapii/ToDoSNS">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=batapii&repo=ToDoSNS&theme=radical" />
   </a>
-  <a href="https://github.com/batapii/batapii">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=batapii&repo=batapii&theme=radical" />
-  </a>
-</div>
 
 ## 📈 GitHub Stats
 
@@ -171,18 +136,6 @@ Mac                      3 hrs 52 mins       ███████████�
 
 </div>
 
-## 🌈 Skill Spectrum
-
-<div align="center">
-
-![Kotlin](https://img.shields.io/badge/Kotlin-0095D5?style=for-the-badge&logo=kotlin&logoColor=white)
-![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
-![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white)
-![Swift](https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white)
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-
-</div>
 
 ## 🏆 Coding Achievements
 
