@@ -216,29 +216,6 @@ Mac                      3 hrs 52 mins       ███████████�
 
 </div>
 
-## 🎮 Let's Play a Game
-
-<div align="center">
-  
-[![GitHub Readme Tic Tac Toe](https://github-readme-tictactoe.vercel.app/api?username=batapii&theme=dark&stroke=5aff5a)](https://github.com/batapii/github-readme-tictactoe)
-
-</div>
-
-## 🐍 Contribution Graph Snake
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/batapii/batapii/output/github-contribution-grid-snake-dark.svg" alt="Snake Animation" />
-</div>
-
-## 📫 How to Reach Me
-
-<div align="center">
-  
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/batapii)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/batapii/)
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/batapii/)
-
 </div>
 
 ## 🚀 3D Contribution Calendar
