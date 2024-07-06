@@ -145,13 +145,6 @@ Mac                      3 hrs 52 mins       ███████████�
 
 </div>
 
-## 🌍 Open Source Contributions Map
-
-<div align="center">
-  
-![Open Source Contributions Map](https://contributor.wtf/image?githubusername=batapii&year=2023)
-
-</div>
 
 ## 📊 GitHub Activity Graph
 
