@@ -13,7 +13,6 @@ g = Github(GITHUB_TOKEN)
 repo = g.get_repo(GITHUB_REPOSITORY)
 
 def fetch_wakatime_stats():
-    # WakaTime APIからデータを取得する関数
     headers = {
         "Authorization": f"Basic {base64.b64encode(WAKATIME_API_KEY.encode()).decode()}"
     }
@@ -25,74 +24,70 @@ def fetch_wakatime_stats():
     return response.json()
 
 def format_github_data():
-    # GitHubデータを取得し、整形する関数
     user = g.get_user()
     contributions = sum(c.total for c in repo.get_stats_contributors() if c.author.login == user.login)
     private_repos = sum(1 for _ in user.get_repos(visibility='private'))
     
-    return f"""* 📦 {repo.size / 1024:.1f} kB Used in GitHub's Storage
-* 🏆 {contributions} Contributions in the Year {datetime.now().year}
-* 🚫 Not Opted to Hire
-* 📜 {user.public_repos} Public Repositories
-* 🔑 {private_repos} Private Repositories"""
+    return f"""<ul>
+  <li>📦 {repo.size / 1024:.1f} kB Used in GitHub's Storage</li>
+  <li>🏆 {contributions} Contributions in the Year {datetime.now().year}</li>
+  <li>🚫 Not Opted to Hire</li>
+  <li>📜 {user.public_repos} Public Repositories</li>
+  <li>🔑 {private_repos} Private Repositories</li>
+</ul>"""
 
 def format_commit_time(commits):
-    # コミット時間の統計を整形する関数
     total = sum(commits.values())
     return "\n".join([
-        f"🌞 Morning    {commits['morning']:3d} commits    {'█' * int(commits['morning']/total*10)}{'░' * (10-int(commits['morning']/total*10))} {commits['morning']/total*100:.2f}%",
-        f"🌆 Daytime    {commits['daytime']:3d} commits    {'█' * int(commits['daytime']/total*10)}{'░' * (10-int(commits['daytime']/total*10))} {commits['daytime']/total*100:.2f}%",
-        f"🌃 Evening     {commits['evening']:3d} commits    {'█' * int(commits['evening']/total*10)}{'░' * (10-int(commits['evening']/total*10))} {commits['evening']/total*100:.2f}%",
-        f"🌙 Night       {commits['night']:3d} commits    {'█' * int(commits['night']/total*10)}{'░' * (10-int(commits['night']/total*10))} {commits['night']/total*100:.2f}%"
+        f"🌞 Morning    {commits['morning']:3d} commits    {generate_bar(commits['morning'], total)} {commits['morning']/total*100:.2f}%",
+        f"🌆 Daytime    {commits['daytime']:3d} commits    {generate_bar(commits['daytime'], total)} {commits['daytime']/total*100:.2f}%",
+        f"🌃 Evening    {commits['evening']:3d} commits    {generate_bar(commits['evening'], total)} {commits['evening']/total*100:.2f}%",
+        f"🌙 Night      {commits['night']:3d} commits    {generate_bar(commits['night'], total)} {commits['night']/total*100:.2f}%"
     ])
 
+def generate_bar(value, total, length=20):
+    filled_length = int(length * value / total)
+    return '█' * filled_length + '░' * (length - filled_length)
+
 def format_week_stats(commits):
-    # 週間コミット統計を整形する関数
     total = sum(commits.values())
     days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-    return "\n".join([f"{day:<12} {commits[day.lower()]:3d} commits    {'█' * int(commits[day.lower()]/total*10)}{'░' * (10-int(commits[day.lower()]/total*10))} {commits[day.lower()]/total*100:.2f}%" for day in days])
+    return "\n".join([f"{day:<12} {commits[day.lower()]:3d} commits    {generate_bar(commits[day.lower()], total)} {commits[day.lower()]/total*100:.2f}%" for day in days])
 
 def format_time_stats(stats):
-    # プログラミング言語の使用時間統計を整形する関数
     languages = stats["data"][0]["languages"]
-    return "💬 Programming Languages: \n" + "\n".join([f"{lang['name']:<15} {lang['text']:<15} {'█' * int(lang['percent']/10)}{'░' * (10-int(lang['percent']/10))} {lang['percent']:.2f}%" for lang in languages[:5]])
+    return "💬 Programming Languages: \n" + "\n".join([f"{lang['name']:<15} {lang['text']:<15} {generate_bar(lang['percent'], 100)} {lang['percent']:.2f}%" for lang in languages[:5]])
 
 def format_editors(stats):
-    # エディタの使用時間統計を整形する関数
     editors = stats["data"][0]["editors"]
-    return "\n".join([f"{editor['name']:<15} {editor['text']:<15} {'█' * int(editor['percent']/10)}{'░' * (10-int(editor['percent']/10))} {editor['percent']:.2f}%" for editor in editors])
+    return "\n".join([f"{editor['name']:<15} {editor['text']:<15} {generate_bar(editor['percent'], 100)} {editor['percent']:.2f}%" for editor in editors])
 
 def format_projects(stats):
-    # プロジェクトの作業時間統計を整形する関数
     projects = stats["data"][0]["projects"]
-    return "\n".join([f"{project['name']:<15} {project['text']:<15} {'█' * int(project['percent']/10)}{'░' * (10-int(project['percent']/10))} {project['percent']:.2f}%" for project in projects[:5]])
+    return "\n".join([f"{project['name']:<15} {project['text']:<15} {generate_bar(project['percent'], 100)} {project['percent']:.2f}%" for project in projects[:5]])
 
 def format_os(stats):
-    # OS使用時間統計を整形する関数
     operating_systems = stats["data"][0]["operating_systems"]
-    return "\n".join([f"{os['name']:<15} {os['text']:<15} {'█' * int(os['percent']/10)}{'░' * (10-int(os['percent']/10))} {os['percent']:.2f}%" for os in operating_systems])
+    return "\n".join([f"{os['name']:<15} {os['text']:<15} {generate_bar(os['percent'], 100)} {os['percent']:.2f}%" for os in operating_systems])
 
 def format_tech_stack():
-    # 技術スタック（使用言語）統計を整形する関数
     langs = repo.get_languages()
     total = sum(langs.values())
-    return "\n".join([f"{lang:<15} {count:2d} repos   {'█' * int(count/total*10)}{'░' * (10-int(count/total*10))} {count/total*100:.2f}%" for lang, count in langs.items() if count > 0])
+    return "\n".join([f"{lang:<15} {count:2d} repos   {generate_bar(count, total)} {count/total*100:.2f}%" for lang, count in langs.items() if count > 0])
 
 def update_readme_section(content, start_tag, end_tag):
-    # README.mdの特定のセクションを更新する関数
     with open("README.md", "r", encoding="utf-8") as f:
         readme = f.read()
     
     pattern = f"{start_tag}.*?{end_tag}"
-    replacement = f"{start_tag}\n```\n{content}\n```\n{end_tag}"
+    replacement = f"{start_tag}\n{content}\n{end_tag}"
     updated_readme = re.sub(pattern, replacement, readme, flags=re.DOTALL)
     
     with open("README.md", "w", encoding="utf-8") as f:
         f.write(updated_readme)
 
 def get_commit_times():
-    # コミット時間の統計を取得する関数
-    commits = repo.get_commits(author=g.get_user().login)
+    commits = list(repo.get_commits(author=g.get_user().login))
     times = {'morning': 0, 'daytime': 0, 'evening': 0, 'night': 0}
     for commit in commits:
         hour = commit.commit.author.date.hour
@@ -107,8 +102,7 @@ def get_commit_times():
     return times
 
 def get_week_stats():
-    # 週間コミット統計を取得する関数
-    commits = repo.get_commits(author=g.get_user().login)
+    commits = list(repo.get_commits(author=g.get_user().login))
     days = {day.lower(): 0 for day in ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']}
     for commit in commits:
         day = commit.commit.author.date.strftime("%A").lower()
