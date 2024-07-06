@@ -1,14 +1,13 @@
 import os
-import json
+import base64
 import httpx
 from github import Github
 from datetime import datetime, timedelta
 import re
-import base64
 
 GITHUB_TOKEN = os.environ["GH_TOKEN"]
 WAKATIME_API_KEY = os.environ["WAKATIME_API_KEY"]
-GITHUB_REPOSITORY = os.environ["GITHUB_REPOSITORY"]
+GITHUB_REPOSITORY = os.environ.get("GITHUB_REPOSITORY", "your_username/your_repo")
 
 g = Github(GITHUB_TOKEN)
 repo = g.get_repo(GITHUB_REPOSITORY)
@@ -29,53 +28,53 @@ def format_github_data():
     contributions = sum(c.total for c in repo.get_stats_contributors() if c.author.login == user.login)
     private_repos = sum(1 for _ in user.get_repos(visibility='private'))
     
-    return f"""<ul>
-          <li>📦 {repo.size / 1024:.1f} kB Used in GitHub's Storage</li>
-          <li>🏆 {contributions} Contributions in the Year {datetime.now().year}</li>
-          <li>🚫 Not Opted to Hire</li>
-          <li>📜 {user.public_repos} Public Repositories</li>
-          <li>🔑 {private_repos} Private Repositories</li>
-        </ul>"""
+    return f"""* 📦 {repo.size / 1024:.1f} kB Used in GitHub's Storage
+* 🏆 {contributions} Contributions in the Year {datetime.now().year}
+* 🚫 Not Opted to Hire
+* 📜 {user.public_repos} Public Repositories
+* 🔑 {private_repos} Private Repositories"""
 
 def format_commit_time(commits):
     total = sum(commits.values())
-    return f"""<pre><code>🌞 Morning    {commits['morning']:3d} commits    {'█' * int(commits['morning']/total*8)}{'░' * (8-int(commits['morning']/total*8))} {commits['morning']/total*100:.2f}%
-🌆 Daytime    {commits['daytime']:3d} commits    {'█' * int(commits['daytime']/total*8)}{'░' * (8-int(commits['daytime']/total*8))} {commits['daytime']/total*100:.2f}%
-🌃 Evening    {commits['evening']:3d} commits    {'█' * int(commits['evening']/total*8)}{'░' * (8-int(commits['evening']/total*8))} {commits['evening']/total*100:.2f}%
-🌙 Night      {commits['night']:3d} commits    {'█' * int(commits['night']/total*8)}{'░' * (8-int(commits['night']/total*8))} {commits['night']/total*100:.2f}%</code></pre>"""
+    return "\n".join([
+        f"🌞 Morning     {commits['morning']:3d} commits    {'█' * int(commits['morning']/total*10)}{'░' * (10-int(commits['morning']/total*10))} {commits['morning']/total*100:.2f}%",
+        f"🌆 Daytime    {commits['daytime']:3d} commits    {'█' * int(commits['daytime']/total*10)}{'░' * (10-int(commits['daytime']/total*10))} {commits['daytime']/total*100:.2f}%",
+        f"🌃 Evening     {commits['evening']:3d} commits    {'█' * int(commits['evening']/total*10)}{'░' * (10-int(commits['evening']/total*10))} {commits['evening']/total*100:.2f}%",
+        f"🌙 Night       {commits['night']:3d} commits    {'█' * int(commits['night']/total*10)}{'░' * (10-int(commits['night']/total*10))} {commits['night']/total*100:.2f}%"
+    ])
 
 def format_week_stats(commits):
     total = sum(commits.values())
     days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-    return "<pre><code>" + "\n".join([f"{day:<12} {commits[day.lower()]:3d} commits    {'█' * int(commits[day.lower()]/total*8)}{'░' * (8-int(commits[day.lower()]/total*8))} {commits[day.lower()]/total*100:.2f}%" for day in days]) + "</code></pre>"
+    return "\n".join([f"{day:<12} {commits[day.lower()]:3d} commits    {'█' * int(commits[day.lower()]/total*10)}{'░' * (10-int(commits[day.lower()]/total*10))} {commits[day.lower()]/total*100:.2f}%" for day in days])
 
 def format_time_stats(stats):
     languages = stats["data"][0]["languages"]
-    return "<pre><code>💬 Programming Languages: \n" + "\n".join([f"{lang['name']:<15} {lang['text']:<15} {'█' * int(lang['percent']/10)}{'░' * (10-int(lang['percent']/10))} {lang['percent']:.2f}%" for lang in languages[:5]]) + "</code></pre>"
+    return "💬 Programming Languages: \n" + "\n".join([f"{lang['name']:<15} {lang['text']:<15} {'█' * int(lang['percent']/10)}{'░' * (10-int(lang['percent']/10))} {lang['percent']:.2f}%" for lang in languages[:5]])
 
 def format_editors(stats):
     editors = stats["data"][0]["editors"]
-    return "<pre><code>" + "\n".join([f"{editor['name']:<15} {editor['text']:<15} {'█' * int(editor['percent']/10)}{'░' * (10-int(editor['percent']/10))} {editor['percent']:.2f}%" for editor in editors]) + "</code></pre>"
+    return "\n".join([f"{editor['name']:<15} {editor['text']:<15} {'█' * int(editor['percent']/10)}{'░' * (10-int(editor['percent']/10))} {editor['percent']:.2f}%" for editor in editors])
 
 def format_projects(stats):
     projects = stats["data"][0]["projects"]
-    return "<pre><code>" + "\n".join([f"{project['name']:<15} {project['text']:<15} {'█' * int(project['percent']/10)}{'░' * (10-int(project['percent']/10))} {project['percent']:.2f}%" for project in projects[:5]]) + "</code></pre>"
+    return "\n".join([f"{project['name']:<15} {project['text']:<15} {'█' * int(project['percent']/10)}{'░' * (10-int(project['percent']/10))} {project['percent']:.2f}%" for project in projects[:5]])
 
 def format_os(stats):
     operating_systems = stats["data"][0]["operating_systems"]
-    return "<pre><code>" + "\n".join([f"{os['name']:<15} {os['text']:<15} {'█' * int(os['percent']/10)}{'░' * (10-int(os['percent']/10))} {os['percent']:.2f}%" for os in operating_systems]) + "</code></pre>"
+    return "\n".join([f"{os['name']:<15} {os['text']:<15} {'█' * int(os['percent']/10)}{'░' * (10-int(os['percent']/10))} {os['percent']:.2f}%" for os in operating_systems])
 
 def format_tech_stack():
     langs = repo.get_languages()
     total = sum(langs.values())
-    return "<pre><code>" + "\n".join([f"{lang:<12} {count:2d} repos   {'█' * int(count/total*10)}{'░' * (10-int(count/total*10))} {count/total*100:.2f}%" for lang, count in langs.items()]) + "</code></pre>"
+    return "\n".join([f"{lang:<12} {count:2d} repos   {'█' * int(count/total*10)}{'░' * (10-int(count/total*10))} {count/total*100:.2f}%" for lang, count in langs.items()])
 
 def update_readme_section(content, start_tag, end_tag):
     with open("README.md", "r", encoding="utf-8") as f:
         readme = f.read()
     
     pattern = f"{start_tag}.*?{end_tag}"
-    replacement = f"{start_tag}\n{content}\n{end_tag}"
+    replacement = f"{start_tag}\n```\n{content}\n```\n{end_tag}"
     updated_readme = re.sub(pattern, replacement, readme, flags=re.DOTALL)
     
     with open("README.md", "w", encoding="utf-8") as f:
