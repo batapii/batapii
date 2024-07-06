@@ -120,6 +120,8 @@ Mac                      3 hrs 52 mins       ███████████�
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=batapii&show_icons=true&theme=radical" alt="Batapii's GitHub Stats" />
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=batapii&theme=radical" alt="Batapii's GitHub Streak" />
+  
+[![Batapii's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=batapii&theme=react-dark)](https://github.com/ashutosh00710/github-readme-activity-graph)
 </div>
 
 ## 🎵 Now Listening on Apple Music
@@ -136,15 +138,6 @@ Mac                      3 hrs 52 mins       ███████████�
 <div align="center">
 
 [![An image of @batapii's Holopin badges, which is a link to view their full Holopin profile](https://holopin.me/batapii)](https://holopin.io/@batapii)
-
-</div>
-
-
-## 📊 GitHub Activity Graph
-
-<div align="center">
-  
-[![Batapii's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=batapii&theme=react-dark)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 </div>
 
