@@ -11,7 +11,7 @@
 <div align="center">
   
 [![GitHub followers](https://img.shields.io/github/followers/batapii?style=social)](https://github.com/batapii)
-[![Twitter Follow](https://img.shields.io/twitter/follow/batapii?style=social)](https://twitter.com/batapii)
+[![Twitter Follow](https://img.shields.io/twitter/follow/batapii?style=social)](https://twitter.com/batapii3939)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/batapii/)](https://www.linkedin.com/in/batapii/)
 
 </div>
