@@ -1,3 +1,16 @@
+
+## 🎮 My Developer Status
+
+As an Android developer, I'm always leveling up my skills. Here's a quick overview of my current stats:
+
+<DeveloperStatusCard />
+
+These stats represent my journey in the world of Android development. I'm constantly working on improving them and adding new skills to my repertoire. Feel free to challenge me to a code duel anytime! 😉
+
+[View Source](./DeveloperStatusCard.jsx)
+
+
+
 <h1 align="center">
   <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28">
   Welcome to Batapii's Android Coding Universe!
