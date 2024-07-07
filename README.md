@@ -10,8 +10,8 @@
 
 <div align="center">
 
-![Kotlin](https://img.shields.io/badge/Kotlin-★☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆-brightgreen)
-![Android](https://img.shields.io/badge/Android-★☆☆☆☆☆☆☆☆☆☆☆☆☆-brightgreen)
+![Kotlin](https://img.shields.io/badge/Kotlin-★☆☆☆☆☆☆☆☆☆-brightgreen)
+![Android](https://img.shields.io/badge/Android-★☆☆☆☆☆☆☆☆☆-brightgreen)
 
   
 [![GitHub followers](https://img.shields.io/github/followers/batapii?style=social)](https://github.com/batapii)
