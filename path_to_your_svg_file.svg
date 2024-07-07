@@ -1,29 +1,105 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 100">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
   <style>
-    @keyframes wave {
-      0%, 100% { transform: rotate(0deg); }
-      50% { transform: rotate(20deg); }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
     }
-    .waving-hand {
-      animation: wave 2s infinite;
-      transform-origin: 70% 70%;
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.1); opacity: 0.8; }
     }
-    @keyframes fadeIn {
-      0% { opacity: 0; }
-      100% { opacity: 1; }
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
     }
-    .fade-in-text {
-      opacity: 0;
-      animation: fadeIn 2s forwards;
+    @keyframes dash {
+      to { stroke-dashoffset: 0; }
     }
-    .fade-in-text:nth-child(2) { animation-delay: 0.5s; }
-    .fade-in-text:nth-child(3) { animation-delay: 1s; }
+    .floating { animation: float 4s ease-in-out infinite; }
+    .pulsing { animation: pulse 2s infinite; }
+    .rotating { animation: rotate 10s linear infinite; }
+    .path {
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: dash 5s linear forwards;
+    }
+    .hide { opacity: 0; }
+    .show { opacity: 1; transition: opacity 0.5s; }
   </style>
   
-  <text x="50" y="50" font-family="Arial, sans-serif" font-size="24" fill="#f75c7e" class="fade-in-text">Welcome to Batapii's</text>
-  <text x="50" y="80" font-family="Arial, sans-serif" font-size="24" fill="#f75c7e" class="fade-in-text">Android Coding Universe!</text>
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4158D0;stop-opacity:1" />
+      <stop offset="46%" style="stop-color:#C850C0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFCC70;stop-opacity:1" />
+    </linearGradient>
+    <clipPath id="screenMask">
+      <rect x="70" y="70" width="260" height="460" rx="20" ry="20" />
+    </clipPath>
+  </defs>
   
-  <g transform="translate(700, 50)">
-    <text font-family="Arial, sans-serif" font-size="50" fill="#f75c7e" class="waving-hand">👋</text>
+  <rect width="100%" height="100%" fill="url(#bgGrad)" />
+  
+  <!-- Android Device -->
+  <g transform="translate(100,50) scale(0.8)" class="floating">
+    <rect x="50" y="50" width="300" height="500" rx="30" ry="30" fill="#222" />
+    <rect x="70" y="70" width="260" height="460" rx="20" ry="20" fill="#fff" />
+    <circle cx="200" cy="525" r="15" fill="#444" />
+    <g clip-path="url(#screenMask)">
+      <rect x="70" y="70" width="260" height="460" fill="#f0f0f0" />
+      <circle cx="200" cy="250" r="50" fill="#4CAF50" class="pulsing" />
+      <text x="200" y="260" font-family="Arial, sans-serif" font-size="40" fill="white" text-anchor="middle">🤖</text>
+    </g>
   </g>
+  
+  <!-- Kotlin Logo -->
+  <g transform="translate(450, 100)" class="rotating">
+    <path d="M0,200 L200,200 L200,0 Z" fill="#F88909" />
+    <path d="M0,0 L0,200 L200,0 Z" fill="#7F52FF" />
+  </g>
+  
+  <!-- Coding Path -->
+  <path d="M50,350 Q200,300 350,350 T650,350" stroke="#2196F3" stroke-width="5" fill="none" class="path" />
+  
+  <!-- Interactive Elements -->
+  <g id="codeSnippet" transform="translate(500, 250)" class="hide">
+    <rect x="0" y="0" width="250" height="100" rx="10" ry="10" fill="#333" />
+    <text x="10" y="30" font-family="monospace" font-size="14" fill="#4CAF50">
+      fun main() {
+        println("Hello, Android!")
+      }
+    </text>
+  </g>
+  
+  <circle id="infoButton" cx="750" cy="50" r="20" fill="#FFC107" class="pulsing" />
+  <text x="750" y="55" font-family="Arial, sans-serif" font-size="20" fill="#333" text-anchor="middle">i</text>
+  
+  <g id="infoPanel" transform="translate(550, 70)" class="hide">
+    <rect x="0" y="0" width="200" height="100" rx="10" ry="10" fill="#fff" stroke="#333" stroke-width="2" />
+    <text x="10" y="30" font-family="Arial, sans-serif" font-size="14" fill="#333">
+      Android Developer
+      Based in Japan
+      Kotlin Enthusiast
+    </text>
+  </g>
+  
+  <script type="text/ecmascript"><![CDATA[
+    function showElement(id) {
+      document.getElementById(id).classList.remove('hide');
+      document.getElementById(id).classList.add('show');
+    }
+    function hideElement(id) {
+      document.getElementById(id).classList.remove('show');
+      document.getElementById(id).classList.add('hide');
+    }
+    document.getElementById('infoButton').addEventListener('click', function() {
+      showElement('infoPanel');
+    });
+    document.querySelector('.floating').addEventListener('mouseover', function() {
+      showElement('codeSnippet');
+    });
+    document.querySelector('.floating').addEventListener('mouseout', function() {
+      hideElement('codeSnippet');
+    });
+  ]]></script>
 </svg>
