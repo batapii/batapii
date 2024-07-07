@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # すべての履歴をフェッチ
 
       - name: Update SVG
         run: |
@@ -49,4 +51,5 @@ jobs:
           git config user.email github-actions@github.com
           git add -A .
           git commit -m "Update profile data" -a || echo "No changes to commit"
-          git push
+          git pull --rebase origin main  # リモートの変更を取り込む
+          git push origin main
