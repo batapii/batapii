@@ -1,105 +1,133 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600">
   <style>
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-20px); }
-    }
-    @keyframes pulse {
-      0%, 100% { transform: scale(1); opacity: 1; }
-      50% { transform: scale(1.1); opacity: 0.8; }
-    }
-    @keyframes rotate {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
-    @keyframes dash {
-      to { stroke-dashoffset: 0; }
-    }
+    @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+    @keyframes pulse { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.1); opacity: 0.8; } }
+    @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    @keyframes dash { to { stroke-dashoffset: 0; } }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
     .floating { animation: float 4s ease-in-out infinite; }
     .pulsing { animation: pulse 2s infinite; }
-    .rotating { animation: rotate 10s linear infinite; }
-    .path {
-      stroke-dasharray: 1000;
-      stroke-dashoffset: 1000;
-      animation: dash 5s linear forwards;
-    }
+    .rotating { animation: rotate 20s linear infinite; }
+    .path { stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: dash 5s linear forwards; }
+    .fadeIn { animation: fadeIn 1s forwards; }
     .hide { opacity: 0; }
     .show { opacity: 1; transition: opacity 0.5s; }
+    text { font-family: Arial, sans-serif; }
   </style>
   
   <defs>
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#4158D0;stop-opacity:1" />
-      <stop offset="46%" style="stop-color:#C850C0;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#FFCC70;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#3a1c71;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#d76d77;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffaf7b;stop-opacity:1" />
     </linearGradient>
-    <clipPath id="screenMask">
-      <rect x="70" y="70" width="260" height="460" rx="20" ry="20" />
-    </clipPath>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
   
   <rect width="100%" height="100%" fill="url(#bgGrad)" />
   
-  <!-- Android Device -->
-  <g transform="translate(100,50) scale(0.8)" class="floating">
-    <rect x="50" y="50" width="300" height="500" rx="30" ry="30" fill="#222" />
-    <rect x="70" y="70" width="260" height="460" rx="20" ry="20" fill="#fff" />
-    <circle cx="200" cy="525" r="15" fill="#444" />
-    <g clip-path="url(#screenMask)">
-      <rect x="70" y="70" width="260" height="460" fill="#f0f0f0" />
-      <circle cx="200" cy="250" r="50" fill="#4CAF50" class="pulsing" />
-      <text x="200" y="260" font-family="Arial, sans-serif" font-size="40" fill="white" text-anchor="middle">🤖</text>
+  <!-- Profile Section -->
+  <g transform="translate(50,50)">
+    <circle cx="50" cy="50" r="50" fill="#fff" />
+    <text x="120" y="40" font-size="24" fill="#fff">Batapii</text>
+    <text x="120" y="70" font-size="18" fill="#ddd">Android Developer | Japan</text>
+  </g>
+  
+  <!-- Interactive Skill Tree -->
+  <g id="skillTree" transform="translate(50,200)">
+    <circle cx="0" cy="0" r="20" fill="#4CAF50" class="pulsing" />
+    <text x="0" y="5" font-size="12" fill="#fff" text-anchor="middle">Kotlin</text>
+    <path d="M20,0 Q90,-40 160,-40" stroke="#fff" stroke-width="2" fill="none" class="path" />
+    <circle cx="160" cy="-40" r="15" fill="#2196F3" />
+    <text x="160" y="-35" font-size="10" fill="#fff" text-anchor="middle">Android</text>
+    <path d="M20,0 Q90,40 160,40" stroke="#fff" stroke-width="2" fill="none" class="path" />
+    <circle cx="160" cy="40" r="15" fill="#FFC107" />
+    <text x="160" y="45" font-size="10" fill="#fff" text-anchor="middle">JetPack</text>
+  </g>
+  
+  <!-- Dynamic Contribution Graph -->
+  <g id="contributionGraph" transform="translate(350,50)">
+    <rect width="300" height="200" fill="rgba(255,255,255,0.1)" rx="10" ry="10" />
+    <text x="10" y="30" font-size="18" fill="#fff">Contribution Activity</text>
+    <!-- Placeholder for dynamic SVG generation based on actual GitHub data -->
+  </g>
+  
+  <!-- Project Showcase Carousel -->
+  <g id="projectCarousel" transform="translate(700,50)">
+    <rect width="250" height="200" fill="rgba(255,255,255,0.1)" rx="10" ry="10" />
+    <text x="10" y="30" font-size="18" fill="#fff">Featured Projects</text>
+    <g id="projectSlides" transform="translate(20,50)">
+      <!-- Placeholder for dynamic project slides -->
     </g>
+    <circle id="prevProject" cx="20" cy="180" r="15" fill="#fff" class="pulsing" />
+    <circle id="nextProject" cx="230" cy="180" r="15" fill="#fff" class="pulsing" />
   </g>
   
-  <!-- Kotlin Logo -->
-  <g transform="translate(450, 100)" class="rotating">
-    <path d="M0,200 L200,200 L200,0 Z" fill="#F88909" />
-    <path d="M0,0 L0,200 L200,0 Z" fill="#7F52FF" />
+  <!-- Live Stats Counter -->
+  <g id="statsCounter" transform="translate(50,450)">
+    <text x="0" y="0" font-size="18" fill="#fff">GitHub Stats:</text>
+    <text id="followerCount" x="0" y="30" font-size="16" fill="#ddd">Followers: Loading...</text>
+    <text id="repoCount" x="0" y="60" font-size="16" fill="#ddd">Repositories: Loading...</text>
+    <text id="starCount" x="0" y="90" font-size="16" fill="#ddd">Total Stars: Loading...</text>
   </g>
   
-  <!-- Coding Path -->
-  <path d="M50,350 Q200,300 350,350 T650,350" stroke="#2196F3" stroke-width="5" fill="none" class="path" />
-  
-  <!-- Interactive Elements -->
-  <g id="codeSnippet" transform="translate(500, 250)" class="hide">
-    <rect x="0" y="0" width="250" height="100" rx="10" ry="10" fill="#333" />
-    <text x="10" y="30" font-family="monospace" font-size="14" fill="#4CAF50">
-      fun main() {
-        println("Hello, Android!")
-      }
-    </text>
-  </g>
-  
-  <circle id="infoButton" cx="750" cy="50" r="20" fill="#FFC107" class="pulsing" />
-  <text x="750" y="55" font-family="Arial, sans-serif" font-size="20" fill="#333" text-anchor="middle">i</text>
-  
-  <g id="infoPanel" transform="translate(550, 70)" class="hide">
-    <rect x="0" y="0" width="200" height="100" rx="10" ry="10" fill="#fff" stroke="#333" stroke-width="2" />
-    <text x="10" y="30" font-family="Arial, sans-serif" font-size="14" fill="#333">
-      Android Developer
-      Based in Japan
-      Kotlin Enthusiast
-    </text>
+  <!-- Interactive Code Editor -->
+  <g id="codeEditor" transform="translate(350,300)">
+    <rect width="600" height="250" fill="rgba(0,0,0,0.7)" rx="10" ry="10" />
+    <text x="10" y="30" font-size="18" fill="#4CAF50">Live Code Editor</text>
+    <foreignObject x="10" y="40" width="580" height="200">
+      <body xmlns="http://www.w3.org/1999/xhtml">
+        <div id="editor" style="width: 100%; height: 100%; color: #fff; font-family: monospace; white-space: pre; overflow: auto; padding: 10px;">
+fun main() {
+    println("Welcome to my GitHub!")
+    // Try editing this code
+    // and see it update live!
+}
+        </div>
+      </body>
+    </foreignObject>
   </g>
   
   <script type="text/ecmascript"><![CDATA[
-    function showElement(id) {
-      document.getElementById(id).classList.remove('hide');
-      document.getElementById(id).classList.add('show');
+    // Placeholder for JavaScript interactivity
+    // In a real implementation, this would include:
+    // 1. Fetching and updating GitHub stats
+    // 2. Generating the contribution graph
+    // 3. Implementing the project carousel
+    // 4. Creating an interactive code editor
+    // 5. Handling skill tree interactions
+    
+    function updateStats() {
+      // Simulating API call and update
+      document.getElementById('followerCount').textContent = 'Followers: 1337';
+      document.getElementById('repoCount').textContent = 'Repositories: 42';
+      document.getElementById('starCount').textContent = 'Total Stars: 999';
     }
-    function hideElement(id) {
-      document.getElementById(id).classList.remove('show');
-      document.getElementById(id).classList.add('hide');
-    }
-    document.getElementById('infoButton').addEventListener('click', function() {
-      showElement('infoPanel');
+    
+    updateStats();
+    
+    // Add event listeners for interactivity
+    document.getElementById('prevProject').addEventListener('click', function() {
+      console.log('Previous project');
     });
-    document.querySelector('.floating').addEventListener('mouseover', function() {
-      showElement('codeSnippet');
+    document.getElementById('nextProject').addEventListener('click', function() {
+      console.log('Next project');
     });
-    document.querySelector('.floating').addEventListener('mouseout', function() {
-      hideElement('codeSnippet');
+    
+    // Skill tree interaction
+    document.querySelectorAll('#skillTree circle').forEach(function(circle) {
+      circle.addEventListener('mouseover', function() {
+        this.setAttribute('r', parseInt(this.getAttribute('r')) + 5);
+      });
+      circle.addEventListener('mouseout', function() {
+        this.setAttribute('r', parseInt(this.getAttribute('r')) - 5);
+      });
     });
   ]]></script>
 </svg>
