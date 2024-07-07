@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 100">
+  <style>
+    @keyframes wave {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(20deg); }
+    }
+    .waving-hand {
+      animation: wave 2s infinite;
+      transform-origin: 70% 70%;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    .fade-in-text {
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+    .fade-in-text:nth-child(2) { animation-delay: 0.5s; }
+    .fade-in-text:nth-child(3) { animation-delay: 1s; }
+  </style>
+  
+  <text x="50" y="50" font-family="Arial, sans-serif" font-size="24" fill="#f75c7e" class="fade-in-text">Welcome to Batapii's</text>
+  <text x="50" y="80" font-family="Arial, sans-serif" font-size="24" fill="#f75c7e" class="fade-in-text">Android Coding Universe!</text>
+  
+  <g transform="translate(700, 50)">
+    <text font-family="Arial, sans-serif" font-size="50" fill="#f75c7e" class="waving-hand">👋</text>
+  </g>
+</svg>
