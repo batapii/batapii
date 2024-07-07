@@ -1,3 +1,12 @@
+
+
+
+
+<div align="center">
+  <img src="path_to_your_svg_file.svg" width="800" height="100" alt="Animated Welcome">
+</div>
+
+
 <h1 align="center">
   <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28">
   Welcome to Batapii's Android Coding Universe!
