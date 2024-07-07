@@ -18,9 +18,10 @@ jobs:
           # 例: python update_svg.py
 
       - name: Generate GitHub Profile 3D Contribution
-        uses: batapii/github-profile-3d-contrib@0.7.1
+        uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
           USERNAME: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Update Readme with WakaTime Metrics
         uses: anmol098/waka-readme-stats@master
