@@ -54,7 +54,7 @@ I'm an Android developer based in Japan, passionate about creating innovative mo
 
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-185%20hrs%2033%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-182%20hrs%2013%20mins-blue)
 
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-97-blue)
 
@@ -126,7 +126,7 @@ Mac                      17 hrs 48 mins      ███████████�
 ![Lines of Code chart](https://raw.githubusercontent.com/batapii/batapii/main/assets/bar_graph.png)
 
 
- Last Updated on 08/07/2024 12:21:24 UTC
+ Last Updated on 08/07/2024 18:14:47 UTC
 <!--END_SECTION:waka-->
 
 
