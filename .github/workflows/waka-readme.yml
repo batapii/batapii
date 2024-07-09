@@ -1,7 +1,7 @@
 name: Update GitHub Profile
 on:
   schedule:
-    - cron: "0 */6 * "  
+    - cron: "0 */6 * * *"  
   workflow_dispatch:  # 手動実行のオプション
 jobs:
   update-profile:
