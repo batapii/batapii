@@ -61,7 +61,7 @@ I'm an Android developer based in Japan, passionate about creating innovative mo
 
 **🐱 My GitHub Data** 
 
-> 📦 2.7 kB Used in GitHub's Storage 
+> 📦 2.6 kB Used in GitHub's Storage 
  > 
 > 🏆 493 Contributions in the Year 2024
  > 
@@ -125,7 +125,7 @@ Mac                      14 hrs 55 mins      ███████████�
 ![Lines of Code chart](https://raw.githubusercontent.com/batapii/batapii/main/assets/bar_graph.png)
 
 
- Last Updated on 09/07/2024 12:18:15 UTC
+ Last Updated on 09/07/2024 18:12:36 UTC
 <!--END_SECTION:waka-->
 
 ## 🌟 Featured Projects
