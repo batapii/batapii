@@ -56,16 +56,16 @@ I'm an Android developer based in Japan, passionate about creating innovative mo
 <!--START_SECTION:waka-->
 
 ```txt
-From: 23 January 2024 - To: 08 July 2024
+From: 01 July 2024 - To: 08 July 2024
 
-Total Time: 185 hrs 33 mins
+Total Time: 14 hrs 55 mins
 
-Other                  102 hrs 47 mins >>>>>>>>>>>>>>-----------   55.40 %
-Kotlin                 67 hrs 8 mins   >>>>>>>>>----------------   36.18 %
-Swift                  4 hrs 24 mins   >------------------------   02.38 %
-XML                    2 hrs 10 mins   -------------------------   01.17 %
-Text                   1 hr 46 mins    -------------------------   00.95 %
-Figma Design           1 hr 31 mins    -------------------------   00.83 %
+Kotlin         11 hrs 34 mins  >>>>>>>>>>>>>>>>>>>------   77.54 %
+Other          2 hrs 4 mins    >>>----------------------   13.86 %
+Figma Design   1 hr 6 mins     >>-----------------------   07.47 %
+Text           5 mins          -------------------------   00.67 %
+TOML           3 mins          -------------------------   00.40 %
+CLASS          0 secs          -------------------------   00.02 %
 ```
 
 <!--END_SECTION:waka-->
