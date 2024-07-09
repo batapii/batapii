@@ -53,25 +53,11 @@ I'm an Android developer based in Japan, passionate about creating innovative mo
 ## 📊 My Coding Insights
 
 
-<!--START_SECTION:waka-->
-
-```txt
-From: 01 July 2024 - To: 08 July 2024
-
-Total Time: 14 hrs 55 mins
-
-Kotlin         11 hrs 34 mins  >>>>>>>>>>>>>>>>>>>------   77.54 %
-Other          2 hrs 4 mins    >>>----------------------   13.86 %
-Figma Design   1 hr 6 mins     >>-----------------------   07.47 %
-Text           5 mins          -------------------------   00.67 %
-TOML           3 mins          -------------------------   00.40 %
-CLASS          0 secs          -------------------------   00.02 %
-```
-
-<!--END_SECTION:waka-->
-
 <!--START_SECTION:waka-all-time-->
 <!--END_SECTION:waka-all-time-->
+
+<!--START_SECTION:waka-week-->
+<!--END_SECTION:waka-week-->
 
 ## 🌟 Featured Projects
 
