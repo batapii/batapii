@@ -129,6 +129,8 @@ Mac                      14 hrs 55 mins      ███████████�
  Last Updated on 09/07/2024 00:50:53 UTC
 <!--END_SECTION:waka-->
 
+<!--START_SECTION:waka-all-time-->
+<!--END_SECTION:waka-all-time-->
 
 ## 🌟 Featured Projects
 
