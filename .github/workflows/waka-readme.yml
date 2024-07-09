@@ -15,11 +15,16 @@ jobs:
           fetch-depth: 0
 
       - name: Debug Info
+        env:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           echo "GITHUB_REPOSITORY: $GITHUB_REPOSITORY"
           echo "GITHUB_ACTOR: $GITHUB_ACTOR"
           echo "WAKATIME_API_KEY set: ${{ secrets.WAKATIME_API_KEY != '' }}"
           echo "GH_TOKEN set: ${{ secrets.GH_TOKEN != '' }}"
+          echo "WAKATIME_API_KEY length: ${#WAKATIME_API_KEY}"
+          echo "GH_TOKEN length: ${#GH_TOKEN}"
 
       - name: Update Readme with WakaTime All-Time Metrics
         uses: athul/waka-readme@master
@@ -27,6 +32,8 @@ jobs:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         with:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
           SHOW_TITLE: true
           SECTION_NAME: waka-all-time
           BLOCKS: ->
@@ -38,22 +45,14 @@ jobs:
           STOP_AT_OTHER: false
           COMMIT_MESSAGE: "Updated all-time waka-readme graph with new metrics"
 
-      - name: Update Readme with WakaTime Weekly Metrics
-        uses: athul/waka-readme@master
-        env:
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        with:
-          SHOW_TITLE: true
-          SECTION_NAME: waka-week
-          BLOCKS: ->
-          TIME_RANGE: last_7_days
-          LANG_COUNT: 6
-          SHOW_TIME: true
-          SHOW_TOTAL: true
-          SHOW_MASKED_TIME: true
-          STOP_AT_OTHER: false
-          COMMIT_MESSAGE: "Updated weekly waka-readme graph with new metrics"
+      - name: Error Check
+        if: failure()
+        run: |
+          echo "Previous step failed. Checking environment variables:"
+          env | grep -E 'WAKATIME_API_KEY|GH_TOKEN' || echo "Variables not found in environment"
+          echo "Checking input variables:"
+          echo "WAKATIME_API_KEY set in input: ${{ inputs.WAKATIME_API_KEY != '' }}"
+          echo "GH_TOKEN set in input: ${{ inputs.GH_TOKEN != '' }}"
 
       - name: Commit and push changes
         run: |
