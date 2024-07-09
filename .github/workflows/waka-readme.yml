@@ -14,12 +14,18 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Debug Info
+        run: |
+          echo "GITHUB_REPOSITORY: $GITHUB_REPOSITORY"
+          echo "GITHUB_ACTOR: $GITHUB_ACTOR"
+          echo "WAKATIME_API_KEY set: ${{ secrets.WAKATIME_API_KEY != '' }}"
+          echo "GH_TOKEN set: ${{ secrets.GH_TOKEN != '' }}"
+
       - name: Update Readme with WakaTime All-Time Metrics
         uses: athul/waka-readme@master
         env:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          DEBUG: true
         with:
           SHOW_TITLE: true
           SECTION_NAME: waka-all-time
@@ -37,7 +43,6 @@ jobs:
         env:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          DEBUG: true
         with:
           SHOW_TITLE: true
           SECTION_NAME: waka-week
