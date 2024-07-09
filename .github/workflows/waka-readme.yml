@@ -2,7 +2,7 @@ name: Update GitHub Profile
 
 on:
   schedule:
-    - cron: "0 */6 * * *"  
+    - cron: "0 */6 * * *"  # 6時間ごとに実行
   workflow_dispatch:  # 手動実行のオプション
 
 jobs:
@@ -14,11 +14,6 @@ jobs:
         with:
           fetch-depth: 0  # すべての履歴をフェッチ
 
-      - name: Update SVG
-        run: |
-          # SVGを更新するスクリプトをここに記述
-          # 例: python update_svg.py
-
       - name: Generate GitHub Profile 3D Contribution
         uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
@@ -26,6 +21,22 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Update Readme with WakaTime Metrics
+        uses: athul/waka-readme@master
+        with:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          SHOW_TITLE: true
+          SECTION_NAME: waka
+          BLOCKS: ->
+          TIME_RANGE: all_time
+          LANG_COUNT: 10
+          SHOW_TIME: true
+          SHOW_TOTAL: true
+          SHOW_MASKED_TIME: false
+          STOP_AT_OTHER: true
+          COMMIT_MESSAGE: "Updated waka-readme graph with new metrics"
+
+      - name: Update Readme with GitHub Stats
         uses: anmol098/waka-readme-stats@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
@@ -51,5 +62,5 @@ jobs:
           git config user.email github-actions@github.com
           git add -A .
           git commit -m "Update profile data" -a || echo "No changes to commit"
-          git pull --rebase origin main  # リモートの変更を取り込む
+          git pull --rebase origin main
           git push origin main
