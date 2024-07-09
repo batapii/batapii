@@ -52,12 +52,8 @@ I'm an Android developer based in Japan, passionate about creating innovative mo
 
 ## 📊 My Coding Insights
 
-
-<!--START_SECTION:waka-all-time-->
-<!--END_SECTION:waka-all-time-->
-
-<!--START_SECTION:waka-week-->
-<!--END_SECTION:waka-week-->
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
 
 ## 🌟 Featured Projects
 
