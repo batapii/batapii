@@ -141,8 +141,9 @@ GitIgnore file         41 mins         -------------------------   00.37 %
 <!--END_SECTION:waka-month-->
 
 ## 📊 Lifetime Coding Stats
-<!--START_SECTION:waka-alltime-->
-<!--END_SECTION:waka-alltime-->
+
+<!--START_SECTION:wakaalltime-->
+<!--END_SECTION:wakaalltime-->
 
 Last Updated on 10/07/2024 04:52:24 UTC
 
