@@ -145,6 +145,9 @@ GitIgnore file         41 mins         ░░░░░░░░░░░░░�
  Last Updated on 10/07/2024 04:12:00 UTC
 <!--END_SECTION:waka-month-->
 
+📊 Lifetime Coding Stats
+<!--START_SECTION:waka-alltime-->
+<!--END_SECTION:waka-alltime-->
 ## 🌟 Featured Projects
 
 <div align="center">
