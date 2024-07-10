@@ -143,6 +143,24 @@ GitIgnore file         41 mins         -------------------------   00.37 %
 ## 📊 Lifetime Coding Stats
 
 <!--START_SECTION:wakaalltime-->
+
+```txt
+From: 23 January 2024 - To: 09 July 2024
+
+Total Time: 185 hrs 33 mins
+
+Other                  102 hrs 47 mins >>>>>>>>>>>>>>-----------   55.40 %
+Kotlin                 67 hrs 8 mins   >>>>>>>>>----------------   36.18 %
+Swift                  4 hrs 24 mins   >------------------------   02.38 %
+XML                    2 hrs 10 mins   -------------------------   01.17 %
+Text                   1 hr 46 mins    -------------------------   00.95 %
+Figma Design           1 hr 31 mins    -------------------------   00.83 %
+TOML                   1 hr 10 mins    -------------------------   00.63 %
+Cocoa                  58 mins         -------------------------   00.52 %
+Markdown               43 mins         -------------------------   00.39 %
+GitIgnore file         41 mins         -------------------------   00.37 %
+```
+
 <!--END_SECTION:wakaalltime-->
 
 Last Updated on 10/07/2024 04:52:24 UTC
