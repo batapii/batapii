@@ -42,20 +42,19 @@ jobs:
           COMMIT_MESSAGE: "Updated README with Weekly WakaTime stats"
           COMMIT_USERNAME: "github-actions"
           COMMIT_EMAIL: "github-actions@github.com"
-
-      - name: Update Readme with Monthly WakaTime Metrics
+          
+      - name: Update Monthly WakaTime stats
         uses: athul/waka-readme@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           SHOW_TITLE: true
-          SECTION_NAME: waka-month
-          BLOCKS: ░▒▓█
+          SECTION_NAME: wakamonth
+          BLOCKS: ->
           TIME_RANGE: last_30_days
           LANG_COUNT: 10
           SHOW_TIME: true
           SHOW_TOTAL: true
-          SHOW_MASKED_TIME: true
           COMMIT_MESSAGE: "Updated README with Monthly WakaTime stats"
 
       - name: Update Readme with All Time WakaTime Metrics
