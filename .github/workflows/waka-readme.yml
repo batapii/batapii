@@ -50,7 +50,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           SHOW_TITLE: true
           SECTION_NAME: waka-month
-          BLOCKS: ->
+          BLOCKS: ░▒▓█
           TIME_RANGE: last_30_days
           LANG_COUNT: 10
           SHOW_TIME: true
@@ -65,7 +65,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           SHOW_TITLE: true
           SECTION_NAME: wakaalltime  # Changed from waka-alltime to wakaalltime
-          BLOCKS: ->
+          BLOCKS: ░▒▓█
           TIME_RANGE: all_time
           LANG_COUNT: 10
           SHOW_TIME: true
