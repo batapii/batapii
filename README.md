@@ -62,6 +62,21 @@ I'm an Android developer based in Japan, passionate about creating innovative mo
 <!--END_SECTION:waka-week-->
 
 <!--START_SECTION:waka-month-->
+![Code Time](http://img.shields.io/badge/Code%20Time-185%20hrs%2033%20mins-blue)
+
+📊 **This Week I Spent My Time On** 
+
+```text
+💬 Programming Languages: 
+Kotlin                   11 hrs 34 mins      ████████████████████░░░░░   78.99 % 
+Other                    1 hr 47 mins        ███░░░░░░░░░░░░░░░░░░░░░░   12.24 % 
+Figma Design             1 hr 6 mins         ██░░░░░░░░░░░░░░░░░░░░░░░   07.61 % 
+Text                     5 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.68 % 
+TOML                     3 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.40 % 
+```
+
+
+ Last Updated on 10/07/2024 04:05:14 UTC
 <!--END_SECTION:waka-month-->
 
 ## 🌟 Featured Projects
