@@ -123,6 +123,24 @@ Mac                      14 hrs 38 mins      ███████████�
 
 ## 📅 This Month
 <!--START_SECTION:wakamonth-->
+
+```txt
+From: 09 June 2024 - To: 09 July 2024
+
+Total Time: 45 hrs 4 mins
+
+Kotlin         42 hrs 15 mins  >>>>>>>>>>>>>>-----------   54.40 %
+Other          32 hrs 36 mins  >>>>>>>>>>---------------   41.98 %
+Figma Design   1 hr 22 mins    -------------------------   01.77 %
+Text           1 hr 6 mins     -------------------------   01.42 %
+TOML           17 mins         -------------------------   00.37 %
+Properties     1 min           -------------------------   00.03 %
+Git            0 secs          -------------------------   00.01 %
+CLASS          0 secs          -------------------------   00.00 %
+Java           0 secs          -------------------------   00.00 %
+Swift          0 secs          -------------------------   00.00 %
+```
+
 <!--END_SECTION:wakamonth-->
 
 ## 📊 Lifetime Coding Stats
