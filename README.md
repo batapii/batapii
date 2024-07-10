@@ -53,12 +53,6 @@ I'm an Android developer based in Japan, passionate about creating innovative mo
 ## 📊 My Coding Insights
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-185%20hrs%2033%20mins-blue)
-
-![Profile Views](http://img.shields.io/badge/Profile%20Views-97-blue)
-
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-57.5%20thousand%20lines%20of%20code-blue)
-
 <!--END_SECTION:waka-week-->
 
 <!--START_SECTION:waka-month-->
