@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4  # Updated to v4
         with:
           fetch-depth: 0
           token: ${{ secrets.GH_TOKEN }}
@@ -34,14 +34,9 @@ jobs:
           SHOW_SHORT_INFO: "True"
           SHOW_UPDATED_DATE: "True"
           SECTION_NAME: waka-week
-          BLOCKS: ->
-          TIME_RANGE: last_7_days
-          LANG_COUNT: 10
-          SHOW_TIME: true
-          SHOW_TOTAL: true
-          SHOW_MASKED_TIME: true
-          STOP_AT_OTHER: false
-          IGNORED_LANGUAGES: ""
+          COMMIT_MESSAGE: "Updated README with Weekly WakaTime stats"
+          COMMIT_USERNAME: "github-actions"
+          COMMIT_EMAIL: "github-actions@github.com"
 
       - name: Update Readme with Monthly WakaTime Metrics
         uses: anmol098/waka-readme-stats@master
@@ -63,18 +58,6 @@ jobs:
           SHOW_SHORT_INFO: "False"
           SHOW_UPDATED_DATE: "True"
           SECTION_NAME: waka-month
-          BLOCKS: ->
-          TIME_RANGE: last_30_days
-          LANG_COUNT: 10
-          SHOW_TIME: true
-          SHOW_TOTAL: true
-          SHOW_MASKED_TIME: true
-          STOP_AT_OTHER: false
-          IGNORED_LANGUAGES: ""
-
-      - name: Commit and push if changed
-        run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add README.md
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Updated README with Weekly and Monthly WakaTime stats" && git push)
+          COMMIT_MESSAGE: "Updated README with Monthly WakaTime stats"
+          COMMIT_USERNAME: "github-actions"
+          COMMIT_EMAIL: "github-actions@github.com"
