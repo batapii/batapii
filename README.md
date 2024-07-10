@@ -50,81 +50,17 @@ I'm an Android developer based in Japan, passionate about creating innovative mo
 </div>
 
 
-## 📊 My Coding Insights
-📅 This Week
+# 📊 My Coding Insights
+
+## 📅 This Week
 <!--START_SECTION:waka-week-->
-![Code Time](http://img.shields.io/badge/Code%20Time-185%20hrs%2050%20mins-blue)
-
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-53.5%20thousand%20lines%20of%20code-blue)
-
-**🐱 My GitHub Data** 
-
-> 📦 2.6 kB Used in GitHub's Storage 
- > 
-> 🏆 508 Contributions in the Year 2024
- > 
-> 🚫 Not Opted to Hire
- > 
-> 📜 3 Public Repositories 
- > 
-> 🔑 3 Private Repositories 
- > 
-**I'm an Early 🐤** 
-
-```text
-🌞 Morning                254 commits         ███████░░░░░░░░░░░░░░░░░░   29.85 % 
-🌆 Daytime                364 commits         ███████████░░░░░░░░░░░░░░   42.77 % 
-🌃 Evening                121 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.22 % 
-🌙 Night                  112 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.16 % 
-```
-📅 **I'm Most Productive on Wednesday** 
-
-```text
-Monday                   202 commits         ██████░░░░░░░░░░░░░░░░░░░   23.74 % 
-Tuesday                  79 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   09.28 % 
-Wednesday                242 commits         ███████░░░░░░░░░░░░░░░░░░   28.44 % 
-Thursday                 120 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.10 % 
-Friday                   98 commits          ███░░░░░░░░░░░░░░░░░░░░░░   11.52 % 
-Saturday                 70 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   08.23 % 
-Sunday                   40 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   04.70 % 
-```
-
-
-📊 **This Week I Spent My Time On** 
-
-```text
-💬 Programming Languages: 
-Kotlin                   11 hrs 34 mins      ████████████████████░░░░░   78.99 % 
-Other                    1 hr 47 mins        ███░░░░░░░░░░░░░░░░░░░░░░   12.24 % 
-Figma Design             1 hr 6 mins         ██░░░░░░░░░░░░░░░░░░░░░░░   07.61 % 
-Text                     5 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.68 % 
-TOML                     3 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.40 % 
-
-🔥 Editors: 
-Android Studio           10 hrs 29 mins      ██████████████████░░░░░░░   71.59 % 
-Slack                    1 hr 28 mins        ███░░░░░░░░░░░░░░░░░░░░░░   10.02 % 
-Xcode                    1 hr 15 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   08.56 % 
-Figma                    1 hr 6 mins         ██░░░░░░░░░░░░░░░░░░░░░░░   07.61 % 
-Chrome                   19 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.22 % 
-
-🐱‍💻 Projects: 
-ToDoSNS                  11 hrs 43 mins      ████████████████████░░░░░   80.05 % 
-Unknown Project          2 hrs 54 mins       █████░░░░░░░░░░░░░░░░░░░░   19.83 % 
-ToDoKMP                  0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.11 % 
-
-💻 Operating System: 
-Mac                      14 hrs 38 mins      █████████████████████████   100.00 % 
-```
-
-
- Last Updated on 10/07/2024 04:52:24 UTC
+[Your existing weekly data here]
 <!--END_SECTION:waka-week-->
-📅 This Month
-<!--START_SECTION:waka-->
 
+## 📅 This Month
+<!--START_SECTION:waka-month-->
 ```txt
 From: 23 January 2024 - To: 09 July 2024
-
 Total Time: 185 hrs 33 mins
 
 Other                  102 hrs 47 mins >>>>>>>>>>>>>>-----------   55.40 %
@@ -138,16 +74,14 @@ Cocoa                  58 mins         -------------------------   00.52 %
 Markdown               43 mins         -------------------------   00.39 %
 GitIgnore file         41 mins         -------------------------   00.37 %
 ```
-
-<!--END_SECTION:waka-->
-
-
- Last Updated on 10/07/2024 04:12:00 UTC
 <!--END_SECTION:waka-month-->
 
-📊 Lifetime Coding Stats
+## 📊 Lifetime Coding Stats
 <!--START_SECTION:waka-alltime-->
 <!--END_SECTION:waka-alltime-->
+
+Last Updated on 10/07/2024 04:52:24 UTC
+
 ## 🌟 Featured Projects
 
 <div align="center">
