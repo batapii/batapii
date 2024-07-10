@@ -50,8 +50,8 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           SHOW_TITLE: true
           SECTION_NAME: waka
-          BLOCKS: ->
-          TIME_RANGE: last_30_days  # Changed from 30 days to 14 days
+          BLOCKS: ░▒▓█
+          TIME_RANGE: all_time
           LANG_COUNT: 10
           SHOW_TIME: true
           SHOW_TOTAL: true
