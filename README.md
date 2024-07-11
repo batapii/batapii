@@ -9,6 +9,8 @@
 </p>
 
 <div align="center">
+  
+[![AtCoder Rating](https://img.shields.io/endpoint?url=https%3A%2F%2Fatcoder-badges.now.sh%2Fapi%2Fatcoder%2Fjson%2Fbatapii3939)](https://atcoder.jp/users/batapii3939)
 
 ![Kotlin](https://img.shields.io/badge/Kotlin-★☆☆☆☆☆☆☆☆☆-brightgreen)
 ![Android](https://img.shields.io/badge/Android-★☆☆☆☆☆☆☆☆☆-brightgreen)
