@@ -30,7 +30,7 @@ jobs:
           docker system prune -af
 
       - name: Clear GitHub Actions cache
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: |
             ~/.npm
@@ -65,7 +65,7 @@ jobs:
           COMMIT_EMAIL: "github-actions@github.com"
           
       - name: Update Monthly WakaTime stats
-        uses: athul/waka-readme@master
+        uses: athul/waka-readme@v0.2.5
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
@@ -79,7 +79,7 @@ jobs:
           COMMIT_MESSAGE: "Updated README with Monthly WakaTime stats"
 
       - name: Update Readme with All Time WakaTime Metrics
-        uses: athul/waka-readme@master
+        uses: athul/waka-readme@v0.2.5
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
