@@ -8,6 +8,9 @@ on:
 env:
   CACHE_BUSTER: ${{ github.sha }}
 
+permissions:
+  contents: write
+
 jobs:
   update-readme:
     runs-on: ubuntu-latest
@@ -40,6 +43,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-
 
+      - name: Check Docker
+        run: |
+          docker --version
+          docker info
+
       - name: Update Readme with Weekly WakaTime Metrics
         uses: anmol098/waka-readme-stats@master
         with:
@@ -63,9 +71,9 @@ jobs:
           COMMIT_MESSAGE: "Updated README with Weekly WakaTime stats"
           COMMIT_USERNAME: "github-actions"
           COMMIT_EMAIL: "github-actions@github.com"
-          
+
       - name: Update Monthly WakaTime stats
-        uses: athul/waka-readme@v0.2.5
+        uses: athul/waka-readme@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
@@ -79,7 +87,7 @@ jobs:
           COMMIT_MESSAGE: "Updated README with Monthly WakaTime stats"
 
       - name: Update Readme with All Time WakaTime Metrics
-        uses: athul/waka-readme@v0.2.5
+        uses: athul/waka-readme@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
