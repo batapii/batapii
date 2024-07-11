@@ -14,11 +14,28 @@ jobs:
         with:
           fetch-depth: 0
           token: ${{ secrets.GH_TOKEN }}
+      
+      - name: Clear GitHub Actions cache
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const caches = await github.rest.actions.getActionsCacheList({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+            })
+            for (const cache of caches.data.actions_caches) {
+              await github.rest.actions.deleteActionsCacheById({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                cache_id: cache.id,
+              })
+            }
+            console.log('Cleared all GitHub Actions caches')
 
-      - name: Clear cache
+      - name: Clear npm cache
         run: |
-          rm -rf ~/.npm
           npm cache clean --force
+          echo "Cleared npm cache"
 
       - name: Update Readme with Weekly WakaTime Metrics
         uses: anmol098/waka-readme-stats@master
