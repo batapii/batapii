@@ -2,14 +2,8 @@ name: Update GitHub Profile and Waka Readme
 
 on:
   schedule:
-    - cron: "0 */1 * * *"  # Runs every hour
-  workflow_dispatch:  # Allows manual triggering
-
-env:
-  CACHE_BUSTER: ${{ github.sha }}
-
-permissions:
-  contents: write
+    - cron: "0 */6 * * *" # Runs every 6 hours
+  workflow_dispatch: # Allows manual triggering
 
 jobs:
   update-readme:
@@ -24,29 +18,7 @@ jobs:
       - name: Clear cache
         run: |
           rm -rf ~/.npm
-          rm -rf ~/.gradle/caches/
-          rm -rf ~/Library/Caches/
           npm cache clean --force
-          yarn cache clean --force
-          pip cache purge
-          sudo apt-get clean
-          docker system prune -af
-
-      - name: Clear GitHub Actions cache
-        uses: actions/cache@v3
-        with:
-          path: |
-            ~/.npm
-            ~/.gradle/caches
-            ~/Library/Caches
-          key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}-${{ env.CACHE_BUSTER }}
-          restore-keys: |
-            ${{ runner.os }}-
-
-      - name: Check Docker
-        run: |
-          docker --version
-          docker info
 
       - name: Update Readme with Weekly WakaTime Metrics
         uses: anmol098/waka-readme-stats@master
@@ -100,11 +72,6 @@ jobs:
           SHOW_TOTAL: true
           SHOW_MASKED_TIME: true
           COMMIT_MESSAGE: "Updated README with All Time WakaTime stats"
-
-      - name: Debug WakaTime data
-        run: |
-          echo "Fetched WakaTime data:"
-          cat $HOME/waka.*
 
       - name: Push changes
         run: |
