@@ -151,7 +151,7 @@ Properties        2 mins          ░░░░░░░░░░░░░░░�
 <!--START_SECTION:wakaalltime-->
 
 ```txt
-From: 23 January 2024 - To: 19 July 2024
+From: 23 January 2024 - To: 20 July 2024
 
 Total Time: 206 hrs 24 mins
 
