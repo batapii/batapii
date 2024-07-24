@@ -10,7 +10,7 @@
 
 <div align="center">
 
-[![batapii3939's atcoder stats](https://atcoder-readme-stats.vercel.app/stats/batapii3939?theme=darcula&width=450)](https://github.com/iwbc-mzk/atcoder-readme-stats)
+[![batapii3939's atcoder stats](https://atcoder-readme-stats.vercel.app/stats/batapii3939?show_history=5&width=450)](https://github.com/iwbc-mzk/atcoder-readme-stats)
 
 ![Kotlin](https://img.shields.io/badge/Kotlin-★☆☆☆☆☆☆☆☆☆-brightgreen)
 ![Android](https://img.shields.io/badge/Android-★☆☆☆☆☆☆☆☆☆-brightgreen)
