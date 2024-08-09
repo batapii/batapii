@@ -124,7 +124,7 @@ Mac                      6 mins              ███████████�
 <!--START_SECTION:wakamonth-->
 
 ```txt
-From: 08 July 2024 - To: 07 August 2024
+From: 09 July 2024 - To: 08 August 2024
 
 Total Time: 30 hrs 41 mins
 
