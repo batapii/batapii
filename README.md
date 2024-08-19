@@ -117,19 +117,19 @@ No Activity Tracked This Week
 <!--START_SECTION:wakamonth-->
 
 ```txt
-From: 18 July 2024 - To: 17 August 2024
+From: 19 July 2024 - To: 18 August 2024
 
-Total Time: 10 hrs 44 mins
+Total Time: 10 hrs 21 mins
 
-Kotlin               9 hrs 21 mins   █████████████████████▓░░░   87.11 %
-Text                 31 mins         █▒░░░░░░░░░░░░░░░░░░░░░░░   04.93 %
-JSON                 31 mins         █▒░░░░░░░░░░░░░░░░░░░░░░░   04.90 %
-Minecraft Function   12 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.86 %
-Git                  4 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.64 %
+Kotlin               8 hrs 58 mins   █████████████████████▓░░░   86.69 %
+Text                 31 mins         █▒░░░░░░░░░░░░░░░░░░░░░░░   05.12 %
+JSON                 31 mins         █▒░░░░░░░░░░░░░░░░░░░░░░░   05.08 %
+Minecraft Function   12 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.93 %
+Git                  3 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.61 %
 SQL                  1 min           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.17 %
 mcfunction           1 min           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.17 %
 GitIgnore file       0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.10 %
-TOML                 0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.08 %
+TOML                 0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.09 %
 Mermaid              0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.02 %
 ```
 
