@@ -139,7 +139,7 @@ Java                 0 secs          ░░░░░░░░░░░░░░�
 <!--START_SECTION:wakaalltime-->
 
 ```txt
-From: 23 January 2024 - To: 30 August 2024
+From: 23 January 2024 - To: 31 August 2024
 
 Total Time: 216 hrs 45 mins
 
