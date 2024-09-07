@@ -115,15 +115,12 @@ No Activity Tracked This Week
 <!--START_SECTION:wakamonth-->
 
 ```txt
-From: 06 August 2024 - To: 05 September 2024
+From: 07 August 2024 - To: 06 September 2024
 
-Total Time: 9 mins
+Total Time: 8 mins
 
-JSON      8 mins          ██████████████████████▓░░   90.95 %
-Kotlin    0 secs          ██▒░░░░░░░░░░░░░░░░░░░░░░   08.94 %
-Gradle    0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.06 %
-Mermaid   0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.02 %
-Java      0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.02 %
+JSON     7 mins          ██████████████████████▓░░   90.03 %
+Kotlin   0 secs          ██▒░░░░░░░░░░░░░░░░░░░░░░   09.97 %
 ```
 
 <!--END_SECTION:wakamonth-->
