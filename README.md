@@ -117,12 +117,11 @@ No Activity Tracked This Week
 <!--START_SECTION:wakamonth-->
 
 ```txt
-From: 10 August 2024 - To: 09 September 2024
+From: 11 August 2024 - To: 10 September 2024
 
-Total Time: 8 mins
+Total Time: 0 secs
 
-JSON     7 mins          ██████████████████████▓░░   90.03 %
-Kotlin   0 secs          ██▒░░░░░░░░░░░░░░░░░░░░░░   09.97 %
+Kotlin   0 secs          █████████████████████████   100.00 %
 ```
 
 <!--END_SECTION:wakamonth-->
