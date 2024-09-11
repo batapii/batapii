@@ -97,20 +97,20 @@ Sunday                   58 commits          █░░░░░░░░░░�
 
 ```text
 💬 Programming Languages: 
-No Activity Tracked This Week
+Kotlin                   0 secs              █████████████████████████   100.00 % 
 
 🔥 Editors: 
-No Activity Tracked This Week
+Android Studio           0 secs              █████████████████████████   100.00 % 
 
 🐱‍💻 Projects: 
-No Activity Tracked This Week
+ToDoSNS                  0 secs              █████████████████████████   100.00 % 
 
 💻 Operating System: 
-No Activity Tracked This Week
+Mac                      0 secs              █████████████████████████   100.00 % 
 ```
 
 
- Last Updated on 11/09/2024 12:44:43 UTC
+ Last Updated on 11/09/2024 18:30:34 UTC
 <!--END_SECTION:waka-week-->
 
 ## 📅 This Month
