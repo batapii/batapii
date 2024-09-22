@@ -117,7 +117,7 @@ No Activity Tracked This Week
 <!--START_SECTION:wakamonth-->
 
 ```txt
-From: 21 August 2024 - To: 20 September 2024
+From: 22 August 2024 - To: 21 September 2024
 
 Total Time: 0 secs
 
