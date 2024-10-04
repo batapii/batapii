@@ -30,8 +30,6 @@ I'm an Android developer based in Japan, passionate about creating innovative mo
 - 🔭 I'm currently working on revolutionizing mobile productivity apps
 - 🌱 I'm currently learning Kotlin Multiplatform and Jetpack Compose
 - 👯 I'm looking to collaborate on open-source Android projects
-- 💬 Ask me about Android development, Kotlin, and mobile UX design
-- ⚡ Fun fact: I can solve a Rubik's cube in under 2 minutes!
 
 </details>
 
