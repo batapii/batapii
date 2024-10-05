@@ -147,7 +147,7 @@ Gradle         0 secs          ░░░░░░░░░░░░░░░░�
 <!--START_SECTION:wakaalltime-->
 
 ```txt
-From: 23 January 2024 - To: 04 October 2024
+From: 23 January 2024 - To: 05 October 2024
 
 Total Time: 230 hrs 46 mins
 
