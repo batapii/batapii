@@ -124,7 +124,7 @@ Mac                      13 hrs 49 mins      ███████████�
 <!--START_SECTION:wakamonth-->
 
 ```txt
-From: 04 September 2024 - To: 04 October 2024
+From: 05 September 2024 - To: 05 October 2024
 
 Total Time: 12 hrs
 
