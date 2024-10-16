@@ -56,13 +56,13 @@ I'm an Android developer based in Japan, passionate about creating innovative mo
 <!--START_SECTION:waka-week-->
 ![Code Time](http://img.shields.io/badge/Code%20Time-244%20hrs%2054%20mins-blue)
 
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-99.3%20thousand%20lines%20of%20code-blue)
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-104.2%20thousand%20lines%20of%20code-blue)
 
 **🐱 My GitHub Data** 
 
 > 📦 3.0 kB Used in GitHub's Storage 
  > 
-> 🏆 748 Contributions in the Year 2024
+> 🏆 749 Contributions in the Year 2024
  > 
 > 🚫 Not Opted to Hire
  > 
@@ -70,8 +70,49 @@ I'm an Android developer based in Japan, passionate about creating innovative mo
  > 
 > 🔑 4 Private Repositories 
  > 
+**I'm an Early 🐤** 
 
- Last Updated on 15/10/2024 18:32:17 UTC
+```text
+🌞 Morning                576 commits         █████████░░░░░░░░░░░░░░░░   36.46 % 
+🌆 Daytime                673 commits         ███████████░░░░░░░░░░░░░░   42.59 % 
+🌃 Evening                121 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   07.66 % 
+🌙 Night                  210 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.29 % 
+```
+📅 **I'm Most Productive on Monday** 
+
+```text
+Monday                   588 commits         █████████░░░░░░░░░░░░░░░░   37.22 % 
+Tuesday                  119 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   07.53 % 
+Wednesday                365 commits         ██████░░░░░░░░░░░░░░░░░░░   23.10 % 
+Thursday                 214 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.54 % 
+Friday                   128 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   08.10 % 
+Saturday                 98 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   06.20 % 
+Sunday                   68 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   04.30 % 
+```
+
+
+📊 **This Week I Spent My Time On** 
+
+```text
+💬 Programming Languages: 
+Kotlin                   8 hrs 53 mins       █████████████████████████   98.64 % 
+Text                     7 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.33 % 
+Properties               0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.02 % 
+GitIgnore file           0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.01 % 
+Shell Script             0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
+
+🔥 Editors: 
+Android Studio           9 hrs               █████████████████████████   100.00 % 
+
+🐱‍💻 Projects: 
+ToDoSNS                  9 hrs               █████████████████████████   100.00 % 
+
+💻 Operating System: 
+Mac                      9 hrs               █████████████████████████   100.00 % 
+```
+
+
+ Last Updated on 16/10/2024 01:50:22 UTC
 <!--END_SECTION:waka-week-->
 
 ## 📅 This Month
