@@ -142,7 +142,7 @@ Git              0 secs          ░░░░░░░░░░░░░░░�
 <!--START_SECTION:wakaalltime-->
 
 ```txt
-From: 23 January 2024 - To: 17 October 2024
+From: 23 January 2024 - To: 18 October 2024
 
 Total Time: 249 hrs 29 mins
 
