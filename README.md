@@ -62,8 +62,6 @@ I'm an Android developer based in Japan, passionate about creating innovative mo
 
 > 📦 3.0 kB Used in GitHub's Storage 
  > 
-> 🏆 803 Contributions in the Year 2024
- > 
 > 🚫 Not Opted to Hire
  > 
 > 📜 3 Public Repositories 
@@ -116,7 +114,7 @@ Mac                      17 hrs 19 mins      ███████████�
 ```
 
 
- Last Updated on 29/10/2024 06:33:46 UTC
+ Last Updated on 29/10/2024 12:48:12 UTC
 <!--END_SECTION:waka-week-->
 
 ## 📅 This Month
