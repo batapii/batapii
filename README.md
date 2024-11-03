@@ -76,19 +76,19 @@ I'm an Android developer based in Japan, passionate about creating innovative mo
 <!--START_SECTION:wakamonth-->
 
 ```txt
-From: 03 October 2024 - To: 02 November 2024
+From: 04 October 2024 - To: 03 November 2024
 
-Total Time: 46 hrs 8 mins
+Total Time: 45 hrs 36 mins
 
-Kotlin            41 hrs 53 mins  ████████████████████▓░░░░   82.33 %
-Other             4 hrs 45 mins   ██▒░░░░░░░░░░░░░░░░░░░░░░   09.34 %
-Swift             1 hr 10 mins    ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.31 %
-Image (svg)       56 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.84 %
-HTTP Request      48 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.58 %
-GraphQL           33 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.09 %
-Text              17 mins         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.57 %
-Markdown          12 mins         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.40 %
-Java Properties   10 mins         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.34 %
+Kotlin            41 hrs 34 mins  █████████████████████░░░░   84.40 %
+Other             3 hrs 38 mins   ██░░░░░░░░░░░░░░░░░░░░░░░   07.39 %
+Swift             1 hr 10 mins    ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.39 %
+HTTP Request      48 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.64 %
+Image (svg)       47 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.61 %
+GraphQL           33 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.13 %
+Text              14 mins         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.48 %
+Markdown          12 mins         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.41 %
+Java Properties   10 mins         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.35 %
 SQL               1 min           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.05 %
 ```
 
