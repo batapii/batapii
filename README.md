@@ -146,7 +146,7 @@ SQL               1 min           ░░░░░░░░░░░░░░░�
 <!--START_SECTION:wakaalltime-->
 
 ```txt
-From: 23 January 2024 - To: 04 November 2024
+From: 23 January 2024 - To: 05 November 2024
 
 Total Time: 279 hrs 57 mins
 
