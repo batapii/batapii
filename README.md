@@ -54,7 +54,7 @@ I'm an Android developer based in Japan, passionate about creating innovative mo
 
 ## 📅 This Week
 <!--START_SECTION:waka-week-->
-![Code Time](http://img.shields.io/badge/Code%20Time-299%20hrs-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-299%20hrs%2055%20mins-blue)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-252.3%20thousand%20lines%20of%20code-blue)
 
@@ -120,7 +120,7 @@ Mac                      13 hrs 26 mins      ███████████�
 ```
 
 
- Last Updated on 14/11/2024 06:34:01 UTC
+ Last Updated on 14/11/2024 12:48:58 UTC
 <!--END_SECTION:waka-week-->
 
 ## 📅 This Month
