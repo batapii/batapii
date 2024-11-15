@@ -1,3 +1,7 @@
+## 🔤 Most Used Languages
+
+- Kotlin: 98.3%
+- Swift: 1.7%
 <h1 align="center">
   <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28">
   Welcome to Batapii's Android Coding Universe!
