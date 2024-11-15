@@ -8,10 +8,10 @@
 
 <p align="center">
   <a href="https://github.com/batapii">
-    <img src="https://img.shields.io/badge/Android-Pro_Developer-3DDC84?style=for-the-badge&logo=android&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Android-Noob-3DDC84?style=for-the-badge&logo=android&logoColor=white"/>
   </a>
   <a href="https://github.com/batapii">
-    <img src="https://img.shields.io/badge/Kotlin-Expert-0095D5?style=for-the-badge&logo=kotlin&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Kotlin-Noob-0095D5?style=for-the-badge&logo=kotlin&logoColor=white"/>
   </a>
 </p>
 
