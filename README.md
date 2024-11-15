@@ -1,73 +1,85 @@
-<h1 align="center">
-  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28">
-  Welcome to Batapii's Android Coding Universe!
-  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28">
-</h1>
+<div align="center">
+  
+![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=300&section=header&text=Welcome%20to%20Batapii's%20Universe&fontSize=50&animation=fadeIn&fontAlignY=40&desc=Android%20Developer%20|%20Kotlin%20Expert%20|%20Innovation%20Enthusiast&descAlignY=55)
+
+<div style="margin-top: -20px;">
+  <img src="https://readme-typing-svg.herokuapp.com/?lines=Crafting+Android+Experiences;Building+Tomorrow's+Apps+Today;Always+Learning,+Always+Growing&font=Fira%20Code&center=true&width=440&height=45&color=f75c7e&vCenter=true&size=22&pause=1000">
+</div>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?lines=Android+Developer+in+Japan;Always%20learning%20new%20things&font=Fira%20Code&center=true&width=440&height=45&color=f75c7e&vCenter=true&size=22">
+  <a href="https://github.com/batapii">
+    <img src="https://img.shields.io/badge/Android-Pro_Developer-3DDC84?style=for-the-badge&logo=android&logoColor=white"/>
+  </a>
+  <a href="https://github.com/batapii">
+    <img src="https://img.shields.io/badge/Kotlin-Expert-0095D5?style=for-the-badge&logo=kotlin&logoColor=white"/>
+  </a>
 </p>
 
-<div align="center">
-  
-![](https://img.shields.io/badge/Android-Developer-3DDC84?style=for-the-badge&logo=android&logoColor=white)
-![](https://img.shields.io/badge/Kotlin-Expert-0095D5?style=for-the-badge&logo=kotlin&logoColor=white)
-[![GitHub followers](https://img.shields.io/github/followers/batapii?style=for-the-badge&logo=github)](https://github.com/batapii)
-[![Twitter Follow](https://img.shields.io/twitter/follow/batapii?style=for-the-badge&logo=twitter)](https://twitter.com/batapii3939)
+<p align="center">
+  <a href="https://github.com/batapii">
+    <img src="https://img.shields.io/github/followers/batapii?style=for-the-badge&logo=github&label=Follow"/>
+  </a>
+  <a href="https://twitter.com/batapii3939">
+    <img src="https://img.shields.io/twitter/follow/batapii?style=for-the-badge&logo=twitter&color=1DA1F2&label=Follow"/>
+  </a>
+</p>
 
 </div>
 
-## 💻 Tech Stack
+## 🚀 Skill Arsenal
 
 <div align="center">
+<img src="https://skillicons.dev/icons?i=kotlin,android,swift,java,firebase,gradle,git" /><br>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=batapii&layout=compact&theme=radical&hide_border=true&bg_color=0D1117" />
+</div>
 
-![Kotlin](https://img.shields.io/badge/Kotlin-98.3%25-0095D5?style=for-the-badge&logo=kotlin&logoColor=white)
-![Swift](https://img.shields.io/badge/Swift-1.7%25-FA7343?style=for-the-badge&logo=swift&logoColor=white)
-![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
-![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white)
+## 📊 Performance Metrics
+
+<div align="center" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=batapii&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117)
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=batapii&theme=radical&hide_border=true&background=0D1117)
+
+[![AtCoder Stats](https://atcoder-readme-stats.vercel.app/stats/batapii3939?theme=dark&show_history=5&width=495)](https://github.com/iwbc-mzk/atcoder-readme-stats)
 
 </div>
 
-## 📊 Activity Stats
-
-<div align="center">
-  
-[![AtCoder Stats](https://atcoder-readme-stats.vercel.app/stats/batapii3939?theme=dark&show_history=5&width=450)](https://github.com/iwbc-mzk/atcoder-readme-stats)
-
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=batapii&show_icons=true&theme=radical)](https://github.com/batapii)
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=batapii&theme=radical)](https://github.com/batapii)
-
-</div>
-
-## ⌚ Coding Time
+## 🏃‍♂️ Activity Dashboard
 
 <details>
-<summary>📊 Detailed Coding Statistics</summary>
-
-### 📅 This Week
-<!--START_SECTION:waka-week-->
-<!-- 既存のwaka-week content -->
-<!--END_SECTION:waka-week-->
-
-### 📅 This Month
-<!--START_SECTION:wakamonth-->
-<!-- 既存のwakamonth content -->
-<!--END_SECTION:wakamonth-->
-
-### 📊 Lifetime Stats
-<!--START_SECTION:wakaalltime-->
-<!-- 既存のwakaalltime content -->
-<!--END_SECTION:wakaalltime-->
-
-</details>
-
-## 🏆 GitHub Achievements
+<summary>📈 Detailed Analytics</summary>
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=batapii&theme=nord&column=7&no-frame=true&no-bg=true&rank=SECRET,SSS,SS,S,AAA,AA,A,B,C" />
+  
+### Weekly Overview
+<!--START_SECTION:waka-week-->
+<!-- 既存の内容 -->
+<!--END_SECTION:waka-week-->
+
+### Monthly Progress
+<!--START_SECTION:wakamonth-->
+<!-- 既存の内容 -->
+<!--END_SECTION:wakamonth-->
+
+### Career Stats
+<!--START_SECTION:wakaalltime-->
+<!-- 既存の内容 -->
+<!--END_SECTION:wakaalltime-->
+
+</div>
+</details>
+
+## 🏆 Achievement Gallery
+
+<div align="center">
+
+![Trophy](https://github-profile-trophy.vercel.app/?username=batapii&theme=radical&no-frame=true&no-bg=true&column=7&rank=SECRET,SSS,SS,S,AAA,AA,A)
+
+[![Holopin Badges](https://holopin.me/batapii)](https://holopin.io/@batapii)
+
 </div>
 
-## 🎵 Now Playing
+## 🎵 Vibing To
 
 <div align="center">
   
@@ -75,34 +87,22 @@
 
 </div>
 
-## 🎯 Featured Project
+## 🌟 Featured Creation
 
 <div align="center">
   <a href="https://github.com/batapii/ToDoSNS">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=batapii&repo=ToDoSNS&theme=radical" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=batapii&repo=ToDoSNS&theme=radical&hide_border=true&bg_color=0D1117" />
   </a>
 </div>
 
-## 📈 Contribution Graph
+## 📈 Contribution Landscape
 
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=batapii&theme=react-dark)](https://github.com/ashutosh00710/github-readme-activity-graph)
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=batapii&custom_title=Contribution%20Graph&hide_border=true&theme=radical&bg_color=0D1117)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 <div align="center">
   
-![](./profile-3d-contrib/profile-night-rainbow.svg)
+![3D Contrib](./profile-3d-contrib/profile-night-rainbow.svg)
 
 </div>
 
-## 🎖 Badges
-
-<div align="center">
-
-[![Holopin Badges](https://holopin.me/batapii)](https://holopin.io/@batapii)
-
-</div>
-
-<div align="center">
-
-![Dev Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
-
-</div>
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=100&section=footer)
