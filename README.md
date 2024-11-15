@@ -6,6 +6,10 @@
   <img src="https://readme-typing-svg.herokuapp.com/?lines=Crafting+Android+Experiences;Building+Tomorrow's+Apps+Today;Always+Learning,+Always+Growing&font=Fira%20Code&center=true&width=440&height=45&color=f75c7e&vCenter=true&size=22&pause=1000">
 </div>
 
+## 🏆 Achievement Gallery
+
+![Trophy](https://github-profile-trophy.vercel.app/?username=batapii&theme=radical&no-frame=true&no-bg=true&column=8&rank=SSS,SS,S,AAA,AA,A,B,C&margin-w=10&margin-h=10)
+
 <p align="center">
   <a href="https://github.com/batapii">
     <img src="https://img.shields.io/badge/Android-Noob-3DDC84?style=for-the-badge&logo=android&logoColor=white"/>
@@ -44,13 +48,8 @@
 
 </div>
 
-## 📊 Activity Statistics
+## ⌨️ Coding Activity
 
-<details>
-<summary>⌨️ Detailed Coding Metrics</summary>
-
-### Weekly Overview
-<!--START_SECTION:waka-week-->
 ![Code Time](http://img.shields.io/badge/Code%20Time-299%20hrs%2055%20mins-blue)
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-252.3%20thousand%20lines%20of%20code-blue)
 
@@ -66,17 +65,15 @@
 🌃 Evening     188 commits  ██░░░░░░░░░░░░░░░░░   6.00%
 🌙 Night       240 commits  ██░░░░░░░░░░░░░░░░░   7.66%
 
-💬 Languages: 
+💬 Programming Languages: 
 Kotlin       10 hrs 25 mins ██████████████████░  70.04%
 Other        2 hrs 41 mins  █████░░░░░░░░░░░░░  18.12%
 Swift        43 mins        █░░░░░░░░░░░░░░░░░   4.90%
 Image (svg)  35 mins        █░░░░░░░░░░░░░░░░░   3.93%
 GraphQL      11 mins        ░░░░░░░░░░░░░░░░░░   1.24%
 ```
-<!--END_SECTION:waka-week-->
 
 ### Monthly Stats
-<!--START_SECTION:wakamonth-->
 ```text
 Total: 48 hrs 45 mins
 
@@ -86,10 +83,8 @@ Image (svg)  2 hrs 48 mins  █▒░░░░░░░░░░░░░░░�
 HTTP         49 mins        ▒░░░░░░░░░░░░░░░░░░   1.50%
 GraphQL      44 mins        ▒░░░░░░░░░░░░░░░░░░   1.35%
 ```
-<!--END_SECTION:wakamonth-->
 
 ### All Time Stats
-<!--START_SECTION:wakaalltime-->
 ```text
 Total: 299 hrs 55 mins
 
@@ -99,43 +94,27 @@ Swift      6 hrs 23 mins   ▓░░░░░░░░░░░░░░░░�
 Image      3 hrs 24 mins   ▒░░░░░░░░░░░░░░░░░   1.14%
 Text       3 hrs 12 mins   ▒░░░░░░░░░░░░░░░░░   1.07%
 ```
-<!--END_SECTION:wakaalltime-->
 
-</details>
-
-## 🏆 Achievement Gallery
-
-<div align="center">
-
-![Trophy](https://github-profile-trophy.vercel.app/?username=batapii&theme=radical&no-frame=true&no-bg=true&column=7)
-
-[![Holopin Badges](https://holopin.me/batapii)](https://holopin.io/@batapii)
-
-</div>
-
-## 🎵 Vibing To
-
-<div align="center">
-  
-[![Apple Music](https://music-profile.rayriffy.com/theme/dark.svg?uid=001005.6598667d2ffd4a10a4f429edd0ba24c4.1156)](https://github.com/rayriffy/apple-music-github-profile)
-
-</div>
-
-## 🌟 Featured Creation
+## 🌟 Featured Creation & Contributions
 
 <div align="center">
   <a href="https://github.com/batapii/ToDoSNS">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=batapii&repo=ToDoSNS&theme=radical&hide_border=true&bg_color=0D1117" />
   </a>
-</div>
-
-## 📈 Contribution Landscape
 
 [![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=batapii&custom_title=Contribution%20Graph&hide_border=true&theme=radical&bg_color=0D1117)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
+![3D Contrib](./profile-3d-contrib/profile-night-rainbow.svg)
+
+[![Holopin Badges](https://holopin.me/batapii)](https://holopin.io/@batapii)
+
+</div>
+
+## 🎵 Now Playing
+
 <div align="center">
   
-![3D Contrib](./profile-3d-contrib/profile-night-rainbow.svg)
+[![Apple Music](https://music-profile.rayriffy.com/theme/dark.svg?uid=001005.6598667d2ffd4a10a4f429edd0ba24c4.1156)](https://github.com/rayriffy/apple-music-github-profile)
 
 </div>
 
