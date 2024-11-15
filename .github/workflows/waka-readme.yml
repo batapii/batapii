@@ -17,6 +17,13 @@ jobs:
         with:
           node-version: '18'
           
+      - name: Create package.json
+        run: |
+          echo '{"type": "module"}' > package.json
+          
+      - name: Install dependencies
+        run: npm install @octokit/graphql
+          
       - name: Update Language Statistics
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
