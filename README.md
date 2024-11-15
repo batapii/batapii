@@ -6,35 +6,24 @@
   <img src="https://readme-typing-svg.herokuapp.com/?lines=Crafting+Android+Experiences;Building+Tomorrow's+Apps+Today;Always+Learning,+Always+Growing&font=Fira%20Code&center=true&width=440&height=45&color=f75c7e&vCenter=true&size=22&pause=1000">
 </div>
 
-## 🏆 Achievement Gallery
+## 🏆 Achievements
 
-![Trophy](https://github-profile-trophy.vercel.app/?username=batapii&theme=radical&no-frame=true&no-bg=true&column=8&rank=SSS,SS,S,AAA,AA,A,B,C&margin-w=10&margin-h=10)
+![Trophy](https://github-profile-trophy.vercel.app/?username=batapii&theme=onestar&no-frame=true&no-bg=true&column=8&rank=SSS,SS,S,AAA,AA,A,B,C&margin-w=10&margin-h=10)
 
-<p align="center">
-  <a href="https://github.com/batapii">
-    <img src="https://img.shields.io/badge/Android-Noob-3DDC84?style=for-the-badge&logo=android&logoColor=white"/>
-  </a>
-  <a href="https://github.com/batapii">
-    <img src="https://img.shields.io/badge/Kotlin-Noob-0095D5?style=for-the-badge&logo=kotlin&logoColor=white"/>
-  </a>
-</p>
+## 💻 Technology & Social
 
-<p align="center">
-  <a href="https://github.com/batapii">
-    <img src="https://img.shields.io/github/followers/batapii?style=for-the-badge&logo=github&label=Follow"/>
-  </a>
-  <a href="https://twitter.com/batapii3939">
-    <img src="https://img.shields.io/twitter/follow/batapii?style=for-the-badge&logo=twitter&color=1DA1F2&label=Follow"/>
-  </a>
-</p>
+<div align="center" style="background: linear-gradient(to right, #282A36, #44475A); padding: 20px; border-radius: 10px;">
 
+![Kotlin](https://img.shields.io/badge/Kotlin-98.3%25-0095D5?style=for-the-badge&logo=kotlin&logoColor=white&labelColor=282A36)
+![Swift](https://img.shields.io/badge/Swift-1.7%25-FA7343?style=for-the-badge&logo=swift&logoColor=white&labelColor=282A36)
+
+<img src="https://skillicons.dev/icons?i=kotlin,android,swift,java,firebase,gradle,git&theme=dark" />
+
+<div style="margin-top: 15px">
+<a href="https://github.com/batapii"><img src="https://img.shields.io/github/followers/batapii?style=for-the-badge&logo=github&label=Follow&color=ff6e96&labelColor=282A36"/></a>
+<a href="https://twitter.com/batapii3939"><img src="https://img.shields.io/twitter/follow/batapii?style=for-the-badge&logo=twitter&color=1DA1F2&labelColor=282A36&label=Follow"/></a>
 </div>
 
-## 🚀 Skill Arsenal
-
-<div align="center">
-<img src="https://skillicons.dev/icons?i=kotlin,android,swift,java,firebase,gradle,git" /><br>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=batapii&layout=compact&theme=radical&hide_border=true&bg_color=0D1117" />
 </div>
 
 ## 📊 Performance Metrics
@@ -52,12 +41,6 @@
 
 ![Code Time](http://img.shields.io/badge/Code%20Time-299%20hrs%2055%20mins-blue)
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-252.3%20thousand%20lines%20of%20code-blue)
-
-**🐱 My GitHub Data** 
-> 📦 3.0 kB Used in GitHub's Storage 
-> 🏆 857 Contributions in the Year 2024
-> 📜 3 Public Repositories  
-> 🔑 4 Private Repositories 
 
 ```text
 🌞 Morning    1175 commits  █████████░░░░░░░░░░  37.49%
@@ -119,3 +102,5 @@ Text       3 hrs 12 mins   ▒░░░░░░░░░░░░░░░░�
 </div>
 
 ![Footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=100&section=footer)
+
+</div>
