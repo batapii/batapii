@@ -6,9 +6,21 @@
   <img src="https://readme-typing-svg.herokuapp.com/?lines=Crafting+Android+Experiences;Building+Tomorrow's+Apps+Today;Always+Learning,+Always+Growing&font=Fira%20Code&center=true&width=440&height=45&color=f75c7e&vCenter=true&size=22&pause=1000">
 </div>
 
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=1000&center=true&vCenter=true&width=800&lines=Hey+there!+I'm+Batapii+%F0%9F%91%8B;Android+Developer+from+Japan+%F0%9F%87%AF%F0%9F%87%B5" alt="Typing SVG" />
+</a>
+
 ## 🏆 Achievements
 
 ![Trophy](https://github-profile-trophy.vercel.app/?username=batapii&theme=onestar&no-frame=true&no-bg=true&column=8&rank=SSS,SS,S,AAA,AA,A,B,C&margin-w=10&margin-h=10)
+
+## 🎯 Github Profile Summary
+
+<img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=batapii&theme=radical" />
+<img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=batapii&theme=radical" />
+<img src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=batapii&theme=radical" />
+<img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=batapii&theme=radical" />
+<img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=batapii&theme=radical" />
 
 ## 💻 Technology & Social
 
@@ -17,13 +29,15 @@
 ![Kotlin](https://img.shields.io/badge/Kotlin-98.3%25-0095D5?style=for-the-badge&logo=kotlin&logoColor=white&labelColor=282A36)
 ![Swift](https://img.shields.io/badge/Swift-1.7%25-FA7343?style=for-the-badge&logo=swift&logoColor=white&labelColor=282A36)
 
-<img src="https://skillicons.dev/icons?i=kotlin,android,swift,java,firebase,gradle,git&theme=dark" />
-
 <div style="margin-top: 15px">
 <a href="https://github.com/batapii"><img src="https://img.shields.io/github/followers/batapii?style=for-the-badge&logo=github&label=Follow&color=ff6e96&labelColor=282A36"/></a>
 <a href="https://twitter.com/batapii3939"><img src="https://img.shields.io/twitter/follow/batapii?style=for-the-badge&logo=twitter&color=1DA1F2&labelColor=282A36&label=Follow"/></a>
 </div>
 
+</div>
+
+<div align="center">
+<img src="https://github-readme-tech-stack.vercel.app/api/cards?title=Tech+Stack&align=center&titleAlign=center&fontSize=20&lineHeight=10&lineCount=2&theme=github_dark&width=450&bg=%230D1117&badge=%23161B22&border=%2321262D&titleColor=%2358A6FF&line1=android%2Candroid%2C00ff00%3Bkotlin%2Ckotlin%2C0095D5%3Bswift%2Cswift%2CFA7343%3B&line2=git%2Cgit%2CF05032%3Bfirebase%2Cfirebase%2CFFCA28%3Bgithub%2Cgithub%2C181717%3B" alt="Tech Stack" />
 </div>
 
 ## 📊 Performance Metrics
