@@ -35,7 +35,7 @@
 
 ## 📊 Performance Metrics
 
-<div align="center" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
+<div align="center">
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=batapii&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117)
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=batapii&theme=radical&hide_border=true&background=0D1117)
@@ -44,74 +44,64 @@
 
 </div>
 
-## ⌨️ Coding Activity
+## 📊 Activity Statistics
 
-### 📅 This Week
+<details>
+<summary>⌨️ Detailed Coding Metrics</summary>
+
+### Weekly Overview
 <!--START_SECTION:waka-week-->
 ![Code Time](http://img.shields.io/badge/Code%20Time-299%20hrs%2055%20mins-blue)
-
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-252.3%20thousand%20lines%20of%20code-blue)
 
 **🐱 My GitHub Data** 
-
 > 📦 3.0 kB Used in GitHub's Storage 
-> 
 > 🏆 857 Contributions in the Year 2024
-> 
-> 📜 3 Public Repositories 
-> 
+> 📜 3 Public Repositories  
 > 🔑 4 Private Repositories 
 
-**I'm an Early 🐤** 
-
 ```text
-🌞 Morning                1175 commits        █████████░░░░░░░░░░░░░░░░   37.49 % 
-🌆 Daytime                1531 commits        ████████████░░░░░░░░░░░░░   48.85 % 
-🌃 Evening                188 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   06.00 % 
-🌙 Night                  240 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   07.66 % 
-```
+🌞 Morning    1175 commits  █████████░░░░░░░░░░  37.49%
+🌆 Daytime    1531 commits  ████████████░░░░░░░  48.85%
+🌃 Evening     188 commits  ██░░░░░░░░░░░░░░░░░   6.00%
+🌙 Night       240 commits  ██░░░░░░░░░░░░░░░░░   7.66%
 
-📊 **This Week I Spent My Time On** 
-
-```text
-💬 Programming Languages: 
-Kotlin                   10 hrs 25 mins      ██████████████████░░░░░░░   70.04 % 
-Other                    2 hrs 41 mins       █████░░░░░░░░░░░░░░░░░░░░   18.12 % 
-Swift                    43 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   04.90 % 
-Image (svg)              35 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.93 % 
-GraphQL                  11 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   01.24 % 
+💬 Languages: 
+Kotlin       10 hrs 25 mins ██████████████████░  70.04%
+Other        2 hrs 41 mins  █████░░░░░░░░░░░░░  18.12%
+Swift        43 mins        █░░░░░░░░░░░░░░░░░   4.90%
+Image (svg)  35 mins        █░░░░░░░░░░░░░░░░░   3.93%
+GraphQL      11 mins        ░░░░░░░░░░░░░░░░░░   1.24%
 ```
 <!--END_SECTION:waka-week-->
 
-### 📅 This Month
+### Monthly Stats
 <!--START_SECTION:wakamonth-->
-```txt
-From: 15 October 2024 - To: 14 November 2024
+```text
+Total: 48 hrs 45 mins
 
-Total Time: 48 hrs 45 mins
-
-Kotlin            42 hrs 44 mins  ███████████████████▒░░░░░   77.69 %
-Other             6 hrs 15 mins   ███░░░░░░░░░░░░░░░░░░░░░░   11.39 %
-Image (svg)       2 hrs 48 mins   █▒░░░░░░░░░░░░░░░░░░░░░░░   05.11 %
-HTTP Request      49 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.50 %
-GraphQL           44 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.35 %
+Kotlin       42 hrs 44 mins ███████████████████▒  77.69%
+Other        6 hrs 15 mins  ███░░░░░░░░░░░░░░░░  11.39%
+Image (svg)  2 hrs 48 mins  █▒░░░░░░░░░░░░░░░░░   5.11%
+HTTP         49 mins        ▒░░░░░░░░░░░░░░░░░░   1.50%
+GraphQL      44 mins        ▒░░░░░░░░░░░░░░░░░░   1.35%
 ```
 <!--END_SECTION:wakamonth-->
 
-### 📊 Lifetime Stats
+### All Time Stats
 <!--START_SECTION:wakaalltime-->
-```txt
-From: 23 January 2024 - To: 14 November 2024
+```text
+Total: 299 hrs 55 mins
 
-Total Time: 299 hrs 55 mins
-
-Kotlin                 160 hrs 24 mins █████████████▒░░░░░░░░░░░   53.48 %
-Other                  111 hrs 46 mins █████████▒░░░░░░░░░░░░░░░   37.27 %
-Swift                  6 hrs 23 mins   ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.13 %
-Image (svg)            3 hrs 24 mins   ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.14 %
-Text                   3 hrs 12 mins   ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.07 %
+Kotlin     160 hrs 24 mins █████████████▒░░░░░  53.48%
+Other      111 hrs 46 mins █████████▒░░░░░░░░░  37.27%
+Swift      6 hrs 23 mins   ▓░░░░░░░░░░░░░░░░░   2.13%
+Image      3 hrs 24 mins   ▒░░░░░░░░░░░░░░░░░   1.14%
+Text       3 hrs 12 mins   ▒░░░░░░░░░░░░░░░░░   1.07%
 ```
 <!--END_SECTION:wakaalltime-->
+
+</details>
 
 ## 🏆 Achievement Gallery
 
