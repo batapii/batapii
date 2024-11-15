@@ -7,7 +7,7 @@
   Welcome to Batapii's Android Coding Universe!
   <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28">
 </h1>
-
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username={batapii}&layout=compact&theme=onedark)](https://github.com/anuraghazra/github-readme-stats)
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com/?lines=Android+Developer+in+Japan;Always%20learning%20new%20things&font=Fira%20Code&center=true&width=440&height=45&color=f75c7e&vCenter=true&size=22">
 </p>
