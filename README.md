@@ -1,6 +1,6 @@
 <div align="center">
   
-![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=300&section=header&text=Welcome%20to%20Batapii's%20Universe&fontSize=50&animation=fadeIn&fontAlignY=40&desc=Android%20Developer%20|%20Kotlin%20Expert%20|%20Innovation%20Enthusiast&descAlignY=55)
+![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=300&section=header&text=Welcome%20to%20Batapii's%20Universe&fontSize=50&animation=fadeIn&fontAlignY=40&desc=Android%20Developer%20|%20Kotlin%20LOVE%20)
 
 <div style="margin-top: -20px;">
   <img src="https://readme-typing-svg.herokuapp.com/?lines=Crafting+Android+Experiences;Building+Tomorrow's+Apps+Today;Always+Learning,+Always+Growing&font=Fira%20Code&center=true&width=440&height=45&color=f75c7e&vCenter=true&size=22&pause=1000">
