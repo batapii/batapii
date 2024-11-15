@@ -1,12 +1,11 @@
-name: Update GitHub Profile and Waka Readme
-
+name: Update GitHub Profile Statistics
 on:
   schedule:
-    - cron: "0 */6 * * *" # Runs every 6 hours
-  workflow_dispatch: # Allows manual triggering
+    - cron: "0 */6 * * *"  # 6時間ごとに実行
+  workflow_dispatch:
 
 jobs:
-  update-readme:
+  update-profile:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -14,8 +13,8 @@ jobs:
         with:
           fetch-depth: 0
           token: ${{ secrets.GH_TOKEN }}
-      
-      - name: Clear GitHub Actions cache
+          
+      - name: Clear caches
         uses: actions/github-script@v6
         with:
           script: |
@@ -30,14 +29,85 @@ jobs:
                 cache_id: cache.id,
               })
             }
-            console.log('Cleared all GitHub Actions caches')
-
+            
       - name: Clear npm cache
         run: |
           npm cache clean --force
-          echo "Cleared npm cache"
+          
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          
+      - name: Install Dependencies
+        run: npm install @octokit/graphql
+          
+      - name: Update Language Statistics
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+        run: |
+          node -e '
+          const { graphql } = require("@octokit/graphql");
+          
+          async function fetchStats() {
+            const query = `
+              query userInfo($username: String!, $limit: Int!) {
+                user(login: $username) {
+                  repositories(ownerAffiliations: OWNER, isFork: false, first: 100) {
+                    nodes {
+                      name
+                      languages(first: $limit, orderBy: {field: SIZE, direction: DESC}) {
+                        edges {
+                          size
+                          node {
+                            color
+                            name
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            `;
+            
+            const graphqlWithAuth = graphql.defaults({
+              headers: {
+                authorization: `token ${process.env.GITHUB_TOKEN}`,
+              },
+            });
+            
+            const result = await graphqlWithAuth(query, {
+              username: process.env.USERNAME,
+              limit: 10
+            });
+            
+            const stats = {};
+            result.user.repositories.nodes.forEach(repo => {
+              repo.languages.edges.forEach(edge => {
+                const lang = edge.node.name;
+                stats[lang] = (stats[lang] || 0) + edge.size;
+              });
+            });
+            
+            const fs = require("fs");
+            let md = "## 🔤 Most Used Languages\n\n";
+            
+            Object.entries(stats)
+              .sort(([,a], [,b]) => b - a)
+              .forEach(([lang, size]) => {
+                const percent = (size * 100 / Object.values(stats).reduce((a,b) => a+b)).toFixed(1);
+                md += `- ${lang}: ${percent}%\n`;
+              });
+            
+            fs.writeFileSync("language-stats.md", md);
+          }
+          
+          fetchStats().catch(console.error);
+          '
 
-      - name: Update Readme with Weekly WakaTime Metrics
+      - name: Update Weekly WakaTime Stats
         uses: anmol098/waka-readme-stats@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
@@ -57,11 +127,8 @@ jobs:
           SHOW_SHORT_INFO: "True"
           SHOW_UPDATED_DATE: "True"
           SECTION_NAME: waka-week
-          COMMIT_MESSAGE: "Updated README with Weekly WakaTime stats"
-          COMMIT_USERNAME: "github-actions"
-          COMMIT_EMAIL: "github-actions@github.com"
-
-      - name: Update Monthly WakaTime stats
+          
+      - name: Update Monthly WakaTime Stats
         uses: athul/waka-readme@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
@@ -73,9 +140,8 @@ jobs:
           LANG_COUNT: 10
           SHOW_TIME: true
           SHOW_TOTAL: true
-          COMMIT_MESSAGE: "Updated README with Monthly WakaTime stats"
-
-      - name: Update Readme with All Time WakaTime Metrics
+          
+      - name: Update All Time WakaTime Stats
         uses: athul/waka-readme@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
@@ -88,11 +154,15 @@ jobs:
           SHOW_TIME: true
           SHOW_TOTAL: true
           SHOW_MASKED_TIME: true
-          COMMIT_MESSAGE: "Updated README with All Time WakaTime stats"
 
-      - name: Push changes
+      - name: Combine Statistics
+        run: |
+          cat language-stats.md README.md > temp.md
+          mv temp.md README.md
+          
+      - name: Commit and Push
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add README.md
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Updated README with WakaTime stats" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Updated GitHub Profile Statistics" && git push)
