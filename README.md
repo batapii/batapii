@@ -44,36 +44,80 @@
 
 </div>
 
-## 🏃‍♂️ Activity Dashboard
+## ⌨️ Coding Activity
 
-<details>
-<summary>📈 Detailed Analytics</summary>
-
-<div align="center">
-  
-### Weekly Overview
+### 📅 This Week
 <!--START_SECTION:waka-week-->
-<!-- 既存の内容 -->
+![Code Time](http://img.shields.io/badge/Code%20Time-299%20hrs%2055%20mins-blue)
+
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-252.3%20thousand%20lines%20of%20code-blue)
+
+**🐱 My GitHub Data** 
+
+> 📦 3.0 kB Used in GitHub's Storage 
+> 
+> 🏆 857 Contributions in the Year 2024
+> 
+> 📜 3 Public Repositories 
+> 
+> 🔑 4 Private Repositories 
+
+**I'm an Early 🐤** 
+
+```text
+🌞 Morning                1175 commits        █████████░░░░░░░░░░░░░░░░   37.49 % 
+🌆 Daytime                1531 commits        ████████████░░░░░░░░░░░░░   48.85 % 
+🌃 Evening                188 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   06.00 % 
+🌙 Night                  240 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   07.66 % 
+```
+
+📊 **This Week I Spent My Time On** 
+
+```text
+💬 Programming Languages: 
+Kotlin                   10 hrs 25 mins      ██████████████████░░░░░░░   70.04 % 
+Other                    2 hrs 41 mins       █████░░░░░░░░░░░░░░░░░░░░   18.12 % 
+Swift                    43 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   04.90 % 
+Image (svg)              35 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.93 % 
+GraphQL                  11 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   01.24 % 
+```
 <!--END_SECTION:waka-week-->
 
-### Monthly Progress
+### 📅 This Month
 <!--START_SECTION:wakamonth-->
-<!-- 既存の内容 -->
+```txt
+From: 15 October 2024 - To: 14 November 2024
+
+Total Time: 48 hrs 45 mins
+
+Kotlin            42 hrs 44 mins  ███████████████████▒░░░░░   77.69 %
+Other             6 hrs 15 mins   ███░░░░░░░░░░░░░░░░░░░░░░   11.39 %
+Image (svg)       2 hrs 48 mins   █▒░░░░░░░░░░░░░░░░░░░░░░░   05.11 %
+HTTP Request      49 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.50 %
+GraphQL           44 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.35 %
+```
 <!--END_SECTION:wakamonth-->
 
-### Career Stats
+### 📊 Lifetime Stats
 <!--START_SECTION:wakaalltime-->
-<!-- 既存の内容 -->
-<!--END_SECTION:wakaalltime-->
+```txt
+From: 23 January 2024 - To: 14 November 2024
 
-</div>
-</details>
+Total Time: 299 hrs 55 mins
+
+Kotlin                 160 hrs 24 mins █████████████▒░░░░░░░░░░░   53.48 %
+Other                  111 hrs 46 mins █████████▒░░░░░░░░░░░░░░░   37.27 %
+Swift                  6 hrs 23 mins   ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.13 %
+Image (svg)            3 hrs 24 mins   ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.14 %
+Text                   3 hrs 12 mins   ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.07 %
+```
+<!--END_SECTION:wakaalltime-->
 
 ## 🏆 Achievement Gallery
 
 <div align="center">
 
-![Trophy](https://github-profile-trophy.vercel.app/?username=batapii&theme=radical&no-frame=true&no-bg=true&column=7&rank=SECRET,SSS,SS,S,AAA,AA,A)
+![Trophy](https://github-profile-trophy.vercel.app/?username=batapii&theme=radical&no-frame=true&no-bg=true&column=7)
 
 [![Holopin Badges](https://holopin.me/batapii)](https://holopin.io/@batapii)
 
