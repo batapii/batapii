@@ -37,7 +37,7 @@
 </div>
 
 <div align="center">
-<img src="https://github-readme-tech-stack.vercel.app/api/cards?title=Tech+Stack&align=center&titleAlign=center&fontSize=20&lineHeight=10&lineCount=3&theme=github_dark&width=800&bg=%230D1117&badge=%23161B22&border=%2321262D&titleColor=%2358A6FF&line1=android%2Candroid%2C00ff00%3Bkotlin%2Ckotlin%2C0095D5%3Bswift%2Cswift%2CFA7343%3B&line2=git%2Cgit%2CF05032%3Bfirebase%2Cfirebase%2CFFCA28%3Bgithub%2Cgithub%2C181717%3B&line3=gitkraken%2Cgitkraken%2C179287%3Btypescript%2Ctypescript%2C3178C6%3Bgraphql%2Cgraphql%2CE10098%3Bsupabase%2Csupabase%2C3FCF8E%3B" alt="Tech Stack" />
+<img src="https://github-readme-tech-stack.vercel.app/api/cards?title=Tech+Stack&align=center&titleAlign=center&fontSize=20&lineHeight=10&lineCount=4&theme=github_dark&width=800&bg=%230D1117&badge=%23161B22&border=%2321262D&titleColor=%2358A6FF&line1=android%2Candroid%2C00ff00%3Bkotlin%2Ckotlin%2C0095D5%3Bswift%2Cswift%2CFA7343%3B&line2=git%2Cgit%2CF05032%3Bfirebase%2Cfirebase%2CFFCA28%3Bgithub%2Cgithub%2C181717%3B&line3=gitkraken%2Cgitkraken%2C179287%3Btypescript%2Ctypescript%2C3178C6%3Bgraphql%2Cgraphql%2CE10098%3B&line4=supabase%2Csupabase%2C3FCF8E%3Bpostman%2Cpostman%2CFF6C37%3B" alt="Tech Stack" />
 </div>
 
 ## 📊 Performance Metrics
