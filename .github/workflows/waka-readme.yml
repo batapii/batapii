@@ -1,54 +1,30 @@
 name: Update GitHub Profile Statistics
 on:
   schedule:
-    - cron: "0 */6 * * *"  # 6時間ごとに実行
+    - cron: "0 */6 * * *"
   workflow_dispatch:
 
 jobs:
   update-profile:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
           token: ${{ secrets.GH_TOKEN }}
           
-      - name: Clear caches
-        uses: actions/github-script@v6
-        with:
-          script: |
-            const caches = await github.rest.actions.getActionsCacheList({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-            })
-            for (const cache of caches.data.actions_caches) {
-              await github.rest.actions.deleteActionsCacheById({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                cache_id: cache.id,
-              })
-            }
-            
-      - name: Clear npm cache
-        run: |
-          npm cache clean --force
-          
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '18'
-          
-      - name: Install Dependencies
-        run: npm install @octokit/graphql
           
       - name: Update Language Statistics
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
         run: |
-          node -e '
-          const { graphql } = require("@octokit/graphql");
+          node --input-type=module -e '
+          import { graphql } from "@octokit/graphql";
+          import fs from "fs";
           
           async function fetchStats() {
             const query = `
@@ -91,7 +67,6 @@ jobs:
               });
             });
             
-            const fs = require("fs");
             let md = "## 🔤 Most Used Languages\n\n";
             
             Object.entries(stats)
@@ -155,13 +130,10 @@ jobs:
           SHOW_TOTAL: true
           SHOW_MASKED_TIME: true
 
-      - name: Combine Statistics
+      - name: Combine Stats and Push
         run: |
           cat language-stats.md README.md > temp.md
           mv temp.md README.md
-          
-      - name: Commit and Push
-        run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add README.md
