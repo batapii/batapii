@@ -17,6 +17,11 @@ jobs:
         with:
           node-version: '18'
           
+      - name: Git Setup
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          
       - name: Create package.json
         run: |
           echo '{"type": "module"}' > package.json
@@ -139,9 +144,8 @@ jobs:
 
       - name: Combine Stats and Push
         run: |
+          git pull origin main --rebase
           cat language-stats.md README.md > temp.md
           mv temp.md README.md
-          git config user.name github-actions
-          git config user.email github-actions@github.com
           git add README.md
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Updated GitHub Profile Statistics" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Updated GitHub Profile Statistics" && git push origin main)
