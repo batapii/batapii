@@ -31,13 +31,15 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           SECTION_NAME: "wakayesterday"
           BLOCKS: ░▒▓█
-          TIME_RANGE: yesterday        # 直前の24時間ではなく、昨日の統計
+          TIME_RANGE: "yesterday"      # 昨日のみの統計
           SHOW_TIME: true
           SHOW_TOTAL: true
-          SHOW_TITLE: false           # カスタムタイトルを使用するため無効化
-          LANG_COUNT: 10
+          SHOW_TITLE: false           # デフォルトタイトルを非表示
+          LANG_COUNT: 10              # 表示する言語数を制限
           CODE_LANG: "text"
+          API_BASE_URL: "https://wakatime.com/api/v1"  # APIエンドポイントを明示
           COMMIT_MESSAGE: "Updated Yesterday's Stats"
+          STOP_AT_OTHER: true         # その他の言語をまとめる
           
       - name: Weekly Stats
         uses: anmol098/waka-readme-stats@master
@@ -56,6 +58,7 @@ jobs:
           SHOW_PROJECTS: "True"
           SHOW_OS: "True"
           COMMIT_MESSAGE: "Updated Weekly Stats"
+          LOCALE: "en"
           
       - name: Monthly Stats
         uses: athul/waka-readme@master
@@ -64,7 +67,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           SECTION_NAME: "wakamonth"
           BLOCKS: ░▒▓█
-          TIME_RANGE: last_30_days
+          TIME_RANGE: "last_30_days"
           SHOW_TIME: true
           SHOW_TOTAL: true
           SHOW_TITLE: false
@@ -79,7 +82,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           SECTION_NAME: "wakaalltime"
           BLOCKS: ░▒▓█
-          TIME_RANGE: all_time
+          TIME_RANGE: "all_time"
           SHOW_TIME: true
           SHOW_TOTAL: true
           SHOW_TITLE: false
