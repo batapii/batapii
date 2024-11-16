@@ -1,21 +1,20 @@
-name: Update GitHub Profile and Waka Readme
-
+name: GitHub プロフィールとWaka Readmeの更新
 on:
   schedule:
-    - cron: "0 */6 * * *"  # Runs every 6 hours
-  workflow_dispatch:        # Allows manual triggering
+    - cron: "0 */6 * * *"  # 6時間ごとに実行
+  workflow_dispatch:        # 手動実行も可能
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: リポジトリのチェックアウト
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
           token: ${{ secrets.GH_TOKEN }}
-
-      - name: Clear GitHub Actions cache
+          
+      - name: GitHub Actionsキャッシュのクリア
         uses: actions/github-script@v6
         with:
           script: |
@@ -30,14 +29,14 @@ jobs:
                 cache_id: cache.id,
               })
             }
-            console.log('Cleared all GitHub Actions caches')
-
-      - name: Clear npm cache
+            console.log('GitHub Actionsキャッシュをクリアしました')
+            
+      - name: npmキャッシュのクリア
         run: |
           npm cache clean --force
-          echo "Cleared npm cache"
-
-      - name: Update Readme with Weekly WakaTime Metrics
+          echo "npmキャッシュをクリアしました"
+          
+      - name: 週間WakaTime統計の更新
         uses: anmol098/waka-readme-stats@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
@@ -57,11 +56,11 @@ jobs:
           SHOW_SHORT_INFO: "True"
           SHOW_UPDATED_DATE: "True"
           SECTION_NAME: waka-week
-          COMMIT_MESSAGE: "Updated README with Weekly WakaTime stats"
+          COMMIT_MESSAGE: "Weekly WakaTime統計でREADMEを更新"
           COMMIT_USERNAME: "github-actions"
           COMMIT_EMAIL: "github-actions@github.com"
-
-      - name: Update Monthly WakaTime stats
+          
+      - name: 月間WakaTime統計の更新
         uses: athul/waka-readme@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
@@ -73,9 +72,9 @@ jobs:
           LANG_COUNT: 10
           SHOW_TIME: true
           SHOW_TOTAL: true
-          COMMIT_MESSAGE: "Updated README with Monthly WakaTime stats"
-
-      - name: Update Readme with All Time WakaTime Metrics
+          COMMIT_MESSAGE: "Monthly WakaTime統計でREADMEを更新"
+          
+      - name: 累計WakaTime統計の更新
         uses: athul/waka-readme@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
@@ -88,11 +87,11 @@ jobs:
           SHOW_TIME: true
           SHOW_TOTAL: true
           SHOW_MASKED_TIME: true
-          COMMIT_MESSAGE: "Updated README with All Time WakaTime stats"
-
-      - name: Push changes
+          COMMIT_MESSAGE: "累計WakaTime統計でREADMEを更新"
+          
+      - name: 変更のプッシュ
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add README.md
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Updated README with WakaTime stats" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "WakaTime統計でREADMEを更新" && git push)
