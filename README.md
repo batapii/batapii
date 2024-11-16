@@ -59,8 +59,6 @@
 <!--START_SECTION:wakayesterday-->
 
 ```text
-From: 09 November 2024 - To: 16 November 2024
-
 Total Time: 10 hrs 6 mins
 
 Kotlin         9 hrs 13 mins   ██████████████████▓░░░░░░   74.52 %
