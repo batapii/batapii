@@ -160,6 +160,7 @@ GraphQL           44 mins         ▒░░░░░░░░░░░░░░�
 
 ### 🏆 All Time Stats
 <!--START_SECTION:wakaalltime-->
+
 ```text
 Total Time: 188 hrs 9 mins
 
@@ -169,6 +170,7 @@ Swift                  6 hrs 23 mins   ▓░░░░░░░░░░░░�
 Image (svg)            3 hrs 24 mins   ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.14 %
 Text                   3 hrs 12 mins   ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.07 %
 ```
+
 <!--END_SECTION:wakaalltime-->
 
 ## 🌟 Featured Creation & Contributions
