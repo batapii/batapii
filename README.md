@@ -53,11 +53,7 @@
 
 </div>
 
-
 ## ⌨️ Coding Activity
-
-![Code Time](http://img.shields.io/badge/Code%20Time-299%20hrs%2055%20mins-blue)
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-253.2%20thousand%20lines%20of%20code-blue)
 
 ### 👨‍💻 Weekly Development Breakdown
 <!--START_SECTION:waka-->
@@ -99,7 +95,6 @@ Saturday                 121 commits         █░░░░░░░░░░�
 Sunday                   76 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   02.39 % 
 ```
 
-
 📊 **This Week I Spent My Time On** 
 
 ```text
@@ -137,19 +132,15 @@ Kotlin                   7 repos             ███████████�
 mcfunction               1 repo              ███░░░░░░░░░░░░░░░░░░░░░░   12.50 % 
 ```
 
-
-
 **Timeline**
 
 ![Lines of Code chart](https://raw.githubusercontent.com/batapii/batapii/main/assets/bar_graph.png)
 
-
- Last Updated on 16/11/2024 14:41:19 UTC
+Last Updated on 16/11/2024 14:41:19 UTC
 <!--END_SECTION:waka-->
 
 ### 📅 Monthly Stats
 <!--START_SECTION:wakamonth-->
-
 ```text
 Total Time: 48 hrs 45 mins
 
@@ -159,12 +150,10 @@ Image (svg)       2 hrs 48 mins   █▒░░░░░░░░░░░░░�
 HTTP Request      49 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.50 %
 GraphQL           44 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.35 %
 ```
-
 <!--END_SECTION:wakamonth-->
 
 ### 🏆 All Time Stats
 <!--START_SECTION:wakaalltime-->
-
 ```text
 Total Time: 188 hrs 9 mins
 
@@ -174,24 +163,8 @@ Swift                  6 hrs 23 mins   ▓░░░░░░░░░░░░�
 Image (svg)            3 hrs 24 mins   ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.14 %
 Text                   3 hrs 12 mins   ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.07 %
 ```
-
 <!--END_SECTION:wakaalltime-->
 
-### 📈 Additional Stats
-
-**🐱 GitHub Data** 
-> 📦 3.0 kB Used in GitHub's Storage   
-> 🏆 879 Contributions in 2024  
-> 📜 3 Public Repositories  
-> 🔑 4 Private Repositories  
-
-**💻 Preferred Languages** 
-```text
-Kotlin                   7 repos             ██████████████████████░░░   87.50 % 
-mcfunction               1 repo              ███░░░░░░░░░░░░░░░░░░░░░░   12.50 % 
-```
-
-_Last Updated on 16/11/2024 14:29:26 UTC_
 ## 🌟 Featured Creation & Contributions
 
 <div align="center">
