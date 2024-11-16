@@ -1,100 +1,43 @@
-name: Update GitHub Profile Statistics
+name: Update GitHub Profile and Waka Readme
+
 on:
   schedule:
-    - cron: "0 */6 * * *"
-  workflow_dispatch:
+    - cron: "0 */6 * * *"  # Runs every 6 hours
+  workflow_dispatch:        # Allows manual triggering
 
 jobs:
-  update-profile:
+  update-readme:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
           token: ${{ secrets.GH_TOKEN }}
-          
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-          
-      - name: Git Setup
-        run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          
-      - name: Create package.json
-        run: |
-          echo '{"type": "module"}' > package.json
-          
-      - name: Install dependencies
-        run: npm install @octokit/graphql
-          
-      - name: Update Language Statistics
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          USERNAME: ${{ github.repository_owner }}
-        run: |
-          node --input-type=module -e '
-          import { graphql } from "@octokit/graphql";
-          import fs from "fs";
-          
-          async function fetchStats() {
-            const query = `
-              query userInfo($username: String!, $limit: Int!) {
-                user(login: $username) {
-                  repositories(ownerAffiliations: OWNER, isFork: false, first: 100) {
-                    nodes {
-                      name
-                      languages(first: $limit, orderBy: {field: SIZE, direction: DESC}) {
-                        edges {
-                          size
-                          node {
-                            color
-                            name
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            `;
-            
-            const graphqlWithAuth = graphql.defaults({
-              headers: {
-                authorization: `token ${process.env.GITHUB_TOKEN}`,
-              },
-            });
-            
-            const result = await graphqlWithAuth(query, {
-              username: process.env.USERNAME,
-              limit: 10
-            });
-            
-            const stats = {};
-            result.user.repositories.nodes.forEach(repo => {
-              repo.languages.edges.forEach(edge => {
-                const lang = edge.node.name;
-                stats[lang] = (stats[lang] || 0) + edge.size;
-              });
-            });
-            
-            let md = "## 🔤 Most Used Languages\n\n";
-            
-            Object.entries(stats)
-              .sort(([,a], [,b]) => b - a)
-              .forEach(([lang, size]) => {
-                const percent = (size * 100 / Object.values(stats).reduce((a,b) => a+b)).toFixed(1);
-                md += `- ${lang}: ${percent}%\n`;
-              });
-            
-            fs.writeFileSync("language-stats.md", md);
-          }
-          
-          fetchStats().catch(console.error);
-          '
 
-      - name: Update Weekly WakaTime Stats
+      - name: Clear GitHub Actions cache
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const caches = await github.rest.actions.getActionsCacheList({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+            })
+            for (const cache of caches.data.actions_caches) {
+              await github.rest.actions.deleteActionsCacheById({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                cache_id: cache.id,
+              })
+            }
+            console.log('Cleared all GitHub Actions caches')
+
+      - name: Clear npm cache
+        run: |
+          npm cache clean --force
+          echo "Cleared npm cache"
+
+      - name: Update Readme with Weekly WakaTime Metrics
         uses: anmol098/waka-readme-stats@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
@@ -114,8 +57,11 @@ jobs:
           SHOW_SHORT_INFO: "True"
           SHOW_UPDATED_DATE: "True"
           SECTION_NAME: waka-week
-          
-      - name: Update Monthly WakaTime Stats
+          COMMIT_MESSAGE: "Updated README with Weekly WakaTime stats"
+          COMMIT_USERNAME: "github-actions"
+          COMMIT_EMAIL: "github-actions@github.com"
+
+      - name: Update Monthly WakaTime stats
         uses: athul/waka-readme@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
@@ -127,8 +73,9 @@ jobs:
           LANG_COUNT: 10
           SHOW_TIME: true
           SHOW_TOTAL: true
-          
-      - name: Update All Time WakaTime Stats
+          COMMIT_MESSAGE: "Updated README with Monthly WakaTime stats"
+
+      - name: Update Readme with All Time WakaTime Metrics
         uses: athul/waka-readme@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
@@ -141,11 +88,11 @@ jobs:
           SHOW_TIME: true
           SHOW_TOTAL: true
           SHOW_MASKED_TIME: true
+          COMMIT_MESSAGE: "Updated README with All Time WakaTime stats"
 
-      - name: Combine Stats and Push
+      - name: Push changes
         run: |
-          git pull origin main --rebase
-          cat language-stats.md README.md > temp.md
-          mv temp.md README.md
+          git config user.name github-actions
+          git config user.email github-actions@github.com
           git add README.md
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Updated GitHub Profile Statistics" && git push origin main)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Updated README with WakaTime stats" && git push)
