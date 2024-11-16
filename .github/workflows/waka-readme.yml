@@ -24,21 +24,6 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
-      - name: Daily Stats
-        uses: athul/waka-readme@master
-        with:
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          SECTION_NAME: "wakatoday"
-          BLOCKS: ░▒▓█
-          TIME_RANGE: last_7_days        # 7日間の統計から最新のデータを表示
-          SHOW_TIME: true
-          SHOW_TOTAL: true
-          LANG_COUNT: 10
-          SHOW_TITLE: false
-          CODE_LANG: "text"
-          COMMIT_MESSAGE: "Updated Daily Stats"
-          
       - name: Weekly Stats
         uses: anmol098/waka-readme-stats@master
         with:
@@ -55,6 +40,7 @@ jobs:
           SHOW_EDITORS: "True"
           SHOW_PROJECTS: "True"
           SHOW_OS: "True"
+          SHOW_LOC_CHART: "False"  # Timelineを非表示
           COMMIT_MESSAGE: "Updated Weekly Stats"
           
       - name: Monthly Stats
