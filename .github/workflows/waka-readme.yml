@@ -13,15 +13,34 @@ jobs:
       contents: write
       
     steps:
-      - name: Checkout
+      - name: Checkout Repository
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GH_TOKEN }}
+          fetch-depth: 0
           
-      - name: Setup Git
+      - name: Clean Git Config
+        run: |
+          rm -f .git/config
+          git config --local --unset-all http.https://github.com/.extraheader || true
+          git config --local --unset-all credential.helper || true
+          
+      - name: Configure Git
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global credential.helper store
+          echo "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com" > ~/.git-credentials
+          
+      - name: Clean Working Directory
+        run: |
+          git reset --hard HEAD
+          git clean -fd
+          
+      - name: Check README
+        run: |
+          echo "Current README content:"
+          cat README.md || echo "README.md not found"
           
       - name: Update WakaTime Stats
         uses: anmol098/waka-readme-stats@master
@@ -29,48 +48,41 @@ jobs:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           SECTION_NAME: "waka"
-          COMMIT_MESSAGE: "Updated WakaTime Stats"
-          
-          # GitHubデータ
           SHOW_LINES_OF_CODE: "True"
           SHOW_PROFILE_VIEWS: "True"
           SHOW_SHORT_INFO: "True"
           SHOW_TOTAL_CODE_TIME: "True"
-          
-          # 言語とコミット
           SHOW_LANGUAGE: "True"
-          SHOW_LANGUAGE_PER_REPO: "True"
-          SHOW_LOC_CHART: "True"
-          SHOW_COMMIT: "True"
-          
-          # 時間帯と活動
-          SHOW_TIMEZONE: "True"
           SHOW_DAYS_OF_WEEK: "True"
-          
-          # 開発環境
-          SHOW_OS: "True"
-          SHOW_PROJECTS: "True"
+          SHOW_TIMEZONE: "True"
           SHOW_EDITORS: "True"
-          
-          # その他設定
-          SHOW_UPDATED_DATE: "True"
-          LOCALE: "en"
+          SHOW_PROJECTS: "True"
+          SHOW_OS: "True"
+          COMMIT_BY_ME: "False"
           DEBUG_LOGGING: "True"
           
-          # コミット設定
-          COMMIT_BY_ME: "False"
-          COMMIT_USERNAME: "github-actions[bot]"
-          COMMIT_EMAIL: "41898282+github-actions[bot]@users.noreply.github.com"
-          
-      - name: Force Update
-        if: success()
+      - name: Verify Changes
         run: |
-          if [[ -f README.md ]]; then
-            git add README.md
-            git status
-            git diff --cached
-            git commit -m "Updated WakaTime Statistics" || echo "No changes to commit"
-            git push origin main || git push --force origin main
+          echo "Modified files:"
+          git status
+          
+          echo "Changes in README:"
+          git diff README.md
+          
+      - name: Commit and Push
+        run: |
+          git add README.md
+          git status
+          
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
           else
-            echo "README.md not found"
+            echo "Committing changes..."
+            git commit -m "Updated WakaTime Statistics"
+            
+            echo "Setting up remote..."
+            git remote set-url origin "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git"
+            
+            echo "Pushing changes..."
+            git push origin HEAD:main
           fi
