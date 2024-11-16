@@ -1,20 +1,22 @@
-name: Update GitHub Profile and Waka Readme
+name: Update WakaTime Statistics
+
 on:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "0 0 * * *"  # 毎日UTCの00:00に実行
   workflow_dispatch:
 
 jobs:
-  update-readme:
+  update-stats:
     name: Update WakaTime Stats
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
         
-      - name: Update Weekly Stats
+      - name: Weekly Stats
         uses: anmol098/waka-readme-stats@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
@@ -23,12 +25,14 @@ jobs:
           SHOW_PROJECTS: "True"
           SHOW_EDITORS: "True"
           SHOW_LANGUAGE: "True"
-          SHOW_LINES_OF_CODE: "True"
           SHOW_COMMIT: "True"
+          SHOW_SHORT_INFO: "True"
+          SHOW_LINES_OF_CODE: "True"
+          SHOW_DAYS_OF_WEEK: "True"
           SECTION_NAME: "waka"
-          COMMIT_MESSAGE: "Updated weekly WakaTime stats"
+          COMMIT_MESSAGE: "Updated Weekly Stats"
           
-      - name: Update Monthly Stats
+      - name: Monthly Stats
         uses: athul/waka-readme@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
@@ -36,12 +40,12 @@ jobs:
           SECTION_NAME: "wakamonth"
           BLOCKS: ░▒▓█
           TIME_RANGE: last_30_days
-          LANG_COUNT: 10
           SHOW_TIME: true
           SHOW_TOTAL: true
-          COMMIT_MESSAGE: "Updated monthly WakaTime stats"
+          LANG_COUNT: 10
+          CODE_LANG: "txt"
           
-      - name: Update All Time Stats
+      - name: All Time Stats
         uses: athul/waka-readme@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
@@ -49,8 +53,7 @@ jobs:
           SECTION_NAME: "wakaalltime"
           BLOCKS: ░▒▓█
           TIME_RANGE: all_time
-          LANG_COUNT: 10
           SHOW_TIME: true
           SHOW_TOTAL: true
-          SHOW_MASKED_TIME: true
-          COMMIT_MESSAGE: "Updated all-time WakaTime stats"
+          LANG_COUNT: 10
+          CODE_LANG: "txt"
