@@ -53,11 +53,14 @@
 
 </div>
 
-<!--START_SECTION:waka-->
+
 ## ⌨️ Coding Activity
 
 ![Code Time](http://img.shields.io/badge/Code%20Time-299%20hrs%2055%20mins-blue)
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-252.3%20thousand%20lines%20of%20code-blue)
+
+
+<!--START_SECTION:waka-->
 
 ```text
 🌞 Morning    1175 commits  █████████░░░░░░░░░░  37.49%
@@ -72,8 +75,12 @@ Swift        43 mins        █░░░░░░░░░░░░░░░░�
 Image (svg)  35 mins        █░░░░░░░░░░░░░░░░░   3.93%
 GraphQL      11 mins        ░░░░░░░░░░░░░░░░░░   1.24%
 ```
+<!--END_SECTION:waka-->
 
 ### Monthly Stats
+
+<!--START_SECTION:wakamonth-->
+
 ```text
 Total: 48 hrs 45 mins
 
@@ -83,8 +90,12 @@ Image (svg)  2 hrs 48 mins  █▒░░░░░░░░░░░░░░░�
 HTTP         49 mins        ▒░░░░░░░░░░░░░░░░░░   1.50%
 GraphQL      44 mins        ▒░░░░░░░░░░░░░░░░░░   1.35%
 ```
+<!--END_SECTION:wakamonth-->
 
 ### All Time Stats
+
+<!--START_SECTION:wakaalltime-->
+
 ```text
 Total: 299 hrs 55 mins
 
@@ -94,7 +105,7 @@ Swift      6 hrs 23 mins   ▓░░░░░░░░░░░░░░░░�
 Image      3 hrs 24 mins   ▒░░░░░░░░░░░░░░░░░   1.14%
 Text       3 hrs 12 mins   ▒░░░░░░░░░░░░░░░░░   1.07%
 ```
-<!--END_SECTION:waka-->
+<!--END_SECTION:wakaalltime-->
 
 ## 🌟 Featured Creation & Contributions
 
