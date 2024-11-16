@@ -17,12 +17,19 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          submodules: false
+          
+      - name: Remove submodule configuration
+        run: |
+          if [ -f .gitmodules ]; then
+            rm .gitmodules
+          fi
+          git config --local --unset-all submodule.README.Mountain.url || true
           
       - name: Setup Git
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git pull origin main --rebase
           
       - name: Weekly Stats
         uses: anmol098/waka-readme-stats@master
@@ -42,9 +49,7 @@ jobs:
           SHOW_PROJECTS: "True"
           SHOW_EDITORS: "True"
           SHOW_UPDATED_DATE: "True"
-          SYMBOL_VERSION: "1"
-          LOCALE: "en"
-          UPDATED_DATE_FORMAT: "%d/%m/%Y %H:%M:%S"
+          COMMIT_MESSAGE: "Updated WakaTime Stats"
           
       - name: Monthly Stats
         uses: athul/waka-readme@master
@@ -70,11 +75,13 @@ jobs:
           SHOW_TOTAL: true
           CODE_LANG: "text"
           
-      - name: Commit and Push
+      - name: Sync and Push
         run: |
           git pull origin main --rebase
           git add README.md
           if [[ -n $(git status -s) ]]; then
-            git commit -m "Updated WakaTime Stats"
+            git commit -m "Updated WakaTime Statistics"
             git push origin main
+          else
+            echo "No changes to commit"
           fi
