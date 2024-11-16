@@ -1,3 +1,5 @@
+<div align="center">
+  
 ![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=300&section=header&text=Welcome%20to%20Batapii's%20Universe&fontSize=50&animation=fadeIn&fontAlignY=40&desc=Android%20Developer%20|%20Kotlin%20LOVE%20)
 
 <div style="margin-top: -20px;">
@@ -14,11 +16,13 @@
 
 ## 🎯 Github Profile Summary
 
-<img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=batapii&theme=radical" />
-<img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=batapii&theme=radical" />
-<img src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=batapii&theme=radical" />
-<img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=batapii&theme=radical" />
-<img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=batapii&theme=radical" />
+<div align="center">
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=batapii&theme=radical" />
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=batapii&theme=radical" />
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=batapii&theme=radical" />
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=batapii&theme=radical" />
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=batapii&theme=radical" />
+</div>
 
 ## 💻 Technology & Social
 
@@ -49,6 +53,7 @@
 
 </div>
 
+<!--START_SECTION:waka-->
 ## ⌨️ Coding Activity
 
 ![Code Time](http://img.shields.io/badge/Code%20Time-299%20hrs%2055%20mins-blue)
@@ -89,6 +94,7 @@ Swift      6 hrs 23 mins   ▓░░░░░░░░░░░░░░░░�
 Image      3 hrs 24 mins   ▒░░░░░░░░░░░░░░░░░   1.14%
 Text       3 hrs 12 mins   ▒░░░░░░░░░░░░░░░░░   1.07%
 ```
+<!--END_SECTION:waka-->
 
 ## 🌟 Featured Creation & Contributions
 
