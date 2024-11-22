@@ -109,16 +109,6 @@ mcfunction               1 repo              ███░░░░░░░░�
 <!--START_SECTION:dev-stats-->
 ![Code Time](http://img.shields.io/badge/Code%20Time-319%20hrs%2014%20mins-blue)
 
-**I'm an Early 🐤** 
-
-```text
-🌞 Morning                1276 commits        █████████░░░░░░░░░░░░░░░░   34.72 % 
-🌆 Daytime                1843 commits        █████████████░░░░░░░░░░░░   50.15 % 
-🌃 Evening                290 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   07.89 % 
-🌙 Night                  266 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   07.24 % 
-```
-
-
 📊 **This Week I Spent My Time On** 
 
 ```text
@@ -142,21 +132,8 @@ astahmer/openapi-zod-clie7 mins              ░░░░░░░░░░░�
 Mac                      17 hrs 41 mins      █████████████████████████   100.00 % 
 ```
 
-**I Mostly Code in Kotlin** 
 
-```text
-Kotlin                   7 repos             ██████████████████████░░░   87.50 % 
-mcfunction               1 repo              ███░░░░░░░░░░░░░░░░░░░░░░   12.50 % 
-```
-
-
-
-**Timeline**
-
-![Lines of Code chart](https://raw.githubusercontent.com/batapii/batapii/main/assets/bar_graph.png)
-
-
- Last Updated on 22/11/2024 13:49:35 UTC
+ Last Updated on 22/11/2024 13:55:45 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 This Week's Programming
