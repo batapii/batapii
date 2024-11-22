@@ -2,7 +2,7 @@ name: Update WakaTime Statistics
 on:
   schedule:
     # cronの構文が間違っていたので修正 (* * *の間のスペースが必要)
-    - cron: "0 0 * * *"  # 毎日UTC 00:00に実行
+    - cron: "0 */12 * * * "  # 毎日UTC 00:00に実行
   workflow_dispatch:
 
 jobs:
