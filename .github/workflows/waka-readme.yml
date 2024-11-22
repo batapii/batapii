@@ -28,7 +28,7 @@ jobs:
         run: |
           git remote set-url origin https://${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}
           
-      # Weekly Stats
+      # Weekly Stats (Programming Languages and General Stats)
       - name: Update Weekly Stats
         uses: anmol098/waka-readme-stats@master
         with:
@@ -38,7 +38,17 @@ jobs:
           SHOW_PROFILE_VIEWS: "False"
           SHOW_LOC_CHART: "False"
           SECTION_NAME: "waka"
-          COMMIT_MESSAGE: "Updated waka-readme stats"
+          SHOW_LANGUAGE: "True"
+          SHOW_DAYS_OF_WEEK: "True"
+          SHOW_PROJECTS: "True"
+          SHOW_EDITORS: "True"
+          SHOW_TIMEZONE: "True"
+          SHOW_OS: "True"
+          COMMITS_PER_LANGUAGE: "True"
+          SHOW_SHORT_INFO: "False"
+          SHOW_LOC_CHART: "False"
+          SHOW_PROFILE_VIEWS: "False"
+          LOCALE: "en"
           
       # Monthly Stats
       - name: Update Monthly Stats
@@ -65,19 +75,6 @@ jobs:
           SHOW_TIME: true
           SHOW_TOTAL: true
           LANG_COUNT: 15
-          
-      # Development Environment Stats
-      - name: Update Dev Environment Stats
-        uses: anmol098/waka-readme-stats@master
-        with:
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          SECTION_NAME: "waka-env"
-          SHOW_OS: "True"
-          SHOW_PROJECTS: "True"
-          SHOW_EDITORS: "True"
-          SHOW_TIMEZONE: "False"
-          SHOW_SHORT_INFO: "False"
           
       - name: Commit and Push
         run: |
