@@ -55,6 +55,8 @@
 
 ## ⌨️ Coding Activity
 
+<div align="center">
+
 ### 📊 Weekly Development Stats
 <!--START_SECTION:waka-->
 
@@ -69,6 +71,8 @@
 <!--START_SECTION:wakaalltime-->
 
 <!--END_SECTION:wakaalltime-->
+
+</div>
 
 
 
