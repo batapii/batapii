@@ -163,9 +163,7 @@ TOML              2 mins          ░░░░░░░░░░░░░░░�
 ### 🏆 All Time Stats
 <!--START_SECTION:wakaalltime-->
 
-```text
-From: 23 January 2024 - To: 21 November 2024
-
+```txt
 Total Time: 202 hrs 20 mins
 
 Kotlin                 168 hrs 16 mins █████████████▒░░░░░░░░░░░   53.01 %
