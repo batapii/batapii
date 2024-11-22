@@ -80,6 +80,10 @@ jobs:
           SHOW_DAYS_OF_WEEK: "False"
           SHOW_COMMIT: "False"
           SHOW_LANGUAGE_PER_REPO: "False"
+          SHOW_TOTAL_CODE_TIME: "True"  # 追加
+          SHOW_PROFILE: "True"          # 追加
+          SHOW_UPDATED_DATE: "True"     # 追加
+          SHOW_ACTIVITY: "True"         # 追加: アクティビティの種類を表示
           
       # Monthly Stats
       - name: Update Monthly Stats
