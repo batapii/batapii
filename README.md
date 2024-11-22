@@ -138,9 +138,7 @@ mcfunction               1 repo              ███░░░░░░░░�
 ### 📈 Monthly Stats
 <!--START_SECTION:wakamonth-->
 
-```text
-From: 22 October 2024 - To: 21 November 2024
-
+```txt
 Total Time: 53 hrs 34 mins
 
 Kotlin            41 hrs 26 mins  ████████████████▒░░░░░░░░   65.66 %
