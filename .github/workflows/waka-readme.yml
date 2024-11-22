@@ -1,7 +1,7 @@
 name: Update WakaTime Statistics
 on:
   schedule:
-    - cron: "0 */12 * * *"  # 12時間おきに実行
+    - cron: "0 */12 * * *"
   workflow_dispatch:
 jobs:
   update-stats:
@@ -26,12 +26,13 @@ jobs:
         run: |
           git remote set-url origin https://${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}
           
-      - name: Weekly Stats
+      # Languages
+      - name: Weekly Language Stats
         uses: athul/waka-readme@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          SECTION_NAME: "waka"
+          SECTION_NAME: "waka-languages"
           BLOCKS: ░▒▓█
           TIME_RANGE: last_7_days
           SHOW_TIME: true
@@ -40,6 +41,55 @@ jobs:
           SHOW_TITLE: true
           CODE_LANG: "text"
           
+      # Editors
+      - name: Weekly Editor Stats
+        uses: athul/waka-readme@master
+        with:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          SECTION_NAME: "waka-editors"
+          BLOCKS: ░▒▓█
+          TIME_RANGE: last_7_days
+          SHOW_TIME: true
+          SHOW_TOTAL: true
+          LANG_COUNT: 15
+          SHOW_TITLE: true
+          CODE_LANG: "text"
+          REQUEST_STATS: "editors"
+          
+      # Operating Systems
+      - name: Weekly OS Stats
+        uses: athul/waka-readme@master
+        with:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          SECTION_NAME: "waka-os"
+          BLOCKS: ░▒▓█
+          TIME_RANGE: last_7_days
+          SHOW_TIME: true
+          SHOW_TOTAL: true
+          LANG_COUNT: 15
+          SHOW_TITLE: true
+          CODE_LANG: "text"
+          REQUEST_STATS: "os"
+          
+      # Projects
+      - name: Weekly Project Stats
+        uses: athul/waka-readme@master
+        with:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          SECTION_NAME: "waka-projects"
+          BLOCKS: ░▒▓█
+          TIME_RANGE: last_7_days
+          SHOW_TIME: true
+          SHOW_TOTAL: true
+          LANG_COUNT: 15
+          SHOW_TITLE: true
+          CODE_LANG: "text"
+          REQUEST_STATS: "projects"
+          
+      # Monthly Stats
       - name: Monthly Stats
         uses: athul/waka-readme@master
         with:
@@ -54,6 +104,7 @@ jobs:
           SHOW_TITLE: true
           CODE_LANG: "text"
           
+      # All Time Stats
       - name: All Time Stats
         uses: athul/waka-readme@master
         with:
