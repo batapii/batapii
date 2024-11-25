@@ -127,7 +127,7 @@ TOML              2 mins          ░░░░░░░░░░░░░░░�
 
 ### 🔨 Development Environment
 <!--START_SECTION:dev-stats-->
-![Code Time](http://img.shields.io/badge/Code%20Time-320%20hrs%2014%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-327%20hrs%2021%20mins-blue)
 
 📊 **This Week I Spent My Time On** 
 
@@ -151,7 +151,7 @@ Mac                      18 hrs 36 mins      ███████████�
 ```
 
 
- Last Updated on 25/11/2024 00:42:36 UTC
+ Last Updated on 25/11/2024 12:17:31 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
