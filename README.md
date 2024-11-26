@@ -33,7 +33,7 @@
 
 <div style="margin-top: 15px">
 <a href="https://github.com/batapii"><img src="https://img.shields.io/github/followers/batapii?style=for-the-badge&logo=github&label=Follow&color=ff6e96&labelColor=282A36"/></a>
-<a href="https://twitter.com/batapii3939"><img src="https://img.shields.io/twitter/follow/batapii?style=for-the-badge&logo=twitter&color=1DA1F2&labelColor=282A36&label=Follow"/></a>
+<a href="https://twitter.com/batapii3939"><img src="https://img.shields.io/twitter/follow/batapii?style=for-the-badge&logo=twitter&color=1DA1F2&labelColor=282A36&label= Twitter"/></a>
 </div>
 
 </div>
