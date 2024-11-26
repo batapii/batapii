@@ -50,6 +50,8 @@
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=batapii&theme=radical&hide_border=true&background=0D1117)
 
 [![AtCoder Stats](https://atcoder-readme-stats.vercel.app/stats/batapii3939?theme=dark&show_history=5&width=495)](https://github.com/iwbc-mzk/atcoder-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username={batapii}
+)](https://github.com/anuraghazra/github-readme-stats)
 
 </div>
 
