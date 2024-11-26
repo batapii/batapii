@@ -28,8 +28,8 @@
 
 <div align="center" style="background: linear-gradient(to right, #282A36, #44475A); padding: 20px; border-radius: 10px;">
 
-![Kotlin](https://img.shields.io/badge/Kotlin-98.3%25-0095D5?style=for-the-badge&logo=kotlin&logoColor=white&labelColor=282A36)
-![Swift](https://img.shields.io/badge/Swift-1.7%25-FA7343?style=for-the-badge&logo=swift&logoColor=white&labelColor=282A36)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=batapii
+)](https://github.com/anuraghazra/github-readme-stats)
 
 <div style="margin-top: 15px">
 <a href="https://github.com/batapii"><img src="https://img.shields.io/github/followers/batapii?style=for-the-badge&logo=github&label=Follow&color=ff6e96&labelColor=282A36"/></a>
@@ -42,8 +42,7 @@
 <img src="https://github-readme-tech-stack.vercel.app/api/cards?title=Tech+Stack&align=center&titleAlign=center&fontSize=20&lineHeight=10&lineCount=4&theme=github_dark&width=800&bg=%230D1117&badge=%23161B22&border=%2321262D&titleColor=%2358A6FF&line1=kotlin%2Ckotlin%2C0095D5%3Bandroid%2Candroid%2C00ff00%3Bjetpackcompose%2Cjetpack%2C4285F4%3B&line2=swift%2Cswift%2CFA7343%3Bfirebase%2Cfirebase%2CFFCA28%3Bgithub%2Cgithub%2C181717%3B&line3=typescript%2Ctypescript%2C3178C6%3Bgraphql%2Cgraphql%2CE10098%3Bsupabase%2Csupabase%2C3FCF8E%3B&line4=gradle%2Cgradle%2C02303A%3Bgitkraken%2Cgitkraken%2C179287%3Bpostman%2Cpostman%2CFF6C37%3B" alt="Tech Stack" />
 </div>
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=batapii
-)](https://github.com/anuraghazra/github-readme-stats)
+
 
 ## 📊 Performance Metrics
 
