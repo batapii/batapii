@@ -129,7 +129,7 @@ Bash              1 min           ░░░░░░░░░░░░░░░�
 
 ### 🔨 Development Environment
 <!--START_SECTION:dev-stats-->
-![Code Time](http://img.shields.io/badge/Code%20Time-333%20hrs%2038%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-337%20hrs%208%20mins-blue)
 
 📊 **This Week I Spent My Time On** 
 
@@ -153,7 +153,7 @@ Mac                      22 hrs 46 mins      ███████████�
 ```
 
 
- Last Updated on 27/11/2024 00:41:45 UTC
+ Last Updated on 27/11/2024 12:17:20 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
