@@ -93,7 +93,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           SECTION_NAME: "wakamonth"
           BLOCKS: ░▒▓█
-          TIME_RANGE: This Month
+          TIME_RANGE: This_Month
           SHOW_TIME: true
           SHOW_TOTAL: true
           LANG_COUNT: 15
