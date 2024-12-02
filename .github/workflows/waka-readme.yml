@@ -59,7 +59,7 @@ jobs:
           SHOW_TIME: true
           SHOW_TOTAL: true
           LANG_COUNT: 10
-          TIME_RANGE: last_7_days
+          TIME_RANGE: this_week
           
       # Development Stats
       - name: Update Dev Stats
