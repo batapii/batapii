@@ -59,7 +59,7 @@ jobs:
           SHOW_TIME: true
           SHOW_TOTAL: true
           LANG_COUNT: 10
-          TIME_RANGE: this_week
+          TIME_RANGE: last_7_days
           
       # Development Stats
       - name: Update Dev Stats
@@ -93,7 +93,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           SECTION_NAME: "wakamonth"
           BLOCKS: ░▒▓█
-          TIME_RANGE: this_month
+          TIME_RANGE: last_30_days
           SHOW_TIME: true
           SHOW_TOTAL: true
           LANG_COUNT: 15
