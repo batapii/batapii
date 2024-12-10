@@ -12,7 +12,7 @@
 
 ## 🏆 Achievements
 
-![Trophy](https://github-profile-trophy.vercel.app/?username=batapii&theme=onestar&no-frame=true&no-bg=true&column=8&rank=SSS,SS,S,AAA,AA,A,B,C&margin-w=10&margin-h=10)
+![Trophy](https://github-profile-trophy.vercel.app/?username=batapii&theme=onestar&no-frame=true&no-bg=true&column=8&rank=SECRET,SSS,SS,S,AAA,AA,A,B,C,D,E,F,G&margin-w=10&margin-h=10)
 
 ## 🎯 Github Profile Summary
 
