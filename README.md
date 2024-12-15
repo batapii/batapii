@@ -129,7 +129,7 @@ SQL               2 mins          ░░░░░░░░░░░░░░░�
 
 ### 🔨 Development Environment
 <!--START_SECTION:dev-stats-->
-![Code Time](http://img.shields.io/badge/Code%20Time-374%20hrs%2052%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-374%20hrs%2058%20mins-blue)
 
 📊 **This Week I Spent My Time On** 
 
@@ -153,7 +153,7 @@ Mac                      18 hrs 54 mins      ███████████�
 ```
 
 
- Last Updated on 14/12/2024 12:15:41 UTC
+ Last Updated on 15/12/2024 00:46:54 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
