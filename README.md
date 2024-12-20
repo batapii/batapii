@@ -130,7 +130,7 @@ XML               4 mins          ░░░░░░░░░░░░░░░�
 
 ### 🔨 Development Environment
 <!--START_SECTION:dev-stats-->
-![Code Time](http://img.shields.io/badge/Code%20Time-387%20hrs%2050%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-388%20hrs%2041%20mins-blue)
 
 📊 **This Week I Spent My Time On** 
 
@@ -156,7 +156,7 @@ Mac                      13 hrs 18 mins      ███████████�
 ```
 
 
- Last Updated on 20/12/2024 00:40:04 UTC
+ Last Updated on 20/12/2024 12:16:06 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
