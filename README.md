@@ -146,22 +146,22 @@ No Activity Tracked This Week
 <!--START_SECTION:wakamonth-->
 
 ```txt
-Total Time: 34 hrs 32 mins
+Total Time: 32 hrs 44 mins
 
-Kotlin            17 hrs 48 mins  █████████▒░░░░░░░░░░░░░░░   36.92 %
-Other             13 hrs 41 mins  ███████░░░░░░░░░░░░░░░░░░   28.39 %
-TypeScript        7 hrs 9 mins    ███▓░░░░░░░░░░░░░░░░░░░░░   14.84 %
-YAML              2 hrs 30 mins   █▒░░░░░░░░░░░░░░░░░░░░░░░   05.20 %
-HTTP Request      2 hrs 14 mins   █░░░░░░░░░░░░░░░░░░░░░░░░   04.64 %
-Swift             1 hr 18 mins    ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.71 %
-JSON              1 hr 9 mins     ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.41 %
-Image (svg)       1 hr 2 mins     ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.17 %
-mcfunction        17 mins         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.61 %
+Kotlin            16 hrs 20 mins  █████████░░░░░░░░░░░░░░░░   35.38 %
+Other             13 hrs 26 mins  ███████▒░░░░░░░░░░░░░░░░░   29.11 %
+TypeScript        7 hrs 8 mins    ████░░░░░░░░░░░░░░░░░░░░░   15.47 %
+YAML              2 hrs 28 mins   █▒░░░░░░░░░░░░░░░░░░░░░░░   05.37 %
+HTTP Request      2 hrs 14 mins   █▒░░░░░░░░░░░░░░░░░░░░░░░   04.84 %
+Swift             1 hr 18 mins    ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.83 %
+JSON              1 hr 8 mins     ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.49 %
+Image (svg)       46 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.68 %
+mcfunction        17 mins         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.63 %
 Text              9 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.34 %
-Java Properties   8 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.29 %
-Properties        6 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.23 %
-XML               4 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.16 %
-HTML              4 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.16 %
+Java Properties   8 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.30 %
+Properties        6 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.24 %
+HTML              4 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.17 %
+XML               4 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.17 %
 GitIgnore file    4 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.16 %
 ```
 
