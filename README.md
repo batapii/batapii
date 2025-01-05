@@ -122,7 +122,7 @@ TypeScript   3 mins          █░░░░░░░░░░░░░░░░
 
 ### 🔨 Development Environment
 <!--START_SECTION:dev-stats-->
-![Code Time](http://img.shields.io/badge/Code%20Time-398%20hrs%2038%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-398%20hrs%2046%20mins-blue)
 
 📊 **This Week I Spent My Time On** 
 
@@ -145,7 +145,7 @@ Mac                      1 hr 20 mins        ███████████�
 ```
 
 
- Last Updated on 05/01/2025 00:43:40 UTC
+ Last Updated on 05/01/2025 12:15:04 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
