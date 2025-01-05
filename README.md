@@ -122,7 +122,7 @@ TypeScript   3 mins          █░░░░░░░░░░░░░░░░
 
 ### 🔨 Development Environment
 <!--START_SECTION:dev-stats-->
-![Code Time](http://img.shields.io/badge/Code%20Time-398%20hrs%2024%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-398%20hrs%2038%20mins-blue)
 
 📊 **This Week I Spent My Time On** 
 
@@ -130,17 +130,22 @@ TypeScript   3 mins          █░░░░░░░░░░░░░░░░
 🕑︎ Time Zone: Asia/Tokyo
 
 🔥 Editors: 
-No Activity Tracked This Week
+MinecraftEducation       1 hr 7 mins         █████████████████████░░░░   83.39 % 
+Slack                    9 mins              ███░░░░░░░░░░░░░░░░░░░░░░   12.11 % 
+Cursor                   3 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   04.22 % 
+VS Code                  0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.29 % 
 
 🐱‍💻 Projects: 
-No Activity Tracked This Week
+eLNoZ4Y4AAA=             51 mins             ████████████████░░░░░░░░░   63.66 % 
+tk-ice-onigokko-command-125 mins             ████████░░░░░░░░░░░░░░░░░   32.13 % 
+ToDoSNS                  3 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   04.22 % 
 
 💻 Operating System: 
-No Activity Tracked This Week
+Mac                      1 hr 20 mins        █████████████████████████   100.00 % 
 ```
 
 
- Last Updated on 04/01/2025 12:15:10 UTC
+ Last Updated on 05/01/2025 00:43:40 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
