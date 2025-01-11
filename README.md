@@ -65,8 +65,6 @@
 
 > 📦 3.8 kB Used in GitHub's Storage 
  > 
-> 🏆 21 Contributions in the Year 2025
- > 
 > 🚫 Not Opted to Hire
  > 
 > 📜 4 Public Repositories 
@@ -105,7 +103,7 @@ mcfunction               1 repo              ███░░░░░░░░�
 
 
 
- Last Updated on 10/01/2025 12:17:02 UTC
+ Last Updated on 11/01/2025 00:40:06 UTC
 <!--END_SECTION:commit-stats-->
 
 ### 💻 Weekly Development
