@@ -131,7 +131,7 @@ Shell Script     0 secs          ░░░░░░░░░░░░░░░�
 
 ### 🔨 Development Environment
 <!--START_SECTION:dev-stats-->
-![Code Time](http://img.shields.io/badge/Code%20Time-453%20hrs%203%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-457%20hrs%2047%20mins-blue)
 
 📊 **This Week I Spent My Time On** 
 
@@ -157,7 +157,7 @@ Mac                      12 hrs 52 mins      ███████████�
 ```
 
 
- Last Updated on 13/02/2025 00:39:57 UTC
+ Last Updated on 13/02/2025 12:16:53 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
