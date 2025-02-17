@@ -59,13 +59,13 @@
 
 ### 🌟 Commit Activity
 <!--START_SECTION:commit-stats-->
-![Code Time](http://img.shields.io/badge/Code%20Time-460%20hrs%208%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-460%20hrs%2053%20mins-blue)
 
 **🐱 My GitHub Data** 
 
 > 📦 3.8 kB Used in GitHub's Storage 
  > 
-> 🏆 126 Contributions in the Year 2025
+> 🏆 0 Contributions in the Year 2025
  > 
 > 🚫 Not Opted to Hire
  > 
@@ -106,7 +106,7 @@ HTML                     1 repo              ██░░░░░░░░░�
 
 
 
- Last Updated on 17/02/2025 00:42:19 UTC
+ Last Updated on 17/02/2025 12:17:03 UTC
 <!--END_SECTION:commit-stats-->
 
 ### 💻 Weekly Development
