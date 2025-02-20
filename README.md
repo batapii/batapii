@@ -126,7 +126,7 @@ JSON     0 secs          ░░░░░░░░░░░░░░░░░░�
 
 ### 🔨 Development Environment
 <!--START_SECTION:dev-stats-->
-![Code Time](http://img.shields.io/badge/Code%20Time-460%20hrs%2053%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-465%20hrs%2021%20mins-blue)
 
 📊 **This Week I Spent My Time On** 
 
@@ -150,7 +150,7 @@ Mac                      7 hrs 51 mins       ███████████�
 ```
 
 
- Last Updated on 20/02/2025 00:40:38 UTC
+ Last Updated on 20/02/2025 12:16:57 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
