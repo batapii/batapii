@@ -125,7 +125,7 @@ JavaScript   1 min           ▒░░░░░░░░░░░░░░░░
 
 ### 🔨 Development Environment
 <!--START_SECTION:dev-stats-->
-![Code Time](http://img.shields.io/badge/Code%20Time-487%20hrs%204%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-487%20hrs%205%20mins-blue)
 
 📊 **This Week I Spent My Time On** 
 
@@ -148,7 +148,7 @@ Mac                      1 hr 45 mins        ███████████�
 ```
 
 
- Last Updated on 30/03/2025 00:46:47 UTC
+ Last Updated on 30/03/2025 12:16:08 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
