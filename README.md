@@ -126,7 +126,7 @@ Kotlin       0 secs          ░░░░░░░░░░░░░░░░░
 
 ### 🔨 Development Environment
 <!--START_SECTION:dev-stats-->
-![Code Time](http://img.shields.io/badge/Code%20Time-487%20hrs%2017%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-487%20hrs%2020%20mins-blue)
 
 📊 **This Week I Spent My Time On** 
 
@@ -149,7 +149,7 @@ Mac                      40 mins             ███████████�
 ```
 
 
- Last Updated on 04/04/2025 00:42:31 UTC
+ Last Updated on 04/04/2025 12:17:57 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
