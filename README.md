@@ -123,7 +123,7 @@ Swift   1 hr 13 mins    ██▒░░░░░░░░░░░░░░░�
 
 ### 🔨 Development Environment
 <!--START_SECTION:dev-stats-->
-![Code Time](http://img.shields.io/badge/Code%20Time-507%20hrs%2025%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-511%20hrs%2052%20mins-blue)
 
 📊 **This Week I Spent My Time On** 
 
@@ -145,7 +145,7 @@ Mac                      12 hrs 16 mins      ███████████�
 ```
 
 
- Last Updated on 01/05/2025 00:50:19 UTC
+ Last Updated on 01/05/2025 12:17:44 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
