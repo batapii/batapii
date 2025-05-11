@@ -123,7 +123,7 @@ Other   6 mins          █████████▓░░░░░░░░�
 
 ### 🔨 Development Environment
 <!--START_SECTION:dev-stats-->
-![Code Time](http://img.shields.io/badge/Code%20Time-512%20hrs%208%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-512%20hrs%2047%20mins-blue)
 
 📊 **This Week I Spent My Time On** 
 
@@ -142,7 +142,7 @@ Mac                      15 mins             ███████████�
 ```
 
 
- Last Updated on 11/05/2025 00:49:05 UTC
+ Last Updated on 11/05/2025 12:16:16 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
