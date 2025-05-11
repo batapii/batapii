@@ -131,17 +131,18 @@ Other   6 mins          █████████▓░░░░░░░░�
 🕑︎ Time Zone: Asia/Tokyo
 
 🔥 Editors: 
-No Activity Tracked This Week
+Xcode                    9 mins              ███████████████░░░░░░░░░░   60.88 % 
+Slack                    6 mins              ██████████░░░░░░░░░░░░░░░   39.12 % 
 
 🐱‍💻 Projects: 
-No Activity Tracked This Week
+opm25                    15 mins             █████████████████████████   100.00 % 
 
 💻 Operating System: 
-No Activity Tracked This Week
+Mac                      15 mins             █████████████████████████   100.00 % 
 ```
 
 
- Last Updated on 10/05/2025 12:16:18 UTC
+ Last Updated on 11/05/2025 00:49:05 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
