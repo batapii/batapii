@@ -124,7 +124,7 @@ Cocoa   5 mins          ▒░░░░░░░░░░░░░░░░░�
 
 ### 🔨 Development Environment
 <!--START_SECTION:dev-stats-->
-![Code Time](http://img.shields.io/badge/Code%20Time-530%20hrs%208%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-530%20hrs%2041%20mins-blue)
 
 📊 **This Week I Spent My Time On** 
 
@@ -145,7 +145,7 @@ Mac                      7 hrs 19 mins       ███████████�
 ```
 
 
- Last Updated on 30/05/2025 00:45:39 UTC
+ Last Updated on 30/05/2025 12:18:09 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
