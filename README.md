@@ -147,11 +147,11 @@ No Activity Tracked This Week
 <!--START_SECTION:wakamonth-->
 
 ```txt
-Total Time: 3 hrs 5 mins
+Total Time: 2 hrs 55 mins
 
-Other         20 hrs 37 mins  █████████████████████▓░░░   86.98 %
-Swift         2 hrs 21 mins   ██▒░░░░░░░░░░░░░░░░░░░░░░   09.93 %
-Cocoa         43 mins         ▓░░░░░░░░░░░░░░░░░░░░░░░░   03.08 %
+Other         20 hrs 31 mins  ██████████████████████░░░   87.51 %
+Swift         2 hrs 11 mins   ██▒░░░░░░░░░░░░░░░░░░░░░░   09.37 %
+Cocoa         43 mins         ▓░░░░░░░░░░░░░░░░░░░░░░░░   03.11 %
 Image (png)   0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.01 %
 ```
 
