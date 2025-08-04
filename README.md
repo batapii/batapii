@@ -124,7 +124,7 @@ mcfunction   2 mins          ▒░░░░░░░░░░░░░░░░
 
 ### 🔨 Development Environment
 <!--START_SECTION:dev-stats-->
-![Code Time](http://img.shields.io/badge/Code%20Time-583%20hrs%206%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-583%20hrs%2027%20mins-blue)
 
 📊 **This Week I Spent My Time On** 
 
@@ -147,7 +147,7 @@ Mac                      4 hrs 3 mins        ███████████�
 ```
 
 
- Last Updated on 04/08/2025 00:56:33 UTC
+ Last Updated on 04/08/2025 12:21:30 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
