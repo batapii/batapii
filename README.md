@@ -123,7 +123,7 @@ Java Properties   2 mins          ▒░░░░░░░░░░░░░░�
 
 ### 🔨 Development Environment
 <!--START_SECTION:dev-stats-->
-![Code Time](http://img.shields.io/badge/Code%20Time-590%20hrs%2059%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-594%20hrs%2034%20mins-blue)
 
 📊 **This Week I Spent My Time On** 
 
@@ -145,7 +145,7 @@ Mac                      1 hr 51 mins        ███████████�
 ```
 
 
- Last Updated on 16/08/2025 00:45:38 UTC
+ Last Updated on 16/08/2025 12:17:36 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
