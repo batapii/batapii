@@ -113,10 +113,9 @@ HTML                     1 repo              ██░░░░░░░░░�
 <!--START_SECTION:wakatime-->
 
 ```txt
-Total Time: 5 mins
+Total Time: 0 secs
 
-Other   4 hrs 1 min     ████████████████████████▒   97.81 %
-Swift   5 mins          ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.19 %
+No activity tracked
 ```
 
 <!--END_SECTION:wakatime-->
