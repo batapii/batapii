@@ -120,7 +120,7 @@ Other   22 mins         ██████████████████�
 
 ### 🔨 Development Environment
 <!--START_SECTION:dev-stats-->
-![Code Time](http://img.shields.io/badge/Code%20Time-606%20hrs%2016%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-606%20hrs%2030%20mins-blue)
 
 📊 **This Week I Spent My Time On** 
 
@@ -128,17 +128,17 @@ Other   22 mins         ██████████████████�
 🕑︎ Time Zone: Asia/Tokyo
 
 🔥 Editors: 
-No Activity Tracked This Week
+Music                    22 mins             █████████████████████████   100.00 % 
 
 🐱‍💻 Projects: 
-No Activity Tracked This Week
+Third_11                 22 mins             █████████████████████████   100.00 % 
 
 💻 Operating System: 
-No Activity Tracked This Week
+Mac                      22 mins             █████████████████████████   100.00 % 
 ```
 
 
- Last Updated on 05/09/2025 12:18:07 UTC
+ Last Updated on 06/09/2025 00:41:26 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
