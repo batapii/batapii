@@ -113,7 +113,7 @@ HTML                     1 repo              ██░░░░░░░░░�
 ```txt
 Total Time: 0 secs
 
-No activity tracked
+Other   22 mins         █████████████████████████   100.00 %
 ```
 
 <!--END_SECTION:wakatime-->
