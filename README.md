@@ -59,13 +59,13 @@
 
 ### 🌟 Commit Activity
 <!--START_SECTION:commit-stats-->
-![Code Time](http://img.shields.io/badge/Code%20Time-640%20hrs%2018%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-640%20hrs%2034%20mins-blue)
 
 **🐱 My GitHub Data** 
 
-> 📦 6.8 kB Used in GitHub's Storage 
+> 📦 6.9 kB Used in GitHub's Storage 
  > 
-> 🏆 565 Contributions in the Year 2025
+> 🏆 566 Contributions in the Year 2025
  > 
 > 🚫 Not Opted to Hire
  > 
@@ -73,27 +73,6 @@
  > 
 > 🔑 8 Private Repositories 
  > 
-**I'm an Early 🐤** 
-
-```text
-🌞 Morning                2017 commits        █████████░░░░░░░░░░░░░░░░   34.01 % 
-🌆 Daytime                2878 commits        ████████████░░░░░░░░░░░░░   48.53 % 
-🌃 Evening                741 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.50 % 
-🌙 Night                  294 commits         █░░░░░░░░░░░░░░░░░░░░░░░░   04.96 % 
-```
-📅 **I'm Most Productive on Monday** 
-
-```text
-Monday                   1634 commits        ███████░░░░░░░░░░░░░░░░░░   27.55 % 
-Tuesday                  1058 commits        ████░░░░░░░░░░░░░░░░░░░░░   17.84 % 
-Wednesday                903 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.23 % 
-Thursday                 1432 commits        ██████░░░░░░░░░░░░░░░░░░░   24.15 % 
-Friday                   460 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   07.76 % 
-Saturday                 232 commits         █░░░░░░░░░░░░░░░░░░░░░░░░   03.91 % 
-Sunday                   211 commits         █░░░░░░░░░░░░░░░░░░░░░░░░   03.56 % 
-```
-
-
 **I Mostly Code in Kotlin** 
 
 ```text
@@ -107,7 +86,7 @@ TypeScript               1 repo              ██░░░░░░░░░�
 
 
 
- Last Updated on 19/09/2025 12:18:45 UTC
+ Last Updated on 20/09/2025 00:40:50 UTC
 <!--END_SECTION:commit-stats-->
 
 ### 💻 Weekly Development
