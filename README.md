@@ -132,7 +132,7 @@ IDEA_MODULE      0 secs          ░░░░░░░░░░░░░░░�
 
 ### 🔨 Development Environment
 <!--START_SECTION:dev-stats-->
-![Code Time](http://img.shields.io/badge/Code%20Time-640%20hrs%2034%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-640%20hrs%2045%20mins-blue)
 
 📊 **This Week I Spent My Time On** 
 
@@ -158,7 +158,7 @@ Mac                      13 hrs 26 mins      ███████████�
 ```
 
 
- Last Updated on 21/09/2025 00:47:36 UTC
+ Last Updated on 21/09/2025 12:16:59 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
