@@ -130,24 +130,8 @@ JSON         0 secs          ░░░░░░░░░░░░░░░░░
 <!--START_SECTION:dev-stats-->
 ![Code Time](http://img.shields.io/badge/Code%20Time-647%20hrs%2032%20mins-blue)
 
-📊 **This Week I Spent My Time On** 
 
-```text
-🕑︎ Time Zone: Asia/Tokyo
-
-🔥 Editors: 
-Warp                     1 hr 6 mins         ██████████████████████░░░   87.30 % 
-IntelliJ IDEA            9 mins              ███░░░░░░░░░░░░░░░░░░░░░░   12.70 % 
-
-🐱‍💻 Projects: 
-LPRecruitment            1 hr 16 mins        █████████████████████████   100.00 % 
-
-💻 Operating System: 
-Mac                      1 hr 16 mins        █████████████████████████   100.00 % 
-```
-
-
- Last Updated on 03/10/2025 12:18:11 UTC
+ Last Updated on 04/10/2025 00:40:54 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
