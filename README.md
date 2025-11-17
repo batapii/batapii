@@ -172,11 +172,11 @@ Properties   0 secs          ░░░░░░░░░░░░░░░░░
 <!--START_SECTION:wakaalltime-->
 
 ```txt
-Total Time: 318 hrs
+Total Time: 319 hrs 38 mins
 
-Other                  358 hrs 36 mins █████████████▒░░░░░░░░░░░   53.00 %
-Kotlin                 202 hrs 13 mins ███████▒░░░░░░░░░░░░░░░░░   29.89 %
-Swift                  39 hrs 34 mins  █▒░░░░░░░░░░░░░░░░░░░░░░░   05.85 %
+Other                  358 hrs 36 mins █████████████▒░░░░░░░░░░░   52.87 %
+Kotlin                 202 hrs 13 mins ███████▒░░░░░░░░░░░░░░░░░   29.82 %
+Swift                  41 hrs 11 mins  █▓░░░░░░░░░░░░░░░░░░░░░░░   06.07 %
 TypeScript             19 hrs 14 mins  ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.84 %
 YAML                   9 hrs 25 mins   ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.39 %
 Cocoa                  9 hrs 3 mins    ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.34 %
