@@ -131,20 +131,17 @@ No activity tracked
 🕑︎ Time Zone: Asia/Tokyo
 
 🔥 Editors: 
-Zoom                     4 hrs 15 mins       ████████████████████████░   95.14 % 
-FirstSeedCalendar        12 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   04.79 % 
-Notion                   0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.05 % 
-Warp                     0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.01 % 
+No Activity Tracked This Week
 
 🐱‍💻 Projects: 
-53_1                     4 hrs 28 mins       █████████████████████████   100.00 % 
+No Activity Tracked This Week
 
 💻 Operating System: 
-Mac                      4 hrs 28 mins       █████████████████████████   100.00 % 
+No Activity Tracked This Week
 ```
 
 
- Last Updated on 04/12/2025 12:22:06 UTC
+ Last Updated on 05/12/2025 00:48:19 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
