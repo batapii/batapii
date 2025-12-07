@@ -148,15 +148,13 @@ No Activity Tracked This Week
 <!--START_SECTION:wakamonth-->
 
 ```txt
-Total Time: 3 hrs 32 mins
+Total Time: 3 hrs 21 mins
 
-Other           17 hrs 28 mins  ████████████████████▓░░░░   83.13 %
-Swift           3 hrs 4 mins    ███▓░░░░░░░░░░░░░░░░░░░░░   14.64 %
-Kotlin          11 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.90 %
-Cocoa           10 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.84 %
-Objective-C++   4 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.39 %
-XML             1 min           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.10 %
-Properties      0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 %
+Other           12 hrs 33 mins  ███████████████████▓░░░░░   78.92 %
+Swift           3 hrs 4 mins    ████▓░░░░░░░░░░░░░░░░░░░░   19.33 %
+Cocoa           10 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.11 %
+Objective-C++   4 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.51 %
+XML             1 min           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.13 %
 ```
 
 <!--END_SECTION:wakamonth-->
