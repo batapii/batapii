@@ -172,23 +172,23 @@ JSON            0 secs          ░░░░░░░░░░░░░░░░
 <!--START_SECTION:wakaalltime-->
 
 ```txt
-Total Time: 321 hrs 4 mins
+Total Time: 321 hrs 6 mins
 
-Other                  376 hrs 48 mins █████████████▒░░░░░░░░░░░   53.99 %
-Kotlin                 202 hrs 13 mins ███████▒░░░░░░░░░░░░░░░░░   28.98 %
-Swift                  42 hrs 12 mins  █▓░░░░░░░░░░░░░░░░░░░░░░░   06.05 %
-TypeScript             19 hrs 14 mins  ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.76 %
-YAML                   9 hrs 25 mins   ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.35 %
-Cocoa                  9 hrs 3 mins    ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.30 %
-Image (svg)            6 hrs 50 mins   ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.98 %
+Other                  382 hrs         █████████████▓░░░░░░░░░░░   54.33 %
+Kotlin                 202 hrs 13 mins ███████▒░░░░░░░░░░░░░░░░░   28.76 %
+Swift                  42 hrs 13 mins  █▓░░░░░░░░░░░░░░░░░░░░░░░   06.01 %
+TypeScript             19 hrs 14 mins  ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.74 %
+YAML                   9 hrs 25 mins   ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.34 %
+Cocoa                  9 hrs 4 mins    ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.29 %
+Image (svg)            6 hrs 50 mins   ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.97 %
 HTTP Request           5 hrs 14 mins   ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.75 %
-JSON                   4 hrs 55 mins   ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.71 %
+JSON                   4 hrs 55 mins   ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.70 %
 Text                   3 hrs 42 mins   ░░░░░░░░░░░░░░░░░░░░░░░░░   00.53 %
 XML                    2 hrs 26 mins   ░░░░░░░░░░░░░░░░░░░░░░░░░   00.35 %
 TOML                   2 hrs 9 mins    ░░░░░░░░░░░░░░░░░░░░░░░░░   00.31 %
 Figma Design           1 hr 57 mins    ░░░░░░░░░░░░░░░░░░░░░░░░░   00.28 %
 HTML                   1 hr 41 mins    ░░░░░░░░░░░░░░░░░░░░░░░░░   00.24 %
-Markdown               1 hr 25 mins    ░░░░░░░░░░░░░░░░░░░░░░░░░   00.21 %
+Markdown               1 hr 25 mins    ░░░░░░░░░░░░░░░░░░░░░░░░░   00.20 %
 ```
 
 <!--END_SECTION:wakaalltime-->
