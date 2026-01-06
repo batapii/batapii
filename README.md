@@ -123,7 +123,7 @@ No activity tracked
 
 ### 🔨 Development Environment
 <!--START_SECTION:dev-stats-->
-![Code Time](http://img.shields.io/badge/Code%20Time-719%20hrs%2011%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-719%20hrs%2011%20mins-blue?style=flat)
 
 📊 **This Week I Spent My Time On** 
 
@@ -141,7 +141,7 @@ No Activity Tracked This Week
 ```
 
 
- Last Updated on 05/01/2026 12:22:38 UTC
+ Last Updated on 06/01/2026 00:51:38 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
