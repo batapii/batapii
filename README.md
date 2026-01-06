@@ -59,7 +59,7 @@
 
 ### 🌟 Commit Activity
 <!--START_SECTION:commit-stats-->
-![Code Time](http://img.shields.io/badge/Code%20Time-719%20hrs%2011%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-719%20hrs%2011%20mins-blue?style=flat)
 
 **🐱 My GitHub Data** 
 
@@ -107,7 +107,7 @@ TypeScript               1 repo              ██░░░░░░░░░�
 
 
 
- Last Updated on 05/01/2026 12:22:31 UTC
+ Last Updated on 06/01/2026 00:51:31 UTC
 <!--END_SECTION:commit-stats-->
 
 ### 💻 Weekly Development
