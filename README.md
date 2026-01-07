@@ -148,14 +148,13 @@ No Activity Tracked This Week
 <!--START_SECTION:wakamonth-->
 
 ```txt
-Total Time: 1 hr 12 mins
+Total Time: 28 mins
 
-Other           12 hrs 12 mins  ██████████████████████▓░░   90.95 %
-Swift           52 mins         █▓░░░░░░░░░░░░░░░░░░░░░░░   06.50 %
-JavaScript      19 mins         ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.47 %
-Objective-C++   0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.06 %
-Cocoa           0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.01 %
-JSON            0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 %
+Other        12 hrs 12 mins  ████████████████████████░   96.23 %
+JavaScript   19 mins         ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.61 %
+Swift        8 mins          ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.14 %
+Cocoa        0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.01 %
+JSON         0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 %
 ```
 
 <!--END_SECTION:wakamonth-->
