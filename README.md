@@ -131,17 +131,17 @@ JavaScript   9 mins          █████████████████
 🕑︎ Time Zone: Asia/Tokyo
 
 🔥 Editors: 
-No Activity Tracked This Week
+VS Code                  9 mins              █████████████████████████   100.00 % 
 
 🐱‍💻 Projects: 
-No Activity Tracked This Week
+ユーザ作成                    9 mins              █████████████████████████   100.00 % 
 
 💻 Operating System: 
-No Activity Tracked This Week
+Mac                      9 mins              █████████████████████████   100.00 % 
 ```
 
 
- Last Updated on 07/01/2026 12:23:10 UTC
+ Last Updated on 08/01/2026 00:51:30 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
