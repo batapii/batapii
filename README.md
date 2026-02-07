@@ -116,7 +116,7 @@ TypeScript               1 repo              ██░░░░░░░░░�
 ```txt
 Total Time: 0 secs
 
-Other   16 mins         █████████████████████████   100.00 %
+No activity tracked
 ```
 
 <!--END_SECTION:wakatime-->
