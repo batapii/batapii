@@ -133,17 +133,18 @@ Swift   0 secs          █████▒░░░░░░░░░░░░�
 🕑︎ Time Zone: Asia/Tokyo
 
 🔥 Editors: 
-No Activity Tracked This Week
+Simulator                2 mins              ██████████████░░░░░░░░░░░   56.93 % 
+Xcode                    1 min               ███████████░░░░░░░░░░░░░░   43.07 % 
 
 🐱‍💻 Projects: 
-No Activity Tracked This Week
+opm_3_2                  4 mins              █████████████████████████   100.00 % 
 
 💻 Operating System: 
-No Activity Tracked This Week
+Mac                      4 mins              █████████████████████████   100.00 % 
 ```
 
 
- Last Updated on 08/02/2026 12:23:41 UTC
+ Last Updated on 09/02/2026 01:05:33 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
