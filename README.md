@@ -126,7 +126,7 @@ Text    0 secs                ░░░░░░░░░░░░░░░░�
 
 ### 🔨 Development Environment
 <!--START_SECTION:dev-stats-->
-![Code Time](http://img.shields.io/badge/Code%20Time-745%20hrs%2037%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-746%20hrs%2022%20mins-blue?style=flat)
 
 📊 **This Week I Spent My Time On** 
 
@@ -134,17 +134,20 @@ Text    0 secs                ░░░░░░░░░░░░░░░░�
 🕑︎ Time Zone: Asia/Tokyo
 
 🔥 Editors: 
-No Activity Tracked This Week
+Zoom                     4 hrs 16 mins       █████████████████░░░░░░░░   68.46 % 
+Warp                     1 hr 48 mins        ███████░░░░░░░░░░░░░░░░░░   28.86 % 
+Xcode                    7 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.98 % 
+Terminal                 2 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.69 % 
 
 🐱‍💻 Projects: 
-No Activity Tracked This Week
+opm_3_2                  6 hrs 14 mins       █████████████████████████   100.00 % 
 
 💻 Operating System: 
-No Activity Tracked This Week
+Mac                      6 hrs 14 mins       █████████████████████████   100.00 % 
 ```
 
 
- Last Updated on 07/03/2026 12:22:36 UTC
+ Last Updated on 08/03/2026 01:03:55 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
