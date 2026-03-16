@@ -126,7 +126,7 @@ JavaScript   1 min                 ░░░░░░░░░░░░░░░
 
 ### 🔨 Development Environment
 <!--START_SECTION:dev-stats-->
-![Code Time](http://img.shields.io/badge/Code%20Time-754%20hrs%204%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-754%20hrs%2016%20mins-blue?style=flat)
 
 📊 **This Week I Spent My Time On** 
 
@@ -134,22 +134,23 @@ JavaScript   1 min                 ░░░░░░░░░░░░░░░
 🕑︎ Time Zone: Asia/Tokyo
 
 🔥 Editors: 
-Zoom                     5 hrs 26 mins       █████████████████████░░░░   82.90 % 
-Warp                     36 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   09.19 % 
-Xcode                    29 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   07.58 % 
-Simulator                0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.17 % 
-Arc                      0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.15 % 
+Zoom                     5 hrs 17 mins       ███████████████████████░░   90.28 % 
+Xcode                    25 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   07.32 % 
+Warp                     5 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.63 % 
+VS Code                  1 min               ░░░░░░░░░░░░░░░░░░░░░░░░░   00.57 % 
+Simulator                0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.19 % 
 
 🐱‍💻 Projects: 
-opm_3_2                  3 hrs 40 mins       ██████████████░░░░░░░░░░░   56.05 % 
-54_1                     2 hrs 53 mins       ███████████░░░░░░░░░░░░░░   43.95 % 
+54_1                     4 hrs 57 mins       █████████████████████░░░░   84.60 % 
+opm_3_2                  52 mins             ████░░░░░░░░░░░░░░░░░░░░░   14.83 % 
+ユーザ作成                    1 min               ░░░░░░░░░░░░░░░░░░░░░░░░░   00.57 % 
 
 💻 Operating System: 
-Mac                      6 hrs 34 mins       █████████████████████████   100.00 % 
+Mac                      5 hrs 51 mins       █████████████████████████   100.00 % 
 ```
 
 
- Last Updated on 15/03/2026 12:27:19 UTC
+ Last Updated on 16/03/2026 01:11:50 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
