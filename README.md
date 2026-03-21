@@ -134,21 +134,21 @@ JavaScript   1 min                 ░░░░░░░░░░░░░░░
 🕑︎ Time Zone: Asia/Tokyo
 
 🔥 Editors: 
-Zoom                     5 hrs 29 mins       ███████████████████████░░   90.46 % 
-Xcode                    22 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   06.21 % 
-MinecraftEducation       10 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.78 % 
-VS Code                  1 min               ░░░░░░░░░░░░░░░░░░░░░░░░░   00.55 % 
+Zoom                     5 hrs 29 mins       █████████████████████░░░░   85.06 % 
+MinecraftEducation       33 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   08.59 % 
+Xcode                    22 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.84 % 
+VS Code                  1 min               ░░░░░░░░░░░░░░░░░░░░░░░░░   00.52 % 
 
 🐱‍💻 Projects: 
-54_1                     3 hrs 53 mins       ████████████████░░░░░░░░░   64.28 % 
-ユーザ作成                    2 hrs 9 mins        █████████░░░░░░░░░░░░░░░░   35.72 % 
+54_1                     4 hrs 16 mins       █████████████████░░░░░░░░   66.42 % 
+ユーザ作成                    2 hrs 9 mins        ████████░░░░░░░░░░░░░░░░░   33.58 % 
 
 💻 Operating System: 
-Mac                      6 hrs 3 mins        █████████████████████████   100.00 % 
+Mac                      6 hrs 26 mins       █████████████████████████   100.00 % 
 ```
 
 
- Last Updated on 20/03/2026 12:33:02 UTC
+ Last Updated on 21/03/2026 01:00:07 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
