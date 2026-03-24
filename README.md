@@ -126,7 +126,7 @@ Cocoa        2 mins                ▒░░░░░░░░░░░░░░
 
 ### 🔨 Development Environment
 <!--START_SECTION:dev-stats-->
-![Code Time](http://img.shields.io/badge/Code%20Time-758%20hrs%2037%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-758%20hrs%2043%20mins-blue?style=flat)
 
 📊 **This Week I Spent My Time On** 
 
@@ -134,20 +134,22 @@ Cocoa        2 mins                ▒░░░░░░░░░░░░░░
 🕑︎ Time Zone: Asia/Tokyo
 
 🔥 Editors: 
-Zoom                     3 hrs 25 mins       ████████████████████░░░░░   78.62 % 
-MinecraftEducation       33 mins             ███░░░░░░░░░░░░░░░░░░░░░░   12.73 % 
-Xcode                    22 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   08.65 % 
+Zoom                     3 hrs 25 mins       ███████████████████░░░░░░   76.76 % 
+MinecraftEducation       33 mins             ███░░░░░░░░░░░░░░░░░░░░░░   12.43 % 
+Xcode                    22 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   08.45 % 
+VS Code                  6 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   02.34 % 
+AdobePhotoshop2026       0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.03 % 
 
 🐱‍💻 Projects: 
-54_1                     2 hrs 13 mins       █████████████░░░░░░░░░░░░   50.98 % 
-ユーザ作成                    2 hrs 7 mins        ████████████░░░░░░░░░░░░░   49.02 % 
+ユーザ作成                    2 hrs 14 mins       █████████████░░░░░░░░░░░░   50.20 % 
+54_1                     2 hrs 13 mins       ████████████░░░░░░░░░░░░░   49.80 % 
 
 💻 Operating System: 
-Mac                      4 hrs 20 mins       █████████████████████████   100.00 % 
+Mac                      4 hrs 27 mins       █████████████████████████   100.00 % 
 ```
 
 
- Last Updated on 23/03/2026 12:39:06 UTC
+ Last Updated on 24/03/2026 01:00:55 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
