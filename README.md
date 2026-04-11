@@ -131,18 +131,17 @@ No activity tracked
 🕑︎ Time Zone: Asia/Tokyo
 
 🔥 Editors: 
-Arc                      1 hr 44 mins        ███████████████████████░░   92.50 % 
-MinecraftEducation       8 mins              ██░░░░░░░░░░░░░░░░░░░░░░░   07.50 % 
+No Activity Tracked This Week
 
 🐱‍💻 Projects: 
-ユーザ作成                    1 hr 52 mins        █████████████████████████   100.00 % 
+No Activity Tracked This Week
 
 💻 Operating System: 
-Mac                      1 hr 52 mins        █████████████████████████   100.00 % 
+No Activity Tracked This Week
 ```
 
 
- Last Updated on 10/04/2026 12:42:23 UTC
+ Last Updated on 11/04/2026 01:09:38 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
