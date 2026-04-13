@@ -173,23 +173,23 @@ Cocoa        2 mins                ░░░░░░░░░░░░░░░
 <!--START_SECTION:wakaalltime-->
 
 ```txt
-Total Time: 336 hrs 55 mins
+Total Time: 337 hrs 48 mins
 
-Other                  427 hrs 45 mins       ██████████████░░░░░░░░░░░   55.94 %
-Kotlin                 214 hrs 23 mins       ███████░░░░░░░░░░░░░░░░░░   28.04 %
-Swift                  43 hrs 39 mins        █▒░░░░░░░░░░░░░░░░░░░░░░░   05.71 %
-TypeScript             19 hrs 19 mins        ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.53 %
+Other                  431 hrs 22 mins       ██████████████░░░░░░░░░░░   56.08 %
+Kotlin                 214 hrs 23 mins       ███████░░░░░░░░░░░░░░░░░░   27.87 %
+Swift                  44 hrs 19 mins        █▒░░░░░░░░░░░░░░░░░░░░░░░   05.76 %
+TypeScript             19 hrs 19 mins        ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.51 %
+Cocoa                  9 hrs 25 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.23 %
 YAML                   9 hrs 25 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.23 %
-Cocoa                  9 hrs 19 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.22 %
-Image (svg)            6 hrs 51 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.90 %
-HTTP Request           5 hrs 14 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.69 %
-JSON                   4 hrs 56 mins         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.65 %
+Image (svg)            6 hrs 51 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.89 %
+HTTP Request           5 hrs 14 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.68 %
+JSON                   4 hrs 56 mins         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.64 %
 Text                   4 hrs                 ░░░░░░░░░░░░░░░░░░░░░░░░░   00.52 %
 Figma Design           3 hrs 2 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.40 %
 XML                    2 hrs 27 mins         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.32 %
 TOML                   2 hrs 13 mins         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.29 %
 HTML                   1 hr 41 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.22 %
-JavaScript             1 hr 38 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.22 %
+JavaScript             1 hr 38 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.21 %
 ```
 
 <!--END_SECTION:wakaalltime-->
