@@ -125,7 +125,7 @@ Unity3D Asset   0 secs                ░░░░░░░░░░░░░░
 
 ### 🔨 Development Environment
 <!--START_SECTION:dev-stats-->
-![Code Time](http://img.shields.io/badge/Code%20Time-783%20hrs%2016%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-784%20hrs%2050%20mins-blue?style=flat)
 
 📊 **This Week I Spent My Time On** 
 
@@ -133,20 +133,20 @@ Unity3D Asset   0 secs                ░░░░░░░░░░░░░░
 🕑︎ Time Zone: Asia/Tokyo
 
 🔥 Editors: 
-Zoom                     4 hrs 9 mins        ██████████████████████░░░   86.86 % 
-Xcode                    37 mins             ███░░░░░░░░░░░░░░░░░░░░░░   13.14 % 
+VS Code                  18 mins             █████████████████████░░░░   83.91 % 
+Warp                     3 mins              ████░░░░░░░░░░░░░░░░░░░░░   15.76 % 
+Terminal                 0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.33 % 
 
 🐱‍💻 Projects: 
-Third_01                 2 hrs 51 mins       ███████████████░░░░░░░░░░   59.68 % 
-odds                     1 hr 53 mins        ██████████░░░░░░░░░░░░░░░   39.48 % 
-Third_13                 2 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.85 % 
+3_1                      19 mins             █████████████████████░░░░   84.24 % 
+Third_01                 3 mins              ████░░░░░░░░░░░░░░░░░░░░░   15.76 % 
 
 💻 Operating System: 
-Mac                      4 hrs 47 mins       █████████████████████████   100.00 % 
+Mac                      22 mins             █████████████████████████   100.00 % 
 ```
 
 
- Last Updated on 07/05/2026 13:26:09 UTC
+ Last Updated on 08/05/2026 01:49:01 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
