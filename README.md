@@ -123,7 +123,7 @@ C#   56 mins               █████████████████�
 
 ### 🔨 Development Environment
 <!--START_SECTION:dev-stats-->
-![Code Time](http://img.shields.io/badge/Code%20Time-787%20hrs%2012%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-787%20hrs%2024%20mins-blue?style=flat)
 
 📊 **This Week I Spent My Time On** 
 
@@ -144,7 +144,7 @@ Mac                      56 mins             ███████████�
 ```
 
 
- Last Updated on 16/05/2026 01:46:36 UTC
+ Last Updated on 16/05/2026 12:54:37 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
