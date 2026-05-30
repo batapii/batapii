@@ -184,23 +184,23 @@ Unity3D Asset   0 secs                ░░░░░░░░░░░░░░
 <!--START_SECTION:wakaalltime-->
 
 ```txt
-Total Time: 353 hrs 49 mins
+Total Time: 355 hrs 33 mins
 
-Other                  446 hrs 47 mins       ██████████████░░░░░░░░░░░   55.81 %
-Kotlin                 214 hrs 23 mins       ██████▓░░░░░░░░░░░░░░░░░░   26.78 %
-Swift                  45 hrs 34 mins        █▒░░░░░░░░░░░░░░░░░░░░░░░   05.69 %
-TypeScript             20 hrs 37 mins        ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.58 %
+Other                  446 hrs 47 mins       ██████████████░░░░░░░░░░░   55.69 %
+Kotlin                 214 hrs 23 mins       ██████▓░░░░░░░░░░░░░░░░░░   26.72 %
+Swift                  45 hrs 34 mins        █▒░░░░░░░░░░░░░░░░░░░░░░░   05.68 %
+TypeScript             20 hrs 37 mins        ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.57 %
 Cocoa                  9 hrs 35 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.20 %
 YAML                   9 hrs 25 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.18 %
 C#                     8 hrs 5 mins          ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.01 %
 Image (svg)            7 hrs 7 mins          ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.89 %
 HTTP Request           5 hrs 14 mins         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.65 %
 JSON                   4 hrs 59 mins         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.62 %
-Text                   4 hrs 2 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.51 %
+Text                   4 hrs 2 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.50 %
+CSS                    3 hrs 57 mins         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.49 %
 JavaScript             3 hrs 34 mins         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.45 %
 Figma Design           3 hrs 2 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.38 %
 HTML                   2 hrs 56 mins         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.37 %
-XML                    2 hrs 27 mins         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.31 %
 ```
 
 <!--END_SECTION:wakaalltime-->
