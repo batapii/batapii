@@ -190,7 +190,7 @@ Unity3D Asset   0 secs                ░░░░░░░░░░░░░░
 ```txt
 Total Time: 359 hrs 30 mins
 
-Other                  446 hrs 49 mins       ██████████████░░░░░░░░░░░   55.41 %
+Other                  446 hrs 54 mins       ██████████████░░░░░░░░░░░   55.42 %
 Kotlin                 214 hrs 23 mins       ██████▓░░░░░░░░░░░░░░░░░░   26.59 %
 Swift                  45 hrs 43 mins        █▒░░░░░░░░░░░░░░░░░░░░░░░   05.67 %
 TypeScript             20 hrs 37 mins        ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.56 %
