@@ -114,10 +114,9 @@ TypeScript               1 repo              ██░░░░░░░░░�
 <!--START_SECTION:wakatime-->
 
 ```txt
-Total Time: 2 mins
+Total Time: 0 secs
 
-C++     2 mins                ████████████████████████▓   98.38 %
-Swift   0 secs                ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.62 %
+No activity tracked
 ```
 
 <!--END_SECTION:wakatime-->
