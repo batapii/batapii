@@ -131,18 +131,17 @@ No activity tracked
 🕑︎ Time Zone: Asia/Tokyo
 
 🔥 Editors: 
-Xcode                    2 mins              █████████████████████████   100.00 % 
+No Activity Tracked This Week
 
 🐱‍💻 Projects: 
-realm-core               2 mins              █████████████████████████   98.38 % 
-test111                  0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.62 % 
+No Activity Tracked This Week
 
 💻 Operating System: 
-Mac                      2 mins              █████████████████████████   100.00 % 
+No Activity Tracked This Week
 ```
 
 
- Last Updated on 25/07/2026 12:56:32 UTC
+ Last Updated on 26/07/2026 01:27:23 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
