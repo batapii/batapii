@@ -214,9 +214,9 @@ Text    0 secs                ░░░░░░░░░░░░░░░░�
 <!--START_SECTION:wakaalltime-->
 
 ```txt
-Total Time: 362 hrs 24 mins
+Total Time: 362 hrs 34 mins
 
-Other                  475 hrs 16 mins       ██████████████▒░░░░░░░░░░   56.74 %
+Other                  475 hrs 16 mins       ██████████████▒░░░░░░░░░░   56.73 %
 Kotlin                 214 hrs 23 mins       ██████▒░░░░░░░░░░░░░░░░░░   25.59 %
 Swift                  46 hrs 29 mins        █▒░░░░░░░░░░░░░░░░░░░░░░░   05.55 %
 TypeScript             20 hrs 37 mins        ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.46 %
@@ -227,9 +227,9 @@ Image (svg)            7 hrs 7 mins          ▒░░░░░░░░░░�
 CSS                    5 hrs 39 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.67 %
 HTTP Request           5 hrs 14 mins         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.63 %
 JavaScript             5 hrs 6 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.61 %
-JSON                   4 hrs 59 mins         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.60 %
+JSON                   5 hrs                 ░░░░░░░░░░░░░░░░░░░░░░░░░   00.60 %
 Text                   4 hrs 3 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.49 %
-HTML                   3 hrs 3 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.37 %
+HTML                   3 hrs 4 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.37 %
 Figma Design           3 hrs 2 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.36 %
 ```
 
