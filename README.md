@@ -59,7 +59,9 @@
 
 ### 🌟 Commit Activity
 <!--START_SECTION:commit-stats-->
-![Code Time](http://img.shields.io/badge/Code%20Time-837%20hrs%2050%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-362%20hrs%2034%20mins-blue?style=flat)
+
+![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-6%20hrs%2033%20mins-blue?style=flat)
 
 **🐱 My GitHub Data** 
 
@@ -94,6 +96,26 @@ Sunday                   283 commits         █░░░░░░░░░░�
 ```
 
 
+🤖 **AI Coding This Week** 
+
+```text
+⏱ AI Coding Time: 4 mins (47.54%)
+
+✍️ 3 lines written by AI, 0 lines written by hand (100.0% AI-written)
+
+🔤 0 Input Tokens, 0 Output Tokens
+
+💵 $0.00 Estimated AI Cost This Week
+
+🧠 1 AI Sessions, 7 AI Prompts
+
+🔎 AI Coding Insights:
+🤖 AI-Driven — 100.0% of written lines came from AI
+📝 Concise Prompter — average 44 characters per prompt
+🔁 Iterative Prompter — average 7 prompts per session
+🚀 High AI Trust — 0.0% of changed lines were hand-edited
+```
+
 **I Mostly Code in Kotlin** 
 
 ```text
@@ -107,7 +129,7 @@ TypeScript               1 repo              ██░░░░░░░░░�
 
 
 
- Last Updated on 27/07/2026 14:07:28 UTC
+ Last Updated on 28/07/2026 01:18:40 UTC
 <!--END_SECTION:commit-stats-->
 
 ### 💻 Weekly Development
