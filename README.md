@@ -138,9 +138,10 @@ TypeScript               1 repo              ██░░░░░░░░░�
 ```txt
 Total Time: 10 mins
 
-mcfunction   9 mins                ███████████████████████▒░   92.78 %
-JSON         0 secs                █▓░░░░░░░░░░░░░░░░░░░░░░░   06.44 %
-HTML         0 secs                ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.77 %
+mcfunction   9 mins                █████████████████████▓░░░   87.03 %
+JavaScript   0 secs                █▓░░░░░░░░░░░░░░░░░░░░░░░   06.20 %
+JSON         0 secs                █▓░░░░░░░░░░░░░░░░░░░░░░░   06.04 %
+HTML         0 secs                ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.72 %
 ```
 
 <!--END_SECTION:wakatime-->
