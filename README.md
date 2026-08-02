@@ -158,14 +158,15 @@ HTML         0 secs                ▒░░░░░░░░░░░░░░
 🕑︎ Time Zone: Asia/Tokyo
 
 🔥 Editors: 
-Cursor                   10 mins             █████████████████████████   100.00 % 
+Cursor                   10 mins             ███████████████████████░░   93.80 % 
+VS Code                  0 secs              ██░░░░░░░░░░░░░░░░░░░░░░░   06.20 % 
 
 🐱‍💻 Projects: 
-mhBnashJAAA=             4 mins              ██████████░░░░░░░░░░░░░░░   41.54 % 
-tutorial01               3 mins              █████████░░░░░░░░░░░░░░░░   34.58 % 
-tBNnaoA6AAA=             1 min               █████░░░░░░░░░░░░░░░░░░░░   19.45 % 
-tutorial00               0 secs              █░░░░░░░░░░░░░░░░░░░░░░░░   03.67 % 
-タイムテーブル                  0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.77 % 
+mhBnashJAAA=             4 mins              ██████████░░░░░░░░░░░░░░░   38.96 % 
+tutorial01               3 mins              ████████░░░░░░░░░░░░░░░░░   32.43 % 
+tBNnaoA6AAA=             1 min               █████░░░░░░░░░░░░░░░░░░░░   18.24 % 
+ユーザ作成                    0 secs              ██░░░░░░░░░░░░░░░░░░░░░░░   06.20 % 
+tutorial00               0 secs              █░░░░░░░░░░░░░░░░░░░░░░░░   03.44 % 
 
 💻 Operating System: 
 Mac                      10 mins             █████████████████████████   100.00 % 
@@ -174,7 +175,7 @@ Mac                      10 mins             ███████████�
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 4 mins (47.54%)
+⏱ AI Coding Time: 4 mins (44.59%)
 
 ✍️ 3 lines written by AI, 0 lines written by hand (100.0% AI-written)
 
@@ -192,7 +193,7 @@ Mac                      10 mins             ███████████�
 ```
 
 
- Last Updated on 01/08/2026 12:50:45 UTC
+ Last Updated on 02/08/2026 01:25:44 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
