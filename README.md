@@ -141,42 +141,23 @@ JavaScript   0 secs                ███████████████
 🕑︎ Time Zone: Asia/Tokyo
 
 🔥 Editors: 
-Cursor                   10 mins             ███████████████████████░░   93.80 % 
-VS Code                  0 secs              ██░░░░░░░░░░░░░░░░░░░░░░░   06.20 % 
+Cursor                   0 secs              █████████████████████████   100.00 % 
 
 🐱‍💻 Projects: 
-mhBnashJAAA=             4 mins              ██████████░░░░░░░░░░░░░░░   38.96 % 
-tutorial01               3 mins              ████████░░░░░░░░░░░░░░░░░   32.43 % 
-tBNnaoA6AAA=             1 min               █████░░░░░░░░░░░░░░░░░░░░   18.24 % 
-ユーザ作成                    0 secs              ██░░░░░░░░░░░░░░░░░░░░░░░   06.20 % 
-tutorial00               0 secs              █░░░░░░░░░░░░░░░░░░░░░░░░   03.44 % 
+ユーザ作成                    0 secs              █████████████████████████   100.00 % 
 
 💻 Operating System: 
-Mac                      10 mins             █████████████████████████   100.00 % 
+Mac                      0 secs              █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 4 mins (44.59%)
-
-✍️ 3 lines written by AI, 0 lines written by hand (100.0% AI-written)
-
-🔤 0 Input Tokens, 0 Output Tokens
-
-💵 $0.00 Estimated AI Cost This Week
-
-🧠 1 AI Sessions, 7 AI Prompts
-
-🔎 AI Coding Insights:
-🤖 AI-Driven — 100.0% of written lines came from AI
-📝 Concise Prompter — average 44 characters per prompt
-🔁 Iterative Prompter — average 7 prompts per session
-🚀 High AI Trust — 0.0% of changed lines were hand-edited
+No AI Coding Activity Tracked This Week
 ```
 
 
- Last Updated on 03/08/2026 14:12:23 UTC
+ Last Updated on 04/08/2026 01:17:22 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
