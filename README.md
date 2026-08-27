@@ -164,13 +164,10 @@ No AI Coding Activity Tracked This Week
 <!--START_SECTION:wakamonth-->
 
 ```txt
-Total Time: 1 hr 39 mins
+Total Time: 1 hr 29 mins
 
-C#           1 hr 24 mins          █████████████████████░░░░   84.63 %
-mcfunction   9 mins                ██▒░░░░░░░░░░░░░░░░░░░░░░   09.33 %
-JavaScript   5 mins                █▒░░░░░░░░░░░░░░░░░░░░░░░   05.32 %
-JSON         0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.65 %
-HTML         0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.08 %
+C#           1 hr 24 mins          ███████████████████████▓░   94.08 %
+JavaScript   5 mins                █▒░░░░░░░░░░░░░░░░░░░░░░░   05.92 %
 ```
 
 <!--END_SECTION:wakamonth-->
