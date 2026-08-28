@@ -138,9 +138,14 @@ TypeScript               1 repo              ██░░░░░░░░░�
 <!--START_SECTION:wakatime-->
 
 ```txt
-Total Time: 11 mins
+Total Time: 20 mins
 
-C#   11 mins               █████████████████████████   100.00 %
+C#           11 mins               ██████████████▒░░░░░░░░░░   56.77 %
+HTML         6 mins                ████████▒░░░░░░░░░░░░░░░░   33.38 %
+JSON         1 min                 █▓░░░░░░░░░░░░░░░░░░░░░░░   07.11 %
+Markdown     0 secs                ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.00 %
+JavaScript   0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.64 %
+TypeScript   0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.10 %
 ```
 
 <!--END_SECTION:wakatime-->
