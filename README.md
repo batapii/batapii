@@ -204,10 +204,14 @@ Composer                 0 lines             ░░░░░░░░░░░�
 <!--START_SECTION:wakamonth-->
 
 ```txt
-Total Time: 1 hr 29 mins
+Total Time: 1 hr 38 mins
 
-C#           1 hr 24 mins          ███████████████████████▓░   94.08 %
-JavaScript   5 mins                █▒░░░░░░░░░░░░░░░░░░░░░░░   05.92 %
+C#           1 hr 24 mins          █████████████████████▒░░░   85.43 %
+HTML         6 mins                █▓░░░░░░░░░░░░░░░░░░░░░░░   07.10 %
+JavaScript   5 mins                █▒░░░░░░░░░░░░░░░░░░░░░░░   05.51 %
+JSON         1 min                 ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.51 %
+Markdown     0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.42 %
+TypeScript   0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.02 %
 ```
 
 <!--END_SECTION:wakamonth-->
