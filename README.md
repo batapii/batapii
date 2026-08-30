@@ -161,24 +161,22 @@ TypeScript   0 secs                ░░░░░░░░░░░░░░░
 🕑︎ Time Zone: Asia/Tokyo
 
 🔥 Editors: 
-VS Code                  11 mins             ██████████████░░░░░░░░░░░   56.77 % 
-Cursor                   9 mins              ███████████░░░░░░░░░░░░░░   43.23 % 
+Cursor                   9 mins              █████████████████████████   100.00 % 
 
 🐱‍💻 Projects: 
-25_1                     11 mins             ██████████████░░░░░░░░░░░   56.77 % 
-馬予想                      8 mins              ██████████░░░░░░░░░░░░░░░   41.60 % 
-kyotei-yosou             0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.63 % 
+馬予想                      8 mins              ████████████████████████░   96.23 % 
+kyotei-yosou             0 secs              █░░░░░░░░░░░░░░░░░░░░░░░░   03.77 % 
 
 💻 Operating System: 
-Mac                      20 mins             █████████████████████████   100.00 % 
+Mac                      9 mins              █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 2 mins (10.66%)
+⏱ AI Coding Time: 2 mins (24.66%)
 
-✍️ 0 lines written by AI, 43 lines written by hand (0.0% AI-written)
+✍️ 0 lines written by AI, 2 lines written by hand (0.0% AI-written)
 
 🔤 164 Input Tokens, 164 Output Tokens
 
@@ -196,7 +194,7 @@ Composer                 0 lines             ░░░░░░░░░░░�
 ```
 
 
- Last Updated on 30/08/2026 01:59:11 UTC
+ Last Updated on 30/08/2026 15:36:45 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
