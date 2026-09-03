@@ -155,7 +155,7 @@ Java Properties   0 secs                ░░░░░░░░░░░░░�
 
 ### 🔨 Development Environment
 <!--START_SECTION:dev-stats-->
-![Code Time](http://img.shields.io/badge/Code%20Time-364%20hrs%207%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-364%20hrs%2037%20mins-blue?style=flat)
 
 ![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-6%20hrs%2035%20mins-blue?style=flat)
 
@@ -165,22 +165,26 @@ Java Properties   0 secs                ░░░░░░░░░░░░░�
 🕑︎ Time Zone: Asia/Tokyo
 
 🔥 Editors: 
-Cursor                   9 mins              █████████████████████████   100.00 % 
+Android Studio           24 mins             ████████████████░░░░░░░░░   63.01 % 
+Cursor                   9 mins              ██████░░░░░░░░░░░░░░░░░░░   23.54 % 
+VS Code                  5 mins              ███░░░░░░░░░░░░░░░░░░░░░░   13.45 % 
 
 🐱‍💻 Projects: 
-馬予想                      8 mins              ████████████████████████░   96.23 % 
-kyotei-yosou             0 secs              █░░░░░░░░░░░░░░░░░░░░░░░░   03.77 % 
+ToDoSNS                  24 mins             ████████████████░░░░░░░░░   63.01 % 
+馬予想                      8 mins              ██████░░░░░░░░░░░░░░░░░░░   22.65 % 
+25_1                     5 mins              ███░░░░░░░░░░░░░░░░░░░░░░   13.45 % 
+kyotei-yosou             0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.89 % 
 
 💻 Operating System: 
-Mac                      9 mins              █████████████████████████   100.00 % 
+Mac                      38 mins             █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 2 mins (24.66%)
+⏱ AI Coding Time: 2 mins (5.81%)
 
-✍️ 0 lines written by AI, 2 lines written by hand (0.0% AI-written)
+✍️ 0 lines written by AI, 8 lines written by hand (0.0% AI-written)
 
 🔤 164 Input Tokens, 164 Output Tokens
 
@@ -198,7 +202,7 @@ Composer                 0 lines             ░░░░░░░░░░░�
 ```
 
 
- Last Updated on 03/09/2026 01:44:28 UTC
+ Last Updated on 03/09/2026 15:22:23 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
