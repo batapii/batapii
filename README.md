@@ -138,13 +138,17 @@ TypeScript               1 repo              ██░░░░░░░░░�
 <!--START_SECTION:wakatime-->
 
 ```txt
-Total Time: 9 mins
+Total Time: 38 mins
 
-HTML         6 mins                ███████████████████▒░░░░░   77.22 %
-JSON         1 min                 ████░░░░░░░░░░░░░░░░░░░░░   16.45 %
-Markdown     0 secs                █░░░░░░░░░░░░░░░░░░░░░░░░   04.62 %
-JavaScript   0 secs                ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.48 %
-TypeScript   0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.22 %
+Kotlin            24 mins               ███████████████▓░░░░░░░░░   63.00 %
+HTML              6 mins                ████▓░░░░░░░░░░░░░░░░░░░░   18.18 %
+C#                5 mins                ███▒░░░░░░░░░░░░░░░░░░░░░   13.45 %
+JSON              1 min                 █░░░░░░░░░░░░░░░░░░░░░░░░   03.87 %
+Markdown          0 secs                ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.09 %
+JavaScript        0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.35 %
+TypeScript        0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.05 %
+Properties        0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.01 %
+Java Properties   0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 %
 ```
 
 <!--END_SECTION:wakatime-->
