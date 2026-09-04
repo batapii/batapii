@@ -160,44 +160,25 @@ Java Properties   0 secs                ░░░░░░░░░░░░░�
 🕑︎ Time Zone: Asia/Tokyo
 
 🔥 Editors: 
-Android Studio           24 mins             ████████████████░░░░░░░░░   63.01 % 
-Cursor                   9 mins              ██████░░░░░░░░░░░░░░░░░░░   23.54 % 
-VS Code                  5 mins              ███░░░░░░░░░░░░░░░░░░░░░░   13.45 % 
+Android Studio           24 mins             █████████████████████░░░░   82.41 % 
+VS Code                  5 mins              ████░░░░░░░░░░░░░░░░░░░░░   17.59 % 
 
 🐱‍💻 Projects: 
-ToDoSNS                  24 mins             ████████████████░░░░░░░░░   63.01 % 
-馬予想                      8 mins              ██████░░░░░░░░░░░░░░░░░░░   22.65 % 
-25_1                     5 mins              ███░░░░░░░░░░░░░░░░░░░░░░   13.45 % 
-kyotei-yosou             0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.89 % 
+ToDoSNS                  24 mins             █████████████████████░░░░   82.41 % 
+25_1                     5 mins              ████░░░░░░░░░░░░░░░░░░░░░   17.59 % 
 
 💻 Operating System: 
-Mac                      38 mins             █████████████████████████   100.00 % 
+Mac                      29 mins             █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 2 mins (5.81%)
-
-✍️ 0 lines written by AI, 8 lines written by hand (0.0% AI-written)
-
-🔤 164 Input Tokens, 164 Output Tokens
-
-💵 $0.00 Estimated AI Cost This Week
-
-🧠 2 AI Sessions, 3 AI Prompts
-
-Composer                 0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
-
-🔎 AI Coding Insights:
-🧑‍💻 Mostly Hands-On — 0.0% of written lines came from AI
-📝 Concise Prompter — average 229 characters per prompt
-🔁 Iterative Prompter — average 2 prompts per session
-🔍 Hands-On Reviewer — 100.0% of changed lines were hand-edited
+No AI Coding Activity Tracked This Week
 ```
 
 
- Last Updated on 04/09/2026 01:37:35 UTC
+ Last Updated on 04/09/2026 15:18:16 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
