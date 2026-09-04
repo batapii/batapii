@@ -209,14 +209,17 @@ Composer                 0 lines             ░░░░░░░░░░░�
 <!--START_SECTION:wakamonth-->
 
 ```txt
-Total Time: 1 hr 33 mins
+Total Time: 2 hrs 2 mins
 
-C#           1 hr 24 mins          ██████████████████████▓░░   90.28 %
-HTML         6 mins                ██░░░░░░░░░░░░░░░░░░░░░░░   07.50 %
-JSON         1 min                 ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.60 %
-Markdown     0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.45 %
-JavaScript   0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.14 %
-TypeScript   0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.02 %
+C#                1 hr 29 mins          ██████████████████▒░░░░░░   72.85 %
+Kotlin            24 mins               █████░░░░░░░░░░░░░░░░░░░░   19.76 %
+HTML              6 mins                █▒░░░░░░░░░░░░░░░░░░░░░░░   05.70 %
+JSON              1 min                 ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.22 %
+Markdown          0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.34 %
+JavaScript        0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.11 %
+TypeScript        0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.02 %
+Properties        0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 %
+Java Properties   0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 %
 ```
 
 <!--END_SECTION:wakamonth-->
