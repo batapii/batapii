@@ -130,7 +130,7 @@ JavaScript   23 mins               ███████████████
 
 ### 🔨 Development Environment
 <!--START_SECTION:dev-stats-->
-![Code Time](http://img.shields.io/badge/Code%20Time-364%20hrs%2037%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-365%20hrs-blue?style=flat)
 
 ![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-6%20hrs%2035%20mins-blue?style=flat)
 
@@ -140,15 +140,13 @@ JavaScript   23 mins               ███████████████
 🕑︎ Time Zone: Asia/Tokyo
 
 🔥 Editors: 
-Android Studio           24 mins             █████████████████████░░░░   82.41 % 
-VS Code                  5 mins              ████░░░░░░░░░░░░░░░░░░░░░   17.59 % 
+VS Code                  23 mins             █████████████████████████   100.00 % 
 
 🐱‍💻 Projects: 
-ToDoSNS                  24 mins             █████████████████████░░░░   82.41 % 
-25_1                     5 mins              ████░░░░░░░░░░░░░░░░░░░░░   17.59 % 
+ユーザ作成                    23 mins             █████████████████████████   100.00 % 
 
 💻 Operating System: 
-Mac                      29 mins             █████████████████████████   100.00 % 
+Mac                      23 mins             █████████████████████████   100.00 % 
 ```
 
 🤖 **AI Coding This Week** 
@@ -158,7 +156,7 @@ No AI Coding Activity Tracked This Week
 ```
 
 
- Last Updated on 10/09/2026 01:44:44 UTC
+ Last Updated on 10/09/2026 15:22:49 UTC
 <!--END_SECTION:dev-stats-->
 
 ### 📈 Monthly Stats
