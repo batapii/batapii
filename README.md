@@ -121,12 +121,9 @@ CSS                      1 repo              ██░░░░░░░░░�
 <!--START_SECTION:wakatime-->
 
 ```txt
-Total Time: 29 mins
+Total Time: 23 mins
 
-Kotlin            24 mins               ████████████████████▓░░░░   82.39 %
-C#                5 mins                ████▒░░░░░░░░░░░░░░░░░░░░   17.59 %
-Properties        0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.01 %
-Java Properties   0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 %
+JavaScript   23 mins               █████████████████████████   100.00 %
 ```
 
 <!--END_SECTION:wakatime-->
