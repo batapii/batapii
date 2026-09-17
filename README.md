@@ -121,9 +121,9 @@ CSS                      1 repo              ██░░░░░░░░░�
 <!--START_SECTION:wakatime-->
 
 ```txt
-Total Time: 23 mins
+Total Time: 0 secs
 
-JavaScript   23 mins               █████████████████████████   100.00 %
+No activity tracked
 ```
 
 <!--END_SECTION:wakatime-->
