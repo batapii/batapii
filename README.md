@@ -163,13 +163,9 @@ No AI Coding Activity Tracked This Week
 <!--START_SECTION:wakamonth-->
 
 ```txt
-Total Time: 52 mins
+Total Time: 23 mins
 
-Kotlin            24 mins               ███████████▒░░░░░░░░░░░░░   45.88 %
-JavaScript        23 mins               ███████████░░░░░░░░░░░░░░   44.31 %
-C#                5 mins                ██▒░░░░░░░░░░░░░░░░░░░░░░   09.80 %
-Properties        0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.01 %
-Java Properties   0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 %
+JavaScript   23 mins               █████████████████████████   100.00 %
 ```
 
 <!--END_SECTION:wakamonth-->
