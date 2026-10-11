@@ -163,9 +163,9 @@ No AI Coding Activity Tracked This Week
 <!--START_SECTION:wakamonth-->
 
 ```txt
-Total Time: 23 mins
+Total Time: 0 secs
 
-JavaScript   23 mins               █████████████████████████   100.00 %
+No activity tracked
 ```
 
 <!--END_SECTION:wakamonth-->
