@@ -121,10 +121,9 @@ CSS                      1 repo              ██░░░░░░░░░�
 <!--START_SECTION:wakatime-->
 
 ```txt
-Total Time: 1 hr 52 mins
+Total Time: 35 mins
 
-C#      1 hr 52 mins          █████████████████████████   99.99 %
-Other   0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.01 %
+C#   35 mins               █████████████████████████   100.00 %
 ```
 
 <!--END_SECTION:wakatime-->
